@@ -1,0 +1,33 @@
+{
+  "name": "Index-Project-CBE",
+  "version": "0.1",
+  "description": "index signis criticis",
+  "permissions": ["tabs", "activeTab", "storage", "*://localhost/*", "*://ecomparatio.net/*", "*://papyri.info/*", "*://cts-altegeschichte-leipzig.de/*"],
+  "default_locale": "en",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  
+  "background": {
+    "scripts": ["js/browser.js","js/background.js","js/extension.functions.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "img/icon16.png",
+      "32": "img/icon32.png",
+      "48": "img/icon48.png",
+      "128": "img/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+
+  "manifest_version": 2
+}

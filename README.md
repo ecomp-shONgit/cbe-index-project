@@ -4,8 +4,8 @@
 A cross browser extension to extract a *index signis criticis* from any webpage. What is a *index signis criticis*: It is a index, like the *index verborum*, *index locorum* or *index rerum*, but for all signes used in the critical edition of fragments, inscriptions, papyri and ostraca. This cross browser extension (cbe) is a proof of concept and restricted to this purepose.
 
 # Installation
-The cbe is not available through a browser extension store. A next version of the software will be. But this version is for early testers. Use the Chrome menu to install it as a extracted extension.
-Go to *Menu* > *Weitere Tools (Other Tools)* > *Erweiterungen (Extensions)*. Activate the *Entwicklermodus (Developermode)* and select *Entpackte Erweiterung laden (load extracted extension)* and choose the folder you extracted the cbe to.
+The cbe is not available through a browser extension store. A next version of the software will be. But this version is for early testers. Use the Chrome menu to install it as a extracted extension. Choose src Folder of downloaded gitrepository.
+Go to *Menu* > *Weitere Tools (Other Tools)* > *Erweiterungen (Extensions)*. Activate the *Entwicklermodus (Developermode)* and select *Entpackte Erweiterung laden (load extracted extension)* and choose src folder of the folder you extracted the cbe to.
 
 picture where to click
 

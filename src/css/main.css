@@ -1,0 +1,277 @@
+/* main.css */
+/*initial*/
+body{
+    width:100%;
+
+}
+
+/*index main div*/
+.indind{
+    width: 20%;
+    position: absolute;
+    z-index: 10;
+    left: 75%;
+    top: 0px;
+    background:white;
+    margin:5px;
+    padding:5px;
+    box-shadow: -1px 0 1px black;
+    border-left: 1px dotted gray;
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+    text-align: left;
+}
+/*title div of index div*/
+.itti{
+
+}
+/*show hide*/
+.shhi{
+    cursor:pointer;
+}
+
+/*relation between list per index entry type and text inserted*/
+.anchorofindexentry{
+    color: red;
+    background: green;
+     cursor:pointer;
+}
+
+/*per type of index entry*/
+.perk{
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+}
+
+/* index index index index index index index index index index index index index */
+
+/*LUECKEN*/
+.luebest{
+    font-weight: bold;
+    color: blue;
+}
+/*.luebest::after{
+    content: "lb"; 
+}*/
+
+.luebestvoe{
+    font-weight: bold;
+    color: blue;
+}
+
+.luebestlen{
+    font-weight: bold;
+    color: blue;
+}
+
+.lueckeinZeile{
+    font-weight: bold;
+    color: blue;
+}
+
+.lueckeausZeile{
+    font-weight: bold;
+    color: blue;
+}
+
+.lueckeunbest{
+    font-weight: bold;
+    color: blue;
+}
+.lueckmlen{
+    font-weight: bold;
+    color: blue;
+}
+
+
+/*EINZELBUCHSTABEN*/
+
+.punktunter{
+    font-weight: bold;
+    color: blue;
+}
+
+.frueheregewaer{
+    font-weight: bold;
+    color: blue;
+}
+
+.unbekueber{
+    font-weight: bold;
+    color: blue;
+}
+
+.anzlatbuchs{
+    font-weight: bold;
+    color: blue;
+}
+
+.anzgriechbuch{
+    font-weight: bold;
+    color: blue;
+}
+
+/*Tildungen aller Art / Rasur*/
+.irrgetilgt{
+    font-weight: bold;
+    color: blue;
+}
+
+.tilg{
+    font-weight: bold;
+    color: blue;
+}
+
+.rasiert{
+    font-weight: bold;
+    color: blue;
+}
+
+.tilgerg{
+    font-weight: bold;
+    color: blue;
+}
+
+.tilguns{
+    font-weight: bold;
+    color: blue;
+}
+
+.tilgzei{
+    font-weight: bold;
+    color: blue;
+}
+
+.wiederherst{
+    font-weight: bold;
+    color: blue;
+}
+
+.editorrekonst{
+    font-weight: bold;
+    color: blue;
+}
+
+.recovori{
+    font-weight: bold;
+    color: blue;
+}
+
+.ueberschr{
+    font-weight: bold;
+    color: blue;
+}
+
+.tilgrewrite{
+    font-weight: bold;
+    color: blue;
+}
+
+.korr{
+    font-weight: bold;
+    color: blue;
+}
+
+.erszuff{
+    font-weight: bold;
+    color: blue;
+}
+
+.erzuffunbst{
+    font-weight: bold;
+    color: blue;
+}
+
+.aufabk{
+    font-weight: bold;
+    color: blue;
+}
+
+.aufabkuns{
+    font-weight: bold;
+    color: blue;
+}
+
+.scil{
+    font-weight: bold;
+    color: blue;
+}
+
+.unvollen{
+    font-weight: bold;
+    color: blue;
+}
+
+.hinwabk{
+    font-weight: bold;
+    color: blue;
+}
+
+.korrdeseditors{
+    font-weight: bold;
+    color: blue;
+}
+
+.ungewschreibung{
+    font-weight: bold;
+    color: blue;
+}
+
+.buchstherausrekonst{
+    font-weight: bold;
+    color: blue;
+}
+
+.eckenunbek{
+    font-weight: bold;
+    color: blue;
+}
+
+.vac{
+    font-weight: bold;
+    color: blue;
+}
+
+.wtrenn{
+    font-weight: bold;
+    color: blue;
+}
+.zeilenende{
+    font-weight: bold;
+    color: blue;
+}
+
+.zeilenendeDigit{
+    font-weight: bold;
+    color: blue;
+}
+
+.zeilenanfang{
+    font-weight: bold;
+    color: blue;
+}
+
+.zeilenanfangDigit{
+    font-weight: bold;
+    color: blue;
+}
+
+.spaltenanfang{
+    font-weight: bold;
+    color: blue;
+}
+
+.lueckeausmehrZeile{
+    font-weight: bold;
+    color: blue;
+}
+
+/*Diag*/
+.diagonlytext{
+    display:inline-block;
+}
+
+/*background disp*/
+#backcan{
+    z-index: 9;
+}

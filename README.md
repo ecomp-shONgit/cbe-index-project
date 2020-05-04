@@ -18,11 +18,11 @@ Done.
 # Usage
 After installing the cbe to your browser, you have to turn the cbe on.
 
-picture of turning on
+![ScreenShot](man/002-turnon.png)
 
 If you navigate to a webpage the cbe adds a *index signis criticis* to it. You can interact with it, print it and if you open another webpage the index of the first and the next page is compared in terms of set comparison.
 
-picture of index
+![ScreenShot](man/003-indind.png)
 
 There is a testpage, taht contains all signes:
 
@@ -30,7 +30,7 @@ http://ecomparatio.net/~khk/signescritiques.html
 
 ## Main Menu
 
-picture of menu
+![ScreenShot](man/004-indmenu.png)
 
 The index has a small main menu at the top of the displayed box. You can freely drag the box around and arrange it to your needs (*hand sign*). You can shorten the whole box to the main menu (*~s/h~*). You can get a PDF/print of the index in its current state (if selections have been made they will occur in the PDF).
 
@@ -38,19 +38,19 @@ The index has a small main menu at the top of the displayed box. You can freely 
 
 The index is of variable length, it shows just singe types that occur on the webpage. Every entry shows the type (mouse over for description), the number of occurrence and a *~s/h~* button.
 
-picture of a entry
+![ScreenShot](man/005-entry.png)
 
 If you click *~s/h~* you get a list of all places of occurrence.
 
-picture of list
+![ScreenShot](man/006-entrylist.png)
 
 If you click on a entry in the list you the place highlighted in the webpage. By clicking on the anchor in the webpage you can dismiss it.
 
-picture of the anchor
+![ScreenShot](man/007-anchor.png)
 
 ## The set comparison
 
-picture from set comp
+![ScreenShot](man/008-setcomp.png)
 
 
 If you have opened more webpages in a tab in your browser to the same time, every index entry provides a comparison. After the arrow there is the total count of occurrence. If you click on this you open the page, if you just do a mouse-over you can see the URL displayed. Next there are up to three colored bars. If you have 3 than the first are the places that are unique in this webpage, the second bar are the places common to this and the other webpage and the third bar are the places unique to the other page. The mouse-over for each bar provides the places, the count and a description.

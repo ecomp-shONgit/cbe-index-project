@@ -24,7 +24,7 @@ If you navigate to a webpage the cbe adds a *index signis criticis* to it. You c
 
 ![ScreenShot](man/003-indind.png)
 
-There is a testpage, taht contains all signes:
+There is a testpage, that contains all signes:
 
 http://ecomparatio.net/~khk/signescritiques.html
 

@@ -1,7 +1,7 @@
 {
   "name": "Index-Project-CBE",
   "version": "0.1",
-  "description": "index signis criticis",
+  "description": "index signa critica",
   "permissions": ["tabs", "activeTab", "storage", "*://localhost/*", "*://ecomparatio.net/*", "*://papyri.info/*", "*://cts-altegeschichte-leipzig.de/*"],
   "default_locale": "en",
   "options_ui": {

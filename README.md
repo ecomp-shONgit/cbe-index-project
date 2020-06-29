@@ -1,7 +1,7 @@
 
 # cbe-index-project
 
-A cross browser extension to extract a *index signis criticis* from any webpage. What is a *index signis criticis*: It is a index, like the *index verborum*, *index locorum* or *index rerum*, but for all signes used in the critical edition of fragments, inscriptions, papyri and ostraca. This cross browser extension (cbe) is a proof of concept and restricted to this purepose.
+A cross browser extension to extract a *index signa critica* from any webpage. What is a *index signa critica*: It is a index, like the *index verborum*, *index locorum* or *index rerum*, but for all signes used in the critical edition of fragments, inscriptions, papyri and ostraca. This cross browser extension (cbe) is a proof of concept and restricted to this purepose.
 
 # Installation
 The cbe is not available through a browser extension store. A next version of the software will be. But this version is for early testers. Use the Chrome menu to install it as a extracted extension. Choose src Folder of downloaded gitrepository.
@@ -20,7 +20,7 @@ After installing the cbe to your browser, you have to turn the cbe on.
 
 ![ScreenShot](man/002-turnon.png)
 
-If you navigate to a webpage the cbe adds a *index signis criticis* to it. You can interact with it, print it and if you open another webpage the index of the first and the next page is compared in terms of set comparison.
+If you navigate to a webpage the cbe adds a *index signa critica* to it. You can interact with it, print it and if you open another webpage the index of the first and the next page is compared in terms of set comparison.
 
 ![ScreenShot](man/003-indind.png)
 

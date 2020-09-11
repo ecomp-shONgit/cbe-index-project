@@ -1,7 +1,7 @@
 
 # cbe-index-project
 
-A cross browser extension (cbe) to extract a *Index signorum criticorum* (ISC), *Index verborum* (IV) and *Index locorum* (IL) from any webpage. 
+A cross browser extension (cbe) to extract a *Index signorum criticorum* (ISC), *Index verborum* (IV) and *Index locorum* (IL) from any webpage. A cross browser extension has the advantage to get access to the data of more than one webpage at a time and to have the JS language at hand, all combined into the browser  as host and interface. The index projket cbe offeres the feature of comparing indices.
 
 # Installation
 

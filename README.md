@@ -1,10 +1,11 @@
 
 # cbe-index-project
 
-A cross browser extension to extract a *Index signorum criticorum* from any webpage. What is a *Index signorum criticorum*: It is a index, like the *index verborum*, *index locorum* or *index rerum*, but for all signes used in the critical edition of fragments, inscriptions, papyri and ostraca. This cross browser extension (cbe) is a proof of concept and restricted to this purepose.
+A cross browser extension (cbe) to extract a *Index signorum criticorum* (ISC), *Index verborum* (IV) and *Index locorum* (IL) from any webpage. 
 
 # Installation
-The cbe is not available through a browser extension store. A next version of the software will be. But this version is for early testers. Use the Chrome menu to install it as a extracted extension. Choose src Folder of downloaded gitrepository.
+
+The cbe is (at the moment) not available through a browser extension store. A next version of the software will be. But this version is for early testers. Use the Chrome menu to install it as a extracted extension. Choose src Folder of downloaded gitrepository.
 Go to *Menu* > *Weitere Tools (Other Tools)* > *Erweiterungen (Extensions)*. 
 
 ![ScreenShot](man/00-chromemenu.png)
@@ -15,7 +16,15 @@ Activate the *Entwicklermodus (Developermode)* and select *Entpackte Erweiterung
 
 Done.
 
-# Usage
+# Data extraction fom webpage
+Just Text.
+
+
+# Index signorum criticorum
+
+What is a *Index signorum criticorum*: It is a index, like the *Index verborum*, *Index locorum* or *Index rerum*, but for all signes used in the critical edition of classical texts, fragments, inscriptions, papyri and ostraca. 
+
+## Usage
 After installing the cbe to your browser, you have to turn the cbe on.
 
 ![ScreenShot](man/002-turnon.png)
@@ -28,13 +37,13 @@ There is a testpage, that contains all signes:
 
 http://ecomparatio.net/~khk/signescritiques.html
 
-## Main Menu
+### Main Menu
 
 ![ScreenShot](man/004-indmenu.png)
 
 The index has a small main menu at the top of the displayed box. You can freely drag the box around and arrange it to your needs (*hand sign*). You can shorten the whole box to the main menu (*~s/h~*). You can get a PDF/print of the index in its current state (if selections have been made they will occur in the PDF).
 
-## A index entry
+### A index entry
 
 The index is of variable length, it shows just singe types that occur on the webpage. Every entry shows the type (mouse over for description), the number of occurrence and a *~s/h~* button.
 
@@ -48,25 +57,16 @@ If you click on a entry in the list you the place highlighted in the webpage. By
 
 ![ScreenShot](man/007-anchor.png)
 
-## The set comparison
+### The set comparison
 
 ![ScreenShot](man/008-setcomp.png)
 
 
 If you have opened more webpages in a tab in your browser to the same time, every index entry provides a comparison. After the arrow there is the total count of occurrence. If you click on this you open the page, if you just do a mouse-over you can see the URL displayed. Next there are up to three colored bars. If you have 3 than the first are the places that are unique in this webpage, the second bar are the places common to this and the other webpage and the third bar are the places unique to the other page. The mouse-over for each bar provides the places, the count and a description.
 
+## Signes recognized
 
-# Restrictions
-
-## Url restriction
-Currently the extension just works on URLs from papyri.info and ecomparatio.net - This will change during the next versions of the cross browser extension.
-
-## Browser compatibility
-The extension is tested under the latest Chrome and Opera. Firefox is not working. See https://github.com/je-wi/cbe for a general list of cbe tested browsers.
-
-# Signes recognized
-
-## EINZELBUCHSTABEN ZEICHEN
+### EINZELBUCHSTABEN ZEICHEN
 
 *ẹ*, Def: Unterpunkt, Lesung unsicher; aus dem Kontext erschlossen, Buchstaben, die derart beschädigt sind, daß sie nur im Kontext sicher identifiziert werden können.
 
@@ -78,7 +78,7 @@ The extension is tested under the latest Chrome and Opera. Firefox is not workin
 
 *...*, Def: Punktserie, Litterarum vestigia.
 
-## LÜCKEN ALLER ART
+### LÜCKEN ALLER ART
 
 *[abc]*, Def: Buchstaben, die infolge einer zufaelligen Beschaedigung der Oberfläche voellig verschwunden oder am Rande weggebrochen sind und die der Herausgeber ergaenzt hat.
 
@@ -97,7 +97,7 @@ The extension is tested under the latest Chrome and Opera. Firefox is not workin
 *][*, Def: Lücke unbestimmt
   
 
-##TILGUNG ALLER ART
+### TILGUNG ALLER ART
 
 *{abc}*, Def: Irrtümlich hinzugefügte Buchstaben, die der Herausgeber getilgt hat.
 
@@ -111,7 +111,7 @@ The extension is tested under the latest Chrome and Opera. Firefox is not workin
 
 *〚[------] 〛*, Def: Lücke einer ganzen getilgten Zeile.
 
-## ERSATZ VON BUCHSTABEN UND LUECKEN / WIEDERHERSTELLUNG
+### ERSATZ VON BUCHSTABEN UND LUECKEN / WIEDERHERSTELLUNG
 
 *《abc》*, Def: Ersatz für getilgte Buchstaben, die deutlich oder mit Wahrscheinlichkeit zu lesen sind.
 
@@ -131,7 +131,7 @@ The extension is tested under the latest Chrome and Opera. Firefox is not workin
 *《[...]》,《[-5?-]》,《[---]》*, Def: Ersatz für getilgte Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig verschwunden oder am Rande weggebrochen sind und deren Anzahl sich sicher, weniger sicher oder gar nicht berechnen läßt.
 
 
-## ANGABEN DES EDITORS
+### ANGABEN DES EDITORS
 
 *(abc)*, Def: Auflösung von Abkürzungen, Abgekürztes Wort, das der Herausgeber aufgelöst hat.
 
@@ -155,7 +155,7 @@ The extension is tested under the latest Chrome and Opera. Firefox is not workin
 
 *=*, Def: Worttrennung.
 
-## ZEILEN UND SPALTEN
+### ZEILEN UND SPALTEN
 
 */*, Def: Zeilentrenner; Zeilenende.
 
@@ -166,3 +166,12 @@ The extension is tested under the latest Chrome and Opera. Firefox is not workin
 *|5*, Def: Zeilenanfang mit Numerierung.
 
 *||*, Def: Spaltenumbruch; Abtrennung von Spalten; Spaltenanfang.
+
+
+
+# Restrictions
+
+## Browser compatibility
+The extension is tested under the latest Chrome and Opera. Firefox is not working. See https://github.com/je-wi/cbe for a general list of cbe tested browsers.
+
+

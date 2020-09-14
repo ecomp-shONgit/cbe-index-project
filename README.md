@@ -1,5 +1,5 @@
 
-# cbe-index-project
+# CBE Index project
 
 A cross browser extension (cbe) to extract a *Index signorum criticorum* (ISC), *Index verborum* (IV) and *Index locorum* (IL) from any webpage. A cross browser extension has the advantage to get access to the data of more than one webpage at a time and to have the JS language at hand, all combined into the browser  as host and interface. The index projket cbe offeres the feature of comparing indices.
 
@@ -32,13 +32,14 @@ Activate the *Entwicklermodus (Developermode)* and select *Entpackte Erweiterung
 
 ![ScreenShot](man/01_operaErwLaden.png)
 
+Done.
+
 ## Firefox
 
 ## Safari
 
 # Data extraction fom webpage
-A crusial internal feature of the software is the content-extraction from a webpage. There are two modi of operation of the cbe. The first one extractes the string content from a page be determing the HTML-elements containing the most unstruktured text. The second one lets the user select the text that need to be processes. If the first modus fails the second one can be used.
-
+A crusial internal feature of the software is the content-extraction from a webpage. There are two modi of operation of the cbe. The first one extractes the string content from a page by determing the HTML-elements containing the most unstruktured text. The second one lets the user select the text that need to be processes. If the first modus fails the second one can be used.
 
 # Index signorum criticorum
 
@@ -49,7 +50,7 @@ After installing the cbe to your browser, you have to turn the cbe on.
 
 ![ScreenShot](man/002-turnon.png)
 
-If you navigate to a webpage the cbe adds a *Index signorum criticorum* to it. You can interact with it, print it and if you open another webpage the index of the first and the next page is compared in terms of set comparison.
+If you navigate to a webpage the cbe adds a *Index signorum criticorum* after clicking the button in the cbe popup-menu. You can interact with shown index, print it and if you open another webpage the index of the first and the next page is compared in terms of set comparison.
 
 ![ScreenShot](man/003-indind.png)
 
@@ -61,28 +62,25 @@ http://ecomparatio.net/~khk/signescritiques.html
 
 ![ScreenShot](man/004-indmenu.png)
 
-The index has a small main menu at the top of the displayed box. You can freely drag the box around and arrange it to your needs (*hand sign*). You can shorten the whole box to the main menu (*~s/h~*). You can get a PDF/print of the index in its current state (if selections have been made they will occur in the PDF).
+The index has a small main menu at the top of the displayed box. You can freely drag the box around and arrange it to your needs (*hand sign*). You can shorten the whole box to the main menu (⬍). You can get a PDF/print of the index in its current state (if selections have been made they will occur in the PDF).
 
 ### A index entry
 
-The index is of variable length, it shows just singe types that occur on the webpage. Every entry shows the type (mouse over for description), the number of occurrence and a *~s/h~* button.
+The index is of variable length, it shows just singe types that occur on the webpage. Every entry shows the type (mouse over for description), the number of occurrence and a ⬍ button.
 
 ![ScreenShot](man/005-entry.png)
 
-If you click *~s/h~* you get a list of all places of occurrence.
+If you click ⬍ you get a list of all places of occurrence.
 
 ![ScreenShot](man/006-entrylist.png)
 
-If you click on a entry in the list you the place highlighted in the webpage. By clicking on the anchor in the webpage you can dismiss it.
-
-![ScreenShot](man/007-anchor.png)
 
 ### The set comparison
 
 ![ScreenShot](man/008-setcomp.png)
 
 
-If you have opened more webpages in a tab in your browser to the same time, every index entry provides a comparison. After the arrow there is the total count of occurrence. If you click on this you open the page, if you just do a mouse-over you can see the URL displayed. Next there are up to three colored bars. If you have 3 than the first are the places that are unique in this webpage, the second bar are the places common to this and the other webpage and the third bar are the places unique to the other page. The mouse-over for each bar provides the places, the count and a description.
+If you have opened more webpages (tabs) in your browser to the same time, every index entry provides a comparison. After the arrow there is the total count of occurrence. If you click on this you open the page, if you just do a mouse-over you can see the URL displayed. Next there are up to three colored bars. If you have 3 than the first are the places that are unique in this webpage, the second bar are the places common to this and the other webpage and the third bar are the places unique to the other page. The mouse-over for each bar provides the places, the count and a description.
 
 ## Signes recognized
 
@@ -187,7 +185,28 @@ If you have opened more webpages in a tab in your browser to the same time, ever
 
 *||*, Def: Spaltenumbruch; Abtrennung von Spalten; Spaltenanfang.
 
+# Index verborum
 
+What is a *Index verborum*: it is a list derived from the wordforms within a string. We will also include the relations between wordforms and different types of organisation of the list. 
+
+## Usage
+
+After you switched the cbe on you can click the button to build a *Index verborum*. The index constits of entries showing the wordform an the count. The list is organized by wordform frequnecy. If you have multiple taps with *index verborum* additional numbers per list entry are generated shwoing the wordformfrequncy on the other pages. There is a mouse-over to show the origin link.
+
+![ScreenShot]( man/00_IndeVerborum.png )
+
+
+# Index Locorum
+
+What is a *Index locorum*: It is a list of all refreences to classical texts. The references are more or less canonical. A reference consists of a few sigla (or full names) that could be read as author workname combinations and a view numbers (locations in the textorganisation or ranges, enumerations of both).
+
+## Usage
+
+After you activated the cbe and hitting the button labeled *Index locorum* you will get a list. With the hand sign in the menu you can freely drag the list around. After every entry of the list there is a little downfacing arrow, if there are alternative references, that could be constructed. There are pointing hands if the constructed reference does exist on a other open webpage.
+
+![ScreenShot]( 00_indexlocorum.png )
+
+There is a testpage http://ecomparatio.net/~khk/isctest.html
 
 # Restrictions
 

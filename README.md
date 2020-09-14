@@ -5,19 +5,39 @@ A cross browser extension (cbe) to extract a *Index signorum criticorum* (ISC), 
 
 # Installation
 
-The cbe is (at the moment) not available through a browser extension store. A next version of the software will be. But this version is for early testers. Use the Chrome menu to install it as a extracted extension. Choose src Folder of downloaded gitrepository.
+## Extension store
+
+The cbe is (at the moment) not available through a browser extension store. A next version of the software will be. But this version is for early testers.
+
+## Chrome / Chromium
+
+Use the Chrome menu to install it as a extracted extension. Choose src Folder of downloaded gitrepository.
 Go to *Menu* > *Weitere Tools (Other Tools)* > *Erweiterungen (Extensions)*. 
 
 ![ScreenShot](man/00-chromemenu.png)
 
-Activate the *Entwicklermodus (Developermode)* and select *Entpackte Erweiterung laden (load extracted extension)* and choose src folder of the folder you extracted the cbe to.
+Activate the *Entwicklermodus (Developermode)* and select *Entpackte Erweiterung laden (load extracted extension)* and choose src-folder of the location you extracted the cbe to.
 
 ![ScreenShot](man/001-chromeupload.png)
 
 Done.
 
+## Opera
+
+Use the Opera menu to install the cbe from the extracted github repository download. Go to *Menu* > *Erweiterungen (Extensions)* > *Erweiterungen (Extensions)* or hit Ctrl+Shift+E.
+
+![ScreenShot](man/00_operaMenu.png)
+
+Activate the *Entwicklermodus (Developermode)* and select *Entpackte Erweiterung laden (load extracted extension)* and choose src-folder of the location you extracted the cbe to.
+
+![ScreenShot](man/01_operaErwLaden.png)
+
+## Firefox
+
+## Safari
+
 # Data extraction fom webpage
-Just Text.
+A crusial internal feature of the software is the content-extraction from a webpage. There are two modi of operation of the cbe. The first one extractes the string content from a page be determing the HTML-elements containing the most unstruktured text. The second one lets the user select the text that need to be processes. If the first modus fails the second one can be used.
 
 
 # Index signorum criticorum

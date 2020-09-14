@@ -204,7 +204,7 @@ What is a *Index locorum*: It is a list of all refreences to classical texts. Th
 
 After you activated the cbe and hitting the button labeled *Index locorum* you will get a list. With the hand sign in the menu you can freely drag the list around. After every entry of the list there is a little downfacing arrow, if there are alternative references, that could be constructed. There are pointing hands if the constructed reference does exist on a other open webpage.
 
-![ScreenShot]( 00_indexlocorum.png )
+![ScreenShot]( man/00_indexlocorum.png )
 
 There is a testpage http://ecomparatio.net/~khk/isctest.html
 

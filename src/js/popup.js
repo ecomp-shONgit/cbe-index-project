@@ -13,8 +13,10 @@
 */ 
 
 document.addEventListener("DOMContentLoaded", function(event) { 
-var isActiveSwitch = document.querySelector('#isActiveSwitch');
-var optButton_el = document.querySelector('#optionsButton');
+    let isActiveSwitch = document.querySelector('#isActiveSwitch');
+    let iscButton_el = document.querySelector('#ButtonISC');
+    let ivButton_el = document.querySelector('#ButtonIV');
+    let ilButton_el = document.querySelector('#ButtonIL');
 
   /* localization of html-elements */
   document.querySelectorAll('.localize').forEach(function(node) {
@@ -23,37 +25,53 @@ var optButton_el = document.querySelector('#optionsButton');
 
   /* get all stored data */
   browser.storage.local.get(null, function(data) {
+    console.log(data);
     isActiveSwitch.checked = data.isActive;
     });
   
   /* switch on / off */  
   isActiveSwitch.addEventListener("click", function(el) {
-    var status = el.target.checked;
-    browser.storage.local.set({isActive: status}, function() 
-      {
-       browser.storage.local.get(null, function(data)
-        { 
-        if( data.isActive )
-          {
+    let status = el.target.checked;
+    browser.storage.local.set({isActive: status}, function(){
+       browser.storage.local.get(null, function(data){ 
+        if( data.isActive ){
           browser.browserAction.setBadgeText({text: 'ON'});
           browser.browserAction.setBadgeBackgroundColor({color: "red"});
-            
           pleaseDoItNow(data);
-          }
-        else
-          {
+         } else {
           browser.browserAction.setBadgeText({text: 'OFF'});
           browser.browserAction.setBadgeBackgroundColor({color: "gray"});  
-          pleaseUnDoItNow(data);                  
-          }            
+          //pleaseUnDoItNow(data);                  
+         }            
         }); 
       }); 
     });
     
-  /* optionButton */
-  optButton_el.addEventListener("click", function(el) {  
+  /* Button signes criticis */
+  iscButton_el.addEventListener("click", function(el) {  
     //browser.runtime.openOptionsPage(); 
-    var status = el.target.checked;
+    let status = isActiveSwitch.checked;
+    
+    browser.storage.local.set({isActive: status}, function() 
+      {
+        console.log(status);
+       browser.storage.local.get(null, function(data)
+        { 
+        console.log(data);
+        if( data.isActive )
+          {
+          //browser.browserAction.setBadgeText({text: 'ON'});
+          //browser.browserAction.setBadgeBackgroundColor({color: "red"});
+            
+          doISC(data);
+          }
+        }); 
+      }); 
+  }); 
+     /* Button index verborum */
+  ivButton_el.addEventListener("click", function(el) {  
+    //browser.runtime.openOptionsPage(); 
+    let status = el.target.checked;
     browser.storage.local.set({isActive: status}, function() 
       {
        browser.storage.local.get(null, function(data)
@@ -63,7 +81,25 @@ var optButton_el = document.querySelector('#optionsButton');
           browser.browserAction.setBadgeText({text: 'ON'});
           browser.browserAction.setBadgeBackgroundColor({color: "red"});
             
-          pleaseDoItNow(data);
+          doIV(data);
+          }
+        }); 
+      }); 
+  }); 
+     /* Button index loccorum */
+  ilButton_el.addEventListener("click", function(el) {  
+    //browser.runtime.openOptionsPage(); 
+    let status = el.target.checked;
+    browser.storage.local.set({isActive: status}, function() 
+      {
+       browser.storage.local.get(null, function(data)
+        { 
+        if( data.isActive )
+          {
+          browser.browserAction.setBadgeText({text: 'ON'});
+          browser.browserAction.setBadgeBackgroundColor({color: "red"});
+            
+          doIL(data);
           }
         }); 
       }); 

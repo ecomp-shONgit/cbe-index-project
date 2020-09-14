@@ -11,7 +11,7 @@ function localizeNode( node ){
         let localizeMessage = browser.i18n.getMessage( localizeKey );
         //console.log("uiui", localizeMessage);
         if( localizeMessage != '' ){
-            node.innerHTML = "<i>Index signis criticis</i> ("+localizeMessage+")";   
+            node.innerHTML = "<i>Index signorum criticorum</i> ("+localizeMessage+")";   
         }
     }
 }
@@ -23,7 +23,9 @@ function localizeNode( node ){
     @need browser.tabs
     @need browser.runtime
  */
+
 function pleaseDoItNow( data ){
+    
     let tabID = data.tabID;
     if( typeof( tabID ) === 'undefined' || tabID === null || tabID ===0 ){
         return;
@@ -74,22 +76,134 @@ function pleaseDoItNow( data ){
                 
             });
             /* content-script can loaded here */
-            browser.tabs.executeScript(tabID, { file: 'js/content.js' }, function( ){
+            browser.tabs.executeScript(tabID, { file: 'js/strdist.js' }, function( ){
                 if( browser.runtime.lastError ){
                     
                     console.log('There was an error injecting script : \n' + browser.runtime.lastError.message);
                 }
                 
             }); 
-                 
+            /* content-script can loaded here */
+
+            browser.tabs.executeScript(tabID, { file: 'js/textdecomp.js' }, function( ){
+                if( browser.runtime.lastError ){
+                    
+                    console.log('There was an error injecting script : \n' + browser.runtime.lastError.message);
+                }
+                
+            }); 
+            /* content-script can loaded here */
+            browser.tabs.executeScript(tabID, { file: 'js/klammsys.js' }, function( ){
+                if( browser.runtime.lastError ){
+                    
+                    console.log('There was an error injecting script : \n' + browser.runtime.lastError.message);
+                }
+                
+            }); 
+            browser.tabs.executeScript(tabID, { file: 'js/abkAW.js' }, function( ){
+                if( browser.runtime.lastError ){
+                    console.log('There was an error injecting script : \n' + browser.runtime.lastError.message);
+                } 
+            });
+            browser.tabs.executeScript(tabID, { file: 'js/hcts.js' }, function( ){
+                if( browser.runtime.lastError ){
+                    console.log('There was an error injecting script : \n' + browser.runtime.lastError.message);
+                } 
+            });
+            browser.tabs.executeScript(tabID, { file: 'js/refexttemp.js' }, function( ){
+                if( browser.runtime.lastError ){
+                    console.log('There was an error injecting script : \n' + browser.runtime.lastError.message);
+                } 
+            });
+            browser.tabs.executeScript(tabID, { file: 'js/content.js' }, function( ){
+                if( browser.runtime.lastError ){
+                    console.log('There was an error injecting script : \n' + browser.runtime.lastError.message);
+                } 
+            });
+            console.log("No Error inserting JS.");
         } else {
              console.log("will do nothing");
         }
     });     
 }
 
+function doISC( data ){
+    let tabID = data.tabID;
+    if( typeof( tabID ) === 'undefined' || tabID === null || tabID ===0 ){
+        return;
+    } 
+    browser.tabs.get( tabID, function( tab ){
+        if( browser.runtime.lastError ){ 
+            console.log('There was an error in pleaseDoItNow : \n' + browser.runtime.lastError.message);
+        }
+        console.log("INDEX-CBE: call on tabID "+tabID+" with url "+tab.url);
+        /* the tab and the popup are separeted - 
+        so we have to load some js and css 
+        in tab-context */     
+        if( !browser.runtime.lastError && 
+            tab                        && 
+            tab.url                    && 
+            tab.url.substring(0,6)!="chrome" && 
+            tab.url.substring(0,5)!="about" &&
+            tab.status === "complete"){
+            browser.tabs.sendMessage( tabID, {cmd:"ISC", key: tabID}, function(response) {});
+        } 
+    });
+}
 
+function doIV( data ){
+    //pleaseDoItNow(data);
 
+    let tabID = data.tabID;
+    if( typeof( tabID ) === 'undefined' || tabID === null || tabID ===0 ){
+        return;
+    } 
+    browser.tabs.get( tabID, function( tab ){
+        if( browser.runtime.lastError ){ 
+            console.log('There was an error in pleaseDoItNow : \n' + browser.runtime.lastError.message);
+        }
+        console.log("INDEX-CBE: call on tabID "+tabID+" with url "+tab.url);
+        /* the tab and the popup are separeted - 
+        so we have to load some js and css 
+        in tab-context */     
+        if( !browser.runtime.lastError && 
+            tab                        && 
+            tab.url                    && 
+            tab.url.substring(0,6)!="chrome" && 
+            tab.url.substring(0,5)!="about" &&
+            tab.status === "complete"){
+
+            browser.tabs.sendMessage( tabID, {cmd:"IV", key: tabID}, function(response) {});
+
+             
+        } 
+    });
+}
+function doIL( data ){
+    //pleaseDoItNow(data);
+    let tabID = data.tabID;
+    if( typeof( tabID ) === 'undefined' || tabID === null || tabID ===0 ){
+        return;
+    } 
+    browser.tabs.get( tabID, function( tab ){
+        if( browser.runtime.lastError ){ 
+            console.log('There was an error in pleaseDoItNow : \n' + browser.runtime.lastError.message);
+        }
+        console.log("INDEX-CBE: call on tabID "+tabID+" with url "+tab.url);
+        /* the tab and the popup are separeted - 
+        so we have to load some js and css 
+        in tab-context */     
+        if( !browser.runtime.lastError && 
+            tab                        && 
+            tab.url                    && 
+            tab.url.substring(0,6)!="chrome" && 
+            tab.url.substring(0,5)!="about" &&
+            tab.status === "complete"){
+            browser.tabs.sendMessage( tabID, {cmd:"IL", key: tabID}, function(response) {});
+            
+        } 
+    });
+}
 /* saveTheOptions
    save the options in browser.storage
                

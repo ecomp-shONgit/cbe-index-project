@@ -42,8 +42,9 @@ const analysisNormalform = "NFKD";
 const dispnormalform = "NFC";
 
 let buchstGRI = {"Α":"A", "α":"a", "Β":"B", "β":"b", "Γ":"G", "γ":"g", "Δ":"D", "δ":"d", "Ε":"E", "ε":"e", "Ζ":"Z", "ζ":"z", "Η":"H", "η":"h", "Θ":"Th", "θ":"th", "Ι":"I", "ι":"i", "Κ": "K", "κ":"k", "Λ":"L", "λ":"l", "Μ":"M", "μ":"m", "Ν":"N", "ν":"n", "Ξ":"Xi", "ξ":"xi", "Ο":"O", "ο":"o", "Π":"P", "π":"p", "Ρ":"R", "ρ":"r", "Σ":"S", "σ":"s", "ς":"s", "Τ":"T", "τ":"t", "Υ":"U", "υ":"u", "Φ":"Ph", "φ":"ph", "Χ":"X", "χ":"x", "Ψ":"Ps", "ψ":"ps", "Ω":"O", "ω":"o"}
-const groups = {"γγ":["n", "g"], "γκ":["n", "c"], "γξ":["n","x"], "γχ":["n", "ch"], "ηυ":["ē", "u"]}; //only great letters??????? what is with that?
-const behauchung = { "῾":"h" }; //missing other Hauch???
+let LAGRI = {"A":"Α", "a":"α", "B":"Β", "b":"β", "G":"Γ", "g":"γ", "D":"Δ", "d":"δ", "E":"Ε", "e":"ε", "Z":"Ζ", "z":"ζ", "H":"Η", "h":"η", "Th":"Θ", "th":"θ", "I":"Ι", "i":"ι", "K":"Κ", "k":"κ","C":"Κ", "c":"κ", "Q":"Κ", "q":"κ", "L":"Λ", "l":"λ", "M":"Μ", "m":"μ", "N":"Ν", "n":"ν", "Xi":"Ξ", "xi":"ξ", "O":"Ο", "o":"ο", "P":"Π", "p":"π", "R":"Ρ", "r":"ρ", "S":"Σ", "s":"σ", "s":"ς", "T":"Τ", "t":"τ", "U":"Υ", "u":"υ", "Ph":"Φ", "ph":"φ", "F":"Φ", "f":"φ", "V":"Φ", "v":"φ", "X":"Χ", "x":"χ", "Ps":"Ψ", "ps":"ψ", "O":"Ω", "o":"ω"}
+const groups = {"γγ":["n", "g"], "γκ":["n", "c"], "γξ":["n","x"], "γχ":["n", "ch"], "ηυ":["ē", "u"]}; //only small letters?
+const behauchung = { "῾":"h" }; //missing other Hauch?
 const buchsCoptic = {"ϐ": "B", "ϑ":"Th", "ϱ":"r", "ϰ":"k", "ϒ":"y", "ϕ":"ph", "ϖ":"p", "Ϝ":"W", "ϝ":"w", "Ϙ":"Q","ϙ":"q", "Ϟ":"ḳ", "ϟ":"ḳ", "Ϲ":"S", "Ⲥ":"S", "ⲥ":"s", "ϲ":"s", "Ͻ":"S", "ͻ":"s","Ϳ ":"j","ϳ":"j","Ͱ":"h","ͱ":"h","Ⲁ":"A","ⲁ":"a", 
 "ϴ":"t","Ⲑ":"t","ⲑ":"t","ϵ":"e","϶":"e","Ϸ":"Sh","ϸ":"sh", "ϼ":"P","Ϡ":"S","ϡ":"S","Ⳁ":"S","ⳁ":"s",
 "Ͳ":"Ss", "ͳ":"ss", "Ϻ":"S","ϻ":"s", "Ϣ":"š","ϣ":"š", "Ϥ":"F","ϥ":"f", "Ϧ":"X", "Ⳉ":"X",
@@ -56,7 +57,7 @@ const buchsCoptic = {"ϐ": "B", "ϑ":"Th", "ϱ":"r", "ϰ":"k", "ϒ":"y", "ϕ":"p
 
 //"de" Akzente richtig, oder falsch????
 let listofelusion = { "δ᾽":"δὲ","δ'":"δὲ", "ἀλλ’": "ἀλλά", "ἀνθ’": "ἀντί", "ἀπ’": "ἀπό", "ἀφ’": "ἀπό","γ’": "γε","γένοιτ’": "γένοιτο","δ’": "δέ","δι’": "διά","δύναιτ’": "δύναιτο","εἶτ’": "εἶτα","ἐπ’": "ἐπί","ἔτ’": "ἔτι","ἐφ’": "ἐπί","ἡγοῖντ’": "ἡγοῖντο","ἵν’": "ἵνα","καθ’": "κατά","κατ’": "κατά","μ’": "με","μεθ’": "μετά","μετ’": "μετά","μηδ’": "μηδέ","μήδ’": "μηδέ","ὅτ’": "ὅτε","οὐδ’": "οὐδέ","πάνθ’": "πάντα","πάντ’": "πάντα","παρ’": "παρά","ποτ’": "ποτε","σ’": "σε","ταῦθ’": "ταῦτα","ταῦτ’": "ταῦτα","τοῦτ’": "τοῦτο","ὑπ’": "ὑπό","ὑφ’": "ὑπό"};
-const cleanhtmltags = new RegExp( /<[a-zA-Z\/]+>/, 'g' ); //hm not good
+const cleanhtmltags = new RegExp( '<(.*?)>', 'g' );
 const cleanhtmlformat1 = new RegExp( '&nbsp;', 'g' );
 const regEbr1 = new RegExp( '<br/>', 'g' ); 
 const regEbr2 = new RegExp( '<br>', 'g' );
@@ -165,12 +166,262 @@ const regEkla13 = new RegExp( "«", 'g' );
 const regEkla14 = new RegExp( "»", 'g' );
 const regEkla15 = new RegExp( "⟦", 'g' );
 const regEkla16 = new RegExp( "⟧", 'g' );
+const regEkla17 = new RegExp( '\u{3008}', 'g' );
+const regEkla18 = new RegExp( '\u{3009}', 'g' );
+const regEkla19 = new RegExp( '\u{2329}', 'g' );
+const regEkla20 = new RegExp( '\u{232A}', 'g' );
+const regEkla21 = new RegExp( '\u{27E8}', 'g' );
+const regEkla22 = new RegExp( '\u{27E9}', 'g' );
 
 const regEuv = new RegExp( "u", 'g' );
 
 //original abschrift, Klammerbehandlungfließtext
+//Inschriften Klammersystem
+//https://apps.timwhitlock.info/js/regex#
+/*const lueckeBestimmt = new RegExp( /\[[Ͱ-Ͼἀ-῾|◌̣ ]+\]/, 'g' ); //l0
+const lueckeinZeile = new RegExp( /\[\-\-\-\]/, 'g' ); //klasse l1
+const lueckeinZeile2 = new RegExp(/\[3\]/, 'g' ); //lueckeinZeile, klasse l1
+const lueckeausZeile = new RegExp( /\[\-\-\-\-\-\-\]/, 'g' ); //klasse l2
+const lueckeausZeile2 = new RegExp( /\[6\]/, 'g' ); //Luecke im Umfang einer Zeile, Klasse l2
+const lueckeunbest = new RegExp( /\]\[/, 'g' ); // Klasse l3
 
+const zeilenende = new RegExp( / \/ /, 'g' ); // Klasse l4
+const zeilenendeDigit = new RegExp( / \/ \d+ /, 'g' ); // Klasse l4
+const zeilenanfang = new RegExp( / \| /, 'g' ); // Zeilenanfang, Klasse l5
+const zeilenanfangDigit = new RegExp( / \| \d+ /, 'g' ); // Zeilenanfang, Klasse l5
+const aufabk = new RegExp( /\(\)/, 'g' );  //Auflösung von Abkürzungen, Klasse l6
+const beschaedigt = new RegExp( /\[nurbuchstabenoderleer\]/, 'g' ); //beschädigt oder undeutlich, klasse l7
+const getilgt = new RegExp( /\{\}/, 'g' ); // Tilgung, Klasse l8
+const rasiert = new RegExp( /\[\[\]\]/, 'g' ); //Rasur, Klasse l9
+const ueberschr = new RegExp( /\<\<\>\>/, 'g' ); // Überschrieben, Klasse l10
+const tilgrewrite = new RegExp( /\<\<\[\[\]\]\>\>/, 'g' ); //Tilgung Wiedereinfügung, Klasse l11
+const punktunter = "◌̣ "; //Punkt unter Buchstaben - Buchstabe nur Teilweise erhalten -- später, Klasse l12
+const anzgriechbuch = new RegExp( / \.+ /, 'g' ); //Anzahl unbestimmabrer griechischen Bustaben, Klasse l13
+const anzlatbuchs = new RegExp( / \++ /, 'g' );  //Anzahl unbestimmbarer römsicher Buchstaben, Klasse l14
+const korrdeseditors = new RegExp( /\<\>/, 'g' ); //Korrektur des Editors, Klasse l15
+*/
+//**************************************************
+// Section 0000
+// helper
+//**************************************************
+const ronum = {//not perfect
+"i" :1, 
+"ii" :1, 
+"iii" :1, 
+"iiii" :1, 
+"iv" :1, 
+"v" :1, 
+"vii" :1, 
+"viii" :1, 
+"ix" :1, 
+"x" :1, 
+"xi" :1, 
+"xii" :1, 
+"xiii" :1, 
+"xiv" :1, 
+"xv" :1, 
+"xvi" :1, 
+"xvii" :1, 
+"xviii" :1, 
+"xix" :1, 
+"xx" :1, 
+"xxi" :1, 
+"xxii" :1, 
+"xxiii" :1, 
+"xxiv" :1, 
+"xxv" :1, 
+"xxvi" :1, 
+"xxvii" :1, 
+"xxviii" :1, 
+"xxix" :1, 
+"xxx" :1, 
+"xxxi" :1, 
+"xxxii" :1, 
+"xxxiii" :1, 
+"xxxiv" :1, 
+"xxxv" :1, 
+"xxxvi" :1, 
+"xxxvii" :1, 
+"xxxviii" :1, 
+"xxxix" :1, 
+"xl" :1, 
+"xli" :1, 
+"xlii" :1, 
+"xliii" :1, 
+"xliv" :1, 
+"xlv" :1, 
+"xlvi" :1, 
+"xlvii" :1, 
+"xlviii" :1, 
+"xlix" :1, 
+"l" :1, 
+"li" :1, 
+"lii" :1, 
+"liii" :1, 
+"liv" :1, 
+"lv" :1, 
+"lvi" :1, 
+"lvii" :1, 
+"lviii" :1, 
+"lix" :1, 
+"lx" :1, 
+"lxi" :1, 
+"lxii" :1, 
+"lxiii" :1, 
+"lxiv" :1, 
+"lxv" :1, 
+"lxvi" :1, 
+"lxvii" :1, 
+"lxviii" :1, 
+"lxix" :1, 
+"lxx" :1, 
+"lxxi" :1, 
+"lxxii" :1, 
+"lxxiii" :1, 
+"lxxiv" :1, 
+"lxxv" :1, 
+"lxxvi" :1, 
+"lxxvii" :1, 
+"lxxviii" :1, 
+"lxxix" :1, 
+"lxxx" :1, 
+"lxxxi" :1, 
+"lxxxii" :1, 
+"lxxxiii" :1, 
+"lxxxiv" :1, 
+"lxxxv" :1, 
+"lxxxvi" :1, 
+"lxxxvii" :1, 
+"lxxxviii" :1, 
+"lxxxix" :1, 
+"xc" :1, 
+"xci" :1, 
+"xcii" :1, 
+"xciii" :1, 
+"xciv" :1, 
+"xcv" :1, 
+"xcvi" :1, 
+"xcvii" :1, 
+"xcviii" :1, 
+"xcix" :1, 
+"c":1
+};
 
+const grnum = {//not perfect
+"α" :1, 
+"β" :1, 
+"γ" :1, 
+"δ" :1, 
+"ε" :1, 
+"ϛ" :1, 
+"ζ" :1, 
+"η" :1, 
+"θ" :1, 
+"ι" :1, 
+"ια" :1, 
+"ιβ" :1, 
+"ιγ" :1, 
+"ιδ" :1, 
+"ιε" :1, 
+"ιϛ" :1, 
+"ιζ" :1, 
+"ιη" :1, 
+"ιθ" :1, 
+"κ" :1, 
+"κα" :1, 
+"κβ" :1, 
+"κγ" :1, 
+"κδ" :1, 
+"κε" :1, 
+"κϛ" :1, 
+"κζ" :1, 
+"κη" :1, 
+"κθ" :1, 
+"λ" :1, 
+"λα" :1, 
+"λβ" :1, 
+"λγ" :1, 
+"λδ" :1, 
+"λε" :1, 
+"λϛ" :1, 
+"λζ" :1, 
+"λη" :1, 
+"λθ" :1, 
+"μ" :1, 
+"μα" :1, 
+"μβ" :1, 
+"μγ" :1, 
+"μδ" :1, 
+"με" :1, 
+"μϛ" :1, 
+"μζ" :1, 
+"μη" :1, 
+"μθ" :1, 
+"ν" :1, 
+"να" :1, 
+"νβ" :1, 
+"νγ" :1, 
+"νδ" :1, 
+"νε" :1, 
+"νϛ" :1, 
+"νζ" :1, 
+"νη" :1, 
+"νθ" :1, 
+"ξ" :1, 
+"ξα" :1, 
+"ξβ" :1, 
+"ξγ" :1, 
+"ξδ" :1, 
+"ξε" :1, 
+"ξϛ" :1, 
+"ξζ" :1, 
+"ξη" :1, 
+"ξθ" :1, 
+"ο" :1, 
+"οα" :1, 
+"οβ" :1, 
+"ογ" :1, 
+"οδ" :1, 
+"οε" :1, 
+"οϛ" :1, 
+"οζ" :1, 
+"οη" :1, 
+"οθ" :1, 
+"π" :1, 
+"πα" :1, 
+"πβ" :1, 
+"πγ" :1, 
+"πδ" :1, 
+"πε" :1, 
+"πϛ" :1, 
+"πζ" :1, 
+"πη" :1, 
+"πθ" :1, 
+"ϟ" :1, 
+"ϟα" :1, 
+"ϟβ" :1, 
+"ϟγ" :1, 
+"ϟδ" :1, 
+"ϟε" :1, 
+"ϟϛ" :1, 
+"ϟζ" :1, 
+"ϟη" :1, 
+"ϟθ" :1, 
+"ρ" : 1
+};
+
+function isnumber( maybe ){
+    //do romannumbers
+    const maymay = parseInt(maybe);
+    if( !isNaN( maymay ) ){
+        return true;
+    } else if( maybe in ronum ){
+        return true;     
+    } else if( maybe in grnum ){
+        return true;
+    }
+    return false;
+}
 //******************************************************************************
 // Section 000
 // basic UNICODE NORMAL FORM / TRANSLITERATION
@@ -186,19 +437,35 @@ function setDisplFormTO( fnew ){
 function normarrayk( aarray ){
 	let replacearray = new Object( );
 	for( let p in aarray ){
-		replacearray[ disambiguDIAkritika( p.normalize( analysisNormalform ) ) ] = aarray[ p ];
+		replacearray[  disambiguDIAkritika( p.normalize( analysisNormalform ) ) ] = aarray[ p ];
+	}
+	return replacearray;
+}
+
+function normarrayksiguv( aarray ){
+	let replacearray = new Object( );
+	for( let p in aarray ){
+		replacearray[ sigmaistgleich( deluv( disambiguDIAkritika( p.normalize( analysisNormalform ) ) ) )] = aarray[ p ];
 	}
 	return replacearray;
 }
 
 function normarrayval( aarray ){ // by reference ????
     for( let p in aarray ){
-        aarray[ p ] = aarray[ p ].normalize( analysisNormalform );
+        
+        aarray[ p ] = disambiguDIAkritika( aarray[ p ].normalize( analysisNormalform ));
+    }
+}
+
+function normarrayvalsiguv( aarray ){ // by reference ????
+    for( let p in aarray ){
+        
+        aarray[ p ] = sigmaistgleich(deluv(disambiguDIAkritika( aarray[ p ].normalize( analysisNormalform ))));
     }
 }
 
 // function takes sting and normalform string (for example "NFD")
-function normatextwordbyword( text, wichnorm ){
+/*function normatextwordbyword( text, wichnorm ){
     let spt = text.split( " " );
     const lele = spt.length;
     for( let w = 0; w < lele; w++ ){
@@ -206,19 +473,36 @@ function normatextwordbyword( text, wichnorm ){
         spt[ w ] = nw;
     }
     return spt.join( " " )
-}
+}*/
 
 function normatext( text, wichnorm ){
     return text.normalize( wichnorm );
 }
 
-
+const spai1 = new RegExp( '\u{2002}', 'g' );//enspacing
+const spai2 = new RegExp( '\u{2000}', 'g' );//enquad
+function sameallspacing( astr ){
+    astr = astr.replace( spai1, ' ' );
+    astr = astr.replace( spai2, ' ' );
+    return astr;
+}
 
 function disambiguDIAkritika( astr ){
     astr = astr.split( "\u0027" ).join( "\u2019" ); //typogra korrektes postroph;
     astr = astr.split( "'" ).join( "\u2019" );
     astr = astr.split( "\u1FBD" ).join( "\u2019" );
     return astr;
+}
+
+function disambiguadashes( astring ){
+    astring = astring.replace( cleangeviert, '-' );
+    astring = astring.replace( cleanhalbgeviert, '-' );
+    astring = astring.replace( cleanziffbreitergeviert, '-' );
+    astring = astring.replace( cleanviertelgeviert, '-' );
+    astring = astring.replace( cleanklgeviert, '-' );
+    astring = astring.replace( cleanklbindstrichkurz, '-' );
+    astring = astring.replace( cleanklbindstrichvollbreit, '-' );
+    return astring;
 }
 
 function ExtractDiafromBuchst( buchst ){ //input as string
@@ -271,6 +555,49 @@ function ExpandelisionText( atext ){
         t += " "+ Expandelision(  wds[ w ] );
     }
     return t;
+}
+
+function TranslitLatinGreekLetters( astring ){
+
+    //
+    let wordlevel = delligaturen( astring.trim().normalize( "NFC" ) ).split(" ");
+    let greekenized = [ ];
+    for( let w in wordlevel ){
+        let buchstlevel = Expandelision( wordlevel[ w ] ).split("");
+        const lele = len( buchstlevel );
+        let perword = [];
+        let extractedida2 = "";
+        let extracteBUCHST2 = "";
+        for( let b = 1; b < lele; b+=1 ){
+            
+            let zwischenerg1 = ExtractDiafromBuchst( buchstlevel[ b-1 ] );
+            let zwischenerg2 = ExtractDiafromBuchst( buchstlevel[ b ] );
+            //console.log(zwischenerg1, zwischenerg2);
+            let extractedida1 = zwischenerg1[0];
+                extractedida2 = zwischenerg2[0];
+            let extracteBUCHST1 = zwischenerg1[1];
+                extracteBUCHST2 = zwischenerg2[1];
+            //console.log("o1", buchstlevel[ b-1 ], "o2", buchstlevel[ b ], "e1", extracteBUCHST1, "d1", extractedida1, "e2", extracteBUCHST2, "d2", extractedida2);
+            if( LAGRI[ extracteBUCHST1+extracteBUCHST2 ] && extracteBUCHST1 !== "" && extracteBUCHST2 !== "" ){
+                perword.push( LAGRI[ extracteBUCHST1+extracteBUCHST2 ]+extractedida1+extractedida2 );
+            } else {
+                if( LAGRI[extracteBUCHST1] ){
+                    perword.push( LAGRI[ extracteBUCHST1 ]+extractedida1 );
+                } else {
+                    perword.push( buchstlevel[ b-1 ] );
+                }
+            }
+        }
+        if( LAGRI[ extracteBUCHST2 ] ){
+            
+            perword.push( LAGRI[ extracteBUCHST2 ]+extractedida2 );
+        } else {
+            perword.push( buchstlevel[ lele-1 ] );
+        }
+        greekenized.push( perword.join( "" ) );
+    }
+    //return astring;
+    return greekenized.join( " " );
 }
 
 function TraslitAncientGreekLatin( astring ){
@@ -395,6 +722,13 @@ function ohnesatzzeichen( wliste ){
 	return wliste;
 }
 
+//usage: replaceWordsfromarray( ["in", "cum", "et", "a", "ut"], " ", stringggg )
+function replaceWordsfromarray( arr, replacement, strstr ){
+    for( let a in arr){
+        strstr = strstr.replace( arr[a], replacement );
+    }
+    return strstr
+}
 //******************************************************************************
 // Section 0
 // word leve conversions: 
@@ -520,10 +854,21 @@ function delumbrbine( text ){
     return text.replace(regEbr1, "").replace(regEbr2, "");
 }
 
-//more to come
+function umbrtospace( text ){
+    text = text.replace(cleanNEWL, " ");
+    text = text.replace(cleanRETL, " ");
+    text = text.replace(regEbr1, " ");
+    text = text.replace(regEbr2, " ");
+    return text;
+}
 
-function delmakup( text ){
+//more to come
+function delmakup( text ){ 
     return text.replace(cleanhtmltags, "").replace(cleanhtmlformat1, "");
+}
+
+function makuptoleer( text ){ 
+    return text.replace(cleanhtmltags, " ").replace(cleanhtmlformat1, " ");
 }
 
 // ...
@@ -539,9 +884,12 @@ function sigmaistgleich( text ){
 
 // function take sstring and replaces the brakets -- do not run this before the Klammersystem fkt
 function delklammern( text ){
-    return text.replace(regEkla1, "").replace(regEkla2, "").replace(regEkla3, "").replace(regEkla4,"").replace(regEkla5,"").replace(regEkla6,"").replace(regEkla7,"").replace(regEkla8,"").replace(regEkla9,"").replace(regEkla10,"").replace(regEkla11,"").replace(regEkla12,"").replace(regEkla13,"").replace(regEkla14,"").replace(regEkla15,"").replace(regEkla16,"");
+    return text.replace(regEkla1, "").replace(regEkla2, "").replace(regEkla3, "").replace(regEkla4,"").replace(regEkla5,"").replace(regEkla6,"").replace(regEkla7,"").replace(regEkla8,"").replace(regEkla9,"").replace(regEkla10,"").replace(regEkla11,"").replace(regEkla12,"").replace(regEkla13,"").replace(regEkla14,"").replace(regEkla15,"").replace(regEkla16,"").replace(regEkla17,"").replace(regEkla18,"").replace(regEkla19,"").replace(regEkla20,"").replace(regEkla21,"").replace(regEkla22,"");
 }
 
+function deledklammern( text ){
+    return text.replace(regEkla1, "").replace(regEkla2, "").replace(regEkla3, "").replace(regEkla4,"").replace(regEkla5,"").replace(regEkla6,"").replace(regEkla9,"").replace(regEkla10,"").replace(regEkla11,"").replace(regEkla12,"").replace(regEkla13,"").replace(regEkla14,"").replace(regEkla15,"").replace(regEkla16,"").replace(regEkla17,"").replace(regEkla18,"").replace(regEkla19,"").replace(regEkla20,"").replace(regEkla21,"").replace(regEkla22,"");
+}
 // function takes string and replaces u by v, used in classical latin texts
 function deluv( text ){
     return text.replace( regEuv, "v" );
@@ -645,466 +993,9 @@ function GRvorbereitungT( dtext ){
 	return diewo;
 } 
 
-//******************************************************************************
-// Section 3: edition klammerung
-//******************************************************************************
-//Inschriften / Papyri / Ostraka signis criticis
-//https://apps.timwhitlock.info/js/regex#
-/*LUECKEN*/
-const lueckeBestimmt = new RegExp( /(?<!〚|\[)\[(---)*[a-zA-ZͰ-Ͼἀ-῾, ,\?:;\(\)◌̅◌̲]+(---)*[a-zA-ZͰ-Ͼἀ-῾, ,\?:;\(\)◌̅◌̲]*\](?!〛|\])/, 'g' ); //luebest, Findet verschachtelte eckige Klammern NICHT!!! also die äußersten - Idee; Newline!!!
-const lueckevoe = new RegExp( /\[[Ͱ-Ͼἀ-῾◌̣ ]+-\]/, 'g' ); //luebestvoe 
-const lueckebestlen = new RegExp( /(?<!〚)\[\.+\](?!〛)/, 'g' ); //luebestlen, luecke bestimmter länge
-const lueckeinZeile = new RegExp( /(?<!〚)\[---\](?!〛)/, 'g' ); 
-//const lueckeinZeile2 = new RegExp(/\[3\]/, 'g' ); 
-const lueckeausZeile = new RegExp( /(?<!〚)\[[\s]*------[\s]*\](?!〛)/, 'g' ); 
-//const lueckeausZeile2 = new RegExp( /\[6\]/, 'g' ); 
-const lueckeausmehrZeile = new RegExp( /(?<![(〚\[)\[⟨])[\s]*------[\s]*(?![(\]〛)\]⟩])/, 'g' ); 
-const lueckeunbest = new RegExp( /\]\[/, 'g' ); //|[__]+|[\_]+/, 'g' ); 
-const lueckmlen = new RegExp( /\[[a-zA-ZͰ-Ͼἀ-῾, ,\?:;\(\)◌̅◌̲]*[\s]*\-[\s]*ca[.\s\d\?]+[\s]*\-[\s]*[a-zA-ZͰ-Ͼἀ-῾, ,\?:;\(\)◌̅◌̲]*\]/, 'g' ); 
-/*Zeilen und Spalten*/
-const zeilenende = new RegExp( /\s\/[\s\n]+/, 'g' ); 
-const zeilenendeDigit = new RegExp( /\s\/(\d)+[\s\n]+/, 'g' ); 
-const zeilenanfang = new RegExp( /\s\|[\s\n]+/, 'g' );
-const zeilenanfangDigit = new RegExp( /\|\d+/, 'g' ); 
-const spaltenanfang = new RegExp( /\s\|\|[\s\n]+|\s\/\/[\s\n]+/, 'g' ); 
-/*einzelne Buchstaben*/
-const punktunter = new RegExp( "[Ͱ-Ͼἀ-῾][\u{0323}]", 'g' ); 
-const frueheregewaer = new RegExp( /[◌̲]/, 'g' );
-const unbekueber = new RegExp( /[◌̅]+/, 'g' );
-const unterpunkteinzelstehend = new RegExp( " +\u{0323}", 'g' ); 
-const anzgriechbuch = new RegExp( /(?<![\[〚])\.\.+(?![\]〛])/, 'g' );//  Litterarum vestigia
-const anzlatbuchs = new RegExp( /\++/, 'g' ); //ein oder mehrer; das ist zwei oder mehrere \+[\+]+ 
-/*Tilgung, willentlicher Verlust*/
-const irrgetilgt = new RegExp( /\{[a-zA-ZͰ-Ͼἀ-῾, ,\?:;\(\)◌̅◌̲◌̣ ]+\}/, 'g' ); // Irrtümlich hinzugefügte Buchstaben, die der Herausgeber getilgt hat
-const tilg = new RegExp( /〚(?<!\[)[a-zA-ZͰ-Ͼἀ-῾, .,\?:;\(\)◌̅◌̲◌̣ ]+(?!\])〛/, 'g' ); //antike Tildung
-const rasiert = new RegExp( /\[\[+[a-zA-ZͰ-Ͼἀ-῾, ,\?:;\(\)◌̅◌̲◌̣ ]*\]+\]/, 'g' ); //Rasur, was ist mit dreifacher Klammerung
-const tilgerg = new RegExp( /〚\[[a-zA-ZͰ-Ͼἀ-῾, ,\?:;\(\)◌̅◌̲]+\]〛/, 'g' ); //antike Tildung erg heraus
-const tilguns = new RegExp( /〚\[\.\.\.\]〛|〚\[\-5\?\-\]〛|〚\[\-\-\-\]〛/, 'g' ); //
-const tilgzei = new RegExp( /〚\[\-\-\-\-\-\-\]〛/, 'g' ); //Tilgung Zeile 
-/*Wieder hergestellt (nach Tilgung)*/
-const editorrekonst = new RegExp( /⎣[a-zA-ZͰ-Ͼἀ-῾, .,\?:;\(\)◌̅◌̲◌̣ ]+⎦/, 'g' ); //durch den Editor wieder hergestellet
-const recovori = new RegExp( /⌈[a-zA-ZͰ-Ͼἀ-῾, .,\?:;\(\)◌̅◌̲◌̣ ]+⌉/, 'g' ); //aus dem Original rekonstruiert
-const ueberschr = new RegExp( /&lt;&lt;[a-zA-ZͰ-Ͼἀ-῾, .,\?:;\(\)◌̅◌̲◌̣ ]+&gt;&gt;/, 'g' ); // Hier sind Texte aufgeführt, die - vor allem in der Severerzeit - anstelle getilgter Passagen eingefügt worden sind.
-const tilgrewrite = new RegExp( /(&lt;&lt;\[\[)[a-zA-ZͰ-Ͼἀ-῾, .,\?:;\(\)◌̅◌̲◌̣ \n]+(\]\]&gt;&gt;)/, 'g' ); //Der Text wurde zunächst getilgt und dann wieder eingemeißelt; häufig leg. III
-const wiederherst = new RegExp( /《[a-zA-ZͰ-Ͼἀ-῾, ,\?:;\(\)◌̅◌̲◌̣ ]+》/, 'g' ); //
-const korr = new RegExp( /&lt;[a-zA-ZͰ-Ͼἀ-῾, .,\?:;\(\)◌̅◌̲◌̣ \n]+\=[a-zA-ZͰ-Ͼἀ-῾, .,\?:;\(\)◌̅◌̲◌̣ \n]+&gt;/, 'g' ); //Korrektur (Beispiel: f<e=F>cit für FFCIT)
-const erszuff = new RegExp( /《\[[a-zA-ZͰ-Ͼἀ-῾, .,\?:;\(\)◌̅◌̲◌̣ \n]+\]》/, 'g' ); //Ersatz für getilgte Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig verschwunden oder am Rande weggebrochen sind und die der Herausgeber ergänzt hat
-const erzuffunbst = new RegExp( /《\[\.\.\.\]》|《\[\-5\?\-\]》|《\[---\]》/, 'g' ); //Ersatz für getilgte Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig verschwunden oder am Rande weggebrochen sind und deren Anzahl sich sicher, weniger sicher oder gar nicht berechnen läßt
-/*Angaben des Editors*/
-const aufabk = new RegExp( /\([a-zA-ZͰ-Ͼἀ-῾, .,\?:;◌̅◌̲◌̣ \n]+\)/, 'g' );  //Auflösung von Abkürzungen, Abgekürztes Wort, das der Herausgeber aufgelöst hat, doppelte Klammerung ist noch nicht gelöst
-const aufabkuns = new RegExp( /\([a-zA-ZͰ-Ͼἀ-῾, .,\?:;◌̅◌̲◌̣ \n]+\-\)/, 'g' ); //Abgekürztes Wort, das der Herausgeber aufgelöst hat, doch ist die Deklinations- oder Konjugationsform unsicher
-const scil = new RegExp( /\(scil\. [a-zA-ZͰ-Ͼἀ-῾, .,\?:;◌̅◌̲◌̣ \n]+\)/, 'g' ); //Ein Wort, das nicht im Text steht, das aber stillschweigend zu verstehen ist und das der Herausgeber hinzugefügt hat
-const unvollen = new RegExp( /⟨------\?*⟩|⟨---\?*⟩/, 'g' ); //Unvollendete Inschrift (die Inschrift bricht entweder innerhalb der Zeile oder am Zeilenende ab; in fraglichen Fällen mit ? vor der schließenden Klammer)
-const hinwabk = new RegExp( /\s[a-zA-ZͰ-Ͼἀ-῾, .,\?:;◌̅◌̲◌̣ \n]+\(\-\-\-\)\s/, 'g' ); //Abgekürztes Wort, das nicht sicher aufgelöst werden kann
-const korrdeseditors = new RegExp( /(?<!&lt;)&lt;[a-zA-ZͰ-Ͼἀ-῾, .,\?:;◌̅◌̲◌̣ \n]+&gt;(?!&gt;)|⟨[a-zA-ZͰ-Ͼἀ-῾, .,\?:;◌̅◌̲◌̣ \n]+⟩/, 'g' ); //Irrtümlich ausgelassene Buchstaben, die der Herausgeber hinzugefügt hat
-const ungewschreibung = new RegExp( /\(\s*\!\s*\)/, 'g'); //Unmittelbar an ein Wort anschließend markiert (!) eine ungewöhnliche Schreibweise wie Maxumus(!); isoliert stehend markiert (!) ein fehlendes Wort wie das fehlende f(ilius) in C(aius) Iulius C(ai) (!) Maximus.
-const buchstherausrekonst = new RegExp( /˹[a-zA-ZͰ-Ͼἀ-῾, .,\?:;◌̅◌̲◌̣ \n]+˺/, 'g' ); //Buchstaben, die der Herausgeber korrigiert hat
-const eckenunbek = new RegExp(/˻[a-zA-ZͰ-Ͼἀ-῾, .,\?:;◌̅◌̲◌̣ \n]+˼/, 'g');//?
-const vac = new RegExp( /\(vac.(\s*\d*\?)*\)/, 'g' ); //Abschnitte einer Zeile, die nicht beschrieben gewesen zu sein scheinen und deren Ausdehnung – nach der Zahl der Buchstaben, die man darin hätte unterbringen können, berechnet – sicher oder weniger sicher oder gar nicht berechnet werden kann
-const wtrenn = new RegExp( /[a-zA-ZͰ-Ͼἀ-῾, .,\?:;◌̅◌̲◌̣ \[\]\(\)]+\=[\s\n]+/, 'g' ); // Worttrennung
-
-function applyklammregexpMark( id, ausdruck, stringtomani, index, legende ){ //insert marking html
-    let out = "";
-    let matches = stringtomani.match( ausdruck );
-    let i = 0;
-    let startindex = 0;
-    while( ausdruck.exec( stringtomani ) ){
-        let inserttext = matches[i];
-        index[ id ].push([ausdruck.lastIndex-matches[i].length, ausdruck.lastIndex, matches[i].length, inserttext ] );
-        out += stringtomani.slice(startindex, ausdruck.lastIndex - matches[i].length) +"<span class='"+id+"'>"+inserttext+"</span>";
-        i+=1;
-        startindex = ausdruck.lastIndex;
-    }
-    out += stringtomani.slice(startindex, stringtomani.length);
-    return out;
-}
-
-function applyklammregexp( id, ausdruck, stringtomani, index, legende ){ //insert anchor
-    let out = "";
-    let matches = stringtomani.match( ausdruck );
-    let i = 0;
-    let startindex = 0;
-    while( ausdruck.exec( stringtomani ) ){
-        let howmuchbuchs = matches[i].length+1;
-        //console.log(howmuchbuchs);
-        if( howmuchbuchs <= 1 ){
-            howmuchbuchs = 2;
-        }
-        let inserttext = stringtomani.slice(ausdruck.lastIndex - howmuchbuchs, ausdruck.lastIndex);
-        
-        index[ id ].push([ausdruck.lastIndex-howmuchbuchs, ausdruck.lastIndex, howmuchbuchs, inserttext ] );
-        out += stringtomani.slice(startindex, ausdruck.lastIndex - matches[i].length) +inserttext+"<a class='anchorofindexentry' id='"+id+ausdruck.lastIndex.toString()+"' onclick='this.innerHTML=\"\";'></a>";
-        i+=1;
-        startindex = ausdruck.lastIndex;
-    }
-    out += stringtomani.slice(startindex, stringtomani.length);
-    return out;
-}
-
-function hervKLAMMSYS( stringtomani ){ //RUN ON NFC/NFKC
-    //index
-    let index = { };
-    let legende = { };
-    let out = "";
-    
-    /*EINZELBUCHSTABEN ZEICHEN*/
-
-    /*
-    ◌̣
-    Def: Unterpunkt, Lesung unsicher; aus dem Kontext erschlossen, Buchstaben, die derart beschädigt sind,
-    daß sie nur im Kontext sicher identifiziert
-    werden können
-    HIER ZUR ZEIT EINZUELBUCHSTABEN AUSWAHL _ VIELLEICHT PRO WORT
-    */
-    index[ "punktunter" ] = [];
-    legende[ "punktunter" ] = ["ẹ", "Unterpunkt, Lesung unsicher; aus dem Kontext erschlossen, Buchstaben, die derart beschädigt sind, daß sie nur im Kontext sicher identifiziert werden können."];
-    out = applyklammregexp( "punktunter", punktunter, stringtomani, index, legende ); 
-
-    /*
-        ◌̲
-        Def: Buchstaben, die von früheren Gewährsmännern gelesen und abgeschrieben wurden, aber später verlorengegangen sind. 
-
-
-    */
-    index[ "frueheregewaer" ] = [];
-    legende[ "frueheregewaer" ] = ["e̲", "Buchstaben, die von früheren Gewährsmännern gelesen und abgeschrieben wurden, aber später verlorengegangen sind."];
-    out = applyklammregexp( "frueheregewaer", frueheregewaer, out, index, legende );
-
-    /*
-    Überstrichen ‾
-    Def: Besondere Buchstabenformen und Zahlen; Abkürzungen/Abbreviaturen in mittelalterlichen Handschriften.
-
-
-    */
-    index[ "unbekueber" ] = [];
-    legende[ "unbekueber" ] = ["c̅", "Besondere Buchstabenformen und Zahlen; Abkürzungen/Abbreviaturen in mittelalterlichen Handschriften."];
-    out = applyklammregexp( "unbekueber", unbekueber, out, index, legende );
-    
-    /*
-        +++ 
-        Def: Spuren von Buchstaben, die derart in 
-        Mitleidenschaft gezogen sind, daß sie 
-        nicht identifiziert werden können.  
-    */
-    index[ "anzlatbuchs" ] = [];
-    legende[ "anzlatbuchs" ] = ["+++", "Spuren von Buchstaben, die derart in Mitleidenschaft gezogen sind, daß sie nicht identifiziert werden können."];
-    out = applyklammregexp( "anzlatbuchs", anzlatbuchs, out, index, legende );  
- 
-    /*
-        Punktserien, auch Unterpunkte mit Leerzeichen, die werden vorher ersetzt. Def: Litterarum vestigia 
-    */
-    index[ "anzgriechbuch" ] = [];
-    legende[ "anzgriechbuch" ] = ["...", "Punktserie, Litterarum vestigia."];
-    out = applyklammregexp( "anzgriechbuch", anzgriechbuch, out.replace( unterpunkteinzelstehend, "." ), index, legende );  
-
-    /*
-        unterstrichene Buchstaben 
-    */
-    /*LÜCKEN ALLER ART*/
-
-    /*Luecke bestimmt aber
-
-    [abc]
-    Def: Buchstaben, die infolge einer zufaelligen Beschaedigung der Oberfläche voellig 
-    verschwunden oder am Rande weggebrochen sind und die der Herausgeber ergaenzt hat
-
-    */
-    index["luebest"] = []; //initialize space for index results
-    legende["luebest"] = ["[abc]", "Buchstaben, die infolge einer zufaelligen Beschaedigung der Oberfläche voellig verschwunden oder am Rande weggebrochen sind und die der Herausgeber ergaenzt hat."];
-    out = applyklammregexp( "luebest", lueckeBestimmt, out, index, legende );
-
-    /*Luecke bestimmt aber
-
-    [abc-]
-    Def: Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig ver-
-    schwunden oder am Rande weggebrochen sind und die der Herausgeber ergänzt
-    hat, doch ist die Deklinations- oder Konjugationsform unsicher; wird auch
-    gesetzt, wenn die Wurzel eines Wortes sicher, aber das aus dieser Wurzel abgelei-
-    tete Wort unsicher ist, außerdem wenn im Falle einer möglichen Abkürzung eines
-    Wortes unbekannt ist, wieviele Buchstaben des Wortes ausgeschrieben waren
-
-    */
-    index["luebestvoe"] = [];
-    legende["luebestvoe"] = ["[abc-]","Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig verschwunden oder am Rande weggebrochen sind und die der Herausgeber ergänzt hat, doch ist die Deklinations- oder Konjugationsform unsicher; wird auch gesetzt, wenn die Wurzel eines Wortes sicher, aber das aus dieser Wurzel abgeleitete Wort unsicher ist, außerdem wenn im Falle einer möglichen Abkürzung eines Wortes unbekannt ist, wieviele Buchstaben des Wortes ausgeschrieben waren."];
-    out = applyklammregexp( "luebestvoe", lueckevoe, out, index, legende );
-
-    /*
-    [...]
-    Def: Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig ver-
-    schwunden oder am Rande weggebrochen sind und die der Herausgeber nicht
-    ergänzen konnte, obwohl sich ihre Anzahl sicher berechnen läßt; für jeden Buch-
-    staben wird ein Punkt gesetzt
-     
-    */
-    index[ "luebestlen" ] = [];
-    legende[ "luebestlen" ] = ["[...]", "Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig verschwunden oder am Rande weggebrochen sind und die der Herausgeber nicht ergänzen konnte, obwohl sich ihre Anzahl sicher berechnen läßt; für jeden Buchstaben wird ein Punkt gesetzt."];
-    out = applyklammregexp( "luebestlen", lueckebestlen, out.replace( unterpunkteinzelstehend, "." ), index, legende );
-
-    /*
-
-     [-ca.16 -]
-    Def: Unbestimmte Lücke, vermutete Anzahl von Buchstaben der Lücke in einer Zeile.
-    */
-    index[ "lueckmlen" ] = [];
-    legende[ "lueckmlen" ] = ["[-ca.16 -]", "Unbestimmte Lücke, vermutete Anzahl von Buchstaben der Lücke in einer Zeile."];
-    out = applyklammregexp( "lueckmlen", lueckmlen, out, index, legende );
-    /* 
-    [---] 
-    Def: unbestimmte, unerkennbare Länge einer Lücke in einer Zeile
-
-    Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig ver-
-    schwunden oder am Rande weggebrochen sind, die der Herausgeber nicht ergänzt
-    hat und deren Anzahl sich ungefähr oder gar nicht berechnen läßt
-    */
-    index[ "lueckeinZeile" ] = [];
-    legende[ "lueckeinZeile" ] = ["[---]", "Unbestimmte, unerkennbare Länge einer Lücke in einer Zeile. Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig verschwunden oder am Rande weggebrochen sind, die der Herausgeber nicht ergänzt hat und deren Anzahl sich ungefähr oder gar nicht berechnen läßt."];
-    out = applyklammregexp( "lueckeinZeile", lueckeinZeile, out, index, legende );
-    /* 
-    [------] 
-    Def: Lücke unbestimmter Länge
-    */
-    index[ "lueckeausZeile" ] = [];
-    legende[ "lueckeausZeile" ] = ["[------]", "Lücke unbestimmter Länge."];
-    out = applyklammregexp( "lueckeausZeile", lueckeausZeile, out, index, legende );
-    /*
-
-    ------
-
-    Def: Lücke einer ganzen Zeile bzw. Lücke ganzer Zeilen, deren Anzahl unsicher ist
-
-    */
-    index[ "lueckeausmehrZeile" ] = [];
-    legende[ "lueckeausmehrZeile" ] = ["------", "Lücke einer ganzen Zeile bzw. Lücke ganzer Zeilen, deren Anzahl unsicher ist."];
-    out = applyklammregexp( "lueckeausmehrZeile", lueckeausmehrZeile, out, index, legende );
-    /*
-    ][ Lücke unbestimmt
-    */
-    index[ "lueckeunbest" ] = [];
-    legende[ "lueckeunbest" ] = ["][", "Lücke unbestimmt"];
-    out = applyklammregexp( "lueckeunbest", lueckeunbest, out, index, legende );
-
-    /*TILGUNG ALLER ART*/
-
-    /*
-        {}
-        Def: Irrtümlich hinzugefügte Buchstaben, die der Herausgeber getilgt hat
-
-    */
-    index[ "irrgetilgt" ] = [];
-    legende[ "irrgetilgt" ] = ["{abc}", "Irrtümlich hinzugefügte Buchstaben, die der Herausgeber getilgt hat."];
-    out = applyklammregexp( "irrgetilgt", irrgetilgt, out, index, legende );
-    /*
-        〚 〛 
-        Def: In der Antike getilgte Buchstaben, die trotzdem deutlich oder mit Wahrscheinlich-
-        keit zu lesen sind
-    */
-    index[ "tilg" ] = [];
-    legende[ "tilg" ] = ["〚abc〛", "In der Antike getilgte Buchstaben, die trotzdem deutlich oder mit Wahrscheinlichkeit zu lesen sind."];
-    out = applyklammregexp( "tilg", tilg, out, index, legende );
-
-    /*
-        [[ ]]
-        Def: Rasur; In der Antike getilgte Buchstaben, die trotzdem deutlich oder mit Wahrscheinlichkeit zu lesen sind.
-    */
-    index[ "rasiert" ] = [];
-    legende[ "rasiert" ] = ["[[abc]]", "Rasur; In der Antike getilgte Buchstaben, die trotzdem deutlich oder mit Wahrscheinlichkeit zu lesen sind."];
-    out = applyklammregexp( "rasiert", rasiert, out, index, legende );
-    /*
-        〚[] 〛
-        Def: In der Antike getilgte Buchstaben, die der Herausgeber ergänzt hat
-    */
-    index[ "tilgerg" ] = [];
-    legende[ "tilgerg" ] = ["〚[abc] 〛", "In der Antike getilgte Buchstaben, die der Herausgeber ergänzt hat."];
-    out = applyklammregexp( "tilgerg", tilgerg, out, index, legende );
-    /*
-        〚[...] 〛, 〚[-5?-] 〛, 〚[---] 〛
-        Def: In der Antike getilgte Buchstaben, deren Anzahl sich sicher, weniger sicher oder
-        gar nicht berechnen läßt
-    */
-    index[ "tilguns" ] = [];
-    legende[ "tilguns" ] = ["〚[...] 〛, 〚[-5?-] 〛, 〚[---] 〛", "In der Antike getilgte Buchstaben, deren Anzahl sich sicher, weniger sicher oder gar nicht berechnen läßt."];
-    out = applyklammregexp( "tilguns", tilguns, out, index, legende );
-     /*
-        〚[------] 〛
-        Def: Lücke einer ganzen getilgten Zeile
-    */
-    index[ "tilgzei" ] = [];
-    legende[ "tilgzei" ] = ["〚[------] 〛", "Lücke einer ganzen getilgten Zeile."];
-    out = applyklammregexp( "tilgzei", tilgzei, out, index, legende );
-
-    /*ERSATZ VON BUCHSTABEN UND LUECKEN / WIEDERHERSTELLUNG */
-
-    /*
-    《》
-    Def: Ersatz für getilgte Buchstaben, die deutlich oder mit Wahrscheinlichkeit zu lesen
-    sind*/
-    index[ "wiederherst" ] = [];
-    legende[ "wiederherst" ] = ["《abc》", "Ersatz für getilgte Buchstaben, die deutlich oder mit Wahrscheinlichkeit zu lesen sind."];
-    out = applyklammregexp( "wiederherst", wiederherst, out, index, legende );
-    /*
-    ⎣⎦
-    Def: Durch den Editor wieder hergestellet.*/
-    index[ "editorrekonst" ] = [];
-    legende[ "editorrekonst" ] = ["⎣abc⎦", "Durch den Editor wieder hergestellet."];
-    out = applyklammregexp( "editorrekonst", editorrekonst, out, index, legende );
-    /*
-    ⌈⌉
-    Def: Aus dem Original rekonstruiert.*/
-    index[ "recovori" ] = [];
-    legende[ "recovori" ] = ["⌈abc⌉", "Aus dem Original rekonstruiert."];
-    out = applyklammregexp( "recovori", recovori, out, index, legende );
-    /*
-    <<>>
-    Def: Buchstaben, die anstelle getilgter Passagen eingefügt worden sind.*/
-    index[ "ueberschr" ] = [];
-    legende[ "ueberschr" ] = ["&lt;&lt;abc&gt;&gt;", "Buchstaben, die anstelle getilgter Passagen eingefügt worden sind."];
-    out = applyklammregexp( "ueberschr", ueberschr, out, index, legende );
-    /*
-    <<[[]]>>
-    Def: Der Text wurde zunächst getilgt und dann wieder eingemeißelt; häufig leg. III.*/
-    index[ "tilgrewrite" ] = [];
-    legende[ "tilgrewrite" ] = ["&lt;&lt[[abc]]&gt;&gt;", "Der Text wurde zunächst getilgt und dann wieder eingemeißelt."];
-    out = applyklammregexp( "tilgrewrite", tilgrewrite, out, index, legende );
-     /*
-    <a=b>
-    Def: Korrektur (Beispiel: f<e=F>cit für FFCIT).*/
-    index[ "korr" ] = [];
-    legende[ "korr" ] = ["&lt;a=b&gt;", "Korrektur (Beispiel: f<e=F>cit für FFCIT)."];
-    out = applyklammregexp( "korr", korr, out, index, legende );
-    /*
-    《[]》
-    Def: Ersatz für getilgte Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig verschwunden oder am Rande weggebrochen sind und die der Herausgeber ergänzt hat.*/
-    index[ "erszuff" ] = [];
-    legende[ "erszuff" ] = ["《[abc]》", "Ersatz für getilgte Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig verschwunden oder am Rande weggebrochen sind und die der Herausgeber ergänzt hat."];
-    out = applyklammregexp( "erszuff", erszuff, out, index, legende );
-    /*
-    《[...]》,《[-5?-]》,《[---]》
-    Def: Ersatz für getilgte Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig verschwunden oder am Rande weggebrochen sind und deren Anzahl sich sicher, weniger sicher oder gar nicht berechnen läßt.*/
-    index[ "erzuffunbst" ] = [];
-    legende[ "erzuffunbst" ] = ["《[...]》,《[-5?-]》,《[---]》", "Ersatz für getilgte Buchstaben, die infolge einer zufälligen Beschädigung der Oberfläche völlig verschwunden oder am Rande weggebrochen sind und deren Anzahl sich sicher, weniger sicher oder gar nicht berechnen läßt."];
-    out = applyklammregexp( "erzuffunbst", erzuffunbst, out, index, legende );
-
-    /*Angaben des Editors*/
-    /*
-    (abc)
-    Def: Auflösung von Abkürzungen, Abgekürztes Wort, das der Herausgeber aufgelöst hat.*/
-    index[ "aufabk" ] = [];
-    legende[ "aufabk" ] = ["(abc)", "Auflösung von Abkürzungen, Abgekürztes Wort, das der Herausgeber aufgelöst hat."];
-    out = applyklammregexp( "aufabk", aufabk, out, index, legende );
-    /*
-    (abc-)
-    Def: Abgekürztes Wort, das der Herausgeber aufgelöst hat, doch ist die Deklinations- oder Konjugationsform unsicher.*/
-    index[ "aufabkuns" ] = [];
-    legende[ "aufabkuns" ] = ["(abc-)", "Abgekürztes Wort, das der Herausgeber aufgelöst hat, doch ist die Deklinations- oder Konjugationsform unsicher."];
-    out = applyklammregexp( "aufabkuns", aufabkuns, out, index, legende );    
-    /*
-    (scil. abc)
-    Def: Ein Wort, das nicht im Text steht, das aber stillschweigend zu verstehen ist und das der Herausgeber hinzugefügt hat.*/
-    index[ "scil" ] = [];
-    legende[ "scil" ] = ["(scil. abc)", "Ein Wort, das nicht im Text steht, das aber stillschweigend zu verstehen ist und das der Herausgeber hinzugefügt hat."];
-    out = applyklammregexp( "scil", scil, out, index, legende );
-    /*
-    ⟨------⟩,⟨---⟩,⟨------?⟩,⟨---?⟩
-    Def: Unvollendete Inschrift (die Inschrift bricht entweder innerhalb der Zeile oder am Zeilenende ab; in fraglichen Fällen mit ? vor der schließenden Klammer).*/
-    index[ "unvollen" ] = [];
-    legende[ "unvollen" ] = ["⟨------⟩,⟨---⟩,⟨------?⟩,⟨---?⟩", "Unvollendete Inschrift (die Inschrift bricht entweder innerhalb der Zeile oder am Zeilenende ab; in fraglichen Fällen mit ? vor der schließenden Klammer)."];
-    out = applyklammregexp( "unvollen", unvollen, out, index, legende );
-    /*
-    abc(---)
-    Def: Abgekürztes Wort, das nicht sicher aufgelöst werden kann.*/
-    index[ "hinwabk" ] = [];
-    legende[ "hinwabk" ] = ["abc(---)", "Abgekürztes Wort, das nicht sicher aufgelöst werden kann."];
-    out = applyklammregexp( "hinwabk", hinwabk, out, index, legende );
-    /*
-    <abc>,⟨abc⟩
-    Def: Irrtümlich ausgelassene Buchstaben, die der Herausgeber hinzugefügt hat.*/
-    index[ "korrdeseditors" ] = [];
-    legende[ "korrdeseditors" ] = ["&lt;abc&gt;, ⟨abc⟩", "Irrtümlich ausgelassene Buchstaben, die der Herausgeber hinzugefügt hat."];
-    out = applyklammregexp( "korrdeseditors", korrdeseditors, out, index, legende );
-    /*
-    (!)
-    Def: Unmittelbar an ein Wort anschließend markiert (!) eine ungewöhnliche Schreibweise wie Maxumus(!); isoliert stehend markiert (!) ein fehlendes Wort wie das fehlende f(ilius) in C(aius) Iulius C(ai) (!) Maximus.*/
-    index[ "ungewschreibung" ] = [];
-    legende[ "ungewschreibung" ] = ["(!)", "Unmittelbar an ein Wort anschließend markiert (!) eine ungewöhnliche Schreibweise wie Maxumus(!); isoliert stehend markiert (!) ein fehlendes Wort wie das fehlende f(ilius) in C(aius) Iulius C(ai) (!) Maximus."];
-    out = applyklammregexp( "ungewschreibung", ungewschreibung, out, index, legende );
-    /*
-    ˹abc˺
-    Def: Buchstaben, die der Herausgeber korrigiert hat.*/
-    index[ "buchstherausrekonst" ] = [];
-    legende[ "buchstherausrekonst" ] = ["˹abc˺", "Buchstaben, die der Herausgeber korrigiert hat."];
-    out = applyklammregexp( "buchstherausrekonst", buchstherausrekonst, out, index, legende );
-    /*
-    ˻abc˼
-    Def: Buchstaben, die der Herausgeber unter Benutzung anderer Zeugnisse korrigiert hat..*/
-    index[ "eckenunbek" ] = [];
-    legende[ "eckenunbek" ] = ["˻abc˼", "Buchstaben, die der Herausgeber unter Benutzung anderer Zeugnisse korrigiert hat."];
-    out = applyklammregexp( "eckenunbek", eckenunbek, out, index, legende );
-    /*
-    (vac.), (vac. 3?)
-    Def: vacat; Abschnitte einer Zeile, die nicht beschrieben gewesen zu sein scheinen und deren Ausdehnung – nach der Zahl der Buchstaben, die man darin hätte unterbringen können, berechnet – sicher oder weniger sicher oder gar nicht berechnet werden kann.*/
-    index[ "vac" ] = [];
-    legende[ "vac" ] = ["(vac.), (vac. 3?)", "vacat; Abschnitte einer Zeile, die nicht beschrieben gewesen zu sein scheinen und deren Ausdehnung – nach der Zahl der Buchstaben, die man darin hätte unterbringen können, berechnet – sicher oder weniger sicher oder gar nicht berechnet werden kann."];
-    out = applyklammregexp( "vac", vac, out, index, legende );
-    /*
-    =
-    Def: Worttrennung.*/
-    index[ "wtrenn" ] = [];
-    legende[ "wtrenn" ] = ["=", "Worttrennung."];
-    out = applyklammregexp( "wtrenn", wtrenn, out, index, legende );
-
-    /*Zeilen und Spalten*/
-    /* 
-        /
-        Def: Zeilenende
-    */ 
-    index[ "zeilenende" ] = [];
-    legende[ "zeilenende" ] = ["/", "Zeilentrenner; Zeilenende."];
-    out = applyklammregexp( "zeilenende", zeilenende, out, index, legende );
-    /* 
-        /5
-        Def: Zeilenende mit Zahl
-    */ 
-    index[ "zeilenendeDigit" ] = [];
-    legende[ "zeilenendeDigit" ] = ["/5", "Zeilenende mit Numerierung."];
-    out = applyklammregexp( "zeilenendeDigit", zeilenendeDigit, out, index, legende );
-    /* 
-        |
-        Def: Zeilenanfang
-    */ 
-    index[ "zeilenanfang" ] = [];
-    legende[ "zeilenanfang" ] = ["|", "Zeilentrenner; Zeilenanfang."];
-    out = applyklammregexp( "zeilenanfang", zeilenanfang, out, index, legende ); 
-    /* 
-        |5
-        Def: Zeilenanfang mit Numerierung
-    */ 
-    index[ "zeilenanfangDigit" ] = [];
-    legende[ "zeilenanfangDigit" ] = ["|5", "Zeilenanfang mit Numerierung."];
-    out = applyklammregexp( "zeilenanfangDigit", zeilenanfangDigit, out, index, legende );
-    /* 
-        ||
-        Def: Spaltenumbruch; Abtrennung von Spalten; Spaltenanfang
-    */ 
-    index[ "spaltenanfang" ] = [];
-    legende[ "spaltenanfang" ] = ["||", "Spaltenumbruch; Abtrennung von Spalten; Spaltenanfang."];
-    out = applyklammregexp( "spaltenanfang", spaltenanfang, out, index, legende ); 
-    
-    return [out, index, legende];
-}
-
-function delKLAMMSYS( stringtomani ){ //RUN ON NFC/NFKC
-    let matches = stringtomani.match( lueckeBestimmt );
-    
-    let i = 0;
-    let out = "";
-    let startindex = 0;
-    while( lueckeBestimmt.exec( stringtomani ) ){
-        console.log( lueckeBestimmt.lastIndex-matches[i].length, lueckeBestimmt.lastIndex, matches[i] );
-        out += stringtomani.slice(startindex, lueckeBestimmt.lastIndex - matches[i].length); 
-        i+=1;
-        startindex = lueckeBestimmt.lastIndex;
-    }
-    return out;
+const unterPu = new RegExp( "◌̣ ", 'g' )
+function delUnterpunkt( text ){
+    return text.replace( unterPu, "" );
 }
 
 //******************************************************************************
@@ -1143,10 +1034,17 @@ function demUsage( atesttext ){
     atttext = atttext + "<br/><br/>"+ str2+"<br/>"+ basicres;
 
     let translitbsp = TraslitAncientGreekLatin( basicres );
-    let str12 = "<b>d) Text transliteration (takes greek utf8 string and returns transliterated latin utf8 string):</b>";
+    let str12 = "<b>d) Text transliteration (gr-la) (takes greek utf8 string and returns transliterated latin utf8 string):</b>";
     //console.log( translitbsp );
     //console.log( str12 );   
     atttext = atttext + "<br/><br/>"+ str12+"<br/>"+ translitbsp; 
+
+    
+    let translitLAGR = TranslitLatinGreekLetters( basicres );
+    let str12x = "<b>d2) Text transliteration (la-gr) (takes latin utf8 string and returns transliterated greek utf8 string):</b>";
+    //console.log( translitbsp );
+    //console.log( str12 );   
+    atttext = atttext + "<br/><br/>"+ str12x+"<br/>"+ translitLAGR; 
 
     let expeli = ExpandelisionText( testnorm );
     let desexpeli = "<b>e) Elusion expansion (given a text, if this is an elusion it will be expanded):</b>";
@@ -1258,13 +1156,6 @@ function demUsage( atesttext ){
     //console.log( comb );       
     atttext = atttext + "<br/><br/>"+ descomb+"<br/>"+ comb;
    
-    
-    //let klammsys = delKLAMMSYS( testnorm );
-    let klammsys = hervKLAMMSYS( atesttext );
-    let desklammsys = "<b>w) Editions Klammerung (delet leidener Klammersystem):</b>";
-    //console.log( desklammsys );
-    //console.log( klammsys );   
-    atttext = atttext + "<br/><br/>"+ desklammsys+"<br/>"+ klammsys;
 
    document.getElementById( "erg").innerHTML = atttext;
 }
@@ -1307,6 +1198,8 @@ replaceBehauchung( adiakstring ) // replaces behauchung in the transliteration o
 Expandelision( aword ) // given a word, if this is an elusion it will be expanded
 
 TraslitAncientGreekLatin( astring ) // takes greek utf8 string and returns transliterated latin utf8 string
+
+TranslitLatinGreekLetters( astring ) // takes latin utf8 string and returns transliterated greek utf8 string
 
 spitzeklammernHTML // ascapes spitze klammern to html encoding
 
@@ -1358,6 +1251,6 @@ iotasubiotoadL( wordlist ) // same as iotasubiotoad but on array of words
 
 GRvorbereitungT( text ) // input a string and get a combination of diakritica disambiguation, normalization, hyphenation removal, linebreak to space, interpunktion separation and klammern removal
 
-hervKLAMMSYS( text ) // input a string, mark all editorial signs
+
 */
 //eof

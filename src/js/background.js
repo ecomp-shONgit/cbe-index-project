@@ -14,23 +14,46 @@
 
 browser.runtime.onInstalled.addListener( function( ){
     browser.storage.local.clear( );
-    browser.storage.local.set({ isActive: false, tabID: 0, option1: 4 }, function() { } );
+    browser.storage.local.set({ isActive: false, backnotisloaded: true, tabID: 0, option1: 4 }, function() { } );
     browser.browserAction.setBadgeText({ text: 'OFF' });
     browser.browserAction.setBadgeBackgroundColor({ color: "gray" });          
 });
  
-/*browser.tabs.onUpdated.addListener( function( info ){ 
+browser.tabs.onUpdated.addListener( function( info ){ 
     browser.storage.local.set( {tabID: info.tabId} , function( ) {
         browser.storage.local.get(null, function( data ){  
             if( data.isActive ){
                 pleaseDoItNow( data );
-            } else {
+            } /*else {
                 pleaseUnDoItNow( data );    
-            }//end else
+            }*/
         }); 
     });
-});  */
+});  
 
+browser.tabs.onActivated.addListener( function( info ){ 
+    browser.storage.local.set( {tabID: info.tabId} , function( ) {
+        browser.storage.local.get(null, function( data ){  
+           if( data.isActive ){
+                if(!browser){
+                    pleaseDoItNow( data );
+                }
+
+            } /*else {
+
+                pleaseUnDoItNow( data );    
+
+            }*///end else
+        }); 
+    });
+}); 
+browser.tabs.onCreated.addListener( function( info ){ 
+    browser.storage.local.set( {tabID: info.tabId} , function( ) {
+        browser.storage.local.get(null, function( data ){  
+                pleaseDoItNow( data );
+        }); 
+    });
+}); 
 /*
 
 //https://discourse.mozilla.org/t/why-is-it-soo-hard-to-inject-a-content-script-only-once-at-site-load/38903/2
@@ -50,29 +73,29 @@ async function onTabUpdated (tabId, changeInfo, tab) {
 //IPCAM-446337
 
 
-browser.tabs.onActivated.addListener( function( info ){ 
-    browser.storage.local.set( {tabID: info.tabId} , function( ) {
-        browser.storage.local.get(null, function( data ){  
-            if( data.isActive ){
-                pleaseDoItNow( data );
-            } else {
-                pleaseUnDoItNow( data );    
-            }//end else
-        }); 
-    });
-}); 
+
 
 
 /*****************************************************************
  * communication tab - background
  *****************************************************************/
 let allthings = {};
+let allthingsIV = {};
+let allthingsIL = {};
 browser.runtime.onMessage.addListener(
-    function(request, sender, sendResponse) {
-        if (request.cmd === "insert") {
+    function(request, sender, sendResponse){
+        if( request.cmd === "insertISC" ){ //insert ISC data
             let truekey = request.key.split("#")[0];
-            allthings[truekey] = request.payload;
-            sendResponse({ resp: "nowallare", alluneed: JSON.stringify(allthings) });
+            allthings[ truekey ] = request.payload;
+            sendResponse( { resp: "nowallare", alluneed: JSON.stringify( allthings ) } );
+        } if( request.cmd === "insertIV" ){ // insert IV data
+            let truekey = request.key.split("#")[0];
+            allthingsIV[ truekey ] = request.payload;
+            sendResponse( { resp: "nowallareIV", alluneed: JSON.stringify( allthingsIV ) } );
+        } if( request.cmd === "insertIL" ){ // insert IV data
+            let truekey = request.key.split("#")[0];
+            allthingsIL[ truekey ] = request.payload;
+            sendResponse( { resp: "nowallareIL", alluneed: JSON.stringify( allthingsIL ) } );
         } else {
             sendResponse({ result: "error", message: `Invalid 'cmd'`, comming: request });
         }

@@ -6,24 +6,54 @@ body{
 }
 
 /*index main div*/
-.indind{
-    width: 20%;
+#indind{
+    width: 30%;
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     left: 75%;
     top: 0px;
     background:white;
     margin:5px;
     padding:5px;
-    box-shadow: -1px 0 1px black;
-    border-left: 1px dotted gray;
-    border-top: 1px dotted gray;
-    border-bottom: 1px dotted gray;
+    /*box-shadow: -3px 1px 1px gray;*/
+    border: 1px dotted black;
+    
+    text-align: left;
+}
+#indind2{
+    width: 25%;
+    position: absolute;
+    z-index: 101;
+    left: 70%;
+    top: 0px;
+    background:white;
+    margin:5px;
+    padding:5px;
+    /*box-shadow: -3px 1px 1px gray;*/
+    border: 1px dotted black;
+    
+    text-align: left;
+}
+#indind3{
+    width: 30%;
+    position: absolute;
+    z-index: 102;
+    left: 60%;
+    top: 0px;
+    background:white;
+    margin:5px;
+    padding:5px;
+    /*box-shadow: -3px 1px 1px gray;*/
+    border: 1px dotted black;
+    
     text-align: left;
 }
 /*title div of index div*/
 .itti{
-
+    background: gray;
+    color:black;
+    padding: 2px;
+    font-size: 120%;
 }
 /*show hide*/
 .shhi{

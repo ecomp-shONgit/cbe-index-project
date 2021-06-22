@@ -12,7 +12,7 @@
     
   </head>
   <body>
-    <div>
+    <!--div>
       <p>
       <label for="option1"class="localize" data-localize="option1">choose option 1</label>
         <select id="option1" class="">
@@ -22,9 +22,79 @@
           <option value="4">4</option>                      
         </select>      
       </p>
+    </div-->
+    <div>
+    <h1>0 - About Index Project</h1>
+
+    <h1>1 - NORMALIZATION</h1>
+        (Use this configuration to specify the normaization for the index verborum. Please check <a href="http://ecomparatio.net/~khk/NORM-DECOMP-DIST/textnorm.html">http://ecomparatio.net/~khk/NORM-DECOMP-DIST/textnorm.html</a> to see some examples of how the selection would work.)
+        <h2>1.1 Unicode normalization</h2>
+        (Select one; it is the normalization of the output. During other normalization steps another unicode normalization maybe used.)<br>
+        Unicode NFD: <input type="checkbox" id="nfdbutt"><br>
+        Unicode NFC: <input type="checkbox" id="nfcbutt"><br>
+        Unicode NFKD: <input type="checkbox" id="nfkdbutt"><br>
+        Unicode NFKC: <input type="checkbox" id="nfkcbutt"><br>
+
+  
+        <h2>1.2 Sign equalization</h2>
+        Disambiguate diacritica: <input type="checkbox" id="disambidiak"><br>
+        Disambiguate dashes: <input type="checkbox" id="disambidashes"><br>
+        Text output latin u-v: <input type="checkbox" id="uv"> (repaces all u with v)</br>
+        Text output latin j-i: <input type="checkbox" id="ji"> (repaces all j with i)</br>
+
+        <h2>1.3 Markup / Format</h2>
+        Without markup: <input type="checkbox" id="womarkup"> (input a string and get it back with markup (html / xml) removed)</br>
+        Delete punctuation: <input type="checkbox" id="delpunktu"> (takes string and returns the string without punctuation)</br>
+        Without newline: <input type="checkbox" id="delnewl"> (input string and get it back with linebreaks removed)</br>
+
+
+        <h2>1.4 Word  level conversions</h2>
+        Elision expansion: <input type="checkbox" id="elisions" checked> (elusion it will be expanded)<br>
+        Alpha privativum  / copulativum: <input type="checkbox" id="alphapriv" checked> (takes utf8 greek and splits the alpha privativum and copulativum from wordforms)</br>
+        Text output without numbering: <input type="checkbox" id="delnumber"> (takes string, return string without the edition numbering i.e. [2])</br>
+        Text output no hypenation: <input type="checkbox" id="hyph" checked> (input string removes hyphenation)</br>
+
+
+        <h2>1.5 Single normalization steps</h2>
+        Iota sub to ad: <input type="checkbox" id="iota"> (takes greek utf8 string and repleces iota subscriptum with iota ad scriptum)</br>
+        Text output tailing sigma uniform: <input type="checkbox" id="sigma"> (equalize tailing sigma)</br>
+
+        Text output without diacritics: <input type="checkbox" id="deldiak"> (replaces diacritics)</br>
+
+        Text output without some signs: <input type="checkbox" id="unkown"> (delete some to the programmer unknown signs: †, *,⋖,#)</br>
+        Text output without ligature: <input type="checkbox" id="ligatu"> (takes a string, return string with ligatures turned to single letters)</br>
+        Text output equal case: <input type="checkbox" id="eqcase"> (input a string and get it back with all small case letters)</br>
+        Text output no brackets: <input type="checkbox" id="delbrackets"> (input string and get it back with no brackets)</br>
+
+
+
+        <h2>1.6 Combinations</h2>
+        (Select one of the combined normalization functions (none of the single steps is used).)</br>
+        Text output basic norm: <input type="checkbox" id="basictextnorm"> (basic equalization and hypenation reversal)</br>
+        Text output all deleted: <input type="checkbox" id="delall" checked> (deletes UV/JI, brackets, sigma, lower, hyphenation, ligatures, punctuation, edition numbering, unknown signs, diakritics)</br>
+        Text output is a combination of steps: <input type="checkbox" id="combi3"> (diacritics disambiguation, normalization, hyphenation removal, linebreak to space, punctuation separation and bracket removal)</br>
+
+        <h2>1.7 Translitteration</h2>
+        (Select one of the transliterations.)<br>
+        Text transliteration (gr-la): <input type="checkbox" id="translgrla"> (takes greek utf8 string and returns transliterated latin utf8 string)</br>
+        Text transliteration (la-gr): <input type="checkbox" id="transllagr"> (takes latin utf8 string and returns transliterated greek utf8 string)</br>
+
+
+    
+    
+        
+
+    </div>    
+
+
+    <div>
+    <h1>2 - Input</h1>
+    Select a text passage frome website, or the software will select the HTML container withe the most text available.<br>
+    
+    
     </div>
 
-    <button id="saveButton" class="localize" data-localize="saveButton">Save</button> 
+    <button id="saveButton" data-localize="saveButton">Save</button> 
 
     <div id="status"></div>    
   </body>

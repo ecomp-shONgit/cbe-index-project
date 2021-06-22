@@ -1,6 +1,6 @@
 {
   "name": "Index-Project-CBE",
-  "version": "0.2",
+  "version": "0.4",
   "description": "INDEX PROJECT",
   "permissions": ["tabs", "activeTab", "storage", "http://*/", "https://*/"],
   "default_locale": "en",

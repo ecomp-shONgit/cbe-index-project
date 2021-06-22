@@ -33,9 +33,10 @@ GLOBALS FROM silben.js MISSING
 let howmuchhaufisselten = 25;
 let nachbarschaft = 6; //gerade zahl 10, 12, ... 20
 
-let satzzeichen = new Array(".", ";", ",", ":", "!", "?", "·");
+//let satzzeichen = new Array(".", ";", ",", ":", "!", "?", "·");
+
 let trenner = {"-":1}; //silbentrennersymbol
-let leidenklammerung = {"[":"im Original beschädigt", "]":"im Original beschädigt",  "(": "im Original augelassen", ")":"im Original augelassen", "<":"Korrektur eines Fehlers aus dem Original",">":"Korrektur eines Fehlers aus dem Original", "{":"im Vergleich zum Original getilgte Worte","}":"im Vergleich zum Original getilgte Worte", "[[":"Rasur","]]":"Rasur"}; //editorische Klammerung
+//let leidenklammerung = {"[":"im Original beschädigt", "]":"im Original beschädigt",  "(": "im Original augelassen", ")":"im Original augelassen", "<":"Korrektur eines Fehlers aus dem Original",">":"Korrektur eines Fehlers aus dem Original", "{":"im Vergleich zum Original getilgte Worte","}":"im Vergleich zum Original getilgte Worte", "[[":"Rasur","]]":"Rasur"}; //editorische Klammerung
 
 /*buchstaben und bewertungen*/
 //lateinische Zeichen / Verwendungen / Bedeutungen im grammatischen System
@@ -87,6 +88,7 @@ let dauerlauteGRI = { "λ":1, "ρ":1, "μ":1, "ν":1,  "ϝ":1, "σ":1 };
 let spirantesGRI = {"ϝ":"labial", "σ":"dental"};
 let nasalesGRI = {"μ":"labial", "ν":"dental"};
 let liquidaeGRI = {"λ":"dental", "ρ":"dental"};
+
 let konsonantengruppenambeginneineswortes = {
 'βγ': 1,
 'βδ': 65,
@@ -6379,7 +6381,7 @@ let stopIT = {};
 function normalizearraykeys(){
 	//die Funktion muß einmal zu beginn des Seitenaufrufs überalle array laufen
 	trenner = normarrayk( trenner );
-	leidenklammerung = normarrayk( leidenklammerung );
+	//leidenklammerung = normarrayk( leidenklammerung );
 	buchstLAT = normarrayk( buchstLAT );
 	vokaleLAT = normarrayk( vokaleLAT );
 	disptongLAT = normarrayk( disptongLAT );
@@ -6498,6 +6500,11 @@ function ngramWords( B, n, padding ){
     return kuku;
 }
 
+function genngram( C, n ){
+    //general ngrtam build
+    return ngram( C, n, false );
+}
+
 function ngram( A, n, padding ){ //string input
     //bad
     if( n >= A.length  ){
@@ -6519,6 +6526,27 @@ function ngram( A, n, padding ){ //string input
     return vecA;
 }
 
+//suffix trees
+function buildTree(){
+    console.log("Build Tree Trigram");
+    treeGram = {};
+
+    for( let lang in inverseabkAWWAkba ){
+        let vecTris = ngram( lang, 3, False );
+        let kurz = inverseabkAWWAkba[ lang ];
+        for( let v = 0; v < len( vecTris )-1; v+=1 ){
+            if( treeGram[ vecTris[v] ] ){
+                if( treeGram[ vecTris[v] ][0].indexOf( kurz ) == -1 ){
+                    treeGram[ vecTris[v] ][0].push(kurz);
+                }
+            } else {
+                treeGram[ vecTris[v] ] = [ [kurz], { } ];
+            }
+        }
+    }   
+    console.log("End Tree Tri");
+}
+
 //SILBEN
 function einzeilzeichenzuLauteinheiten( dieeinzelzeichen, diphtong, 
 										doppelabereinzelkonsonant, mutacumliquida , doppelkonsonanz ){
@@ -6528,7 +6556,7 @@ function einzeilzeichenzuLauteinheiten( dieeinzelzeichen, diphtong,
 	for(let i = 1; i < lele; i++){
 		let einheit = dieeinzelzeichen[i-1]+dieeinzelzeichen[i];
 		let di = diphtong[ einheit ];
-		console.log(i, einheit, buchstaebliches, dieeinzelzeichen);
+		//console.log(i, einheit, buchstaebliches, dieeinzelzeichen);
 		if(di){ // ist diphtong
 			buchstaebliches.pop();
 			buchstaebliches.push( einheit );
@@ -6579,9 +6607,16 @@ function einzeilzeichenzuLauteinheiten( dieeinzelzeichen, diphtong,
 	return buchstaebliches;
 }
 
-function trennSGRI(){
-	let textelem = document.getElementById( "inputtext"); //holt das html Element in das der Text eingegeben wird
-	let diewoerter = ohnesatzzeichen( iotasubiotoadL( GRvorbereitungT( textelem.value ))); //holt den Text und spaltet ihn an den Leerzei., nennt das worte
+function trennSGRI( A ){
+    let textelem = null;
+    let diewoerter = [];
+    if( A === undefined ){
+	    textelem = document.getElementById( "inputtext"); //holt das html Element in das der Text eingegeben wird
+	    diewoerter = diewoerter = ohnesatzzeichen( iotasubiotoadL( GRvorbereitungT( textelem.value ))); //holt den Text und spaltet ihn an den Leerzei., nennt das worte
+	} else {
+        diewoerter = diewoerter = ohnesatzzeichen( iotasubiotoadL( GRvorbereitungT( A )));;
+    }
+	
 	let et = trennSGRInurarray( diewoerter );
 	return et;
 }
@@ -6675,9 +6710,9 @@ function trennSLAT( A ){
     let diewoerter = [];
     if( A === undefined ){
 	    textelem = document.getElementById( "inputtext"); //holt das html Element in das der Text eingegeben wird
-	    diewoerter = GRvorbereitungT( textelem.value.split("v").join("u") ); //holt den Text und spaltet ihn an den Leerzei., nennt das worte
+	    diewoerter = GRvorbereitungT( textelem.value.split("u").join("v") ); //holt den Text und spaltet ihn an den Leerzei., nennt das worte
 	} else {
-        diewoerter = GRvorbereitungT( A.split("v").join("u") );
+        diewoerter = GRvorbereitungT( A.split("u").join("v") );
     }
 	let ergtext = ""; //darin werden die Ergebnisse der Trennung in Silben gespeichert
 	for( let w in diewoerter ){ // für alles was wort bedeuten soll
@@ -6702,7 +6737,6 @@ function trennSLAT( A ){
 		
 		let silben = [];
 		let letzteeinheit = "";
-		let erstesilbe = true;
 		let coda = [];
 		let noVokalKonso = true;
 		let labiovelare = false;
@@ -6739,7 +6773,7 @@ function trennSLAT( A ){
 					let nostop = true;
 					let rest = [];
 					while(nostop){
-						curr = silben.pop();
+						let curr = silben.pop();
 						if( konLAT[ curr ] || curr == undefined ){
 							rest.push( curr );
 							nostop = false;
@@ -6750,11 +6784,11 @@ function trennSLAT( A ){
 						}
 					}
 					//console.log("regel 5, labiovelare", silben);
-					silben.push( rest.pop("") );
+					silben.push( rest.pop() );
 					silben.push( rest.join("") );
 					silben.push( lautlicheeinheit );
 				} else if( vokaleLAT[ letzteeinheit ] == 5 && //regel u oder v
-						   vokaleLAT[ l-2 ] == undefined &&
+						   //vokaleLAT[ l-2 ] == undefined &&
 						   vokaleLAT[ lautlicheeinheit ] != 2){
 					//console.log("regel u oder v");
 					silben.push( coda.join("") );
@@ -6764,7 +6798,7 @@ function trennSLAT( A ){
 						   vokaleLAT[ lautlicheeinheit ] &&
 						   vokaleLAT[ lautlicheeinheit ] != 4 &&
 							noVokalKonso == false){ //regel 6 i oder j
-					coda += lautlicheeinheit; //also als konsoant gewertet
+					coda.push( lautlicheeinheit );//coda += lautlicheeinheit; //also als konsoant gewertet
 					//vorher war entweder konsonant vokal oder vokal vokal
 					let nostrich = true;
 					let rest = [];
@@ -6777,7 +6811,7 @@ function trennSLAT( A ){
 						}
 					}
 					//console.log("i / j Regel", rest, silben);
-					silben.push( rest.pop("") );
+					silben.push( rest.pop( ) );
 					silben.push("-");
 					silben.push( rest.join("") );
 					silben.push( lautlicheeinheit );
@@ -6821,7 +6855,7 @@ function trennSLAT( A ){
 		if( letzteeinheit ){ //letzter konsonant
 			silben.push( coda.join("") );
 		}
-		console.log(lautliches.toString(), silben.toString());
+		//console.log(lautliches.toString(), silben.toString());
 		if ( silben[0] == "-"){
 			silben[0] = "";
 		}
@@ -6833,16 +6867,47 @@ function trennSLAT( A ){
 	//document.getElementById( "ergeb" ).innerHTML = document.getElementById( "ergeb" ).innerHTML +"<b>"+diewoerter.join(" ")+"</b><br/>"+"<i>"+ ergtext +"</i><br/><br/>";
 }
 
+let latlet = /[a-z]/i;
+function islatinletter( L ){
+    return L.length === 1 && L.match( latlet );
+}
 
+function islatinletters( w ){
+    let bu = w.split( "" );
+    let countletters = 0;
+    for( let be = 0; be < bu.length; be += 1 ){
+        if( islatinletter( bu[be] ) ){
+            countletters += 1;
+        }
+    }
+
+    if( countletters >= (bu.length/2)){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+ 
 function silben( A ){ //string input
-    
-    let insilb = trennSLAT( A );
+    let WS = A.split( " " );
+    let allesilben = [];
+    for( let t = 0; t < WS.length; t+=1 ){
+        let B = WS[t];
+        if( islatinletters( B ) ){
+            allesilben.push( trennSLAT( B ) );
+        } else {
+            allesilben.push( trennSGRI( B ) );
+        }
+
+    }
+    /*let insilb = t
     console.log(insilb, len( insilb ),len(A)+1, len( insilb ) <= len(A)+1)
     if( len( insilb ) <= len(A)+1 ){
-        insilb = trennSGRInurarray( A.split( " " ) );
-    }
-    let WoeINSilben  = insilb.split(" "); // hier müssen wir noch unterscheiden, ob griechisch oder lateinische wörter
-    let allesilben = [];
+        insilb = 
+    }*/
+    /*let WoeINSilben  = insilb.split(" "); // hier müssen wir noch unterscheiden, ob griechisch oder lateinische wörter
+    
     const lele = WoeINSilben.length;
     for( let w = 0; w < lele; w++  ){
         if( WoeINSilben[ w ] != "" ){
@@ -6853,6 +6918,7 @@ function silben( A ){ //string input
             }
         }
     }
+    */
     return allesilben;
 }
 
@@ -6895,11 +6961,17 @@ function ohneKon( A ){ //input String
 }
 
 function ohnVoka( A ){ //input string
-    let retstr = ohneAusKEYS( A, vokaleLAT );
-    
-    if( len(retstr) === len(A) ){
-        retstr = ohneAusKEYS( A, vokaleGRI );
-    } 
+    let WS = A.split( " " );
+    let retstr = "";
+    for( let be = 0; be < WS.length; be += 1 ){
+        let B = WS[be];
+        if( islatinletters(B) ){
+            retstr += " " + ohneAusKEYS( B, vokaleLAT );
+        } else {
+            retstr += " " + ohneAusKEYS( B, vokaleGRI );
+        }
+    }
+
     return retstr;
 }
 
@@ -7403,6 +7475,7 @@ function schaneigh( simplekonkordanz, aDaaA ){
                             neighbournoonelovesyou[ cleanedword ][0][nachba[n]] = 1
                         }
                     }
+                    neighbournoonelovesyou[ cleanedword ][1] += 1;
                 } else {
                     let nana = {};
                     for( let n in nachba ){
@@ -7431,6 +7504,18 @@ function fnb( texttt ){
     return schaneigh( konundbigi[0], aDaaA );
 }
 
+function fnbnonorm( texttt ){
+    aDaaA = texttt.split(" ");
+    for( let w = 0; w < len( aDaaA ); w += 1 ){
+        if( isupper( aDaaA[ w ] )){
+            aDaaA[ w ] = capitali( aDaaA[ w ] )
+        }
+    }
+    
+    let konundbigi = simplekon( aDaaA );
+    return schaneigh( konundbigi[0], aDaaA );
+}
+
 /*------------------------------------------------------------------------------
 
 TEST
@@ -7440,7 +7525,7 @@ TEST
 
 function zerl(){
     let stristrstrung = "πρῶτον μὲν οὐσίαν κεκτημένον μηδεμίαν μηδένα ἰδίαν, ἂν μὴ πᾶσα ἀνάγκη: ἔπειτα οἴκησιν καὶ ταμιεῖον μηδενὶ εἶναι μηδὲν τοιοῦτον, εἰς ὃ οὐ πᾶς ὁ βουλόμενος εἴσεισι: τὰ δ᾽ ἐπιτήδεια, ὅσων δέονται ἄνδρες ἀθληταὶ πολέμου σώφρονές τε καὶ ἀνδρεῖοι, ταξαμένους παρὰ τῶν ἄλλων πολιτῶν δέχεσθαι μισθὸν τῆς φυλακῆς τοσοῦτον ὅσον μήτε περιεῖναι αὐτοῖς εἰς τὸν ἐνιαυτὸν μήτε ἐνδεῖν: φοιτῶντας δὲ εἰς συσσίτια ὥσπερ ἐστρατοπεδευμένους κοινῇ ζῆν";
-
+    stristrstrung = "„[IX]” ⁙ ἀλλ’ ἑτέραν τινὰ φύσιν ἄπειρον', ἐξ ἧς ἅπαντας γίνεσθαι τοὺς οὐρανοὺς καὶ τοὺς ἐν αὐτοῖς κόσμους· ἐξ ὧν δὲ ἡ γένεσίς ἐστι τοῖς οὖσι, καὶ τὴν φθορὰν εἰς ταῦτα γίνεσθαι κατὰ τὸ χρεών. διδόναι γὰρ αὐτὰ δίκην καὶ τίσιν ἀλλήλοις τῆς ἀδικίας κατὰ τὴν τοῦ χρόνου τάξιν, ποιητικωτέροις οὕτως ὀνόμασιν αὐτὰ λέγων· δῆλον δὲ ὅτι τὴν εἰς ἄλληλα μεταβολὴν τῶν τεττάρων στοιχείων οὗτος θεασάμενος οὐκ ἠξίωσεν ἕν τι τούτων ὑποκείμενον ποιῆσαι, ἀλλά τι ἄλλο παρὰ ταῦτα. οὗτος δὲ οὐκ ἀλλοιουμένου τοῦ στοιχείου τὴν γένεσιν ποιεῖ, ἀλλ’ ἀποκρινομένων τῶν ἐναντίων διὰ τῆς ἀιδίου κινή- σεως· 1 Summá pecúniae, quam dedit in [bla bla bla] aerarium vel plebei Romanae vel dimissis militibus=> denarium sexiens milliens. 2 Opera fecit nova § aedem Martis, Iovis Tonantis et Feretri, Apollinis, díví Iúli, § Quirini, § Minervae, Iunonis Reginae, Iovis Libertatis, Larum, deum Penátium, § Iuventatis, Matris deum, Lupercal, pulvinar ad [11] circum, § cúriam cum chalcidico, forum Augustum, basilicam 35 Iuliam, theatrum Marcelli, § porticus . . . . . . . . . . , nemus trans Tiberím Caesarum. § 3 Refécit Capitolium sacrasque aedes numero octoginta duas, theatrum Pompeí, aquarum rivos, viam Flaminiam.  Ϗ ϗ ϚϛȢȣꙊꙋἀἁἂἃἄἅἆἇἈἉἊἋἌἍἎἏἐἑἒἓἔἕἘἙἚἛἜἝἠἡἢἣἤἥἦἧἨἩἪἫἬἭἮἯἰἱἲἳἴἵἶἷἸἹἺἻἼἽἾἿὀὁὂὃὄὅὈὉὊὋὌὍὐὑὒὓὔὕὖὗὙὛὝὟὠὡὢὣὤὥὦὧὨὩὪὫὬὭὮὯὰάὲέὴήὶίὸόὺύὼώ	ᾀᾁᾂᾃᾄᾅᾆᾇᾈᾉᾊᾋᾌᾍᾎᾏᾐᾑᾒᾓᾔᾕᾖᾗᾘᾙᾚᾛᾜᾝᾞᾟᾠᾡᾢᾣᾤᾥᾦᾧᾨᾩᾪᾫᾬᾭᾮᾯᾰᾱᾲᾳᾴᾶᾷᾸᾹᾺΆᾼ᾽ι᾿῀῁ῂῃῄῆῇῈΈῊΉῌ῍῎῏ῐῑῒΐῖῗῘῙῚΊ῝῞῟ῠῡῢΰῤῥῦῧῨῩῪΎῬ῭΅`ῲῳῴῶῷῸΌῺΏῼ´῾ͰͱͲͳʹ͵Ͷͷͺͻͼͽ;Ϳ΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϏϐϑϒϓϔϕϖϗϘϙϚϛϜϝϞϟϠϡϢϣϤϥϦϧϨϩϪϫϬϭϮϯϰϱϲϳϴϵ϶ϷϸϹϺϻϼϽϾϿ Αι αι γγ γκ γξ γχ ου Υι υι ἄϋλος αὐλός  τί φῄς; γραφὴν σέ τις, ὡς ἔοικε, γέγραπται οὐ γὰρ ἐκεῖνό γε καταγνώσομαι, ὡς σὺ ἕτερον. δ̣[ὲ κ]αὶ";
     let Strout = "<b>Eingabe:</b><br>";
     Strout += stristrstrung +"<br><br>";
 
@@ -7451,6 +7536,9 @@ function zerl(){
 
     Strout += "<b>2 gram gesamter Text:</b><br>";
     Strout += ngramWhole( stristrstrung, 2 ).join("/ ") +"<br><br>";
+
+    Strout += "<b>3 gram Wordlevel:</b><br>";
+    Strout += genngram( aswords, 3 ).join("/ ") +"<br><br>";
 
     Strout += "<b>3 gram der Wörter nopadding:</b><br>";
     Strout += ngramWords( aswords, 3, False ).join("/ ")+"<br><br>";
@@ -7494,7 +7582,7 @@ function zerl(){
     Strout += "<b>als flache Nachbarschaft:</b><br>";
     let stringtobeout = "";
     let gutgemacht = fnb( stristrstrung );
-    console.log(gutgemacht);
+    //console.log(gutgemacht);
     for( let vv in gutgemacht ){
         let strighgsjhsj = "";
         for(let uuu in gutgemacht[vv][0]){

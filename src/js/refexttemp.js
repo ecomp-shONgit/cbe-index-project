@@ -261,76 +261,6 @@ function getsitefromurlinp( ){
 
 
 
-/*------------------------------------------------------------------------------
-                     Programming Python AND JS helper
-------------------------------------------------------------------------------*/
-
-function len( aA ){
-    if( aA ){
-        if( aA instanceof Set ){
-            return aA.size;
-        } else {
-            return aA.length;
-        }
-    } else {
-        return 0;
-    }
-}
-
-function set( aA ){
-    return new Set( aA );
-}
-
-function list( aS ){
-    return Array.from( aS );
-}
-
-function print(  ){//call with arbitrary arguments and print the argumnet array
-    //for( let a in arguments ){
-        console.log( arguments );
-    //}
-}
-
-function max( a, b ){
-    return Math.max(a, b);
-}
-
-function min(a, b){
-    return Math.min(a, b);
-}
-
-
-
-
-/*------------------------------------------------------------------------------
-            SET OPERATIONS (TO BE DEFINED IN PYtHON ALSO)
-------------------------------------------------------------------------------*/
-
-
-function SetSymDiff( setA, setB ){ //Python:^, In A und nicht in B in B und nicht in A
-    let AB = [...setA].filter(x => !setB.has( x ));
-    let BA = [...setB].filter(x => !setA.has( x ));
-    /*console.log(BA instanceof Array, AB instanceof Array);
-    for( let item of AB ){
-        BA.add( item );
-    }*/
-    let symDiff = new Set( AB.concat( BA ) );
-    return symDiff;
-}
-
-function SetDiff( setA, setB ){ //in A und nicht in B
-    return [...setA].filter(x => !setB.has( x ));
-}
-
-function SetUnsion( setA, setB ){//Python: |
-    let union = new Set( [...setA, ...setB] );
-    return union;
-}
-
-function SetIntersection( setA, setB ){//Python: &
-    return [...setA].filter( x => setB.has( x ));
-}
-
 
 
 
@@ -340,12 +270,13 @@ function SetIntersection( setA, setB ){//Python: &
  
 RESTART WITH MUCH FATSER APROACHE
 
-- 1 Stringdist 
+- 1 string dist 
 - 2 dictonary 
+- 3 numbers
 
 ONLY
 
-*/ 
+**/ 
 
 //slow last stage of REF EXTRACT and CTS GEN
 function H0H1H2deep( ws, hyporange ){
@@ -389,7 +320,7 @@ function H0H1H2deep( ws, hyporange ){
             let countfac = 0;
             //console.log( hypoautwerk ); 
             for( let p in p1 ){
-                countfac += containednessLCF( p1[p], hypoautwerk.toLowerCase() );
+                countfac += containednessLCF( deluv( p1[p] ), deluv( hypoautwerk.toLowerCase() ) );
             }
             if(countfac <= 0.5){
                 continue;
@@ -423,7 +354,7 @@ function H0H1H2deep( ws, hyporange ){
             for( let k in allmaxes[ maxvalues[ m ] ] ){
                 let countAinB = 0;
                 let countBinA = 0;
-                let stristra = allmaxes[ maxvalues[ m ] ][k][0].replace(".","").toLowerCase( )+" "+allmaxes[ maxvalues[ m ] ][k][1].replace(".","").toLowerCase( );
+                let stristra = allmaxes[ maxvalues[ m ] ][k][0].replace(".","").toLowerCase( )+" "+deluv(allmaxes[ maxvalues[ m ] ][k][1].replace(".","").toLowerCase( ));
                 //console.log("jjj", stristra);
                 for( let r in p1 ){
                     if( stristra.indexOf( p1[r] ) !== -1 ){
@@ -444,8 +375,8 @@ function H0H1H2deep( ws, hyporange ){
 
                 if( countAinB > 0.5 ||
                     countBinA > 0.5 ){
-                    console.log("- P1: ", p1.join(" "), " - P2: ", p2.join(";") );
-                    console.log(m, "TAKEN with ",maxvalues[m]," > ", allmaxes[maxvalues[m]][k][0]+" "+allmaxes[maxvalues[m]][k][1]+" "+p2.join(" ")+"("+allmaxes[maxvalues[m]][k][2]+")", countAinB, countBinA);
+                    //console.log("- P1: ", p1.join(" "), " - P2: ", p2.join(";") );
+                    //console.log(m, "TAKEN with ",maxvalues[m]," > ", allmaxes[maxvalues[m]][k][0]+" "+allmaxes[maxvalues[m]][k][1]+" "+p2.join(" ")+"("+allmaxes[maxvalues[m]][k][2]+")", countAinB, countBinA);
                     if( returndeephyp[ is ] ){
                         returndeephyp[is].push( [maxvalues[m], allmaxes[maxvalues[m]][k][0], allmaxes[maxvalues[m]][k][1], p2, stristra] );
                     } else {
@@ -463,28 +394,28 @@ function H0H1H2deep( ws, hyporange ){
 }
 
 /* H0H1H2 - fast veryfie the hypothesis AND compleat with h2*/
-function H0H1H2ranges( ws, hypothesen ){
-    //console.log("--hypothesen: ", hypothesen);
-    let abr = len( hypothesen[1] );
-    let indexstart = hypothesen[0];
+function H0H1H2ranges( ws, hypothese ){
+    //console.log("--hypothese: ", hypothese );
+    let abr = len( hypothese[2] );
+    let indexstart = hypothese[0];
     let rangeto = 10; //range size what?
-    let indexend = indexstart + rangeto;
+    let indexend = hypothese[1] + ( hypothese[4].length );
     let counth0 = 0;
     let counth1 = 0;
     let counth2 = 0;
     let rettext = "";
     let awnARRAY = [];
-    for( let i = 0; i < abr; i++ ){
+    //for( let i = 0; i < abr; i++ ){
+        let howmuchgram = 2;
+        let Au = hypothese[2];
         
-        let Au = hypothesen[1][i][0];
-        
-        let AuTri = ngram( Au, 3, True );
+        let AuTri = ngram( Au, howmuchgram, True );
         let Aul = abkAW[Au][0];
         
         if(Aul == ""){
             Aul = Au;
         }
-        let AulTri = ngram( Aul, 3, True );
+        let AulTri = ngram( Aul, howmuchgram, True );
         //console.log("----Hypo: ", Au, Aul);
         let goon = true;
         let j = indexstart;
@@ -508,8 +439,8 @@ function H0H1H2ranges( ws, hypothesen ){
                         }
                     }*/
                     //vielleicht versuchen wir es mit einer harten grenze und einem Maß
-                    let WoTri = ngram( wo, 3, True );
-                    let WoTriB = ngram( ws[j].toUpperCase(), 3, True );
+                    let WoTri = ngram( wo, howmuchgram, True );
+                    let WoTriB = ngram( ws[j].toUpperCase(), howmuchgram, True );
                     let d1 = baire( AuTri, WoTriB );//jaccardMASZ( AuTri, WoTriB ); //generalized cantor metric more pricise
                     let d2 = baire( AulTri, WoTri );//jaccardMASZ( AulTri, WoTri );
                     let Auclean = Au.toLowerCase().replace(".","");
@@ -521,7 +452,7 @@ function H0H1H2ranges( ws, hypothesen ){
                     //console.log(wo, min(d1,  d2), l3);
                     //console.log(d1 < 0.5, d2 < 0.5, 0.5 < l1,   0.5 < l2)
                     //if( d1 < 0.5 || d2 < 0.5 ||  0.5 < l1 ||   0.5 < l2  ){
-                    if( min(d1,d2) < 0.25  ||  0.5 < l3 ){
+                    if( min(d1,d2) < 0.3  ||  0.7 < l3 ){
                     //if( d1 < 0.3 || d2 < 0.3 ||  0.4 < l1 ||   0.4 < l2  ){
                         woerterZuAu.push(1);
                     } else {
@@ -535,12 +466,13 @@ function H0H1H2ranges( ws, hypothesen ){
                 goon = false;
             }
         }
-        //console.log("Autor check", Au, Aul, woerterZuAu, "...", ws.slice(indexstart, indexend) );
+        console.log("Autor check", Au, Aul, woerterZuAu, "...", ws.slice(indexstart, indexend) );
         //raussuchen aus der 01 serie erstes 1, wenn nicht clean Hypothese
+        
         let firsteinser = true;
         let texttahtisautor = [];
         let indexJzwei = 0;
-        for( let e = 0; e < rangeto; e+=1 ){
+        for( let e = 0; e < indexend; e+=1 ){
             if( woerterZuAu[ e ] === 1 && firsteinser ){
                 texttahtisautor.push( ws[indexstart+e] );
             } else {
@@ -551,7 +483,7 @@ function H0H1H2ranges( ws, hypothesen ){
             }
         }
         
-        if( texttahtisautor.length !== 0 ){ //reject empty - hypothesis fals under the sight of other measures
+        if( texttahtisautor.length !== 0 ){ //reject empty - hypothesis falls under the sight of other measures
             // j2 erzeugen, nach der h0
             if( indexJzwei === 0 ){ //letzte Position autor 1
                 indexJzwei = rangeto;
@@ -561,26 +493,33 @@ function H0H1H2ranges( ws, hypothesen ){
             //console.log("------ AUTOR: ", Aul, texttahtisautor, woerterZuAu, indexstart, indexJzwei, "...", ws.slice(indexstart, indexend) );
             // von j2 aus ws durchsuchen nach wörtern die bedingt in werken auftauchen
             
-            let We = hypothesen[1][i][1];
-            let Welen = len( We );
-            for( let w = 0; w < Welen; w+=1 ){
-                let Wek = We[w];
-                let WekTri = ngram( Wek.toLowerCase(), 3, True );
-                let Wel = abkAW[Au][1][Wek];
-                let WelTri = ngram( Wel.toLowerCase(), 3, True );
+            let We = hypothese[3];
+            //let Welen = len( We );
+            //for( let w = 0; w < Welen; w+=1 ){
+                //console.log(We[w]);
+                let Wek = deluv( We.toLowerCase() );
+                let WekTri = ngram( Wek, howmuchgram, True );
+                //console.log(abkAW[Au], Wek);
                 
+                let Wel = deluv( abkAW[Au][1][We].toLowerCase() );
+                let WelTri = ngram( Wel, howmuchgram, True );
                 let woerterZuWe = [];
                 goon = true;
-                j = indexJzwei;
                 
+                if( ws[indexJzwei] ){
+                    if( !isNaN(parseInt(ws[indexJzwei].replace(".","").replace(",",""))) && indexJzwei > 0 ){ //falls das erste wort im suchgebiet gleich eine zahl ist, dann ist was schief gegangen und nimm wenigstens ein wort mehr
+                        indexJzwei -= 2;
+                    }
+                }
+                j = indexJzwei;
                 while( goon ){
                     if( j < indexend ){
-                        if(ws[j]){
-                            let wo = ws[j].replace(".","").replace(",","");
-                            if( wo != "" && isNaN(parseInt(wo))){
+                        if( ws[j] ){
+                            let wo = deluv( ws[j].replace(".","").replace(",",""));
+                            if( wo !== "" && isNaN(parseInt(wo))){
                                 //check if words are part of a given Work
                                 
-                                let WoTri = ngram( wo, 3, True );
+                                let WoTri = ngram( wo, howmuchgram, True );
                                 let d1 = baire(WekTri, WoTri);//jaccardMASZ( WekTri, WoTri );
                                 let d2 = baire(WelTri, WoTri);//jaccardMASZ( WelTri, WoTri );
                                 //let longestsubseq = LCS( Wek, wo ); //LSF????
@@ -591,7 +530,7 @@ function H0H1H2ranges( ws, hypothesen ){
                                 //console.log( wo, "--", Wel, d1, d2, l3);
                                 //console.log(d1 < 0.5, d2 < 0.5 ,  0.5 < l1 ,  0.5 < l2)
                                 //if( d1 < 0.5 || d2 < 0.5 ||  0.5 < l1 ||  0.5 < l2  ){
-                                if( min(d1,d2) < 0.25 ||  0.3 < l3 ){                                
+                                if( min(d1,d2) < 0.25 ||  0.5 < l3 ){                                
                                     woerterZuWe.push(1);
                                 } else {
                                     woerterZuWe.push(0);
@@ -606,7 +545,7 @@ function H0H1H2ranges( ws, hypothesen ){
                         goon = false;
                     }
                 }
-
+                
                 firsteinser = true;
                 let texttahtiswork = [];
                 let indexWzwei = 0;
@@ -620,6 +559,8 @@ function H0H1H2ranges( ws, hypothesen ){
                         }
                     }
                 }
+                
+                //
                 // w2 erzeugen, nach der h0
                 if( texttahtiswork.length !== 0 ){
                     if( indexWzwei === 0 ){ //letzte Position autor 1
@@ -627,8 +568,9 @@ function H0H1H2ranges( ws, hypothesen ){
                     }
                     indexWzwei += indexJzwei;
                     counth1+=1;
-                    //console.log( "-------- WERK: ", Wek, Wel);
-                    //console.log( "--------       ",woerterZuWe , "....", ws.slice( indexJzwei, indexend ), "Naechster succhindex: ", indexWzwei, ws.slice( indexWzwei, indexend ) );
+                    //
+                    console.log( "--------   Werk check: ",woerterZuWe , "....", texttahtiswork, ws.slice( indexJzwei, indexend ), "Naechster succhindex: ", indexWzwei, ws.slice( indexWzwei, indexend ) );
+                    
 
                     //QUICK CHECK FOR A POSSIBLE RANGE OF numbers
                     let woerterZuNum = []; 
@@ -674,48 +616,56 @@ function H0H1H2ranges( ws, hypothesen ){
                             indexNzwei = woerterZuNum.length;
                         }
                         indexNzwei += indexWzwei;
+                        
                         //console.log( ws.slice( indexWzwei-2, indexNzwei+2 ).toString() );
                         counth2+=1;
                         
                         //do return not only as a STRINg, BUT cts and a array (?)
                         let numbering = ws.slice( indexWzwei, indexNzwei ).join(" ");
-                        let tempstr = "["+Au+" "+Wek+" "+ numbering +"]";
+                        let tempstr = "["+Au+" "+We+" "+ numbering +"]";
+                        console.log( "-Nummer: ", ws.slice( indexWzwei, indexNzwei ), texttahtisnumber, woerterZuNum, ws.slice( indexWzwei, indexend ));
                         if( rettext.indexOf( tempstr ) === -1 ){
                             rettext += "<b>"+tempstr+"</b><br>";
-                            awnARRAY.push([Au, Wek, numbering])
+                            awnARRAY.push([Au, We, numbering]);
+                            console.log( "--All", tempstr );
                         }
-                        //console.log( "-Nummer: ", ws.slice( indexWzwei, indexNzwei ), texttahtisnumber, woerterZuNum, ws.slice( indexWzwei, indexend ));
+                        
                     }
                 }
-            }
+            //}
         }
-    }
+    //}
     return [counth0, counth1, counth2, rettext, indexstart, awnARRAY]; //endindex, RETURN THE DATA IN ARRAY, build dict with positions AND PASS IT TO deep FKT 
+    
 }
 
 /*H1fast*/
-function H1fast( davor, danach, h0 ){
+function H1fast( davor, h0 ){
     //console.warn("h0", h0, "davor", davor,"danach", danach);
     let toreturnAll = [];
+    let A = ngram( davor, 3, False );
+    let lena = len( A );
+    //console.log(A)
     for( let kurz = 0; kurz < h0.length; kurz += 1 ){
-        //console.log(  h0[kurz] );
-        if( abkAW[h0[kurz]] ){
+            //console.log(  h0[kurz] );
             let toreturn = [];
             let werke = abkAW[ h0[ kurz ] ][1];
-            //console.log(werke);
+            
+            //let subtr = ngram( h0[ kurz ].toLowerCase(), 3, False );
+            //console.log( h0[ kurz ], subtr, werke);
             //check direct fast
-            let resuuW = werke[davor]; //groß und klein schreibung das geht noch besser mit allen permutationen der wörter davor und danach!!!
-            if( resuuW ){
-                toreturn.push(davor); 
-            } else {
-                resuuW = werke[danach];
-                if( resuuW ){
-                    toreturn.push(danach); 
-                } else {
-                    let nicht = True;
-                    let wosofdanach = danach.split(" ");
+            //let resuuW = werke[davor]; //groß und klein schreibung das geht noch besser mit allen permutationen der wörter davor und danach!!!
+            //if( resuuW ){
+            //    toreturn.push(davor); 
+            //} else {
+                //resuuW = werke[danach];
+                //if( resuuW ){
+                //    toreturn.push(danach); 
+                //} else {
+                    //let nicht = True;
+                    //let wosofdanach = danach.split(" ");
                     
-                    for( let g = 0; g < wosofdanach.length; g+=1 ){
+                    /*for( let g = 0; g < wosofdanach.length; g+=1 ){
                         let reppp = wosofdanach[g].replace(".", "").replace(",", "");
                         if( isNaN(parseInt( reppp ))){
                             
@@ -730,10 +680,9 @@ function H1fast( davor, danach, h0 ){
                         }
                     }
                     if(nicht){
-                        let A = ngram( davor, 3, False );
-                        let B = ngram( danach, 3, False );
-                        let lena = len( A );
-                        let lenb = len( B );
+                    */
+                        
+                        
                         //check dist kurzformen !!! mit containedness LCS
                         /*
                         for( let k in werke ){
@@ -754,54 +703,48 @@ function H1fast( davor, danach, h0 ){
                             } 
                         }*/
                     
-                    if(nicht){
+                    //if(nicht){
                         //check dist
                         let mindist = 100000;
-                        let kurzATmindist = "";
+                        let kurzATmindist = null;
+                        //let AA = SetDiff( A, subtr );
                         for( let k in werke ){
                             
-                            let Cl = ngram( werke[ k ], 3, True );
-
-                            //baire is faster!!! same in accurate??
+                            let Cl = ngram( werke[ k ], 3, False );
+                            let Ck = ngram( k, 3, False );
+                            let C = list( SetUnsion( Cl, Ck ) );
                             /*let v = diceMASZ( A, Cl );
                             let vv = diceMASZ( B, Cl );
                             let Ck = ngram( k, 3, True );
                             let vvv = diceMASZ( A, Ck );
                             let vvvv = diceMASZ( B, Ck );*/
-                            let v = baire( A, Cl );
-                            let vv = baire( B, Cl );
-                            let Ck = ngram( k, 3, True );
-                            let vvv = baire( A, Ck );
-                            let vvvv = baire( B, Ck );
-                            //console.log(danach, werke[ k ], v, vv, mindist);
-                            if( v < mindist ){
-                                mindist = v;
+                            //let v = setdiffmetric( A, Cl );
+                            //let v = jaccardMASZ(A, Cl);
+                            let v = diceMASZ( A, Cl );
+                            let vv = diceMASZ( A, Ck );
+                            let dg = (v+vv)/2; //wheight length of davor
+                            //let vvv = baire( A, Ck );
+                            //console.log(v, vv, dg, min(v,vv), k, werke[ k ]);
+                            if( dg < mindist ){
+                                mindist = dg;
                                 kurzATmindist = k;
                             } 
-                            else if( vv < mindist ){
-                                mindist = vv;
-                                kurzATmindist = k;
-                            }
-                            else if( vvv < mindist ){
-                                mindist = vvv;
-                                kurzATmindist = k;
-                            }
-                            else if( vvvv < mindist ){
-                                mindist = vvvv;
-                                kurzATmindist = k;
-                            } 
+
+                            //console.log(davor, "--", werke[ k ],"---", k, v, mindist);
                         }
-                        //console.log(danach, werke[ k ], v, vv, mindist);
-                        if( mindist < 0.9 ){
-                            toreturn.push( kurzATmindist ); 
-                        } 
-                    }
-                    }
-                }
-            }
+                        
+                        if( mindist < 1.0 ){
+                            toreturnAll.push( kurzATmindist ); 
+                        } else {
+                            toreturnAll.push( null ); 
+                        }
+                    //}
+                    //}
+                //}
+            //}
             //console.log(toreturn);
-            toreturnAll.push( toreturn );
-        } 
+            //toreturnAll.push( toreturn );
+        
     } 
      /* let basearray = AbkKeys;
     if( long ){
@@ -829,7 +772,7 @@ function H1fast( davor, danach, h0 ){
             }
         }
     }*/
-    
+    //console.log( toreturnAll );
     return toreturnAll;
 }
 
@@ -901,20 +844,24 @@ function getHij( astring ){
 }
 
 function H0fast( w1, w2, w3 ){ //very diffuse result
-    let che = checkDirectH0( [ w1.toUpperCase()+" "+w2.toUpperCase()+" "+w3.toUpperCase() ] );
+    let w1u = w1.toUpperCase();
+    let w2u = w2.toUpperCase();
+    let w3u = w3.toUpperCase();
+    let che = checkDirectH0( [ w1u+" "+w2u+" "+w3u ] );
     if(che){
         return che;
     } else {
-        let doustring = w1+" "+w2;
-        che = checkDirectH0( [ doustring.toUpperCase() ] );
+        let doustring = w1u+" "+w2u;
+        che = checkDirectH0( [ doustring ] );
         if(che){
             return che;
         } else {
-            che = checkDirectH0( [ w1.toUpperCase() ] );
+            che = checkDirectH0( [ w1u] );
             if(che){
                 return che;
             } else {
-                che = getHij( doustring ); //only possible names from tree gram tree
+                che = getHij( w1+" "+w2+" "+w3 )
+                
                 if( che ){
                     return che;
                 } else {
@@ -928,28 +875,43 @@ function H0fast( w1, w2, w3 ){ //very diffuse result
 function zahstruk( ws ){
     let arrofindices = [];
     let old = null;
+    let lastpush = null;
     for( let w = 0; w < ws.length; w += 1 ){
-        //console.log(ws[w])
-        if( !isNaN( parseInt(ws[ w ].replace(".","").replace(",","") ) ) ){
-            if( old+1 !== w ){
-                //console.log("ta");
-                arrofindices.push(w);
+        let wey = ws[ w ].replace(".","").replace(",","");
+        if( wey.toLowerCase() != "liv" ){
+            if(isnumber(wey)){
+                if( old+1 !== w || old === null ){ //Anfänge von Zahlenfolgen und einzelzahlen, keine Zahlen in der Zahlenfolge
+                    arrofindices.push([w]);
+                } else {
+                    arrofindices[arrofindices.length-1].push( w );
+                }
+                old = w;
             }
-            old = w;
         }
-        
     }
     return arrofindices;
 }
 
-function combh0fastwithh1fast( h0, h1 ){
-    //console.log(h0, h1);
-    let abk = len( h1 );
+function combnumstruh0fastwithh1fast( h2, h0, h1 ){
+    //start end h0 h1 h2 in a searealized manner, not in nested array, + array reduction
     let h0hicombined = [];
-    
-    for( let i = 0; i < abk; i+=1){
-        if( 0 < h1[i].length  ){
-            h0hicombined.push( [ h0[i], h1[i] ] );
+    for( let j = 0; j < h2.length; j += 1){
+        let tempend = h2[j][0]; //first index of numbers is end of string search
+        let h2range = h2[j]; //found numpers in this position
+        if( h0[j] ){
+            for( let i = 0; i < h0[j].length; i += 1 ){ //für alle H0 für range befor number
+                if( h0[j][i] ){
+                    let tempstart = h0[j][i][0];
+                    for( let k = 0; k < h1[j][i].length; k += 1 ){
+                        if( h1[j][i][k] ){
+                            let temph0 = h0[j][i][1][k];
+                            let temph1 = h1[j][i][k];
+                            console.log(tempstart, tempend, temph0, temph1, h2range.toString());
+                            h0hicombined.push( [tempstart, tempend, temph0, temph1, h2range] );
+                        }
+                    }
+                }
+            }
         }
     }
     return h0hicombined;
@@ -958,7 +920,7 @@ function combh0fastwithh1fast( h0, h1 ){
 
 /*------------------------------------------------------------------------------
 
-MEIN EXT AND GEN FKT             
+MAIN EXT AND GEN FKT             
 
 ------------------------------------------------------------------------------*/
 
@@ -978,14 +940,14 @@ function GENCTSURN2( astring ){ //EXT IS GEN!
     //CLEANING BEREIT STELLEN; WAS SINNVOLL IST !!!!!!!
     
     //lists of words from silben.js
-    normalizearraykeys( ); //should move to other code place
+    normalizearraykeys( ); //should move to other code place - needed????
     //stopthiswordsL1 = normarrayk( stopthiswordsL1 );
     //lists of words from silben.js
     //stopthiswordsL1 = normarrayk( stopthiswordsL1 );
     mergeAKlists( );
     buildTree( ); //treeGram
 
-	let ws = delklammern( sigmaistgleich( delgrkl( delumbrbine( delligaturen( Trennstricheraus( delmakup( astring ).split( " " ) ).join( " " )))))).split( " " ); //TOKENS WHAT, NO need to CARE
+	let ws =  delklammern( sigmaistgleich( delgrkl( delumbrbine( delligaturen( Trennstricheraus( delmakup( astring ).split( " " ) ).join( " " )))))).split( " " ); //TOKENS WHAT, NO need to CARE
     //klammern
     //Interpunktion??
     //bindestriche???
@@ -999,6 +961,7 @@ function GENCTSURN2( astring ){ //EXT IS GEN!
             rettextasarray.push( ws[ w ].replace("-", "").replace(",","").replace(";","") );  
         }
     }
+    //tail data
     rettextasarray.push("");
     rettextasarray.push("");
     rettextasarray.push("");
@@ -1022,94 +985,117 @@ function GENCTSURN2( astring ){ //EXT IS GEN!
     
     
     let zahindices = zahstruk( ws );
-    //console.log(zahindices);
     let zeit4 = performance.now( );
-    console.log( "ZahStru dauerte " + (zeit4 - zeit0) + " ms. Count: " );
+    console.log( "ZahStru dauerte " + (zeit4 - zeit0) + " ms. Count: " +zahindices.length);
+    console.log( "Zah: ", zahindices );
 
-    let abbruch =  rettextasarray.length;
+    let abbruch = rettextasarray.length;
     //
     let rangeeee = 10;
-    for(let t in zahindices){
-        
-        let sta = zahindices[t]-rangeeee;
+    for( let t in zahindices ){
+        let sta = zahindices[t][0]-rangeeee;
         if(t > 0){
-            if( sta < zahindices[t-1] ){
-                sta = zahindices[t-1]+1;
+            if( sta <= zahindices[t-1][zahindices[t-1].length-1] ){
+                sta = zahindices[t-1][zahindices[t-1].length-1]+1; 
             }
         }
         if( sta < 0 ){
             sta = 0;
         }
-        
-        for( w = sta; w < zahindices[t]; w+=1 ){
-        
-        if( 2 < ws[ w ].length &&
-            isNaN( parseInt( ws[ w ].replace(".","").replace(",","") ) )  ){
-                
-                let che = H0fast( ws[ w ], ws[ w+1 ], ws[ w+2 ] );
-                if( che ){
-                    let hijl = len( che );
-                    if( hijl > 0 && hijl < 100 ){
-                        allh0.push( [w, che] );
-                    } else {
-                        allh0.push( false );
-                    }
-                } else {
-                    allh0.push( false );
-                }
-            /*
-            */
+        let end = zahindices[t][0];
+        let minw = null;
+
+        //console.log("RANGE:", sta, end, ws.slice(sta, zahindices[t][0]),ws.slice(sta, end) )
+        let temph0 = [];
+        for( w = sta; w < end; w+=1 ){
+            
+            let in1 = ws[ w ];
+            let in2 = ""; 
+            if( w+1 < end ){
+                in2 = ws[ w+1 ]
+            }
+            let in3 = "";
+            if( w+2 < end ){
+                in3 = ws[ w+2 ]
+            }
+            //console.log("Range Part", in1, in2, in3)
+            let che = H0fast( in1, in2, in3 );
+            if( che ){
+                let hijl = len( che );
+                if( hijl > 0 && hijl < 100 ){
+                    temph0.push( [w, che, end] );
+                    
+                } 
+            } 
+        }
+        //use intersection if not empty for neigboring hypotheses for a given main search range
+        for( let t = 0; t < temph0.length-1; t+=1 ){
+            let r1 = set(temph0[t][1])
+            let r2 = set(temph0[t+1][1])
+            let d12 = list(SetIntersection(r1,r2))
+            if( d12.length != 0 ){
+                temph0[t+1][1] = d12;
+                temph0[t+1][0] = temph0[t][0];
+                temph0[t] = null;
+            }
+
+        }
+        temph0 = temph0.filter(function(val){if(val!=null)return val;})
+        //console.log(temph0)
+        if( temph0.length != 0 ){
+            allh0.push( temph0 )
         } else {
-            allh0.push(false);
+            allh0.push( null )
         }
-        }
+        
 	}
-    let zeit2 = performance.now();
     
+    let zeit2 = performance.now();
     let abr = len( allh0 );
     console.log( "H0fast dauerte " + (zeit2 - zeit4) + " ms. Count: ", abr );
-    for( let a = 0; a < abr; a+=1 ){
-        if( allh0[ a ] ){
-            let w = allh0[ a ][ 0 ];
-            let stringdavor = ""; //HIER MUESSEN UNTER UMSTAENDEN NOCH DIE LEEREN WOERTER RAUS GEMACHT WERDEN; ODER GANZ VORHER
-            let d = w-1;
-            while( d > 0 && w-d < 4 ){
-                stringdavor += ws[ d ];
-                d-=1;
+    console.log( "H0 :", allh0 );
+
+    for( let a = 0; a < abr; a+=1 ){ // pro Ziffernstelle
+        if( allh0[ a ] ){ 
+            let temph1 = [];
+            for( let b = 0; b < len( allh0[ a ] ); b+=1 ){ // pro h0 pro main search range
+                let anf = allh0[ a ][b][ 0 ]+1;
+                let en = allh0[ a ][b][ 2 ];
+                if( anf <= en ){
+                    let stringdanach = ws.slice( anf, en ).join(" ");
+                    //console.log( anf, "stringdanach: ",stringdanach, allh0[ a ][b][1] );
+                    let resu = H1fast( stringdanach, allh0[a][b][1] );
+                    //print(resu)
+                    temph1.push( resu );
+                } 
             }
-            let stringdanach = "";
-            d = w+1;
-            while( d < ws.length && d-w < 4 ){
-                stringdavor += ws[ d ];
-                d+=1;
-            }
-            let resu = H1fast( stringdavor, stringdanach, allh0[a][1] );
-            //console.log( stringdavor, allh0[a][1], resu, stringdanach );
-            allh1.push( resu );
-            
+            allh1.push(temph1);
         } else {
-            allh1.push( [] );
+            allh1.push( null )
         }
     }
     
-    //console.log(allh0, allh1)
-    var zeit1 = performance.now();
-    console.log("H1fast dauerte " + (zeit1 - zeit2) + " ms.");
+    //c
+    var zeit1 = performance.now( );
+    console.log( "H1fast dauerte " + (zeit1 - zeit2) + " ms." );
+    console.log( "H1: ", allh1 );
+
     let countcheckpunkte = 0;
-    let allcombined = [];
-    for( let a = 0; a < abr; a+=1 ){
+    let allcombined = combnumstruh0fastwithh1fast( zahindices, allh0, allh1 );
+    /*for( let a = 0; a < abr; a+=1 ){
         if( allh0[ a ] ){
-            //console.log( allh0[a][0], " WORT: ", ws[allh0[a][0]],"H0:",allh0[a][1], " H1: ", allh1[a]);
-            let h0h1com = combh0fastwithh1fast( allh0[a][1], allh1[a] );
+            console.log( allh0[a][0], " WORT: ", ws[allh0[a][0]],"H0:",allh0[a][1], " H1: ", allh1[a]);
+            let h0h1com = 
             if( h0h1com.length !== 0 ){
                 countcheckpunkte += 1;
                 allcombined.push( [ allh0[a][0], h0h1com ] );
-                //console.log( allh0[a][0], " WORT: ", ws[allh0[a][0]],"H0H1: ", allcombined[allcombined.length-1]);
+                console.log( allh0[a][0], " WORT: ", ws[allh0[a][0]],"H0H1: ", allcombined[allcombined.length-1]);
             }
         }
-    }
-    console.log("Checkpunkt Anzahl " , countcheckpunkte);
-    //console.log(allcombined);
+    }*/
+    console.log("Checkpunkt Anzahl " , allcombined.length);
+    console.log("combined: ", allcombined);
+
     abr = len( allcombined );
     let ch0 = 0;
     let ch1 = 0;
@@ -1118,10 +1104,8 @@ function GENCTSURN2( astring ){ //EXT IS GEN!
     for( let l = 0; l < abr; l++ ){
         //reject all hypothesis and take a close look
         let s = allcombined[l][0];
-        let e = s+10;
-        if( abbruch < e ){
-            e = abbruch;
-        }
+        let e = allcombined[l][1];
+        
         //hypothesen kontrolle
         let ergcounts = H0H1H2ranges( ws, allcombined[l] );
         ch0 += ergcounts[0];

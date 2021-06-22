@@ -590,6 +590,10 @@ function mergeAKlists(){ //this function will be removed if a stable list is rea
     console.log("start merging", Object.keys(abkAW).length);
     //doUVlatin = true; // called for latin texts
     abkAW = normarrayk( abkAW );
+    for( let a in abkAW ){
+        abkAW[a][1] = normarrayk( abkAW[a][1] ); 
+    }
+    //console.log(abkAW["Iust.".toUpperCase()], abkAW["Ivst.".toUpperCase()])
     //abkAWgrkl = normarrayk( abkAWgrkl );
     //abkGrLaDGE = normarrayk( abkGrLaDGE );
     //abkAWOLD04032017 = normarrayk( abkAWOLD04032017 );
@@ -647,27 +651,7 @@ function buildinverselist(){
     //window.location = "data:application/octet-stream," + encodeURIComponent( asstring );    
 }
 
-function buildTree(){
-    console.log("Build Tree Trigram");
-    treeGram = {};
 
-    for( let lang in inverseabkAWWAkba ){
-        let vecTris = ngram( lang, 3, False );
-        let kurz = inverseabkAWWAkba[ lang ];
-        for( let v = 0; v < len( vecTris )-1; v+=1 ){
-            if( treeGram[ vecTris[v] ] ){
-                if( treeGram[ vecTris[v] ][0].indexOf( kurz ) == -1 ){
-                    treeGram[ vecTris[v] ][0].push(kurz);
-                }
-            } else {
-                treeGram[ vecTris[v] ] = [ [kurz], { } ];
-            }
-        }
-    }
-    
-   
-    console.log("End Tree Tri");
-}
 
 
 /* PLAIN TO REF TO DIGITAL EDITION */

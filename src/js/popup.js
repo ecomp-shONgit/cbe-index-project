@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let iscButton_el = document.querySelector('#ButtonISC');
     let ivButton_el = document.querySelector('#ButtonIV');
     let ilButton_el = document.querySelector('#ButtonIL');
+    let optButton_el = document.querySelector('#optionsButton');
 
   /* localization of html-elements */
   document.querySelectorAll('.localize').forEach(function(node) {
@@ -49,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
   /* Button signes criticis */
   iscButton_el.addEventListener("click", function(el) {  
-    //browser.runtime.openOptionsPage(); 
     let status = isActiveSwitch.checked;
     
     browser.storage.local.set({isActive: status}, function() 
@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }); 
      /* Button index verborum */
   ivButton_el.addEventListener("click", function(el) {  
-    //browser.runtime.openOptionsPage(); 
     let status = el.target.checked;
     browser.storage.local.set({isActive: status}, function() 
       {
@@ -105,4 +104,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }); 
   }); 
   
+
+    /* optionButton */
+  optButton_el.addEventListener("click", function(el) {  
+    browser.runtime.openOptionsPage();  
+  }); 
 }); 

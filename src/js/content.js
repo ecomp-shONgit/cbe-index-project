@@ -14,6 +14,11 @@ let ownkey3 = null;
 let postop = null;
 let posleft = null;
 let xmlns = "http://www.w3.org/2000/svg";
+let optionsCBE = null;
+
+let csvIV = "wf;count;neighborhood\\n";
+let csvISC = "";
+let csvIL = "";
 
 /*Communication system*/
 /******************************************************************************/
@@ -34,6 +39,13 @@ browser.runtime.onMessage.addListener(
     }
 );
 
+/*get the options of the cbe*/
+browser.runtime.sendMessage( {cmd:"getoptions"}, 
+    function( response ){
+        optionsCBE = response;
+        console.log( optionsCBE );
+    }
+);
 
 /*return elem, that contains content of webpage / return CONTENT - difficult*/
 /******************************************************************************/
@@ -147,7 +159,9 @@ function createIV( ){
         return;
     }
 
-    let simplekonkordanz = {};
+    
+
+    let simplekonkordanz = [{}, null];
 
     //database
     ownkey2 = document.location.href.split("#")[0]+"iv";//ignore href anchor part of url
@@ -160,18 +174,104 @@ function createIV( ){
     } else {
         console.log( "Index verborum computation" );
         
-        let aDaaA = delall( Trennstricheraus( normatext( gettextnodes( ), analysisNormalform ).split( " " ) ).join( " " ) ).split( " " );
+        let binp = normatext( gettextnodes( ), "NFD" );
+        if( optionsCBE.option3100.disambidiak ){
+            binp = disambiguDIAkritika( binp );
+        }
+        if( optionsCBE.option3100.disambidashes ){
+            binp = disambiguadashes( binp );
+        }
+        if( optionsCBE.option3100.uv ){
+            binp = deluv( binp );
+        }
+        if( optionsCBE.option3100.ji ){
+            binp = delji( binp );
+        }   
+        if( optionsCBE.option3100.womarkup ){
+            binp = delmakup( binp );
+        }
+        
+        
+        if( optionsCBE.option3100.elisions ){
+            binp = ExpandelisionText( binp );
+        }
+        if( optionsCBE.option3100.alphapriv ){
+            binp = normatext( AlphaPrivativumCopulativumText( normatext( binp, "NFC" ) ), "NFKD" );
+        }
+        if( optionsCBE.option3100.delnumber ){
+            binp = delnumbering( binp );
+        }
+        if( optionsCBE.option3100.hyph ){
+            binp = Trennstricheraus( disambiguadashes( binp ).split( " " ) ).join( " " );
+        }
+        if( optionsCBE.option3100.delpunktu ){
+            binp = delinterp( binp );
+        }
+        if( optionsCBE.option3100.delnewl ){
+            binp = delumbrbine( binp );
+        }
+
+        if( optionsCBE.option3100.basictextnorm ){
+            binp = basClean( binp );
+        } else if( optionsCBE.option3100.delall ){
+            binp = delall( binp );
+        } else if( optionsCBE.option3100.combi3 ){ 
+            binp = GRvorbereitungT( binp );
+        } else {
+            if( optionsCBE.option3100.iota ){
+                binp = iotasubiotoad( binp );
+            }
+            if( optionsCBE.option3100.sigma ){
+                binp = sigmaistgleich( binp );
+            }
+            if( optionsCBE.option3100.deldiak ){
+                binp = deldiak( binp );
+            }
+            if( optionsCBE.option3100.unkown ){
+                binp = delunknown( binp );
+            }
+            if( optionsCBE.option3100.ligatu ){
+                binp = delligaturen( binp );
+            }
+            if( optionsCBE.option3100.eqcase ){
+                binp = delgrkl( binp );
+            }
+            if( optionsCBE.option3100.delbrackets ){
+                binp = delklammern( binp );
+            }
+        }
+
+        if( optionsCBE.option3100.transllagr ){
+            binp = TranslitLatinGreekLetters( binp );
+        } else if( optionsCBE.option3100.translgrla ){
+            binp = TraslitAncientGreekLatin( binp );
+        }
+        
+        if( optionsCBE.option3100.nfdbutt ){
+            binp = normatext( binp, "NFD" );
+        } else if( optionsCBE.option3100.nfcbutt ){
+            binp = normatext( binp, "NFC" );
+        } else if( optionsCBE.option3100.nfkdbutt ){
+            binp = normatext( binp, "NFKD" );
+        } else if( optionsCBE.option3100.nfkcbutt ){
+            binp = normatext( binp, "NFKC" );
+        } 
+
+        let aDaaA = umbrtospace(binp).split( " " );
+        //let aDaaA = delall( Trennstricheraus( normatext( gettextnodes( ), analysisNormalform ).split( " " ) ).join( " " ) ).split( " " );
         let lenofall = len( aDaaA );
         for( let aw = 0; aw < lenofall; aw+=1){ 
             let cleanedword = aDaaA[ aw ].trim( );
             if( cleanedword !== "" && cleanedword.length > 1 && isNaN(parseInt(cleanedword))){
-                if( simplekonkordanz[ cleanedword ] ){
-                    simplekonkordanz[ cleanedword ] += 1;
+                if( simplekonkordanz[0][ cleanedword ] ){
+                    simplekonkordanz[0][ cleanedword ] += 1;
                 } else {
-                    simplekonkordanz[ cleanedword ] = 1;
+                    simplekonkordanz[0][ cleanedword ] = 1;
                 }
             }
         }
+        simplekonkordanz[1] = fnb( binp );
+        console.log(simplekonkordanz)
         //localStorage.setItem( ownkey2, JSON.stringify( simplekonkordanz ) );
     }
 
@@ -190,11 +290,13 @@ function createIV( ){
             //}, 500 );
         }
     );
+    
+
     let other = JSON.parse(localStorage.getItem( "allotherIV" ));
     console.log(other);
     let sorthist = [];
-    for( let k in simplekonkordanz ){
-        sorthist.push( [k, simplekonkordanz[k]] );
+    for( let k in simplekonkordanz[0] ){
+        sorthist.push( [k, simplekonkordanz[0][k]] );
     }
     sorthist.sort( function(a, b) { return b[1] - a[1]; } );
 
@@ -206,37 +308,92 @@ function createIV( ){
         onelem.style.left = event.pageX.toString()+"px";
         onelem.style.top = event.pageY.toString()+"px";
     };*/
-    indexdiv.innerHTML = "<div class='itti'><span id='hiha1'>🖐️</span><i>Index verborum</i> <span class='shhi' onclick='document.getElementById(\"histo\").style.display=\"none\"; this.onclick = function(){ if(document.getElementById(\"histo\").style.display===\"none\"){document.getElementById(\"histo\").style.display=\"block\";}else{document.getElementById(\"histo\").style.display=\"none\";} };'>&#11021;</span><span class='shhi' onclick='let astri = document.getElementById( \"indind2\" ).innerHTML;let childWindow = window.open(\"\",\"childWindow\",\"location=yes, menubar=yes, toolbar=yes\");childWindow.document.open();childWindow.document.write(\"<html><head></head><body>\");childWindow.document.write(astri);childWindow.document.write(\"</body></html>\");childWindow.print();childWindow.close();'>PDF </span><span onclick='getcsv1();'>CSV</span></div>";
+    indexdiv.innerHTML = "\
+    <div class='itti'>\
+    <span id='hiha1'>🖐️</span><i>Index verborum</i> \
+    <span class='shhi' \
+        onclick='\
+            if(document.getElementById(\"histo\").style.display===\"none\"){\
+                document.getElementById(\"histo\").style.display=\"block\";\
+            }else{\
+                document.getElementById(\"histo\").style.display=\"none\";\
+            }\
+        '>&#11021;</span>\
+    <span class='shhi' \
+        onclick='let astri = document.getElementById( \"indind2\" ).innerHTML;\
+        let childWindow = window.open(\"\",\"childWindow\",\"location=yes, menubar=yes, toolbar=yes\");\
+        childWindow.document.open();\
+        childWindow.document.write(\"<html><head></head><body>\");\
+        childWindow.document.write(astri);\
+        childWindow.document.write(\"</body></html>\");\
+        childWindow.print();childWindow.close();'>PDF </span>\
+    <span onclick='getcsv1();'>CSV</span></div>";
+
+    /*first text histogramm*/
          let indexbod = document.createElement( "div" );
         indexbod.id = "histo";
         cou = 1;
         for( let u in sorthist ){
             let oneentr = document.createElement( "div" );
             oneentr.style.color = '#'+Math.round(0xffffff * Math.random()).toString(16);
+            oneentr.style.borderBottom = "1px solid black";
             let addother = " ";
             for( let kk in other ){
                 if( kk !== ownkey2 ){
                     let lk =  JSON.parse( other[kk] );
                     if( lk[sorthist[ u ][ 0 ]] ){
-                        addother += " <span title='"+kk+"'>("+lk[sorthist[ u ][ 0 ]]+")</span>";
+                        addother += " <span title='"+kk+"'>("+lk[0][sorthist[ u ][ 0 ]]+") </span>";
                     }
                 }
             }
-            oneentr.innerHTML = "<b>"+cou.toString( ) + "</b>    "+ sorthist[ u ][ 0 ] + " ("+sorthist[ u ][ 1 ]+")"+addother;
+            let addnachb = "";
+            if(simplekonkordanz[1][sorthist[ u ][ 0 ] ]){
+                //console.log(simplekonkordanz[1][sorthist[ u ][ 0 ] ], sorthist[ u ][ 0 ] );
+                for( let t in simplekonkordanz[1][sorthist[ u ][ 0 ] ][0] ){
+                    //console.log(t);
+                    addnachb += t +" ("+ simplekonkordanz[1][sorthist[ u ][ 0 ]][0][t].toString() + "),";
+                }
+            }
+            let csvadd = "";
+            if( addnachb !== "" ){
+                oneentr.innerHTML = "<b>"+cou.toString( ) + "    "+ sorthist[ u ][ 0 ] + " ("+sorthist[ u ][ 1 ]+") </b> Nachbarschaft: "+addnachb+" "+addother;        
+            } else {
+                oneentr.innerHTML = "<b>"+cou.toString( ) + "    "+ sorthist[ u ][ 0 ] + " ("+sorthist[ u ][ 1 ]+") </b>  "+addother;
+            }
+            csvadd = sorthist[ u ][ 0 ]+";"+sorthist[ u ][ 1 ]+";"+addnachb+"\\n"
+            csvIV += csvadd;
             indexbod.appendChild( oneentr );
             cou+=1;
         }
 
     indexdiv.appendChild( indexbod );
+
+    /*second text historam using the shallow neighborhood*/
+    let indexbodz = document.createElement( "div" );
+        indexbodz.id = "histoZ"; //alphabetisch nicht nach Häufigkeit sortiert
+
+    indexdiv.appendChild( indexbodz );
     document.body.appendChild( indexdiv );
 
     /*addinteraction*/
     let scircra = document.createElement( "script" );
-    scircra.innerHTML = "let dtomove = document.getElementById('hiha1'); dtomove.draggable = 'true';dtomove.ondragend = function(event){let onelem = event.target.parentElement.parentElement || event.srcElement.parentElement.parentElement; onelem.style.left = event.pageX.toString()+'px';onelem.style.top = event.pageY.toString()+'px';}; function getcsv1(){alert('not imple');}";
+    scircra.innerHTML = "function dodownit( contentof, nameoffile, type ){\
+    let af = new Blob( [ contentof ], {type: type} );\
+    let theIE = false || !!document.documentMode;\
+    if ( theIE ){\
+        window.navigator.msSaveOrOpenBlob( af, nameoffile );\
+    } else {\
+        let alink = document.createElement( 'a' );\
+        alink.href = URL.createObjectURL( af );\
+        alink.download = nameoffile;\
+        document.body.appendChild( alink );\
+        alink.click( );\
+        document.body.removeChild( alink );\
+    }\
+}let dtomove = document.getElementById('hiha1'); dtomove.draggable = 'true';dtomove.ondragend = function(event){let onelem = event.target.parentElement.parentElement || event.srcElement.parentElement.parentElement; onelem.style.left = event.pageX.toString()+'px';onelem.style.top = event.pageY.toString()+'px';}; let csvIV=\""+csvIV+"\"; function getcsv1(){ dodownit( csvIV, 'IV.csv', 'text/csv' );}";
     document.body.appendChild( scircra );
     //console.log(simplekonkordanz);
 }
-
 /*INDEX LOCORUM*/
 /******************************************************************************/
 function createIL(){
@@ -261,6 +418,7 @@ function createIL(){
         //console.log(aDaaA.join(" "));
         loco = GENCTSURN2( aDaaA.join(" ") );
         //localStorage.setItem( ownkey3, JSON.stringify( loco ) );
+        console.log(loco);
     }
 
     /*communication with background and getting of other tab data*/
@@ -339,7 +497,7 @@ function createIL(){
 
     /*add interaction*/
     let scircra = document.createElement( "script" );
-    scircra.innerHTML = 'function shownotshown( aaa ){let na = aaa.getAttribute("name"); console.log(na, aaa); let notvis = document.getElementsByClassName( na );for( let n in notvis ){if( notvis[n].style.display == "block" ){notvis[n].style.display = "none";} else {notvis[n].style.display = "block";}}} let dtomove3 = document.getElementById("hiha3"); dtomove3.draggable = "true";dtomove3.ondragend = function(event){let onelem = event.target.parentElement.parentElement || event.srcElement.parentElement.parentElement; onelem.style.left = event.pageX.toString()+"px";onelem.style.top = event.pageY.toString()+"px";};function getcsv3(){alert("not imple");}';
+    scircra.innerHTML = 'function shownotshown( aaa ){let na = aaa.getAttribute("name"); let notvis = document.getElementsByClassName( na );for( let n in notvis ){if(notvis[n].style){if( notvis[n].style.display == "block" ){notvis[n].style.display = "none";} else {notvis[n].style.display = "block";}}}} let dtomove3 = document.getElementById("hiha3"); dtomove3.draggable = "true";dtomove3.ondragend = function(event){let onelem = event.target.parentElement.parentElement || event.srcElement.parentElement.parentElement; onelem.style.left = event.pageX.toString()+"px";onelem.style.top = event.pageY.toString()+"px";};function getcsv3(){alert("not imple");}';
     document.body.appendChild( scircra );
 }
 
@@ -368,7 +526,7 @@ function createISC( ){
     } else {
         console.log( "Index signorum criticorum computation" );
         let rw = gettextnodes( );
-        rw = Trennstricheraus( normatext( rw, analysisNormalform ).split( " " ) ).join(" ");
+        rw = normatext( Trennstricheraus( normatext( rw, analysisNormalform ).split( " " ) ).join(" "), dispnormalform ); //need display form
         klammsys = hervKLAMMSYS( rw );
         //localStorage.setItem( ownkey, JSON.stringify( klammsys ) );
     }
@@ -405,7 +563,7 @@ function createISC( ){
         onelem.style.left = posleft.toString()+"px";
         onelem.style.top = postop.toString()+"px";
     };*/
-    indexdiv.innerHTML = "<div class='itti'><span id='hiha2'>🖐️</span><i>Index signorum criticorum</i> <span class='shhi' onclick='document.getElementById(\"allperk\").style.display=\"none\"; this.onclick = function(){ if(document.getElementById(\"allperk\").style.display===\"none\"){document.getElementById(\"allperk\").style.display=\"block\";}else{document.getElementById(\"allperk\").style.display=\"none\";} };'>&#11021;</span><span class='shhi' onclick='let astri = document.getElementById( \"indind\" ).innerHTML;let childWindow = window.open(\"\",\"childWindow\",\"location=yes, menubar=yes, toolbar=yes\");childWindow.document.open();childWindow.document.write(\"<html><head></head><body>\");childWindow.document.write(astri);childWindow.document.write(\"</body></html>\");childWindow.print();childWindow.close();'>PDF </span><span onclick='getcsv2();'>CSV</span></div>";
+    indexdiv.innerHTML = "<div class='itti'><span id='hiha2'>🖐️</span><i>Index signorum criticorum</i> <span class='shhi' onclick='document.getElementById(\"allperk\").style.display=\"none\"; this.onclick = function(){ if(document.getElementById(\"allperk\").style.display===\"none\"){document.getElementById(\"allperk\").style.display=\"block\";}else{document.getElementById(\"allperk\").style.display=\"none\";} };'>&#11021;</span><span class='shhi' onclick='let astri = document.getElementById( \"indind\" ).innerHTML;let childWindow = window.open(\"\",\"childWindow\",\"location=yes, menubar=yes, toolbar=yes\");childWindow.document.open();childWindow.document.write(\"<html><head></head><body>\");childWindow.document.write(astri);childWindow.document.write(\"</body></html>\");childWindow.print();childWindow.close();'>PDF </span></div>";
     let allperk = document.createElement( "div" );
     allperk.id = "allperk";
     for( let k in klammsys[1] ){
@@ -467,7 +625,7 @@ function createISC( ){
 
     /*addinteraction*/
     let scircra = document.createElement( "script" );
-    scircra.innerHTML = "let dtomove2 = document.getElementById('hiha2'); dtomove2.draggable = 'true';dtomove2.ondragend = function(event){let onelem = event.target.parentElement.parentElement || event.srcElement.parentElement.parentElement; onelem.style.left = event.pageX.toString()+'px';onelem.style.top = event.pageY.toString()+'px';};function getcsv2(){alert('not imple');}";
+    scircra.innerHTML = "let dtomove2 = document.getElementById('hiha2'); dtomove2.draggable = 'true';dtomove2.ondragend = function(event){let onelem = event.target.parentElement.parentElement || event.srcElement.parentElement.parentElement; onelem.style.left = event.pageX.toString()+'px';onelem.style.top = event.pageY.toString()+'px';};";
     document.body.appendChild( scircra );
 }
 

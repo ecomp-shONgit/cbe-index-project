@@ -70,11 +70,6 @@ async function onTabUpdated (tabId, changeInfo, tab) {
 
 */
 
-//IPCAM-446337
-
-
-
-
 
 /*****************************************************************
  * communication tab - background
@@ -96,6 +91,44 @@ browser.runtime.onMessage.addListener(
             let truekey = request.key.split("#")[0];
             allthingsIL[ truekey ] = request.payload;
             sendResponse( { resp: "nowallareIL", alluneed: JSON.stringify( allthingsIL ) } );
+        } if( request.cmd === "getoptions" ){ // get options
+            browser.storage.local.get( "option3100", function( data ){
+                if( data.option3100){
+                    sendResponse( data );
+                } else {
+                    let defaultoptionsss = { 
+                        nfdbutt: true,
+                        nfcbutt: false,
+                        nfkdbutt: false,
+                        nfkcbutt: false,
+                        disambidiak: false,
+                        disambidashes: false,
+                        uv: false,
+                        ji: false,
+                        womarkup: false,
+                        delpunktu: false,
+                        delnewl: false,
+                        elisions: true,
+                        alphapriv: true,
+                        delnumber: false,
+                        hyph: true,
+                        iota: false,
+                        sigma: false,
+                        deldiak: false,
+                        unkown: false,
+                        ligatu: false,
+                        eqcase: false,
+                        delbrackets: false,
+                        basictextnorm: false,
+                        delall: true,
+                        combi3: false,
+                        translgrla: false,
+                        transllagr: false
+                    };
+                    console.log("Return default options.");
+                    sendResponse( {option3100:defaultoptionsss} );
+                }
+            });
         } else {
             sendResponse({ result: "error", message: `Invalid 'cmd'`, comming: request });
         }

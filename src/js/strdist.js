@@ -170,7 +170,7 @@ function LEVDAM( s1, s2, Wv ){
     /*
         NAME: damerau levenshtein,
         INPUT: - a text representation s1 and s2,
-               - Ws a list of 4 weights related to the operations 
+               - Wv a list of 4 weights related to the operations 
                  substitution, insertion, deletion, exchange,
         RETURN: sum of editweights,
 
@@ -230,7 +230,7 @@ function levenshtein( s1, s2, Wv ){
     /*
         NAME: Levenshtein wie immer, weightable,
         INPUT: - s1 and s2 text representations,
-               - Ws a list of 4 weights related to the operations 
+               - Wv a list of 4 weights related to the operations 
                  substitution, insertion, deletion, exchange,
         RETURN: number of edits,
     */
@@ -547,20 +547,6 @@ function baire( vecA, vecB ){
     return ( 1 / (1 + LCP(vecA, vecB)) );
 }
 
-function notbaire( vecA, vecB ){
-    /* 
-        NAME: not baire distance, just same notation
-        INPUT: vecA, vecB text represenations,
-        RETURN: Inf/1 (distant) and 0.0 (not distant) ???,
-    */
-    const lenA = len( vecA );
-    const lenB = len( vecB );
-    if( lenA === 0 || lenB === 0 ){ 
-        return Infinity; 
-    }
-    return ( 1 / (1 + LCP(vecA, vecB)) );
-}
-
 function generalizedcantor( vecA, vecB ){
     /* 
         NAME: gen. cantor distance, 
@@ -817,7 +803,6 @@ bagdist( vecA, vecB )
 JA( vecA, vecB )
 JAWI( vecA, vecB )
 baire( vecA, vecB )
-notbaire( vecA, vecB )
 generalizedcantor( vecA, vecB )
 notgeneralizedcantor( vecA, vecB )
 jaccardMASZzwei( vecA, vecB )
@@ -830,3 +815,4 @@ setdiffmetric( vecA, vecB )
 
 
 */
+

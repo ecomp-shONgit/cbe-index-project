@@ -115,7 +115,7 @@ const ronum = {//not perfect
 "li" :1, 
 "lii" :1, 
 "liii" :1, 
-"liv" :1, 
+//"liv" :1, 
 "lv" :1, 
 "lvi" :1, 
 "lvii" :1, 

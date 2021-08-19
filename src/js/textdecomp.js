@@ -6527,12 +6527,12 @@ function ngram( A, n, padding ){ //string input
 }
 
 //suffix trees
-function buildTree(){
-    console.log("Build Tree Trigram");
+function buildTree(nunu){
+    console.log("Build Tree Trigram abkAW");
     treeGram = {};
 
     for( let lang in inverseabkAWWAkba ){
-        let vecTris = ngram( lang, 3, False );
+        let vecTris = ngram( lang, nunu, False );
         let kurz = inverseabkAWWAkba[ lang ];
         for( let v = 0; v < len( vecTris )-1; v+=1 ){
             if( treeGram[ vecTris[v] ] ){
@@ -6547,6 +6547,58 @@ function buildTree(){
     console.log("End Tree Tri");
 }
 
+//Letter statistics of ABKAW
+let letterstatistics = {};
+function buildLetterStat( ){
+    console.log("Build Letter statistics abkAW");
+    let coulet = 0;
+    for( let lang in inverseabkAWWAkba ){
+        let kurz = inverseabkAWWAkba[ lang ];
+        let b = kurz.split("");
+        let B = lang.split("");
+        for(let o in B){
+            coulet += 1;
+            if( letterstatistics[ B[o] ] ){
+                letterstatistics[ B[o] ] += 1;
+            } else {
+                letterstatistics[ B[o] ] = 1;
+            }
+        }
+        for(let o in b){
+            coulet += 1;
+            if( letterstatistics[ b[o] ] ){
+                letterstatistics[ b[o] ] += 1;
+            } else {
+                letterstatistics[ b[o] ] = 1;
+            }
+        }
+        let werke = abkAW[ kurz ][1];
+        for( let k in werke ){
+            let c = k.split( "" );
+            let C = werke[ k ].split( "" );
+            for( let o in c ){
+                coulet += 1;
+                if( letterstatistics[ c[o] ] ){
+                    letterstatistics[ c[o] ] += 1;
+                } else {
+                    letterstatistics[ c[o] ] = 1;
+                }
+            }
+            for( let o in C ){
+                coulet += 1;
+                if( letterstatistics[ C[o] ] ){
+                    letterstatistics[ C[o] ] += 1;
+                } else {
+                    letterstatistics[ C[o] ] = 1;
+                }
+            }
+        }
+    }
+    for(let k in letterstatistics){
+        letterstatistics[k] = letterstatistics[k]/coulet;
+    }
+    //console.log(letterstatistics);
+}
 //SILBEN
 function einzeilzeichenzuLauteinheiten( dieeinzelzeichen, diphtong, 
 										doppelabereinzelkonsonant, mutacumliquida , doppelkonsonanz ){

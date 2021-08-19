@@ -280,12 +280,13 @@ ONLY
 
 //slow last stage of REF EXTRACT and CTS GEN
 function H0H1H2deep( ws, hyporange ){
+    //console.log(hyporange)
     //first rebuild potential range
     //Form: wwwwwzzz (zweifach ist muss)
     //Bedeutung wa ww z (dreifach muss herausgefunden werden)
     let returndeephyp = {};
      for( let hy = 0; hy < hyporange.length; hy += 1 ){
-        //console.log( hyporange );
+        //console.log( hyporange[ hy ] );
         let is = hyporange[ hy ][ 0 ];
         let machzwei = true;
         let nza = true;
@@ -297,10 +298,11 @@ function H0H1H2deep( ws, hyporange ){
                 machzwei = false;
             } else {
                 let wo = ws[ is ].replace(".","").replace(",","");
+                //console.log(wo, is);
                 if( wo !== "" ){
-                    if( isNaN( parseInt( wo ) ) && nza ){
+                    if( !isnumber( wo ) && nza ){
                         p1.push( wo );  
-                    } else if( !isNaN( parseInt( wo ) ) ){
+                    } else if( isnumber( wo )  ){
                         p2.push( ws[ is ] );
                         nza = false;
                     } else {
@@ -310,18 +312,20 @@ function H0H1H2deep( ws, hyporange ){
                 is+=1; 
             }
         } 
-        
+        //console.log(p1, p2);
         let maxinc = 0;
         let allmaxes = {};
         let maxvalues = [];
         for( let h in hyporange[ hy ][ 1 ] ){
             //
-            let hypoautwerk = hyporange[ hy ][ 1 ][ h ][0] +" "+hyporange[ hy ][ 1 ][ h ][1];
+            let hypoautwerk = hyporange[ hy ][ 1 ][ h ][0].replace( numberingofAkurz,"" ) +" "+hyporange[ hy ][ 1 ][ h ][1];
             let countfac = 0;
             //console.log( hypoautwerk ); 
             for( let p in p1 ){
+                
                 countfac += containednessLCF( deluv( p1[p] ), deluv( hypoautwerk.toLowerCase() ) );
             }
+            //console.log(countfac)
             if(countfac <= 0.5){
                 continue;
             }
@@ -354,27 +358,29 @@ function H0H1H2deep( ws, hyporange ){
             for( let k in allmaxes[ maxvalues[ m ] ] ){
                 let countAinB = 0;
                 let countBinA = 0;
-                let stristra = allmaxes[ maxvalues[ m ] ][k][0].replace(".","").toLowerCase( )+" "+deluv(allmaxes[ maxvalues[ m ] ][k][1].replace(".","").toLowerCase( ));
+                let stristra = allmaxes[ maxvalues[ m ] ][k][0].replace(".","").toLowerCase( ).replace( numberingofAkurz,"" );+" "+deluv(allmaxes[ maxvalues[ m ] ][k][1].replace(".","").toLowerCase( ));
                 //console.log("jjj", stristra);
                 for( let r in p1 ){
+                    console.log(stristra.indexOf( p1[r] ), p1[r] );
                     if( stristra.indexOf( p1[r] ) !== -1 ){
                         countAinB += 1;
                     }
                 }
                 countAinB /= p1.length;
-                
+                //console.log(countAinB)
                 let wiwiawords = stristra.split( " " );
                 stristra = p1.join( " " );
                 //console.log("hhh", stristra);
                 for( let r in wiwiawords ){
+                    console.log(stristra.indexOf( wiwiawords[r] ), wiwiawords[r] );
                     if( stristra.indexOf( wiwiawords[r] ) !== -1 ){
                         countBinA += 1;
                     }
                 }
                 countBinA /= wiwiawords.length;
-
-                if( countAinB > 0.5 ||
-                    countBinA > 0.5 ){
+                //console.log(countBinA);
+                if( countAinB >= 0.5 ||
+                    countBinA >= 0.5 ){
                     //console.log("- P1: ", p1.join(" "), " - P2: ", p2.join(";") );
                     //console.log(m, "TAKEN with ",maxvalues[m]," > ", allmaxes[maxvalues[m]][k][0]+" "+allmaxes[maxvalues[m]][k][1]+" "+p2.join(" ")+"("+allmaxes[maxvalues[m]][k][2]+")", countAinB, countBinA);
                     if( returndeephyp[ is ] ){
@@ -393,8 +399,9 @@ function H0H1H2deep( ws, hyporange ){
     return returndeephyp;
 }
 
+const numberingofAkurz = new RegExp( ' \\$[0-9]+', 'g' );
 /* H0H1H2 - fast veryfie the hypothesis AND compleat with h2*/
-function H0H1H2ranges( ws, hypothese ){
+function H0H1H2ranges( ws, hypothese ){ //do not take a given subset of string and search a corespondance in the list, but other way around
     //console.log("--hypothese: ", hypothese );
     let abr = len( hypothese[2] );
     let indexstart = hypothese[0];
@@ -406,17 +413,18 @@ function H0H1H2ranges( ws, hypothese ){
     let rettext = "";
     let awnARRAY = [];
     //for( let i = 0; i < abr; i++ ){
-        let howmuchgram = 2;
-        let Au = hypothese[2];
+        let howmuchgram = 3;
+        let AuO = hypothese[2];
+        let Au = AuO.replace( numberingofAkurz,"" );
         
         let AuTri = ngram( Au, howmuchgram, True );
-        let Aul = abkAW[Au][0];
+        let Aul = abkAW[AuO][0];
         
         if(Aul == ""){
             Aul = Au;
         }
         let AulTri = ngram( Aul, howmuchgram, True );
-        //console.log("----Hypo: ", Au, Aul);
+        //console.log("----Hypo: ", Au,AuO, Aul);
         let goon = true;
         let j = indexstart;
         let woerterZuAu = [];
@@ -443,16 +451,18 @@ function H0H1H2ranges( ws, hypothese ){
                     let WoTriB = ngram( ws[j].toUpperCase(), howmuchgram, True );
                     let d1 = baire( AuTri, WoTriB );//jaccardMASZ( AuTri, WoTriB ); //generalized cantor metric more pricise
                     let d2 = baire( AulTri, WoTri );//jaccardMASZ( AulTri, WoTri );
+                    let dges = min(d1,d2);
                     let Auclean = Au.toLowerCase().replace(".","");
                     //let longestsubseq = LCS( Auclean, wo ); //bagdist - longest
                     //let longestsubseq = bagdist( Auclean, wo );
                     //let l1 = longestsubseq/len(Auclean); //kind of contained ness like i liked to define it
                     //let l2 = longestsubseq/len(wo);
-                    let l3 = containednessLCS( Auclean, wo );
+                    //let l3 = containednessLCS( Auclean, wo );
+                    let l3 = containednessLCF( Auclean, wo );
                     //console.log(wo, min(d1,  d2), l3);
                     //console.log(d1 < 0.5, d2 < 0.5, 0.5 < l1,   0.5 < l2)
                     //if( d1 < 0.5 || d2 < 0.5 ||  0.5 < l1 ||   0.5 < l2  ){
-                    if( min(d1,d2) < 0.3  ||  0.7 < l3 ){
+                    if( dges < 0.6  ||  0.7 < l3 ){
                     //if( d1 < 0.3 || d2 < 0.3 ||  0.4 < l1 ||   0.4 < l2  ){
                         woerterZuAu.push(1);
                     } else {
@@ -466,7 +476,7 @@ function H0H1H2ranges( ws, hypothese ){
                 goon = false;
             }
         }
-        console.log("Autor check", Au, Aul, woerterZuAu, "...", ws.slice(indexstart, indexend) );
+        //console.log("Autor check", Au, AuO, Aul, woerterZuAu, "...", ws.slice(indexstart, indexend) );
         //raussuchen aus der 01 serie erstes 1, wenn nicht clean Hypothese
         
         let firsteinser = true;
@@ -499,9 +509,9 @@ function H0H1H2ranges( ws, hypothese ){
                 //console.log(We[w]);
                 let Wek = deluv( We.toLowerCase() );
                 let WekTri = ngram( Wek, howmuchgram, True );
-                //console.log(abkAW[Au], Wek);
+                //console.log(abkAW[AuO], Wek);
                 
-                let Wel = deluv( abkAW[Au][1][We].toLowerCase() );
+                let Wel = deluv( abkAW[AuO][1][We].toLowerCase() );
                 let WelTri = ngram( Wel, howmuchgram, True );
                 let woerterZuWe = [];
                 goon = true;
@@ -516,7 +526,7 @@ function H0H1H2ranges( ws, hypothese ){
                     if( j < indexend ){
                         if( ws[j] ){
                             let wo = deluv( ws[j].replace(".","").replace(",",""));
-                            if( wo !== "" && isNaN(parseInt(wo))){
+                            if( wo !== "" && !isnumber(wo)){//isNaN(parseInt(wo))){
                                 //check if words are part of a given Work
                                 
                                 let WoTri = ngram( wo, howmuchgram, True );
@@ -525,8 +535,8 @@ function H0H1H2ranges( ws, hypothese ){
                                 //let longestsubseq = LCS( Wek, wo ); //LSF????
                                 //let l1 = longestsubseq/len(Wek); //kind of contained ness like i liked to define it
                                 //let l2 = longestsubseq/len(wo); // ist das schon im Ergebnis von Jaccard enthalten, oder geibt es fälle  die unterschiedlich sind
-                                let l3 = containednessLCS( Wek, wo );
-                                //let l3 = containednessLCF( Wek, wo );
+                                //let l3 = containednessLCS( Wek, wo );
+                                let l3 = containednessLCF( Wek, wo );
                                 //console.log( wo, "--", Wel, d1, d2, l3);
                                 //console.log(d1 < 0.5, d2 < 0.5 ,  0.5 < l1 ,  0.5 < l2)
                                 //if( d1 < 0.5 || d2 < 0.5 ||  0.5 < l1 ||  0.5 < l2  ){
@@ -569,7 +579,7 @@ function H0H1H2ranges( ws, hypothese ){
                     indexWzwei += indexJzwei;
                     counth1+=1;
                     //
-                    console.log( "--------   Werk check: ",woerterZuWe , "....", texttahtiswork, ws.slice( indexJzwei, indexend ), "Naechster succhindex: ", indexWzwei, ws.slice( indexWzwei, indexend ) );
+                    //console.log( "--------   Werk check: ",woerterZuWe , "....", texttahtiswork, ws.slice( indexJzwei, indexend ), "Naechster succhindex: ", indexWzwei, ws.slice( indexWzwei, indexend ) );
                     
 
                     //QUICK CHECK FOR A POSSIBLE RANGE OF numbers
@@ -581,7 +591,7 @@ function H0H1H2ranges( ws, hypothese ){
                         if( j < indexend ){
                             if(ws[j]){
                                 let wo = ws[j].replace(".","").replace(",","");
-                                if( wo !== "" && !isNaN(parseInt(wo))){ //zifferstring[] and romannum
+                                if( wo !== "" && isnumber(wo)){ //zifferstring[] and romannum
                                     //console.log(j, wo, parseInt(wo));
                                     woerterZuNum.push(1);
                                 } else {
@@ -622,11 +632,11 @@ function H0H1H2ranges( ws, hypothese ){
                         
                         //do return not only as a STRINg, BUT cts and a array (?)
                         let numbering = ws.slice( indexWzwei, indexNzwei ).join(" ");
-                        let tempstr = "["+Au+" "+We+" "+ numbering +"]";
-                        console.log( "-Nummer: ", ws.slice( indexWzwei, indexNzwei ), texttahtisnumber, woerterZuNum, ws.slice( indexWzwei, indexend ));
+                        let tempstr = "["+AuO+" "+We+" "+ numbering +"]";
+                        //console.log( "-Nummer: ", ws.slice( indexWzwei, indexNzwei ), texttahtisnumber, woerterZuNum, ws.slice( indexWzwei, indexend ));
                         if( rettext.indexOf( tempstr ) === -1 ){
                             rettext += "<b>"+tempstr+"</b><br>";
-                            awnARRAY.push([Au, We, numbering]);
+                            awnARRAY.push([AuO, We, numbering]);
                             console.log( "--All", tempstr );
                         }
                         
@@ -647,7 +657,7 @@ function H1fast( davor, h0 ){
     let lena = len( A );
     //console.log(A)
     for( let kurz = 0; kurz < h0.length; kurz += 1 ){
-            //console.log(  h0[kurz] );
+            //console.log(  h0[kurz], abkAW[ h0[ kurz ] ][0], abkAW[ h0[ kurz ] ][1], abkAW[ h0[ kurz ] ][2] );
             let toreturn = [];
             let werke = abkAW[ h0[ kurz ] ][1];
             
@@ -720,8 +730,11 @@ function H1fast( davor, h0 ){
                             let vvvv = diceMASZ( B, Ck );*/
                             //let v = setdiffmetric( A, Cl );
                             //let v = jaccardMASZ(A, Cl);
-                            let v = diceMASZ( A, Cl );
-                            let vv = diceMASZ( A, Ck );
+                            //let v = diceMASZ( A, Cl );
+                            //let vv = diceMASZ( A, Ck );
+                            let v = weightedngram(3, A, Cl, letterstatistics);
+                            let vv = weightedngram(3, A, Ck, letterstatistics);
+                            
                             let dg = (v+vv)/2; //wheight length of davor
                             //let vvv = baire( A, Ck );
                             //console.log(v, vv, dg, min(v,vv), k, werke[ k ]);
@@ -779,7 +792,6 @@ function H1fast( davor, h0 ){
 /*H0 FAST AND ALL*/
 function checkDirectH0( checkarray ){ //si sa simply check against key value list
     let resuarr = [];
-
     for( let c = 0; c < checkarray.length; c++ ){
         /*let e1  = inverseabkAWWAkba[ checkarray[ c ] ];
         if( e1 ){
@@ -792,6 +804,16 @@ function checkDirectH0( checkarray ){ //si sa simply check against key value lis
         if( e2 ){
             if( resuarr.indexOf( cheche ) == -1 ){ //not already in resu array
                 resuarr.push( cheche );
+            }
+        } 
+        //remember that there are enumerations of short forms, internal numbered
+        for( let t = 1; t < 5; t += 1 ){
+            let checheadded = cheche + " $"+ t.toString()
+            let e3 = abkAW[ checheadded ];
+            if( e3 ){
+                if( resuarr.indexOf( checheadded ) == -1 ){ //not already in resu array
+                    resuarr.push( checheadded );
+                }
             }
         }
         
@@ -811,56 +833,68 @@ function getHij( astring ){
     let name = astring;
     let nameTri = ngram( name, 3, False );
     let resuold = null;
-    let intersecCount = 0;
+    let intersecCount = 1;
     let maxinterseccount = 0;
     let atmax = [];
-    
-    for(let l = 0; l < len(nameTri); l++){
+    let ltri = len(nameTri);
+
+    for( let l = 0; l < ltri; l+=1 ){
         let cheche = treeGram[ nameTri[l].toLowerCase() ];
         let curresul = [];
         if( cheche ){
             curresul = cheche[0];
+            if( resuold != null ){
+                let setA = new Set( resuold );
+                let setB = new Set( curresul );
+                let intersec = SetIntersection(setA, setB);
+                //let setu = SetUnsion(setA, setB)
+                //console.log(l, nameTri[l], resuold, curresul, intersec);
+                if( len( intersec ) == 0 ){            
+                    if( maxinterseccount < intersecCount ){
+                        maxinterseccount = intersecCount;
+                        atmax = resuold;
+                    }
+                    //THIS BOOSTS FIRST FOUND ENTRY
+                    //break;
+                    //THIS BOOSTST LONGEST WORD IN INPUT FOR PRESIDENT
+                    intersecCount = 1;
+                    //console.log("neues beginnt");
+                    resuold = curresul;
+                } else {
+                    intersecCount += 1;
+                    resuold = intersec;
+
+                }
+            } else {
+                resuold = curresul;
+            }
         }
         
-        let setA = new Set( resuold );
-        let setB = new Set( curresul );
-        let intersec = SetIntersection(setA, setB);
-        if(len( intersec ) == 0 ){
-            if( maxinterseccount < intersecCount ){
-                maxinterseccount = intersecCount;
-                atmax = resuold;
-            }
-            intersecCount = 0;
-            //console.log("neues beginnt");
-            resuold = curresul;
-        } else {
-            intersecCount += 1;
-            resuold = intersec;
-
-        }
-        //console.log(nameTri[l], resuold);
     }
     return atmax;
 }
 
 function H0fast( w1, w2, w3 ){ //very diffuse result
-    let w1u = w1.toUpperCase();
-    let w2u = w2.toUpperCase();
-    let w3u = w3.toUpperCase();
+    let w1u = deluv(w1).toUpperCase();
+    let w2u = deluv(w2).toUpperCase();
+    let w3u = deluv(w3).toUpperCase();
     let che = checkDirectH0( [ w1u+" "+w2u+" "+w3u ] );
+    
     if(che){
         return che;
     } else {
         let doustring = w1u+" "+w2u;
+        
         che = checkDirectH0( [ doustring ] );
         if(che){
             return che;
         } else {
-            che = checkDirectH0( [ w1u] );
+            che = checkDirectH0( [ w1u ] );
+            console.log(w1u, che)
             if(che){
                 return che;
             } else {
-                che = getHij( w1+" "+w2+" "+w3 )
+                che = getHij( w1+" "+w2 )
                 
                 if( che ){
                     return che;
@@ -906,7 +940,7 @@ function combnumstruh0fastwithh1fast( h2, h0, h1 ){
                         if( h1[j][i][k] ){
                             let temph0 = h0[j][i][1][k];
                             let temph1 = h1[j][i][k];
-                            console.log(tempstart, tempend, temph0, temph1, h2range.toString());
+                            //console.log(tempstart, tempend, temph0, temph1, h2range.toString());
                             h0hicombined.push( [tempstart, tempend, temph0, temph1, h2range] );
                         }
                     }
@@ -945,7 +979,9 @@ function GENCTSURN2( astring ){ //EXT IS GEN!
     //lists of words from silben.js
     //stopthiswordsL1 = normarrayk( stopthiswordsL1 );
     mergeAKlists( );
-    buildTree( ); //treeGram
+    buildTree(3); //treeGram
+    buildLetterStat();//Letterstat
+    
 
 	let ws =  delklammern( sigmaistgleich( delgrkl( delumbrbine( delligaturen( Trennstricheraus( delmakup( astring ).split( " " ) ).join( " " )))))).split( " " ); //TOKENS WHAT, NO need to CARE
     //klammern
@@ -1018,8 +1054,9 @@ function GENCTSURN2( astring ){ //EXT IS GEN!
             if( w+2 < end ){
                 in3 = ws[ w+2 ]
             }
-            //console.log("Range Part", in1, in2, in3)
+            console.log("Range Part", in1, in2, in3)
             let che = H0fast( in1, in2, in3 );
+            console.log(che)
             if( che ){
                 let hijl = len( che );
                 if( hijl > 0 && hijl < 100 ){
@@ -1028,6 +1065,7 @@ function GENCTSURN2( astring ){ //EXT IS GEN!
                 } 
             } 
         }
+        console.log(temph0);
         //use intersection if not empty for neigboring hypotheses for a given main search range
         for( let t = 0; t < temph0.length-1; t+=1 ){
             let r1 = set(temph0[t][1])
@@ -1192,3 +1230,5 @@ function hyptotext( h2, h1, h0, retasarray, w ){ //no return value but retarray 
         }
     } 
 }
+
+

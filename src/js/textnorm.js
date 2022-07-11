@@ -501,7 +501,7 @@ function ExtractDiafromBuchst( buchst ){ //input as string
     let d = [];
     for( let t in toitter ){
         let co =  toitter[t].toLowerCase( );
-        if( buchstGRI[ co ] || buchsCoptic[ co ] || buchstLAT[ co ] ){
+        if( buchstGRI[ co ] || buchsCoptic[ co ] || buchstLAT[ co ] ){ // defined in textdecomp
             b.push( toitter[t] );
         } else {
             d.push( toitter[t] );

@@ -213,6 +213,7 @@ function doIL( data ){
 function saveTheOptions( ){
     let status = document.querySelector('#status');
     let savedMess = browser.i18n.getMessage('savedOpt') || 'Options saved.';
+    console.log(document.getElementById( "inpat1" ).value);
     let optionsss = { 
         nfdbutt: document.getElementById( "nfdbutt" ).checked,
         nfcbutt: document.getElementById( "nfcbutt" ).checked,
@@ -240,7 +241,17 @@ function saveTheOptions( ){
         delall: document.getElementById( "delall" ).checked,
         combi3: document.getElementById( "combi3" ).checked,
         translgrla: document.getElementById( "translgrla" ).checked,
-        transllagr: document.getElementById( "transllagr" ).checked
+        transllagr: document.getElementById( "transllagr" ).checked,
+        dl1: document.getElementById( "dl1" ).checked,
+        dl2: document.getElementById( "dl2" ).checked,
+        dl3: document.getElementById( "dl3" ).checked,
+        inpat1: document.getElementById( "inpat1" ).value,
+        inpat2: document.getElementById( "inpat2" ).value,
+        inpwt1: document.getElementById( "inpwt1" ).value,
+        inpwt2: document.getElementById( "inpwt2" ).value,
+        inpdct1: document.getElementById( "inpdct1" ).value,
+        inpdct2: document.getElementById( "inpdct2" ).value,
+        inpdct3: document.getElementById( "inpdct3" ).value
     };
 
 
@@ -265,35 +276,87 @@ function setTheOptions( ){
   let loadMess = browser.i18n.getMessage('loadOpt') || 'Options loaded.';  
    
   browser.storage.local.get( "option3100", function( data ){
+        
         if(data.option3100){
-        document.getElementById( "nfdbutt" ).checked = data.option3100.nfdbutt;
-        document.getElementById( "nfcbutt" ).checked= data.option3100.nfcbutt;
-        document.getElementById( "nfkdbutt" ).checked = data.option3100.nfkdbutt;
-        document.getElementById( "nfkcbutt" ).checked = data.option3100.nfkcbutt;
-        document.getElementById( "disambidiak" ).checked = data.option3100.disambidiak;
-        document.getElementById( "disambidashes" ).checked = data.option3100.disambidashes;
-        document.getElementById( "uv" ).checked = data.option3100.uv;
-        document.getElementById( "ji" ).checked = data.option3100.ji;
-        document.getElementById( "womarkup" ).checked = data.option3100.womarkup;
-        document.getElementById( "delpunktu" ).checked= data.option3100.delpunktu;
-        document.getElementById( "delnewl" ).checked = data.option3100.delnewl;
-        document.getElementById( "elisions" ).checked = data.option3100.elisions;
-        document.getElementById( "alphapriv" ).checked = data.option3100.alphapriv;
-        document.getElementById( "delnumber" ).checked = data.option3100.delnumber;
-        document.getElementById( "hyph" ).checked = data.option3100.hyph;
-        document.getElementById( "iota" ).checked = data.option3100.iota;
-        document.getElementById( "sigma" ).checked = data.option3100.sigma;
-        document.getElementById( "deldiak" ).checked = data.option3100.deldiak;
-        document.getElementById( "unkown" ).checked = data.option3100.unkown;
-        document.getElementById( "ligatu" ).checked= data.option3100.ligatu;
-        document.getElementById( "eqcase" ).checked= data.option3100.eqcase;
-        document.getElementById( "delbrackets" ).checked= data.option3100.delbrackets;
-        document.getElementById( "basictextnorm" ).checked = data.option3100.basictextnorm;
-        document.getElementById( "delall" ).checked = data.option3100.delall;
-        document.getElementById( "combi3" ).checked= data.option3100.combi3;
-        document.getElementById( "translgrla" ).checked = data.option3100.translgrla;
-        document.getElementById( "transllagr" ).checked= data.option3100.transllagr;
-        } 
+            document.getElementById( "nfdbutt" ).checked = data.option3100.nfdbutt;
+            document.getElementById( "nfcbutt" ).checked= data.option3100.nfcbutt;
+            document.getElementById( "nfkdbutt" ).checked = data.option3100.nfkdbutt;
+            document.getElementById( "nfkcbutt" ).checked = data.option3100.nfkcbutt;
+            document.getElementById( "disambidiak" ).checked = data.option3100.disambidiak;
+            document.getElementById( "disambidashes" ).checked = data.option3100.disambidashes;
+            document.getElementById( "uv" ).checked = data.option3100.uv;
+            document.getElementById( "ji" ).checked = data.option3100.ji;
+            document.getElementById( "womarkup" ).checked = data.option3100.womarkup;
+            document.getElementById( "delpunktu" ).checked= data.option3100.delpunktu;
+            document.getElementById( "delnewl" ).checked = data.option3100.delnewl;
+            document.getElementById( "elisions" ).checked = data.option3100.elisions;
+            document.getElementById( "alphapriv" ).checked = data.option3100.alphapriv;
+            document.getElementById( "delnumber" ).checked = data.option3100.delnumber;
+            document.getElementById( "hyph" ).checked = data.option3100.hyph;
+            document.getElementById( "iota" ).checked = data.option3100.iota;
+            document.getElementById( "sigma" ).checked = data.option3100.sigma;
+            document.getElementById( "deldiak" ).checked = data.option3100.deldiak;
+            document.getElementById( "unkown" ).checked = data.option3100.unkown;
+            document.getElementById( "ligatu" ).checked= data.option3100.ligatu;
+            document.getElementById( "eqcase" ).checked= data.option3100.eqcase;
+            document.getElementById( "delbrackets" ).checked= data.option3100.delbrackets;
+            document.getElementById( "basictextnorm" ).checked = data.option3100.basictextnorm;
+            document.getElementById( "delall" ).checked = data.option3100.delall;
+            document.getElementById( "combi3" ).checked= data.option3100.combi3;
+            document.getElementById( "translgrla" ).checked = data.option3100.translgrla;
+            document.getElementById( "transllagr" ).checked= data.option3100.transllagr;
+
+            document.getElementById( "dl1" ).checked= data.option3100.dl1;
+            document.getElementById( "dl2" ).checked= data.option3100.dl2;
+            document.getElementById( "dl3" ).checked= data.option3100.dl3;
+            document.getElementById( "inpat1" ).value= data.option3100.inpat1;
+            document.getElementById( "inpat2" ).value= data.option3100.inpat2;
+            document.getElementById( "inpwt1" ).value= data.option3100.inpwt1;
+            document.getElementById( "inpwt2" ).value= data.option3100.inpwt2;
+            document.getElementById( "inpdct1" ).value= data.option3100.inpdct1;
+            document.getElementById( "inpdct2" ).value= data.option3100.inpdct2;
+            document.getElementById( "inpdct3" ).value= data.option3100.inpdct3;
+        } else { //default values
+            document.getElementById( "nfdbutt" ).checked = false;
+            document.getElementById( "nfcbutt" ).checked = false;
+            document.getElementById( "nfkdbutt" ).checked = false;
+            document.getElementById( "nfkcbutt" ).checked = true;
+            document.getElementById( "disambidiak" ).checked = false;
+            document.getElementById( "disambidashes" ).checked = false;
+            document.getElementById( "uv" ).checked = false;
+            document.getElementById( "ji" ).checked = false;
+            document.getElementById( "womarkup" ).checked = false;
+            document.getElementById( "delpunktu" ).checked= false;
+            document.getElementById( "delnewl" ).checked = false;
+            document.getElementById( "elisions" ).checked = true;
+            document.getElementById( "alphapriv" ).checked = true;
+            document.getElementById( "delnumber" ).checked = false;
+            document.getElementById( "hyph" ).checked = true;
+            document.getElementById( "iota" ).checked = false;
+            document.getElementById( "sigma" ).checked = false;
+            document.getElementById( "deldiak" ).checked = false;
+            document.getElementById( "unkown" ).checked = false;
+            document.getElementById( "ligatu" ).checked= false;
+            document.getElementById( "eqcase" ).checked= false;
+            document.getElementById( "delbrackets" ).checked= false;
+            document.getElementById( "basictextnorm" ).checked = false;
+            document.getElementById( "delall" ).checked = true;
+            document.getElementById( "combi3" ).checked= false;
+            document.getElementById( "translgrla" ).checked = false;
+            document.getElementById( "transllagr" ).checked= false;
+            
+
+            document.getElementById( "dl1" ).checked= dl1;
+            document.getElementById( "dl2" ).checked= dl2;
+            document.getElementById( "dl3" ).checked= dl3;
+            document.getElementById( "inpat1" ).value= inpat1;
+            document.getElementById( "inpat2" ).value= inpat2;
+            document.getElementById( "inpwt1" ).value= inpwt1;
+            document.getElementById( "inpwt2" ).value= inpwt2;
+            document.getElementById( "inpdct1" ).value= inpdct1;
+            document.getElementById( "inpdct2" ).value= inpdct2;
+            document.getElementById( "inpdct3" ).value= inpdct3;
+        }
     status.textContent = loadMess;
     setTimeout(function() { status.textContent = ''; }, 1450);
   } );   

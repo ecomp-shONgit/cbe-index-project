@@ -19250,19 +19250,12 @@ let MRL = {
 let LDM = {
  "(H)AGIAS-DERCYLUS": [
   "(H)AGIAS-DERCYLUS",
-  {
-   "FGrH #305": "fragmenta",
-   "Frr. 1-4": "Frr. 1-4",
-   "fr. 1a dup. 1387 002 (fr. 3)": "fr. 1a dup. 1387 002 (fr. 3)",
-   "fr. 1b (p. 670) dup. 1387 002 (fr. 1)": "fr. 1b (p. 670) dup. 1387 002 (fr. 1)",
-   "fr. 2 dup. 1387 002 (fr. 2)": "fr. 2 dup. 1387 002 (fr. 2)",
-   "fr. 3 dup. 1387 002 (fr. 7)": "fr. 3 dup. 1387 002 (fr. 7)"
-  },
+  {},
   [
-   "?",
-   "?",
+   "-400",
+   "-301",
    "Hist.",
-   "?",
+   "",
    "1387"
   ]
  ],
@@ -19348,7 +19341,7 @@ let LDM = {
    "1191"
   ]
  ],
- "<ASTRAMPSYCHUS Magus>": [
+ "<ASTRAMPSYCHUS MAGUS>": [
   "<ASTRAMPSYCHUS Magus>",
   {},
   [
@@ -19381,7 +19374,7 @@ let LDM = {
    "2175"
   ]
  ],
- "<BASILIUS I Imperator>": [
+ "<BASILIUS I IMPERATOR>": [
   "<BASILIUS I Imperator>",
   {
    "Paraeneses ad Leonem": "Paraeneses ad Leonem",
@@ -19469,7 +19462,7 @@ let LDM = {
    "1247"
   ]
  ],
- "<CHARONDAS Nomographus>": [
+ "<CHARONDAS NOMOGRAPHUS>": [
   "<CHARONDAS Nomographus>",
   {},
   [
@@ -19491,7 +19484,7 @@ let LDM = {
    "1277"
   ]
  ],
- "<DAMIGERON Magus>": [
+ "<DAMIGERON MAGUS>": [
   "<DAMIGERON Magus>",
   {
    "De lapidibus": "De lapidibus",
@@ -19652,7 +19645,7 @@ let LDM = {
    "1436"
   ]
  ],
- "<LUCAS Apostolus>": [
+ "<LUCAS APOSTOLUS>": [
   "<LUCAS Apostolus>",
   {
    "\u03a3\u03ba\u03b5\u03c5\u03b1\u03c3\u03af\u03b1 \u1f01\u03bb\u03b1\u03c4\u03af\u03bf\u03c5": "\u03a3\u03ba\u03b5\u03c5\u03b1\u03c3\u03af\u03b1 \u1f01\u03bb\u03b1\u03c4\u03af\u03bf\u03c5"
@@ -19759,7 +19752,7 @@ let LDM = {
    "509"
   ]
  ],
- "Nic. Mal.": [
+ "NIC. MAL.": [
   "<NICIAS>",
   {
    "FGH\u00a0n. 60": "fragmenta"
@@ -20020,7 +20013,7 @@ let LDM = {
    "1741"
   ]
  ],
- "Zaleuc.": [
+ "ZALEUC.": [
   "<ZALEUCUS Nomographus>",
   {
    "fragmenta": "fragmenta"
@@ -20033,7 +20026,7 @@ let LDM = {
    "601"
   ]
  ],
- "<ZOROASTER Magus>": [
+ "<ZOROASTER MAGUS>": [
   "<ZOROASTER Magus>",
   {
    "fragmenta": "fragmenta"
@@ -20127,6 +20120,17 @@ let LDM = {
   "ACHILLES TATIUS",
   {},
   [
+   "101",
+   "200",
+   "Astron.",
+   "",
+   "2133"
+  ]
+ ],
+ "ACHILLES TATIUS $1": [
+  "ACHILLES TATIUS",
+  {},
+  [
    "151",
    "250",
    "Scr. Erot.",
@@ -20134,14 +20138,14 @@ let LDM = {
    "532"
   ]
  ],
- "Gaius ACILIUS": [
+ "GAIUS ACILIUS": [
   "Gaius ACILIUS",
   {},
   [
-   "-300",
-   "-201",
-   "Hist. Phil.",
+   "2 B. C.",
    "",
+   "Hist., Phil.",
+   "Romanus",
    "2545"
   ]
  ],
@@ -20345,7 +20349,7 @@ let LDM = {
    "2950"
   ]
  ],
- "ADAMANTIUS Judaeus": [
+ "ADAMANTIUS JUDAEUS": [
   "ADAMANTIUS Judaeus",
   {},
   [
@@ -20400,12 +20404,12 @@ let LDM = {
    "546"
   ]
  ],
- "Claudius AELIANUS": [
+ "CLAUDIUS AELIANUS": [
   "Claudius AELIANUS",
   {},
   [
-   "170",
-   "240",
+   "A. D. 2-3",
+   "",
    "Soph.",
    "",
    "545"
@@ -20434,6 +20438,17 @@ let LDM = {
   ]
  ],
  "AENEAS": [
+  "AENEAS",
+  {},
+  [
+   "-400",
+   "-301",
+   "Tact.",
+   "Stymphalicus",
+   "58"
+  ]
+ ],
+ "AENEAS $1": [
   "AENEAS",
   {},
   [
@@ -20485,6 +20500,25 @@ let LDM = {
  ],
  "AESCHYLUS": [
   "AESCHYLUS",
+  {
+   "Agamemnon": "Agamemnon",
+   "Choephoroe": "Choephoroe",
+   "Eumenides": "Eumenides",
+   "Persae": "Persae",
+   "Prometheus vinctus": "Prometheus vinctus",
+   "Septem contra Thebas": "Septem contra Thebas",
+   "Supplices": "Supplices"
+  },
+  [
+   "-525",
+   "-455 / -456",
+   "Trag.",
+   "Atheniensis",
+   "85"
+  ]
+ ],
+ "AESCHYLUS $1": [
+  "AESCHYLUS",
   {},
   [
    "-300",
@@ -20494,7 +20528,7 @@ let LDM = {
    "321"
   ]
  ],
- "AESOPUS et AESOPICA": [
+ "AESOPUS ET AESOPICA": [
   "AESOPUS et AESOPICA",
   {
    "Epigramma": "Epigramma",
@@ -20549,6 +20583,17 @@ let LDM = {
   "AE\u0308TIUS",
   {},
   [
+   "1",
+   "100",
+   "Doxogr.",
+   "",
+   "528"
+  ]
+ ],
+ "AE\u0308TIUS $1": [
+  "AE\u0308TIUS",
+  {},
+  [
    "451",
    "550",
    "Med.",
@@ -20582,6 +20627,17 @@ let LDM = {
   "AGATHARCHIDES",
   {},
   [
+   "-210",
+   "-131",
+   "Geogr.",
+   "Cnidius",
+   "67"
+  ]
+ ],
+ "AGATHARCHIDES $1": [
+  "AGATHARCHIDES",
+  {},
+  [
    "Incerta",
    "",
    "Hist.",
@@ -20600,7 +20656,7 @@ let LDM = {
    "90"
   ]
  ],
- "AGATHIAS Scholasticus": [
+ "AGATHIAS SCHOLASTICUS": [
   "AGATHIAS Scholasticus",
   {},
   [
@@ -20626,11 +20682,11 @@ let LDM = {
   "[AGATHODAEMON]",
   {},
   [
-   "51",
-   "150",
+   "A. D. 1-2 ?",
+   "",
    "Alchem.",
    "",
-   "2566"
+   "4086"
   ]
  ],
  "AGATHON": [
@@ -20648,11 +20704,11 @@ let LDM = {
   "[AGATHON]",
   {},
   [
-   "-800",
-   "1600",
-   "Hist.",
+   "3-2 B. C. ?",
    "",
-   "2556"
+   "Hist.",
+   "Samius",
+   "2566"
   ]
  ],
  "AGATHYLLUS": [
@@ -20722,6 +20778,17 @@ let LDM = {
   ]
  ],
  "ALCAEUS": [
+  "ALCAEUS",
+  {},
+  [
+   "-630",
+   "-551",
+   "Lyr.",
+   "Lesbius",
+   "383"
+  ]
+ ],
+ "ALCAEUS $1": [
   "ALCAEUS",
   {},
   [
@@ -20824,22 +20891,99 @@ let LDM = {
   "ALEXANDER",
   {},
   [
+   "101",
+   "200",
+   "Rhet. Soph.",
+   "",
+   "594"
+  ]
+ ],
+ "ALEXANDER $1": [
+  "ALEXANDER",
+  {},
+  [
+   "-315",
+   "-251",
+   "Lyr. Trag.",
+   "Aetolus",
+   "216"
+  ]
+ ],
+ "ALEXANDER $2": [
+  "ALEXANDER",
+  {},
+  [
+   "501",
+   "600",
+   "Scr. Eccl.",
+   "Cyprius",
+   "2860"
+  ]
+ ],
+ "ALEXANDER $3": [
+  "ALEXANDER",
+  {},
+  [
+   "505",
+   "605",
+   "Med.",
+   "Trallianus",
+   "744"
+  ]
+ ],
+ "CORNELIUS ALEXANDER": [
+  "Cornelius ALEXANDER",
+  {},
+  [
+   "",
+   "",
+   "Polyhist.",
+   "Milesius",
+   "697"
+  ]
+ ],
+ "ALEXANDER $4": [
+  "ALEXANDER",
+  {},
+  [
+   "-100",
+   "-25",
+   "Rhet.",
+   "Ephesius",
+   "698"
+  ]
+ ],
+ "ALEXANDER $5": [
+  "ALEXANDER",
+  {},
+  [
+   "-100",
+   "-1",
+   "Comic.",
+   "",
+   "401"
+  ]
+ ],
+ "ALEXANDER $6": [
+  "ALEXANDER",
+  {},
+  [
+   "301",
+   "400",
+   "Theol.",
+   "Lycopolitanus",
+   "2059"
+  ]
+ ],
+ "ALEXANDER $7": [
+  "ALEXANDER",
+  {},
+  [
    "151",
    "250",
    "Phil.",
    "Aphrodisiensis",
    "732"
-  ]
- ],
- "Cornelius ALEXANDER": [
-  "Cornelius ALEXANDER",
-  {},
-  [
-   "-110",
-   "-40",
-   "Polyhist.",
-   "",
-   "697"
   ]
  ],
  "ALEXANDRI MAGNI EPISTULAE": [
@@ -20857,8 +21001,8 @@ let LDM = {
   "[ALEXARCHUS]",
   {},
   [
-   "-800",
-   "1600",
+   "1 B. C. ?",
+   "",
    "Hist.",
    "",
    "2556"
@@ -20876,6 +21020,17 @@ let LDM = {
   ]
  ],
  "ALEXIS": [
+  "ALEXIS",
+  {},
+  [
+   "-300",
+   "-101",
+   "Hist.",
+   "Samius",
+   "707"
+  ]
+ ],
+ "ALEXIS $1": [
   "ALEXIS",
   {},
   [
@@ -20942,6 +21097,39 @@ let LDM = {
   ]
  ],
  "AMMONIUS": [
+  "AMMONIUS",
+  {},
+  [
+   "A.D. 4",
+   "",
+   "Scr. Eccl.",
+   "Aegyptius",
+   "2068"
+  ]
+ ],
+ "AMMONIUS $1": [
+  "AMMONIUS",
+  {},
+  [
+   "551",
+   "651",
+   "Scr. Eccl.",
+   "Alexandrinus",
+   "2724"
+  ]
+ ],
+ "AMMONIUS $2": [
+  "AMMONIUS",
+  {},
+  [
+   "401",
+   "600",
+   "Phil.",
+   "Alexandrinus",
+   "4016"
+  ]
+ ],
+ "AMMONIUS $3": [
   "AMMONIUS",
   {},
   [
@@ -21040,7 +21228,7 @@ let LDM = {
    "237"
   ]
  ],
- "ANACREON Junior": [
+ "ANACREON JUNIOR": [
   "ANACREON Junior",
   {},
   [
@@ -21176,6 +21364,17 @@ let LDM = {
   "ANAXIMENES",
   {},
   [
+   "-400",
+   "-301",
+   "Hist. Rhet.",
+   "",
+   "547"
+  ]
+ ],
+ "ANAXIMENES $1": [
+  "ANAXIMENES",
+  {},
+  [
    "-590",
    "-524",
    "Phil.",
@@ -21272,6 +21471,39 @@ let LDM = {
   ]
  ],
  "ANDRON": [
+  "ANDRON",
+  {},
+  [
+   "-400",
+   "-301",
+   "Hist.",
+   "",
+   "4347"
+  ]
+ ],
+ "ANDRON $1": [
+  "ANDRON",
+  {},
+  [
+   "-150",
+   "-51",
+   "Hist.",
+   "",
+   "2172"
+  ]
+ ],
+ "ANDRON $2": [
+  "ANDRON",
+  {},
+  [
+   "-400",
+   "-301",
+   "Geogr.",
+   "",
+   "2536"
+  ]
+ ],
+ "ANDRON $3": [
   "ANDRON",
   {},
   [
@@ -21436,7 +21668,7 @@ let LDM = {
    "72"
   ]
  ],
- "ANONYMI HISTORICI (FGrH)": [
+ "ANONYMI HISTORICI (FGRH)": [
   "ANONYMI HISTORICI (FGrH)",
   {},
   [
@@ -21700,7 +21932,7 @@ let LDM = {
    "1133"
   ]
  ],
- "ANONYMUS Discipulus Isidori Milesii": [
+ "ANONYMUS DISCIPULUS ISIDORI MILESII": [
   "ANONYMUS Discipulus Isidori Milesii",
   {},
   [
@@ -21944,6 +22176,20 @@ let LDM = {
  "ANTIGENES": [
   "ANTIGENES",
   {
+   "Testimonia": "Testimonia",
+   "Fragmenta": "Fragmenta"
+  },
+  [
+   "-400",
+   "-301",
+   "Hist.",
+   "",
+   "1945"
+  ]
+ ],
+ "ANTIGENES $1": [
+  "ANTIGENES",
+  {
    "Epigramma": "Epigramma"
   },
   [
@@ -21970,6 +22216,60 @@ let LDM = {
  "ANTIGONUS": [
   "ANTIGONUS",
   {
+   "Historiarum mirabilium collectio Mirabilia": "Historiarum mirabilium collectio Mirabilia",
+   "Fragmentum et titutlus": "Fragmentum et titutlus",
+   "Epigramma": "Epigramma"
+  },
+  [
+   "-300",
+   "-201",
+   "Paradox.",
+   "Carystius",
+   "568"
+  ]
+ ],
+ "ANTIGONUS $1": [
+  "ANTIGONUS",
+  {
+   "Testimonia, Fragmenta": "Testimonia, Fragmenta"
+  },
+  [
+   "-300",
+   "-201",
+   "Hist.",
+   "",
+   "2547"
+  ]
+ ],
+ "ANTIGONUS $2": [
+  "ANTIGONUS",
+  {
+   "Macedoniae descriptio": "Macedoniae descriptio"
+  },
+  [
+   "2 B. C. ?",
+   "",
+   "Hist.",
+   "Macedo",
+   "2521"
+  ]
+ ],
+ "ANTIGONUS $3": [
+  "ANTIGONUS",
+  {
+   "Imperataoris Hadriani genitura": "Imperataoris Hadriani genitura"
+  },
+  [
+   "A.D. 2",
+   "",
+   "Astrol.",
+   "Nicaeanus",
+   "1142"
+  ]
+ ],
+ "ANTIGONUS $4": [
+  "ANTIGONUS",
+  {
    "Fragmenta apud Galenum": "Fragmenta apud Galenum"
   },
   [
@@ -21992,6 +22292,20 @@ let LDM = {
   ]
  ],
  "ANTIMACHUS": [
+  "ANTIMACHUS",
+  {
+   "Fragmentum": "Fragmentum",
+   "Epigoni (?)": "Epigoni (?)"
+  },
+  [
+   "-800",
+   "-701",
+   "Epic.",
+   "Teius",
+   "1141"
+  ]
+ ],
+ "ANTIMACHUS $1": [
   "ANTIMACHUS",
   {
    "Fragmenta, Epigramma": "Fragmenta, Epigramma",
@@ -22026,6 +22340,70 @@ let LDM = {
  ],
  "ANTIOCHUS": [
   "ANTIOCHUS",
+  {},
+  [
+   "-130",
+   "-67",
+   "Phil.",
+   "Ascalonius",
+   "1143"
+  ]
+ ],
+ "ANTIOCHUS $1": [
+  "ANTIOCHUS",
+  {
+   "Fragmenta, Testimonia": "Fragmenta, Testimonia"
+  },
+  [
+   "-500",
+   "-401",
+   "Hist.",
+   "Syracusanus",
+   "1145"
+  ]
+ ],
+ "ANTIOCHUS $2": [
+  "ANTIOCHUS",
+  {
+   "Fragmenta apud Paulum": "Fragmenta apud Paulum",
+   "Fragmenta apud Aetium": "Fragmenta apud Aetium"
+  },
+  [
+   "A. D. 1 ?",
+   "",
+   "Med.",
+   "Romanus",
+   "778"
+  ]
+ ],
+ "ANTIOCHUS $3": [
+  "ANTIOCHUS",
+  {
+   "Fragmenta": "Fragmenta"
+  },
+  [
+   "5 B.C.",
+   "",
+   "Hist.",
+   "",
+   "1879"
+  ]
+ ],
+ "ANTIOCHUS $4": [
+  "ANTIOCHUS",
+  {
+   "Epigrammata": "Epigrammata"
+  },
+  [
+   "A. D. 1 - 2",
+   "",
+   "Epigr.",
+   "",
+   "112"
+  ]
+ ],
+ "ANTIOCHUS $5": [
+  "ANTIOCHUS",
   {
    "001 Epistula ad Eustathium002 Pandecta scripturae sacrae003 Exomologesis": "001 Epistula ad Eustathium002 Pandecta scripturae sacrae003 Exomologesis"
   },
@@ -22038,6 +22416,98 @@ let LDM = {
   ]
  ],
  "ANTIPATER": [
+  "ANTIPATER",
+  {
+   "Testimonia et fragmenta": "Testimonia et fragmenta"
+  },
+  [
+   "-210",
+   "-129",
+   "Phil.",
+   "Tarsensis",
+   "1146"
+  ]
+ ],
+ "ANTIPATER $1": [
+  "ANTIPATER",
+  {
+   "Epigrammata": "Epigrammata",
+   "Epigrammata demonstrativum": "Epigrammata demonstrativum"
+  },
+  [
+   "2 B.C.",
+   "",
+   "Epigr.",
+   "Sidonius",
+   "113"
+  ]
+ ],
+ "ANTIPATER $2": [
+  "ANTIPATER",
+  {
+   "Fragmenta apud Galenum": "Fragmenta apud Galenum"
+  },
+  [
+   "1 B. C. - A. D. 1 ?",
+   "",
+   "Med.",
+   "",
+   "779"
+  ]
+ ],
+ "ANTIPATER $3": [
+  "ANTIPATER",
+  {
+   "Fragmenta": "Fragmenta"
+  },
+  [
+   "Incertum",
+   "",
+   "Hist.",
+   "Acanthius",
+   "1898"
+  ]
+ ],
+ "ANTIPATER $4": [
+  "ANTIPATER",
+  {
+   "Testimonia": "Testimonia"
+  },
+  [
+   "A. D. 2-3",
+   "Hierapolitanus",
+   "Hist.",
+   "",
+   "1997"
+  ]
+ ],
+ "ANTIPATER $5": [
+  "ANTIPATER",
+  {
+   "Fragmenta, Testimonium": "Fragmenta, Testimonium"
+  },
+  [
+   "2 B. C - A. D. 1",
+   "",
+   "Hist.",
+   "",
+   "2350"
+  ]
+ ],
+ "ANTIPATER $6": [
+  "ANTIPATER",
+  {
+   "Testimonium": "Testimonium"
+  },
+  [
+   "4 B. C.",
+   "Macedo",
+   "Hist.",
+   "",
+   "1929"
+  ]
+ ],
+ "ANTIPATER $7": [
   "ANTIPATER",
   {
    "Fragmenta, Testimonium": "Fragmenta, Testimonium"
@@ -22081,6 +22551,36 @@ let LDM = {
   "ANTIPHON",
   {},
   [
+   "-500",
+   "-401",
+   "Soph.",
+   "",
+   "1147"
+  ]
+ ],
+ "ANTIPHON $1": [
+  "ANTIPHON",
+  {
+   "In novercam": "In novercam",
+   "Tetralogia 1": "Tetralogia 1",
+   "Tetralogia 2": "Tetralogia 2",
+   "Tetralogia 3": "Tetralogia 3",
+   "De caede Herodis": "De caede Herodis",
+   "De choreuta": "De choreuta",
+   "Fragmenta": "Fragmenta"
+  },
+  [
+   "-500",
+   "-401",
+   "Orat.",
+   "Atheniensis",
+   "28"
+  ]
+ ],
+ "ANTIPHON $2": [
+  "ANTIPHON",
+  {},
+  [
    "-450",
    "-351",
    "Trag.",
@@ -22089,6 +22589,46 @@ let LDM = {
   ]
  ],
  "ANTISTHENES": [
+  "ANTISTHENES",
+  {
+   "Declamationes": "Declamationes",
+   "Fragmenta varia": "Fragmenta varia"
+  },
+  [
+   "-450",
+   "-360",
+   "Phil. Rhet.",
+   "",
+   "591"
+  ]
+ ],
+ "ANTISTHENES $1": [
+  "ANTISTHENES",
+  {
+   "Testimonia": "Testimonia"
+  },
+  [
+   "-450",
+   "-351",
+   "Phil.",
+   "",
+   "2313"
+  ]
+ ],
+ "ANTISTHENES $2": [
+  "ANTISTHENES",
+  {
+   "Fragmentum": "Fragmentum"
+  },
+  [
+   "2 B. C. - A. D. 1 ?",
+   "",
+   "Hist.",
+   "",
+   "2435"
+  ]
+ ],
+ "ANTISTHENES $3": [
   "ANTISTHENES",
   {
    "Rhodiaka": "Rhodiaka",
@@ -22136,7 +22676,7 @@ let LDM = {
    "1148"
   ]
  ],
- "ANTONIUS Hagiographus": [
+ "ANTONIUS HAGIOGRAPHUS": [
   "ANTONIUS Hagiographus",
   {},
   [
@@ -22329,6 +22869,94 @@ let LDM = {
   "APOLLODORUS",
   {},
   [
+   "-100",
+   "-34",
+   "Hist.",
+   "",
+   "1164"
+  ]
+ ],
+ "APOLLODORUS $1": [
+  "APOLLODORUS",
+  {},
+  [
+   "-410",
+   "-301",
+   "Trag.",
+   "",
+   "700"
+  ]
+ ],
+ "APOLLODORUS $2": [
+  "APOLLODORUS",
+  {},
+  [
+   "-360",
+   "-260",
+   "Comic.",
+   "",
+   "413"
+  ]
+ ],
+ "APOLLODORUS $3": [
+  "APOLLODORUS",
+  {},
+  [
+   "-800",
+   "1600",
+   "Lyr.",
+   "",
+   "365"
+  ]
+ ],
+ "APOLLODORUS $4": [
+  "APOLLODORUS",
+  {},
+  [
+   "-500",
+   "-401",
+   "Phil.",
+   "",
+   "2319"
+  ]
+ ],
+ "APOLLODORUS $5": [
+  "APOLLODORUS",
+  {},
+  [
+   "51",
+   "140",
+   "Mech.",
+   "",
+   "1165"
+  ]
+ ],
+ "APOLLODORUS $6": [
+  "APOLLODORUS",
+  {},
+  [
+   "-180",
+   "-110",
+   "Gramm.",
+   "",
+   "549"
+  ]
+ ],
+ "APOLLODORUS $7": [
+  "APOLLODORUS",
+  {},
+  [
+   "-400",
+   "-201",
+   "Comic.",
+   "",
+   "411"
+  ]
+ ],
+ "APOLLODORUS $8": [
+  "APOLLODORUS",
+  {},
+  [
    "-200",
    "-101",
    "Phil.",
@@ -22336,7 +22964,7 @@ let LDM = {
    "1166"
   ]
  ],
- "APOLLODORUS Carystius vel APOLLODORUS Gelous": [
+ "APOLLODORUS CARYSTIUS VEL APOLLODORUS GELOUS": [
   "APOLLODORUS Carystius vel APOLLODORUS Gelous",
   {},
   [
@@ -22361,14 +22989,137 @@ let LDM = {
  "APOLLONIUS": [
   "APOLLONIUS",
   {
-   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+   "testimonium": "testimonium",
+   "fragmenta": "fragmenta"
   },
   [
-   "ante A. D. 2",
+   "-300",
+   "-201",
+   "Hist.",
+   "",
+   "1170"
+  ]
+ ],
+ "APOLLONIUS $1": [
+  "APOLLONIUS",
+  {
+   "vita aeschines": "vita aeschines"
+  },
+  [
+   "101",
+   "200",
+   "Biogr.",
+   "",
+   "1167"
+  ]
+ ],
+ "APOLLONIUS $2": [
+  "APOLLONIUS",
+  {
+   "Apotelesmata": "Apotelesmata",
+   "Apollonii epistulae": "Apollonii epistulae",
+   "epistulae": "epistulae",
+   "fragmetum ap. Eusebium": "fragmetum ap. Eusebium",
+   "De horis diei et noctis (fragmenta e cod. Berol. 26)": "De horis diei et noctis (fragmenta e cod. Berol. 26)"
+  },
+  [
+   "1",
+   "98",
+   "Phil.",
+   "Tyanensis",
+   "619"
+  ]
+ ],
+ "APOLLONIUS $3": [
+  "APOLLONIUS",
+  {
+   "conica": "conica",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-265",
+   "-190",
+   "Geom.",
+   "Pergaeus",
+   "550"
+  ]
+ ],
+ "APOLLONIUS $4": [
+  "APOLLONIUS",
+  {
+   "Fragmenta ex libro adversus Cataphrygas seu Montanistas": "Fragmenta ex libro adversus Cataphrygas seu Montanistas"
+  },
+  [
+   "140",
+   "240",
+   "Scr. Eccl.",
+   "",
+   "1171"
+  ]
+ ],
+ "APOLLONIUS $5": [
+  "APOLLONIUS",
+  {
+   "lexicon homericum": "lexicon homericum"
+  },
+  [
+   "51",
+   "150",
+   "Soph.",
+   "",
+   "1168"
+  ]
+ ],
+ "APOLLONIUS $6": [
+  "APOLLONIUS",
+  {
+   "In Hippocratis de articulis commentarius": "In Hippocratis de articulis commentarius"
+  },
+  [
+   "-101",
+   "-1",
+   "Med.",
+   "Citiensis",
+   "660"
+  ]
+ ],
+ "APOLLONIUS $7": [
+  "APOLLONIUS",
+  {
+   "mirabilia historiae mirabiles": "mirabilia historiae mirabiles"
+  },
+  [
+   "-200",
+   "-101",
+   "Paradox.",
+   "",
+   "569"
+  ]
+ ],
+ "APOLLONIUS $8": [
+  "APOLLONIUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-800",
+   "1600",
+   "Comic.",
+   "",
+   "394"
+  ]
+ ],
+ "APOLLONIUS $9": [
+  "APOLLONIUS",
+  {
+   "fragmentum ap. Oribasium": "fragmentum ap. Oribasium"
+  },
+  [
+   "1 B. C. ?",
    "",
    "Med.",
-   "Tarsensis",
-   "782"
+   "",
+   "791"
   ]
  ],
  "APOLLONIUS DYSCOLUS": [
@@ -22404,7 +23155,112 @@ let LDM = {
    "1"
   ]
  ],
- "Claudius APOLLONIUS": [
+ "APOLLONIUS $10": [
+  "APOLLONIUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "2/1 B. C. ?",
+   "",
+   "Gramm.",
+   "",
+   "1404"
+  ]
+ ],
+ "APOLLONIUS $11": [
+  "APOLLONIUS",
+  {
+   "fragmenta": "fragmenta",
+   "testimonia": "testimonia"
+  },
+  [
+   "",
+   "",
+   "Hist.",
+   "Atheniensis",
+   "1169"
+  ]
+ ],
+ "APOLLONIUS $12": [
+  "APOLLONIUS",
+  {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "Incertum",
+   "",
+   "Hist.",
+   "",
+   "2283"
+  ]
+ ],
+ "APOLLONIUS $13": [
+  "APOLLONIUS",
+  {
+   "fragmenta ap. Galenum": "fragmenta ap. Galenum"
+  },
+  [
+   "3 B. C.",
+   "",
+   "Med.",
+   "Memphiticus",
+   "680"
+  ]
+ ],
+ "APOLLONIUS $14": [
+  "APOLLONIUS",
+  {
+   "fragmenta ap. Aetium": "fragmenta ap. Aetium"
+  },
+  [
+   "3 B. C. ?",
+   "",
+   "Med.",
+   "",
+   "741"
+  ]
+ ],
+ "APOLLONIUS $15": [
+  "APOLLONIUS",
+  {
+   "fragmenta ap. Alexandrum trallianum": "fragmenta ap. Alexandrum trallianum"
+  },
+  [
+   "1 B. C. / A. D. 1 ?",
+   "",
+   "Med.",
+   "",
+   "739"
+  ]
+ ],
+ "APOLLONIUS $16": [
+  "APOLLONIUS",
+  {
+   "fragmenta ap. Oribasium": "fragmenta ap. Oribasium"
+  },
+  [
+   "A. D. 1 ?",
+   "",
+   "Med.",
+   "Pergamenus",
+   "792"
+  ]
+ ],
+ "APOLLONIUS $17": [
+  "APOLLONIUS",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "ante A. D. 2",
+   "",
+   "Med.",
+   "Tarsensis",
+   "782"
+  ]
+ ],
+ "CLAUDIUS APOLLONIUS": [
   "Claudius APOLLONIUS",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -22417,7 +23273,7 @@ let LDM = {
    "789"
   ]
  ],
- "APOLLONIUS Archistrator": [
+ "APOLLONIUS ARCHISTRATOR": [
   "APOLLONIUS Archistrator",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -22443,7 +23299,7 @@ let LDM = {
    "4259"
   ]
  ],
- "APOLLONIUS Organicus": [
+ "APOLLONIUS ORGANICUS": [
   "APOLLONIUS Organicus",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -22487,6 +23343,37 @@ let LDM = {
   ]
  ],
  "APOLLOPHANES": [
+  "APOLLOPHANES",
+  {
+   "fragmenta": "fragmenta",
+   "fragmentum": "fragmentum",
+   "tituli": "tituli"
+  },
+  [
+   "-450",
+   "-351",
+   "Comic.",
+   "Atheniensis",
+   "414"
+  ]
+ ],
+ "APOLLOPHANES $1": [
+  "APOLLOPHANES",
+  {
+   "fragmenta ap. Galenum": "fragmenta ap. Galenum",
+   "fragmentum ap. Oribasium": "fragmentum ap. Oribasium",
+   "fragmentum ap. Paulum": "fragmentum ap. Paulum",
+   "fragmentum ap. Alexandrum tralliarum": "fragmentum ap. Alexandrum tralliarum"
+  },
+  [
+   "3 B. C.",
+   "",
+   "Med.",
+   "Seleuciensis",
+   "0794"
+  ]
+ ],
+ "APOLLOPHANES $2": [
   "APOLLOPHANES",
   {
    "fragmenta": "fragmenta"
@@ -22605,6 +23492,36 @@ let LDM = {
  "ARATUS": [
   "ARATUS",
   {
+   "fragmenta": "fragmenta",
+   "testimonia": "testimonia"
+  },
+  [
+   "-271",
+   "-200",
+   "Hist.",
+   "Sicyonius",
+   "2162"
+  ]
+ ],
+ "ARATUS $1": [
+  "ARATUS",
+  {
+   "phaenomena": "phaenomena",
+   "epigrammata": "epigrammata",
+   "fragmenta et tituli": "fragmenta et tituli",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-315",
+   "-240",
+   "Astron. Epic.",
+   "Soleus",
+   "653"
+  ]
+ ],
+ "ARATUS $2": [
+  "ARATUS",
+  {
    "testimonium": "testimonium"
   },
   [
@@ -22643,6 +23560,21 @@ let LDM = {
   ]
  ],
  "ARCESILAUS": [
+  "ARCESILAUS",
+  {
+   "fragmenta": "fragmenta",
+   "epigrammata": "epigrammata",
+   "epistula": "epistula"
+  },
+  [
+   "-316",
+   "-240",
+   "Phil.",
+   "",
+   "1172"
+  ]
+ ],
+ "ARCESILAUS $1": [
   "ARCESILAUS",
   {
    "fragmentum": "fragmentum"
@@ -22697,6 +23629,62 @@ let LDM = {
  "ARCHELAUS": [
   "ARCHELAUS",
   {
+   "fragmenta": "fragmenta",
+   "testimonia": "testimonia"
+  },
+  [
+   "-500",
+   "-401",
+   "Phil.",
+   "Atheniensis, Milesius",
+   "2303"
+  ]
+ ],
+ "ARCHELAUS $1": [
+  "ARCHELAUS",
+  {
+   "\u1f08\u03c1\u03c7\u03b5\u03bb\u03ac\u03bf\u03c5 \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u03b8\u03b5\u03af\u03b1\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2 \u03b4\u03b9\u1f70 \u03c3\u03c4\u03af\u03c7\u03c9\u03bd \u1f30\u03ac\u03bc\u03b2\u03c9\u03bd (fort. auctore Heliodoro alchemista et poeta)": "\u1f08\u03c1\u03c7\u03b5\u03bb\u03ac\u03bf\u03c5 \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u03b8\u03b5\u03af\u03b1\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2 \u03b4\u03b9\u1f70 \u03c3\u03c4\u03af\u03c7\u03c9\u03bd \u1f30\u03ac\u03bc\u03b2\u03c9\u03bd (fort. auctore Heliodoro alchemista et poeta)"
+  },
+  [
+   "-800",
+   "700",
+   "Alchem. Poeta",
+   "",
+   "4339"
+  ]
+ ],
+ "ARCHELAUS $2": [
+  "ARCHELAUS",
+  {
+   "fragmenta": "fragmenta",
+   "epigramma": "epigramma",
+   "epigrammata demonstrativa": "epigrammata demonstrativa"
+  },
+  [
+   "-300",
+   "-201",
+   "Paradox.",
+   "Aegyptius, Chersonesita",
+   "570"
+  ]
+ ],
+ "ARCHELAUS $3": [
+  "ARCHELAUS",
+  {
+   "testimonia": "testimonia",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "1. B. C. - A. D. 1.",
+   "",
+   "Hist.",
+   "Cappadox",
+   "1935"
+  ]
+ ],
+ "ARCHELAUS $4": [
+  "ARCHELAUS",
+  {
    "fragmentum ap. galenum": "fragmentum ap. galenum"
   },
   [
@@ -22723,6 +23711,20 @@ let LDM = {
  "ARCHESTRATUS": [
   "ARCHESTRATUS",
   {
+   "fragmenta": "fragmenta",
+   "fragmenta et tituli": "fragmenta et tituli"
+  },
+  [
+   "-375",
+   "-300",
+   "Parodius",
+   "Gelensis vel Syracusanus",
+   "1175"
+  ]
+ ],
+ "ARCHESTRATUS $1": [
+  "ARCHESTRATUS",
+  {
    "titulus": "titulus"
   },
   [
@@ -22746,7 +23748,7 @@ let LDM = {
    "0126"
   ]
  ],
- "testimonius": [
+ "TESTIMONIUS": [
   "testimonius",
   {},
   [
@@ -22867,6 +23869,19 @@ let LDM = {
  "ARCHYTAS": [
   "ARCHYTAS",
   {
+   "tituli": "tituli"
+  },
+  [
+   "-250",
+   "-201",
+   "Epic.",
+   "Amphissensis",
+   "1176"
+  ]
+ ],
+ "ARCHYTAS $1": [
+  "ARCHYTAS",
+  {
    "testimonia": "testimonia",
    "fragmenta": "fragmenta"
   },
@@ -22931,6 +23946,33 @@ let LDM = {
  "ARISTAENETUS": [
   "ARISTAENETUS",
   {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "post 4 B. C. ?",
+   "",
+   "Hist.",
+   "",
+   "2519"
+  ]
+ ],
+ "ARISTAENETUS $1": [
+  "ARISTAENETUS",
+  {
+   "testimonia": "testimonia",
+   "fragmentum": "fragmentum"
+  },
+  [
+   "A. D. 2/3",
+   "",
+   "Hist.",
+   "Byzantius",
+   "2429"
+  ]
+ ],
+ "ARISTAENETUS $2": [
+  "ARISTAENETUS",
+  {
    "epistulae": "epistulae"
   },
   [
@@ -22944,6 +23986,20 @@ let LDM = {
  "ARISTAGORAS": [
   "ARISTAGORAS",
   {
+   "fragmenta": "fragmenta",
+   "testimonia": "testimonia"
+  },
+  [
+   "-370",
+   "-337",
+   "Hist.",
+   "Milesius",
+   "1190"
+  ]
+ ],
+ "ARISTAGORAS $1": [
+  "ARISTAGORAS",
+  {
    "fragmenta": "fragmenta"
   },
   [
@@ -22955,6 +24011,99 @@ let LDM = {
   ]
  ],
  "ARISTARCHUS": [
+  "ARISTARCHUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "3 - 2 B. C.",
+   "",
+   "Philol.",
+   "Samothracenus",
+   "1767"
+  ]
+ ],
+ "ARISTARCHUS $1": [
+  "ARISTARCHUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "III/II a. C",
+   "",
+   "Gramm.",
+   "",
+   "DGE"
+  ]
+ ],
+ "ARISTARCHUS $2": [
+  "ARISTARCHUS",
+  {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "I / II d. C.",
+   "",
+   "Hist.",
+   "Eleus",
+   "2290"
+  ]
+ ],
+ "ARISTARCHUS $3": [
+  "ARISTARCHUS",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum",
+   "fragmentum ap. Aetium": "fragmentum ap. Aetium"
+  },
+  [
+   "A. D. 2",
+   "",
+   "Med.",
+   "",
+   "878"
+  ]
+ ],
+ "ARISTARCHUS $4": [
+  "ARISTARCHUS",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "A. D. 2",
+   "",
+   "Med.",
+   "",
+   "871"
+  ]
+ ],
+ "ARISTARCHUS $5": [
+  "ARISTARCHUS",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "A. D. 1",
+   "",
+   "Med.",
+   "Tarsensis",
+   "798"
+  ]
+ ],
+ "ARISTARCHUS $6": [
+  "ARISTARCHUS",
+  {
+   "de magnitudinibus et distantiis solis et lunae": "de magnitudinibus et distantiis solis et lunae",
+   "hypothesis": "hypothesis"
+  },
+  [
+   "-350",
+   "-264",
+   "Astron.",
+   "Samius",
+   "1181"
+  ]
+ ],
+ "ARISTARCHUS $7": [
   "ARISTARCHUS",
   {
    "fragmenta": "fragmenta"
@@ -22996,6 +24145,45 @@ let LDM = {
  "ARISTIDES": [
   "ARISTIDES",
   {
+   "testimonium": "testimonium"
+  },
+  [
+   "4. B. C.",
+   "",
+   "Phil.",
+   "Atheniensis",
+   "4268"
+  ]
+ ],
+ "ARISTIDES $1": [
+  "ARISTIDES",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "ante A. D. 1?",
+   "",
+   "Hist.",
+   "",
+   "1185"
+  ]
+ ],
+ "ARISTIDES $2": [
+  "ARISTIDES",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "2-1 B. C.",
+   "",
+   "Hist.",
+   "Milesius",
+   "2342"
+  ]
+ ],
+ "ARISTIDES $3": [
+  "ARISTIDES",
+  {
    "fragmenta": "fragmenta"
   },
   [
@@ -23022,6 +24210,19 @@ let LDM = {
  "ARISTION": [
   "ARISTION",
   {
+   "titulus": "titulus"
+  },
+  [
+   "Incertum",
+   "",
+   "Hist.",
+   "",
+   "2352"
+  ]
+ ],
+ "ARISTION $1": [
+  "ARISTION",
+  {
    "fragmentum ap. Oribasium": "fragmentum ap. Oribasium"
   },
   [
@@ -23035,6 +24236,20 @@ let LDM = {
  "ARISTIPPUS": [
   "ARISTIPPUS",
   {
+   "fragmenta": "fragmenta",
+   "testimonium": "testimonium"
+  },
+  [
+   "-430",
+   "-250",
+   "Hist.",
+   "",
+   "2216"
+  ]
+ ],
+ "ARISTIPPUS $1": [
+  "ARISTIPPUS",
+  {
    "fragmenta": "fragmenta"
   },
   [
@@ -23045,7 +24260,7 @@ let LDM = {
    "2513"
   ]
  ],
- "ARISTOBULUS Judaeus": [
+ "ARISTOBULUS JUDAEUS": [
   "ARISTOBULUS Judaeus",
   {
    "fragmenta": "fragmenta"
@@ -23061,6 +24276,20 @@ let LDM = {
  "ARISTOBULUS": [
   "ARISTOBULUS",
   {
+   "fragmenta": "fragmenta",
+   "testimonia": "testimonia"
+  },
+  [
+   "4 B. C.",
+   "",
+   "Hist.",
+   "Cassandreus",
+   "1187"
+  ]
+ ],
+ "ARISTOBULUS $1": [
+  "ARISTOBULUS",
+  {
    "fragmenta": "fragmenta"
   },
   [
@@ -23072,6 +24301,45 @@ let LDM = {
   ]
  ],
  "ARISTOCLES": [
+  "ARISTOCLES",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-300",
+   "100",
+   "Paradox.",
+   "",
+   "571"
+  ]
+ ],
+ "ARISTOCLES $1": [
+  "ARISTOCLES",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "1",
+   "200",
+   "Phil.",
+   "Messanius",
+   "1188"
+  ]
+ ],
+ "ARISTOCLES $2": [
+  "ARISTOCLES",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "2. B. C.",
+   "",
+   "Hist.",
+   "Alexandrinus",
+   "2405"
+  ]
+ ],
+ "ARISTOCLES $3": [
   "ARISTOCLES",
   {
    "fragmenta": "fragmenta"
@@ -23129,6 +24397,19 @@ let LDM = {
    "fragmenta": "fragmenta"
   },
   [
+   "-300",
+   "100",
+   "Hist.",
+   "",
+   "2148"
+  ]
+ ],
+ "ARISTODEMUS $1": [
+  "ARISTODEMUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
    "-100",
    "-1",
    "Hist. Myth.",
@@ -23153,6 +24434,45 @@ let LDM = {
  "ARISTON": [
   "ARISTON",
   {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "101",
+   "200",
+   "Apol.",
+   "Pellaeus",
+   "1992"
+  ]
+ ],
+ "ARISTON $1": [
+  "ARISTON",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-280",
+   "-201",
+   "Phil.",
+   "Ceus",
+   "1192"
+  ]
+ ],
+ "ARISTON $2": [
+  "ARISTON",
+  {
+   "fragmenta rhetorica": "fragmenta rhetorica"
+  },
+  [
+   "-300",
+   "-101",
+   "Phil.",
+   "Cous",
+   "2587"
+  ]
+ ],
+ "ARISTON $3": [
+  "ARISTON",
+  {
    "Testimonia et fragmenta": "Testimonia et fragmenta"
   },
   [
@@ -23164,6 +24484,22 @@ let LDM = {
   ]
  ],
  "ARISTONICUS": [
+  "ARISTONICUS",
+  {
+   "De signis Odysseae": "De signis Odysseae",
+   "De signis Iliadis": "De signis Iliadis",
+   "fragmentum": "fragmentum",
+   "testimonia": "testimonia"
+  },
+  [
+   "-30",
+   "40",
+   "Gramm.",
+   "Alexandrinus",
+   "1194"
+  ]
+ ],
+ "ARISTONICUS $1": [
   "ARISTONICUS",
   {
    "fragmenta": "fragmenta"
@@ -23206,6 +24542,41 @@ let LDM = {
  "ARISTOPHANES": [
   "ARISTOPHANES",
   {
+   "Aristophanis historiae animalium epitome subjunctis Aeliani Timothei aliorumque eclogis": "Aristophanis historiae animalium epitome subjunctis Aeliani Timothei aliorumque eclogis",
+   "testimonia": "testimonia",
+   "Nomina aetatum": "Nomina aetatum",
+   "De suspectis apud veteres verbis": "De suspectis apud veteres verbis",
+   "Argumenta fabularum Aristophani tributa": "Argumenta fabularum Aristophani tributa",
+   "Ceteri Aristophanis libri": "Ceteri Aristophanis libri",
+   "Commentaria in Callimachi pinaces": "Commentaria in Callimachi pinaces",
+   "Paroemiae": "Paroemiae",
+   "Nomina aetatum (fragmentum Parisinum)": "Nomina aetatum (fragmentum Parisinum)",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-265",
+   "-180",
+   "Gramm.",
+   "Byzantius",
+   "644"
+  ]
+ ],
+ "ARISTOPHANES $1": [
+  "ARISTOPHANES",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-400",
+   "-301",
+   "Hist.",
+   "Boeotus",
+   "1196"
+  ]
+ ],
+ "ARISTOPHANES $2": [
+  "ARISTOPHANES",
+  {
    "Ach.": "Acharnenses",
    "Av.": "Aves",
    "Eccl.": "Ecclesiazusae",
@@ -23238,7 +24609,7 @@ let LDM = {
    "421"
   ]
  ],
- "ARISTOTELES et CORPUS ARISTOTELICUM": [
+ "ARISTOTELES ET CORPUS ARISTOTELICUM": [
   "ARISTOTELES et CORPUS ARISTOTELICUM",
   {
    "an.": "de anima",
@@ -23285,6 +24656,21 @@ let LDM = {
   ]
  ],
  "ARISTOXENUS": [
+  "ARISTOXENUS",
+  {
+   "harm.": "elementa harmonica",
+   "elementa rhythmica": "elementa rhythmica",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-376",
+   "-301",
+   "Mus.",
+   "Tarentinus",
+   "88"
+  ]
+ ],
+ "ARISTOXENUS $1": [
   "ARISTOXENUS",
   {
    "fragmenta": "fragmenta"
@@ -23335,7 +24721,7 @@ let LDM = {
    "2650"
   ]
  ],
- "Flavius ARRIANUS": [
+ "FLAVIUS ARRIANUS": [
   "Flavius ARRIANUS",
   {
    "alan.": "Alexandri anabasis {001}",
@@ -23380,6 +24766,17 @@ let LDM = {
   "ARTEMIDORUS",
   {},
   [
+   "-800",
+   "-201",
+   "Eleg.",
+   "",
+   "2651"
+  ]
+ ],
+ "ARTEMIDORUS $1": [
+  "ARTEMIDORUS",
+  {},
+  [
    "101",
    "200",
    "Onir.",
@@ -23391,6 +24788,28 @@ let LDM = {
   "ARTEMON",
   {},
   [
+   "-400",
+   "-301",
+   "Hist.",
+   "",
+   "2307"
+  ]
+ ],
+ "ARTEMON $1": [
+  "ARTEMON",
+  {},
+  [
+   "-200",
+   "-201",
+   "Hist.",
+   "",
+   "2392"
+  ]
+ ],
+ "ARTEMON $2": [
+  "ARTEMON",
+  {},
+  [
    "-170",
    "-80",
    "Gramm.",
@@ -23399,6 +24818,39 @@ let LDM = {
   ]
  ],
  "ASCLEPIADES": [
+  "ASCLEPIADES",
+  {},
+  [
+   "-400",
+   "-301",
+   "Myth.",
+   "",
+   "1200"
+  ]
+ ],
+ "ASCLEPIADES $1": [
+  "ASCLEPIADES",
+  {},
+  [
+   "-350",
+   "-250",
+   "Epigr.",
+   "",
+   "137"
+  ]
+ ],
+ "ASCLEPIADES $2": [
+  "ASCLEPIADES",
+  {},
+  [
+   "-50",
+   "50",
+   "Gramm. Hist.",
+   "",
+   "2423"
+  ]
+ ],
+ "ASCLEPIADES $3": [
   "ASCLEPIADES",
   {},
   [
@@ -23486,7 +24938,7 @@ let LDM = {
    "2060"
   ]
  ],
- "ASTERIUS Sophista": [
+ "ASTERIUS SOPHISTA": [
   "ASTERIUS Sophista",
   {},
   [
@@ -23512,6 +24964,17 @@ let LDM = {
   "ATHANASIUS",
   {},
   [
+   "295",
+   "373",
+   "Theol.",
+   "",
+   "2035"
+  ]
+ ],
+ "ATHANASIUS $1": [
+  "ATHANASIUS",
+  {},
+  [
    "351",
    "450",
    "Soph.",
@@ -23531,6 +24994,28 @@ let LDM = {
   ]
  ],
  "ATHENAEUS": [
+  "ATHENAEUS",
+  {},
+  [
+   "151",
+   "250",
+   "Epigr.",
+   "",
+   "141"
+  ]
+ ],
+ "ATHENAEUS $1": [
+  "ATHENAEUS",
+  {},
+  [
+   "-100",
+   "-1",
+   "Mech.",
+   "",
+   "1204"
+  ]
+ ],
+ "ATHENAEUS $2": [
   "ATHENAEUS",
   {},
   [
@@ -23633,6 +25118,17 @@ let LDM = {
   "AUTOCRATES",
   {},
   [
+   "-450",
+   "-351",
+   "Comic.",
+   "",
+   "423"
+  ]
+ ],
+ "AUTOCRATES $1": [
+  "AUTOCRATES",
+  {},
+  [
    "-250",
    "-151",
    "Hist.",
@@ -23662,7 +25158,7 @@ let LDM = {
    "424"
   ]
  ],
- "Aelius ARISTIDES": [
+ "AELIUS ARISTIDES": [
   "Aelius ARISTIDES",
   {
    "Techn. rhet.": "Technai rhetorikai",
@@ -23698,7 +25194,7 @@ let LDM = {
    "284"
   ]
  ],
- "Aelius DIONYSIUS": [
+ "AELIUS DIONYSIUS": [
   "Aelius DIONYSIUS",
   {
    "\u1f08\u03c4\u03c4\u03b9\u03ba\u1f70 \u1f40\u03bd\u03cc\u03bc\u03b1\u03c4\u03b1": "\u1f08\u03c4\u03c4\u03b9\u03ba\u1f70 \u1f40\u03bd\u03cc\u03bc\u03b1\u03c4\u03b1"
@@ -23711,7 +25207,7 @@ let LDM = {
    "1323"
   ]
  ],
- "Aelius HERODIANUS et Pseudo-HERODIANUS": [
+ "AELIUS HERODIANUS ET PSEUDO-HERODIANUS": [
   "Aelius HERODIANUS et Pseudo-HERODIANUS",
   {
    "De prosodia catholica {001}": "De prosodia catholica {001}",
@@ -23782,20 +25278,18 @@ let LDM = {
    "87"
   ]
  ],
- "Aelius THEON": [
+ "AELIUS THEON": [
   "Aelius THEON",
-  {
-   "progymnasmata": "progymnasmata"
-  },
+  {},
   [
-   "?",
-   "?",
+   "1",
+   "200",
    "Rhet.",
-   "Alexandrinus",
+   "",
    "607"
   ]
  ],
- "Aulus Licinius ARCHIAS": [
+ "AULUS LICINIUS ARCHIAS": [
   "Aulus Licinius ARCHIAS",
   {
    "epigramma": "epigramma",
@@ -23822,7 +25316,7 @@ let LDM = {
    "4249"
   ]
  ],
- "Bacch.": [
+ "BACCH.": [
   "BACCHIUS",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum",
@@ -23918,7 +25412,7 @@ let LDM = {
    "1215"
   ]
  ],
- "Theodorus BALSAMON": [
+ "THEODORUS BALSAMON": [
   "Theodorus BALSAMON",
   {
    "Epigrammata {001}": "Epigrammata {001}",
@@ -23933,7 +25427,20 @@ let LDM = {
    "3010"
   ]
  ],
- "Michael BALSAMON": [
+ "MICHAEL BALSAMON": [
+  "Michael BALSAMON",
+  {
+   "Professio fidei": "Professio fidei"
+  },
+  [
+   "?",
+   "?",
+   "Theol.",
+   "Constantinopolitanus",
+   "4447"
+  ]
+ ],
+ "MICHAEL BALSAMON $1": [
   "Michael BALSAMON",
   {
    "Encomium in sanctos Antonium, Joannem et Eustathium (BHG 2035)": "Encomium in sanctos Antonium, Joannem et Eustathium (BHG 2035)"
@@ -23946,7 +25453,7 @@ let LDM = {
    "4448"
   ]
  ],
- "Georgius BARDANES": [
+ "GEORGIUS BARDANES": [
   "Georgius BARDANES",
   {
    "Epistula ad Germanum II {001}": "Epistula ad Germanum II {001}",
@@ -23967,7 +25474,7 @@ let LDM = {
    "3208"
   ]
  ],
- "BAPHULLUS vel HERAS": [
+ "BAPHULLUS VEL HERAS": [
   "BAPHULLUS vel HERAS",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -23980,7 +25487,7 @@ let LDM = {
    "820"
   ]
  ],
- "Barb.": [
+ "BARB.": [
   "Joannes BARBUCALLUS",
   {
    "epigrammata": "epigrammata"
@@ -23993,7 +25500,7 @@ let LDM = {
    "4051"
   ]
  ],
- "Bardes.": [
+ "BARDES.": [
   "BARDESANES",
   {
    "FGrH #719": "fragmenta"
@@ -24069,7 +25576,7 @@ let LDM = {
    "3159"
   ]
  ],
- "Ep. Barn.": [
+ "EP. BARN.": [
   "BARNABAE EPISTULA",
   {
    "Barnabae epistula": "Barnabae epistula"
@@ -24082,7 +25589,7 @@ let LDM = {
    "1216"
   ]
  ],
- "BARSANUPHIUS et JOANNES": [
+ "BARSANUPHIUS ET JOANNES": [
   "BARSANUPHIUS et JOANNES",
   {
    "Quaestiones et responsiones {001}": "Quaestiones et responsiones {001}",
@@ -24102,7 +25609,7 @@ let LDM = {
    "2851"
   ]
  ],
- "BARTHOLOMAEUS Edessenus": [
+ "BARTHOLOMAEUS EDESSENUS": [
   "BARTHOLOMAEUS Edessenus",
   {
    "Confutatio Agareni": "Confutatio Agareni"
@@ -24115,7 +25622,7 @@ let LDM = {
    "3363"
   ]
  ],
- "Nicephorus BASILACES": [
+ "NICEPHORUS BASILACES": [
   "Nicephorus BASILACES",
   {
    "Epistulae (001)": "Epistulae (001)",
@@ -24175,6 +25682,19 @@ let LDM = {
  "BASILIDES": [
   "BASILIDES",
   {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "-800",
+   "200",
+   "Phil.",
+   "",
+   "2398"
+  ]
+ ],
+ "BASILIDES $1": [
+  "BASILIDES",
+  {
    "fragmenta": "fragmenta"
   },
   [
@@ -24185,7 +25705,7 @@ let LDM = {
    "1217"
   ]
  ],
- "Basil.": [
+ "BASIL.": [
   "BASILIS",
   {
    "FGrH #718": "fragmenta"
@@ -24198,7 +25718,7 @@ let LDM = {
    "1218"
   ]
  ],
- "Bas. Anc.": [
+ "BAS. ANC.": [
   "BASILIUS",
   {
    "virg.": "de virginitate (= Liber de vera virginitate (DGE))",
@@ -24214,6 +25734,72 @@ let LDM = {
   ]
  ],
  "BASILIUS": [
+  "BASILIUS",
+  {
+   "Sermones xli (002)": "Sermones xli (002)",
+   "In illud: In principio creavit deus coelum et terram (orat. 1): coll. 28-37": "In illud: In principio creavit deus coelum et terram (orat. 1): coll. 28-37",
+   "In Adam (orat. 2): coll. 37-49": "In Adam (orat. 2): coll. 37-49",
+   "In Adam (orat. 3): coll. 49-61": "In Adam (orat. 3): coll. 49-61",
+   "In Cain et Abel (orat. 4): coll. 61-76": "In Cain et Abel (orat. 4): coll. 61-76",
+   "In Noe (orat. 5): coll. 76-84": "In Noe (orat. 5): coll. 76-84",
+   "In Noe (orat. 6): coll. 84-101": "In Noe (orat. 6): coll. 84-101",
+   "In Abraham (orat. 7): coll. 101-112": "In Abraham (orat. 7): coll. 101-112",
+   "In Josephum (orat. 8): coll. 112-125": "In Josephum (orat. 8): coll. 112-125",
+   "In Moysen (orat. 9): coll. 128-137": "In Moysen (orat. 9): coll. 128-137",
+   "In Elisaeum et Sunamitidem (orat. 10): coll. 137-148": "In Elisaeum et Sunamitidem (orat. 10): coll. 137-148",
+   "In Eliam (orat. 11): coll. 148-157": "In Eliam (orat. 11): coll. 148-157",
+   "In Jonam (orat. 12): coll. 157-172": "In Jonam (orat. 12): coll. 157-172",
+   "In Jonam (orat. 13): coll. 172-181": "In Jonam (orat. 13): coll. 172-181",
+   "In Davidis historiam (orat. 14): coll. 181-192": "In Davidis historiam (orat. 14): coll. 181-192",
+   "In Davidem (orat. 15): coll. 192-204": "In Davidem (orat. 15): coll. 192-204",
+   "In Davidem (orat. 16): coll. 204-216": "In Davidem (orat. 16): coll. 204-216",
+   "In Davidem (orat. 17): coll. 216-225": "In Davidem (orat. 17): coll. 216-225",
+   "In Herodiadem (orat. 18): coll. 225-236": "In Herodiadem (orat. 18): coll. 225-236",
+   "In centurionem (orat. 19): coll. 236-245": "In centurionem (orat. 19): coll. 236-245",
+   "In Chananaeam (orat. 20): coll. 245-253": "In Chananaeam (orat. 20): coll. 245-253",
+   "In claudum ad portam Speciosam sedentem (orat. 21): coll. 253-264": "In claudum ad portam Speciosam sedentem (orat. 21): coll. 253-264",
+   "In illud: Navigabant simul cum Jesu discipuli et ecce tempestas magna (orat. 22): coll. 264-269": "In illud: Navigabant simul cum Jesu discipuli et ecce tempestas magna (orat. 22): coll. 264-269",
+   "De arreptivo (orat. 23): coll. 269-277": "De arreptivo (orat. 23): coll. 269-277",
+   "In illud: Dic ut sedeant hi duo filii mei, unus ad dexteram tuam et unus ad sinistram tuam (orat. 24): coll. 277-288": "In illud: Dic ut sedeant hi duo filii mei, unus ad dexteram tuam et unus ad sinistram tuam (orat. 24): coll. 277-288",
+   "In illud: Quem me dicunt homines esse filium hominis? (orat. 25): coll. 288-297": "In illud: Quem me dicunt homines esse filium hominis? (orat. 25): coll. 288-297",
+   "In illud: Ego sum pastor bonus (orat. 26): coll. 300-308": "In illud: Ego sum pastor bonus (orat. 26): coll. 300-308",
+   "In Olympia (orat. 27): coll. 308-316": "In Olympia (orat. 27): coll. 308-316",
+   "In illud: Nisi conversi fueritis et efficiamini sicut parvuli, non intrabitis in regnum coelorum (orat. 28): coll. 316-325": "In illud: Nisi conversi fueritis et efficiamini sicut parvuli, non intrabitis in regnum coelorum (orat. 28): coll. 316-325",
+   "In illud: Venite ad me, omnes, qui laboratis et onerati estis, et ego reficiam vos (orat. 29): coll. 325-332": "In illud: Venite ad me, omnes, qui laboratis et onerati estis, et ego reficiam vos (orat. 29): coll. 325-332",
+   "In illud: Venite post me, faciam vos fieri piscatores hominum (orat. 30): coll. 332-337": "In illud: Venite post me, faciam vos fieri piscatores hominum (orat. 30): coll. 332-337",
+   "In illud: Ecce ascendimus Hierosolymam, et filius hominis tradetur in manus peccatorum (orat. 31): coll. 337-349": "In illud: Ecce ascendimus Hierosolymam, et filius hominis tradetur in manus peccatorum (orat. 31): coll. 337-349",
+   "In illud: Pater, si possibile est, transeat a me calix iste (orat. 32): coll. 349-360": "In illud: Pater, si possibile est, transeat a me calix iste (orat. 32): coll. 349-360",
+   "In quinquies mille homines quinque panibus pastos (orat. 33): coll. 360-365": "In quinquies mille homines quinque panibus pastos (orat. 33): coll. 360-365",
+   "In illud: Tu es qui venturus es, an alium exspectamus? (orat. 34): coll. 365-373": "In illud: Tu es qui venturus es, an alium exspectamus? (orat. 34): coll. 365-373",
+   "In Publicanum et Pharisaeum (orat. 35): coll. 373-384": "In Publicanum et Pharisaeum (orat. 35): coll. 373-384",
+   "In duos evangelii caecos (orat. 36): coll. 384-388": "In duos evangelii caecos (orat. 36): coll. 384-388",
+   "De infantibus in Bethleem ab Herode sublatis (orat. 37): coll. 388-400": "De infantibus in Bethleem ab Herode sublatis (orat. 37): coll. 388-400",
+   "Contra Judaeos de salvatoris adventu demonstratio (orat. 38) [Sp.]: coll. 400-425": "Contra Judaeos de salvatoris adventu demonstratio (orat. 38) [Sp.]: coll. 400-425",
+   "In sanctae deiparae annuntiationem (orat. 39) [Sp.]: coll. 425-452": "In sanctae deiparae annuntiationem (orat. 39) [Sp.]: coll. 425-452",
+   "In transfigurationem domini (orat. 40): coll. 452-461": "In transfigurationem domini (orat. 40): coll. 452-461",
+   "Laudatio promartyris Stephani (orat. 41) [Sp.]: coll. 461-473": "Laudatio promartyris Stephani (orat. 41) [Sp.]: coll. 461-473",
+   "pasch": "Homilia in sanctum pascha {003}",
+   "Homilia in sanctum pascha et in recens illuminatos {004}": "Homilia in sanctum pascha et in recens illuminatos {004}",
+   "Homilia in assumptionem domini {005}": "Homilia in assumptionem domini {005}",
+   "Homilia in sanctum Andream {006}": "Homilia in sanctum Andream {006}",
+   "Homilia in feriam v et in proditionem Judae {007}": "Homilia in feriam v et in proditionem Judae {007}",
+   "Homilia in passionem domini {008}": "Homilia in passionem domini {008}",
+   "Homilia in pentecosten {011}": "Homilia in pentecosten {011}",
+   "Homilia in pentecosten {012}": "Homilia in pentecosten {012}",
+   "para V. Thecl.": "De vita et miraculis sanctae Theclae libri ii {018}",
+   "laz.": "Homilia in Lazarum {019}",
+   "Homilia in resurrectionem domini": "Homilia in resurrectionem domini",
+   "fragmentum in genesim 22.13": "fragmentum in genesim 22.13"
+  },
+  [
+   "435",
+   "468",
+   "Scr. Eccl.",
+   "Isauricus, Seleuciensis",
+   "2800"
+  ]
+ ],
+ "BASILIUS $1": [
   "BASILIUS",
   {
    "Homiliae in hexaemeron {001}": "Homiliae in hexaemeron {001}",
@@ -24322,7 +25908,7 @@ let LDM = {
    "2800"
   ]
  ],
- "BASILIUS Achridenus": [
+ "BASILIUS ACHRIDENUS": [
   "BASILIUS Achridenus",
   {
    "Dialogi Anselmi Havelbergensis episcopi {001}": "Dialogi Anselmi Havelbergensis episcopi {001}",
@@ -24338,7 +25924,7 @@ let LDM = {
    "3012"
   ]
  ],
- "BASILUS Megalomytes": [
+ "BASILUS MEGALOMYTES": [
   "BASILUS Megalomytes",
   {
    "aenigmata": "aenigmata"
@@ -24351,7 +25937,7 @@ let LDM = {
    "2726"
   ]
  ],
- "BASILIUS Metropolita Neopatrensis": [
+ "BASILIUS METROPOLITA NEOPATRENSIS": [
   "BASILIUS Metropolita Neopatrensis",
   {
    "Prologus interpretationis sanctorum XII prophetarum": "Prologus interpretationis sanctorum XII prophetarum"
@@ -24379,7 +25965,7 @@ let LDM = {
    "9028"
   ]
  ],
- "Julius BASSUS": [
+ "JULIUS BASSUS": [
   "Julius BASSUS",
   {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum",
@@ -24395,7 +25981,7 @@ let LDM = {
    "941"
   ]
  ],
- "Pomponius BASSUS": [
+ "POMPONIUS BASSUS": [
   "Pomponius BASSUS",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -24408,7 +25994,7 @@ let LDM = {
    "781"
   ]
  ],
- "Bato": [
+ "BATO": [
   "BATO",
   {
    "fragmenta": "fragmenta"
@@ -24421,7 +26007,7 @@ let LDM = {
    "425"
   ]
  ],
- "Bato Sinop.": [
+ "BATO SINOP.": [
   "BATO",
   {
    "FGrH #268": "fragmenta"
@@ -24434,7 +26020,7 @@ let LDM = {
    "1219"
   ]
  ],
- "Batr.": [
+ "BATR.": [
   "BATRACHOMYOMACHIA",
   {
    "Batrachomyomachia {001}": "Batrachomyomachia {001}",
@@ -24462,7 +26048,7 @@ let LDM = {
    "4423"
   ]
  ],
- "Bem.": [
+ "BEM.": [
   "BEMARCHIUS",
   {
    "FGrH #220": "testimonia"
@@ -24475,7 +26061,7 @@ let LDM = {
    "2152"
   ]
  ],
- "Beros.": [
+ "BEROS.": [
   "BEROS(S)US",
   {
    "FGrH #680": "fragmenta",
@@ -24600,7 +26186,7 @@ let LDM = {
    "3229"
   ]
  ],
- "Theodorus BESTUS": [
+ "THEODORUS BESTUS": [
   "Theodorus BESTUS",
   {
    "Laudatio sanctae Euphemiae": "Laudatio sanctae Euphemiae"
@@ -24613,7 +26199,7 @@ let LDM = {
    "3267"
   ]
  ],
- "Bianor (?)": [
+ "BIANOR (?)": [
   "BIANOR",
   {
    "epigrammata": "epigrammata"
@@ -24643,17 +26229,19 @@ let LDM = {
  "BION": [
   "BION",
   {
-   "testimonia": "testimonia"
+   "Epitaphius Adonis": "Epitaphius Adonis",
+   "Epithalamium Achillis et Deidameiae [Sp.]": "Epithalamium Achillis et Deidameiae [Sp.]",
+   "fr.": "fragmenta"
   },
   [
-   "-450",
-   "-350",
-   "Math. Phil.",
-   "Abderita",
-   "2153"
+   "-150",
+   "-51",
+   "Bucol.",
+   "Smyrnaeus",
+   "36"
   ]
  ],
- "Bio Bor.": [
+ "BIO BOR.": [
   "BION",
   {
    "fragmenta": "fragmenta",
@@ -24671,7 +26259,20 @@ let LDM = {
    "1224"
   ]
  ],
- "Bio Sol.": [
+ "BION $1": [
+  "BION",
+  {
+   "testimonia": "testimonia"
+  },
+  [
+   "-450",
+   "-350",
+   "Math. Phil.",
+   "Abderita",
+   "2153"
+  ]
+ ],
+ "BIO SOL.": [
   "BION",
   {
    "FGrH #668": "fragmenta"
@@ -24684,7 +26285,7 @@ let LDM = {
    "1225"
   ]
  ],
- "Bio Proc.": [
+ "BIO PROC.": [
   "BION",
   {
    "FGrH #332": "fragmenta"
@@ -24697,7 +26298,7 @@ let LDM = {
    "1871"
   ]
  ],
- "Bio Hist.": [
+ "BIO HIST.": [
   "BION",
   {
    "FGrH #89": "fragmenta"
@@ -24749,7 +26350,7 @@ let LDM = {
    "1226"
   ]
  ],
- "Blaes.": [
+ "BLAES.": [
   "BLAESUS",
   {
    "fragmentum": "fragmentum"
@@ -24775,7 +26376,7 @@ let LDM = {
    "787"
   ]
  ],
- "Matthaeus BLASTARES Theol.": [
+ "MATTHAEUS BLASTARES THEOL.": [
   "Matthaeus BLASTARES Theol.",
   {
    "collectio alphabetica": "collectio alphabetica",
@@ -24813,21 +26414,105 @@ let LDM = {
    "3237"
   ]
  ],
- "Nicephorus BLEMMYDES": [
+ "NICEPHORUS BLEMMYDES": [
+  "Nicephorus BLEMMYDES",
+  {
+   "Curriculum vitae {001}": "Curriculum vitae {001}",
+   "Caput 1: pp. 3-45": "Caput 1: pp. 3-45",
+   "Caput 2: pp. 47-83": "Caput 2: pp. 47-83",
+   "Epistula universalior {002}": "Epistula universalior {002}",
+   "Regia statua {003}": "Regia statua {003}",
+   "Laudatio Sancti Ioanni Evangelistae {004}": "Laudatio Sancti Ioanni Evangelistae {004}",
+   "Orationes de vitae fine {005}": "Orationes de vitae fine {005}",
+   "Oratio 1: pp. 1-17": "Oratio 1: pp. 1-17",
+   "Oratio 2: pp. 18-34": "Oratio 2: pp. 18-34",
+   "Conspectus geographiae {006}": "Conspectus geographiae {006}",
+   "Historia terrae {007}": "Historia terrae {007}",
+   "Versus consolatorii ad imperatorem Joannem Vatatzem {010}": "Versus consolatorii ad imperatorem Joannem Vatatzem {010}",
+   "Fragmentum ex typico {011}": "Fragmentum ex typico {011}",
+   "Fragmentum ex typico {012}": "Fragmentum ex typico {012}",
+   "Capita tria ex typico {013}": "Capita tria ex typico {013}",
+   "Refutatio contra legatos Gregorii IX papae {014}": "Refutatio contra legatos Gregorii IX papae {014}",
+   "Syllogismi de processione spiritus sancti (e cod. Mosq. gr. Vlad. 250) {015}": "Syllogismi de processione spiritus sancti (e cod. Mosq. gr. Vlad. 250) {015}",
+   "Epistula ad Ioannem III Ducam {016}": "Epistula ad Ioannem III Ducam {016}",
+   "Epistula ad Theodorum II Ducam Lascarim de nonnullis dogmaticis questionibus {017}": "Epistula ad Theodorum II Ducam Lascarim de nonnullis dogmaticis questionibus {017}",
+   "Ad Jacobum archiepiscopum Bulgariae {018}": "Ad Jacobum archiepiscopum Bulgariae {018}",
+   "De theologia {019}": "De theologia {019}",
+   "Syllogismi de processione spiritus sancti (e. cod. Marc. gr. 154) {020}": "Syllogismi de processione spiritus sancti (e. cod. Marc. gr. 154) {020}",
+   "Ad monachos de fide {021}": "Ad monachos de fide {021}",
+   "Epistulae {022}": "Epistulae {022}",
+   "Epistle 1: Ad Theodorum Lascarim: pp. 290-292": "Epistle 1: Ad Theodorum Lascarim: pp. 290-292",
+   "Epistle 2: Ad eundem: pp. 292-294": "Epistle 2: Ad eundem: pp. 292-294",
+   "Epistle 3: Ad eundem: pp. 294-295": "Epistle 3: Ad eundem: pp. 294-295",
+   "Epistle 4: Ad eundem: pp. 295-296": "Epistle 4: Ad eundem: pp. 295-296",
+   "Epistle 5: Ad eundem: pp. 296-297": "Epistle 5: Ad eundem: pp. 296-297",
+   "Epistle 6: Ad eundem: p. 297": "Epistle 6: Ad eundem: p. 297",
+   "Epistle 7: Ad eundem: p. 298": "Epistle 7: Ad eundem: p. 298",
+   "Epistle 8: Ad eundem: pp. 298-299": "Epistle 8: Ad eundem: pp. 298-299",
+   "Epistle 9: Ad eundem: p. 300": "Epistle 9: Ad eundem: p. 300",
+   "Epistle 10: Ad eundem: pp. 301-302": "Epistle 10: Ad eundem: pp. 301-302",
+   "Epistle 11: Ad eundem: p. 302": "Epistle 11: Ad eundem: p. 302",
+   "Epistle 12: Ad eundem: pp. 302-303": "Epistle 12: Ad eundem: pp. 302-303",
+   "Epistle 13: Ad eundem: pp. 303-304": "Epistle 13: Ad eundem: pp. 303-304",
+   "Epistle 14: Ad eundem: p. 304": "Epistle 14: Ad eundem: p. 304",
+   "Epistle 15: Ad eundem: pp. 304-305": "Epistle 15: Ad eundem: pp. 304-305",
+   "Epistle 16: Ad eundem: pp. 305-306": "Epistle 16: Ad eundem: pp. 305-306",
+   "Epistle 17: Ad eundem: pp. 306-307": "Epistle 17: Ad eundem: pp. 306-307",
+   "Epistle 18: Ad eundem: p. 307": "Epistle 18: Ad eundem: p. 307",
+   "Epistle 19: Ad eundem: pp. 307-308": "Epistle 19: Ad eundem: pp. 307-308",
+   "Epistle 20: Ad eundem: p. 308": "Epistle 20: Ad eundem: p. 308",
+   "Epistle 21: Ad eundem: pp. 308-309": "Epistle 21: Ad eundem: pp. 308-309",
+   "Epistle 22: Ad eundem: p. 309": "Epistle 22: Ad eundem: p. 309",
+   "Epistle 23: Ad eundem: pp. 309-310": "Epistle 23: Ad eundem: pp. 309-310",
+   "Epistle 24: Ad eundem: pp. 310-311": "Epistle 24: Ad eundem: pp. 310-311",
+   "Epistle 25: Ad eundem: p. 312": "Epistle 25: Ad eundem: p. 312",
+   "Epistle 26: Ad eundem: pp. 312-313": "Epistle 26: Ad eundem: pp. 312-313",
+   "Epistle 27: Ad eundem: pp. 314-316": "Epistle 27: Ad eundem: pp. 314-316",
+   "Epistle 28: Ad eundem: pp. 316-317": "Epistle 28: Ad eundem: pp. 316-317",
+   "Epistle 29: Ad eundem: p. 317": "Epistle 29: Ad eundem: p. 317",
+   "Epistle 30: Ad eundem: pp. 317-318": "Epistle 30: Ad eundem: pp. 317-318",
+   "Epistle 31: Ad eundem: pp. 318-319": "Epistle 31: Ad eundem: pp. 318-319",
+   "Epistle 32: Ad Michaelem Despotam: pp. 319-324": "Epistle 32: Ad Michaelem Despotam: pp. 319-324",
+   "Epistle 33: Ad Manuelem Patriarcham: pp. 325-329": "Epistle 33: Ad Manuelem Patriarcham: pp. 325-329",
+   "De virtute et ascesi {023}": "De virtute et ascesi {023}"
+  },
+  [
+   "A. D. 14",
+   "",
+   "Phil., Theol.",
+   "Constantinopolitanus, Nicaeensis",
+   "3092"
+  ]
+ ],
+ "NICEPHORUS BLEMMYDES $1": [
   "Nicephorus BLEMMYDES",
   {
    "\u039d\u03b9\u03ba\u03b7\u03c6\u03cc\u03c1\u03bf\u03c5 \u03c4\u03bf\u1fe6 \u0392\u03bb\u03b5\u03bc\u03bc\u03cd\u03b4\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u03c7\u03c1\u03c5\u03c3\u03bf\u03c0\u03bf\u03b9\u03af\u03b1\u03c2 (fort. auctore Nicephoro Blemmyde alio) (e cod. Paris. B.N. gr. 2509, fol. 137r)": "\u039d\u03b9\u03ba\u03b7\u03c6\u03cc\u03c1\u03bf\u03c5 \u03c4\u03bf\u1fe6 \u0392\u03bb\u03b5\u03bc\u03bc\u03cd\u03b4\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u03c7\u03c1\u03c5\u03c3\u03bf\u03c0\u03bf\u03b9\u03af\u03b1\u03c2 (fort. auctore Nicephoro Blemmyde alio) (e cod. Paris. B.N. gr. 2509, fol. 137r)",
    "\u1f0d\u03c0\u03b5\u03c1 \u03c7\u03c1\u1fc4\u03b6\u03b5\u03b9 \u1f21 \u03c0\u03b1\u03c1\u03bf\u1fe6\u03c3\u03b1 \u03ba\u03b1\u03c4\u03b1\u03c3\u03ba\u03b5\u03c5\u03ae (fort. auctore Nicephoro Blemmyde alio) (e cod. Paris. B.N. gr. 2509, fol. 139r)": "\u1f0d\u03c0\u03b5\u03c1 \u03c7\u03c1\u1fc4\u03b6\u03b5\u03b9 \u1f21 \u03c0\u03b1\u03c1\u03bf\u1fe6\u03c3\u03b1 \u03ba\u03b1\u03c4\u03b1\u03c3\u03ba\u03b5\u03c5\u03ae (fort. auctore Nicephoro Blemmyde alio) (e cod. Paris. B.N. gr. 2509, fol. 139r)"
   },
   [
-   "1197",
-   "1272",
+   "A. D. 13",
+   "",
    "Alchem.",
    "Constantinopolitanus",
    "4333"
   ]
  ],
  "BOETHUS": [
+  "BOETHUS",
+  {
+   "epigramma": "epigramma",
+   "titulus": "titulus"
+  },
+  [
+   "-100",
+   "-1",
+   "Epigr.",
+   "Tarsensis",
+   "146"
+  ]
+ ],
+ "BOETHUS $1": [
   "BOETHUS",
   {
    "FGrH #194": "testimonium"
@@ -24840,7 +26525,7 @@ let LDM = {
    "1986"
   ]
  ],
- "Boeth. Stoic.": [
+ "BOETH. STOIC.": [
   "BOETHUS",
   {
    "fragmenta": "fragmenta"
@@ -24866,7 +26551,7 @@ let LDM = {
    "2230"
   ]
  ],
- "Eustathius BOILAS": [
+ "EUSTATHIUS BOILAS": [
   "Eustathius BOILAS",
   {
    "Testamentum (e cod. Par. Coisl. gr. 263)": "Testamentum (e cod. Par. Coisl. gr. 263)"
@@ -24951,7 +26636,7 @@ let LDM = {
    "1803"
   ]
  ],
- "Josephus BRYENNIUS": [
+ "JOSEPHUS BRYENNIUS": [
   "Josephus BRYENNIUS",
   {
    "Epistulae xxx {002}": "Epistulae xxx {002}",
@@ -25026,7 +26711,7 @@ let LDM = {
    "3160"
   ]
  ],
- "Manuel BRYENNIUS": [
+ "MANUEL BRYENNIUS": [
   "Manuel BRYENNIUS",
   {
    "harmonica": "harmonica"
@@ -25065,7 +26750,7 @@ let LDM = {
    "1559"
   ]
  ],
- "Marinus Tzanes BUNIALES": [
+ "MARINUS TZANES BUNIALES": [
   "Marinus Tzanes BUNIALES",
   {
    "\u1f49 \u039a\u03c1\u03b7\u03c4\u03b9\u03ba\u1f78\u03c2 \u03a0\u03cc\u03bb\u03b5\u03bc\u03bf\u03c2": "\u1f49 \u039a\u03c1\u03b7\u03c4\u03b9\u03ba\u1f78\u03c2 \u03a0\u03cc\u03bb\u03b5\u03bc\u03bf\u03c2"
@@ -25179,7 +26864,7 @@ let LDM = {
    "533"
   ]
  ],
- "CALLIMACHUS Junior": [
+ "CALLIMACHUS JUNIOR": [
   "CALLIMACHUS Junior",
   {},
   [
@@ -25191,6 +26876,17 @@ let LDM = {
   ]
  ],
  "CALLINICUS": [
+  "CALLINICUS",
+  {},
+  [
+   "251",
+   "300",
+   "Soph.",
+   "",
+   "2189"
+  ]
+ ],
+ "CALLINICUS $1": [
   "CALLINICUS",
   {},
   [
@@ -25212,7 +26908,7 @@ let LDM = {
    "243"
   ]
  ],
- "CALLIPHON et DEMOCEDES": [
+ "CALLIPHON ET DEMOCEDES": [
   "CALLIPHON et DEMOCEDES",
   {},
   [
@@ -25246,6 +26942,17 @@ let LDM = {
   ]
  ],
  "CALLISTRATUS": [
+  "CALLISTRATUS",
+  {},
+  [
+   "301",
+   "400",
+   "Soph.",
+   "",
+   "4091"
+  ]
+ ],
+ "CALLISTRATUS $1": [
   "CALLISTRATUS",
   {},
   [
@@ -25322,7 +27029,7 @@ let LDM = {
    "310"
   ]
  ],
- "CARCINUS Junior": [
+ "CARCINUS JUNIOR": [
   "CARCINUS Junior",
   {},
   [
@@ -25410,7 +27117,7 @@ let LDM = {
    "385"
   ]
  ],
- "CASSIUS Iatrosophista": [
+ "CASSIUS IATROSOPHISTA": [
   "CASSIUS Iatrosophista",
   {},
   [
@@ -25432,7 +27139,7 @@ let LDM = {
    "382"
   ]
  ],
- "CATENAE (Novum Testamentum)": [
+ "CATENAE (NOVUM TESTAMENTUM)": [
   "CATENAE (Novum Testamentum)",
   {},
   [
@@ -25523,6 +27230,17 @@ let LDM = {
   ]
  ],
  "CHAEREMON": [
+  "CHAEREMON",
+  {},
+  [
+   "-400",
+   "-301",
+   "Trag.",
+   "",
+   "328"
+  ]
+ ],
+ "CHAEREMON $1": [
   "CHAEREMON",
   {},
   [
@@ -25655,6 +27373,28 @@ let LDM = {
   ]
  ],
  "CHOERILUS": [
+  "CHOERILUS",
+  {},
+  [
+   "-500",
+   "-401",
+   "Epic.",
+   "",
+   "1263"
+  ]
+ ],
+ "CHOERILUS $1": [
+  "CHOERILUS",
+  {},
+  [
+   "-550",
+   "-451",
+   "Trag.",
+   "",
+   "302"
+  ]
+ ],
+ "CHOERILUS $2": [
   "CHOERILUS",
   {},
   [
@@ -25801,6 +27541,17 @@ let LDM = {
   "CLEARCHUS",
   {},
   [
+   "-400",
+   "-301",
+   "Comic.",
+   "",
+   "432"
+  ]
+ ],
+ "CLEARCHUS $1": [
+  "CLEARCHUS",
+  {},
+  [
    "-350",
    "-251",
    "Phil.",
@@ -25831,7 +27582,7 @@ let LDM = {
    "555"
   ]
  ],
- "CLEMENS ROMANUS et CLEMENTINA": [
+ "CLEMENS ROMANUS ET CLEMENTINA": [
   "CLEMENS ROMANUS et CLEMENTINA",
   {},
   [
@@ -25853,7 +27604,7 @@ let LDM = {
    "622"
   ]
  ],
- "CLEOBULINA Scriptor Aenigmatum": [
+ "CLEOBULINA SCRIPTOR AENIGMATUM": [
   "CLEOBULINA Scriptor Aenigmatum",
   {},
   [
@@ -25967,6 +27718,17 @@ let LDM = {
   "CLIDEMUS",
   {},
   [
+   "-400",
+   "-301",
+   "Hist.",
+   "",
+   "1276"
+  ]
+ ],
+ "CLIDEMUS $1": [
+  "CLIDEMUS",
+  {},
+  [
    "-500",
    "-301",
    "Phil.",
@@ -26051,7 +27813,7 @@ let LDM = {
    "602"
   ]
  ],
- "COMICA ADESPOTA (Suppl. Com.)": [
+ "COMICA ADESPOTA (SUPPL. COM.)": [
   "COMICA ADESPOTA (Suppl. Com.)",
   {},
   [
@@ -26095,7 +27857,7 @@ let LDM = {
    "1285"
   ]
  ],
- "CONSTANTINUS VII PORPHYROGENITUS Imperator": [
+ "CONSTANTINUS VII PORPHYROGENITUS IMPERATOR": [
   "CONSTANTINUS VII PORPHYROGENITUS Imperator",
   {
    "De insidiis": "De insidiis",
@@ -26153,7 +27915,7 @@ let LDM = {
    "1286"
   ]
  ],
- "COSMAS Hieromonachus": [
+ "COSMAS HIEROMONACHUS": [
   "COSMAS Hieromonachus",
   {},
   [
@@ -26201,6 +27963,28 @@ let LDM = {
   "CRATES",
   {},
   [
+   "-500",
+   "-401",
+   "Comic.",
+   "",
+   "433"
+  ]
+ ],
+ "CRATES $1": [
+  "CRATES",
+  {},
+  [
+   "1",
+   "100",
+   "Hist.",
+   "",
+   "1289"
+  ]
+ ],
+ "CRATES $2": [
+  "CRATES",
+  {},
+  [
    "-368",
    "-285",
    "Poet. Phil.",
@@ -26241,7 +28025,7 @@ let LDM = {
    "434"
   ]
  ],
- "CRATINUS Junior": [
+ "CRATINUS JUNIOR": [
   "CRATINUS Junior",
   {},
   [
@@ -26311,6 +28095,28 @@ let LDM = {
   "CRITO",
   {},
   [
+   "-300",
+   "-201",
+   "Phil.",
+   "",
+   "1292"
+  ]
+ ],
+ "CRITO $1": [
+  "CRITO",
+  {},
+  [
+   "151",
+   "250",
+   "Hist.",
+   "",
+   "1867"
+  ]
+ ],
+ "CRITO $2": [
+  "CRITO",
+  {},
+  [
    "-220",
    "-130",
    "Comic.",
@@ -26319,6 +28125,17 @@ let LDM = {
   ]
  ],
  "CRITOLAUS": [
+  "CRITOLAUS",
+  {},
+  [
+   "-220",
+   "-120",
+   "Phil.",
+   "",
+   "1294"
+  ]
+ ],
+ "CRITOLAUS $1": [
   "CRITOLAUS",
   {},
   [
@@ -26388,6 +28205,28 @@ let LDM = {
   "CYRILLUS",
   {},
   [
+   "360",
+   "460",
+   "Theol.",
+   "",
+   "4090"
+  ]
+ ],
+ "CYRILLUS $1": [
+  "CYRILLUS",
+  {},
+  [
+   "301",
+   "400",
+   "Scr. Eccl.",
+   "",
+   "2110"
+  ]
+ ],
+ "CYRILLUS $2": [
+  "CYRILLUS",
+  {},
+  [
    "524",
    "559",
    "Biogr.",
@@ -26406,7 +28245,7 @@ let LDM = {
    "4242"
   ]
  ],
- "Cassius LONGINUS": [
+ "CASSIUS LONGINUS": [
   "Cassius LONGINUS",
   {
    "ars rhetorica": "ars rhetorica",
@@ -26423,7 +28262,18 @@ let LDM = {
    "2178"
   ]
  ],
- "Claudius APOLLINARIUS": [
+ "CLAUDIUS AELIANUS $1": [
+  "Claudius AELIANUS",
+  {},
+  [
+   "170",
+   "240",
+   "Soph.",
+   "",
+   "545"
+  ]
+ ],
+ "CLAUDIUS APOLLINARIUS": [
   "Claudius APOLLINARIUS",
   {},
   [
@@ -26434,7 +28284,7 @@ let LDM = {
    "1163"
   ]
  ],
- "Claudius PTOLEMAEUS": [
+ "CLAUDIUS PTOLEMAEUS": [
   "Claudius PTOLEMAEUS",
   {},
   [
@@ -26445,7 +28295,7 @@ let LDM = {
    "363"
   ]
  ],
- "Constantinus MANASSES": [
+ "CONSTANTINUS MANASSES": [
   "Constantinus MANASSES",
   {
    "Aristarchus et Callithea {004}": "Aristarchus et Callithea {004}",
@@ -26497,7 +28347,18 @@ let LDM = {
    "3074"
   ]
  ],
- "Daim. Hist.": [
+ "CORNELIUS ALEXANDER $1": [
+  "Cornelius ALEXANDER",
+  {},
+  [
+   "-110",
+   "-40",
+   "Polyhist.",
+   "",
+   "697"
+  ]
+ ],
+ "DAIM. HIST.": [
   "DAIMACHUS",
   {
    "FGH\u00a0n. 65": "testimonia (001)",
@@ -26511,7 +28372,7 @@ let LDM = {
    "1908"
   ]
  ],
- "Daim.": [
+ "DAIM.": [
   "DAIMACHUS",
   {
    "FHG 2:440-441FGrH 716": "fragmenta (002)",
@@ -26539,7 +28400,7 @@ let LDM = {
    "2454"
   ]
  ],
- "Damag.": [
+ "DAMAG.": [
   "DAMAGETUS",
   {
    "AG 6.277AP 6.277": "epigrammata"
@@ -26565,7 +28426,7 @@ let LDM = {
    "4421"
   ]
  ],
- "Dam.": [
+ "DAM.": [
   "DAMASCIUS",
   {
    "Pr.": "De principiis (003)",
@@ -26618,7 +28479,7 @@ let LDM = {
    "2627"
   ]
  ],
- "Nilus DAMILAS": [
+ "NILUS DAMILAS": [
   "Nilus DAMILAS",
   {
    "Testamentum et typicon monasterii Theotoci Pantanassae Baeonaeae (001)": "Testamentum et typicon monasterii Theotoci Pantanassae Baeonaeae (001)"
@@ -26657,7 +28518,7 @@ let LDM = {
    "4067"
   ]
  ],
- "Damocr.": [
+ "DAMOCR.": [
   "Servilius DAMOCRATES",
   {
    "fragmentum ap Galenum": "fragmentum ap Galenum"
@@ -26683,7 +28544,7 @@ let LDM = {
    "2493"
   ]
  ],
- "Dam. Mus.": [
+ "DAM. MUS.": [
   "DAMON",
   {
    "testimonia (001)": "testimonia (001)",
@@ -26697,7 +28558,7 @@ let LDM = {
    "2232"
   ]
  ],
- "DAMON et PHINTIAS": [
+ "DAMON ET PHINTIAS": [
   "DAMON et PHINTIAS",
   {
    "testimonium (001)": "testimonium (001)"
@@ -26723,7 +28584,7 @@ let LDM = {
    "2273"
   ]
  ],
- "Claudius DAMONICUS": [
+ "CLAUDIUS DAMONICUS": [
   "Claudius DAMONICUS",
   {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum"
@@ -26736,7 +28597,7 @@ let LDM = {
    "849"
   ]
  ],
- "Damox.": [
+ "DAMOX.": [
   "DAMOXENUS",
   {
    "fragmenta (001)": "fragmenta (001)",
@@ -26750,7 +28611,7 @@ let LDM = {
    "438"
   ]
  ],
- "DANAI\u0308S vel DANAI\u0308DES": [
+ "DANAI\u0308S VEL DANAI\u0308DES": [
   "DANAI\u0308S vel DANAI\u0308DES",
   {
    "Danais = Dana\u00efs vel Dana\u00efdes (fragmentum) (TLG) (001)": "Danais = Dana\u00efs vel Dana\u00efdes (fragmentum) (TLG) (001)"
@@ -26784,7 +28645,7 @@ let LDM = {
    "3369"
   ]
  ],
- "Daph.": [
+ "DAPH.": [
   "DAPHITAS",
   {
    "fragmentum (001)": "fragmentum (001)",
@@ -26798,7 +28659,7 @@ let LDM = {
    "2615"
   ]
  ],
- "Caesarius DAPONTES": [
+ "CAESARIUS DAPONTES": [
   "Caesarius DAPONTES",
   {
    "Bellum inter Imperium Ottomanicum Russicum et Germanicum {001}": "Bellum inter Imperium Ottomanicum Russicum et Germanicum {001}",
@@ -26847,7 +28708,7 @@ let LDM = {
    "4021"
   ]
  ],
- "Pseudo-DAVID et Pseudo-ELIAS": [
+ "PSEUDO-DAVID ET PSEUDO-ELIAS": [
   "Pseudo-DAVID et Pseudo-ELIAS",
   {
    "In Porphyrii isagogen commentarium (001)": "In Porphyrii isagogen commentarium (001)"
@@ -26873,7 +28734,7 @@ let LDM = {
    "272"
   ]
  ],
- "Die(l)och.": [
+ "DIE(L)OCH.": [
   "DEI(L)OCHUS",
   {
    "FGrH #471": "testimonia (001)",
@@ -26889,7 +28750,7 @@ let LDM = {
    "2326"
   ]
  ],
- "Leonardus DELLAPORTAS": [
+ "LEONARDUS DELLAPORTAS": [
   "Leonardus DELLAPORTAS",
   {
    "Poemata (001)": "Poemata (001)",
@@ -26919,7 +28780,7 @@ let LDM = {
    "877"
   ]
  ],
- "Quintus DELLIUS": [
+ "QUINTUS DELLIUS": [
   "Quintus DELLIUS",
   {
    "FGrH #197": "fragmenta",
@@ -26933,7 +28794,7 @@ let LDM = {
    "1989"
   ]
  ],
- "Demad.": [
+ "DEMAD.": [
   "DEMADES",
   {
    "Fragmenta {001}": "Fragmenta {001}",
@@ -27002,17 +28863,19 @@ let LDM = {
  "DEMETRIUS": [
   "DEMETRIUS",
   {
-   "FGrH #852": "fragmenta (001)"
+   "Fragmenta {001}": "Fragmenta {001}",
+   "Fragmenta {002}": "Fragmenta {002}",
+   "Tituli (003)": "Tituli (003)"
   },
   [
-   "Incertum",
-   "",
-   "Hist.",
+   "-500",
+   "-301",
+   "Comic.",
    "?",
-   "2572"
+   "439"
   ]
  ],
- "DEMETRIUS Junior": [
+ "DEMETRIUS JUNIOR": [
   "DEMETRIUS Junior",
   {
    "fragmentum (001)": "fragmentum (001)",
@@ -27026,7 +28889,7 @@ let LDM = {
    "440"
   ]
  ],
- "Dem. Phal.": [
+ "DEM. PHAL.": [
   "DEMETRIUS",
   {
    "Fr.": "Fragmenta {001}",
@@ -27082,7 +28945,7 @@ let LDM = {
    "1300"
   ]
  ],
- "Demetr. Troez.": [
+ "DEMETR. TROEZ.": [
   "DEMETRIUS",
   {
    "fragmenta et titulus (002)": "fragmenta et titulus (002)"
@@ -27095,7 +28958,60 @@ let LDM = {
    "1301"
   ]
  ],
- "Dem. Sal.": [
+ "DEMETRIUS $1": [
+  "DEMETRIUS",
+  {
+   "Formae epistolicae (001)": "Formae epistolicae (001)",
+   "Formae epistolicae (duo exempla spuria) (002)": "Formae epistolicae (duo exempla spuria) (002)"
+  },
+  [
+   "-200",
+   "-1",
+   "Rhet.",
+   "?",
+   "1302"
+  ]
+ ],
+ "DEMETRIUS $2": [
+  "DEMETRIUS",
+  {
+   "fragmenta (001)": "fragmenta (001)"
+  },
+  [
+   "-205",
+   "-130",
+   "Gramm.",
+   "Scepsius",
+   "1756"
+  ]
+ ],
+ "DEMETRIUS $3": [
+  "DEMETRIUS",
+  {
+   "Titulus (+ dramatis personae)": "Titulus (+ dramatis personae)"
+  },
+  [
+   "-500",
+   "-401",
+   "Trag.",
+   "?",
+   "1849"
+  ]
+ ],
+ "DEMETRIUS $4": [
+  "DEMETRIUS",
+  {
+   "FGrH #85": "fragmenta (002)"
+  },
+  [
+   "-250",
+   "-200",
+   "Hist.",
+   "Callatianus",
+   "1917"
+  ]
+ ],
+ "DEM. SAL.": [
   "DEMETRIUS",
   {
    "FGH\u00a0n. 756": "fragmentum (001)",
@@ -27107,6 +29023,33 @@ let LDM = {
    "Hist.",
    "Salaminius",
    "2511"
+  ]
+ ],
+ "DEMETRIUS $5": [
+  "DEMETRIUS",
+  {
+   "fragmentum (001)": "fragmentum (001)"
+  },
+  [
+   "-800",
+   "200",
+   "Poeta",
+   "?",
+   "2617"
+  ]
+ ],
+ "DEMETRIUS $6": [
+  "DEMETRIUS",
+  {
+   "Astrologumena (fragmenta e codd. Paris. gr. 2425, fol. 226 + Paris. gr. 2506, fol. 72) (002)": "Astrologumena (fragmenta e codd. Paris. gr. 2425, fol. 226 + Paris. gr. 2506, fol. 72) (002)",
+   "\u03a0\u03b5\u03c1\u1f76 \u03c0\u03bb\u03b5\u03cc\u03bd\u03c4\u03c9\u03bd \u03ba\u03b1\u1f76 \u1f00\u03c0\u03bf\u03b4\u03b7\u03bc\u03bf\u03cd\u03bd\u03c4\u03c9\u03bd (excerptum e cod. Paris. gr. 2506, fol. 72) (003)": "\u03a0\u03b5\u03c1\u1f76 \u03c0\u03bb\u03b5\u03cc\u03bd\u03c4\u03c9\u03bd \u03ba\u03b1\u1f76 \u1f00\u03c0\u03bf\u03b4\u03b7\u03bc\u03bf\u03cd\u03bd\u03c4\u03c9\u03bd (excerptum e cod. Paris. gr. 2506, fol. 72) (003)"
+  },
+  [
+   "a. A. D. 5",
+   "",
+   "Astrol.",
+   "",
+   "4357"
   ]
  ],
  "DEMETRIUS MOSTRATUS": [
@@ -27122,7 +29065,137 @@ let LDM = {
    "9510"
   ]
  ],
- "DEMETRIUS Judaeus": [
+ "DEMETRIUS $7": [
+  "DEMETRIUS",
+  {
+   "epigramma (001)": "epigramma (001)"
+  },
+  [
+   "2 B. C.",
+   "",
+   "Epigr.",
+   "Bithynius",
+   "159"
+  ]
+ ],
+ "DEMETRIUS $8": [
+  "DEMETRIUS",
+  {
+   "FGrH #304": "fragmentum (002)"
+  },
+  [
+   "4 B. C.",
+   "",
+   "Hist.",
+   "fort. Argivius",
+   "2208"
+  ]
+ ],
+ "DEMETRIUS $9": [
+  "DEMETRIUS",
+  {
+   "FGrH #162": "testimonium (001)"
+  },
+  [
+   "3 B. C.",
+   "",
+   "Hist.",
+   "Byzantius",
+   "1957"
+  ]
+ ],
+ "DEMETRIUS $10": [
+  "DEMETRIUS",
+  {
+   "FGrH #643": "fragmenta (002)"
+  },
+  [
+   "3 B. C. ?",
+   "",
+   "Hist.",
+   "?",
+   "1299"
+  ]
+ ],
+ "DEMETRIUS $11": [
+  "DEMETRIUS",
+  {
+   "FGrH #549": "fragmentum (001)"
+  },
+  [
+   "3 B. C. ?",
+   "",
+   "Hist.",
+   "Seriphius",
+   "2381"
+  ]
+ ],
+ "DEMETRIUS $12": [
+  "DEMETRIUS",
+  {
+   "FGrH #777": "fragmentum (001)"
+  },
+  [
+   "2 B. C. ?",
+   "",
+   "Hist.",
+   "?",
+   "2522"
+  ]
+ ],
+ "DEMETRIUS $13": [
+  "DEMETRIUS",
+  {
+   "FGrH #59": "fragmenta (001)"
+  },
+  [
+   "ante A. D. 2",
+   "",
+   "Hist.",
+   "Iliensis",
+   "1901"
+  ]
+ ],
+ "DEMETRIUS $14": [
+  "DEMETRIUS",
+  {
+   "FGrH #209": "fragmentum (001)"
+  },
+  [
+   "A. D. 2",
+   "",
+   "Hist.",
+   "Sagalassensis",
+   "1995"
+  ]
+ ],
+ "DEMETRIUS $15": [
+  "DEMETRIUS",
+  {
+   "FGrH #808": "testimonium (001)"
+  },
+  [
+   "Incertum",
+   "",
+   "Hist.",
+   "Odessius",
+   "2541"
+  ]
+ ],
+ "DEMETRIUS $16": [
+  "DEMETRIUS",
+  {
+   "FGrH #852": "fragmenta (001)"
+  },
+  [
+   "Incertum",
+   "",
+   "Hist.",
+   "?",
+   "2572"
+  ]
+ ],
+ "DEMETRIUS JUDAEUS": [
   "DEMETRIUS Judaeus",
   {
    "FGrH #722": "fragmenta (001)"
@@ -27161,7 +29234,7 @@ let LDM = {
    "160"
   ]
  ],
- "Democh.": [
+ "DEMOCH.": [
   "DEMOCHARES",
   {
    "FGH\u00a0n. 75": "testimonia (001)",
@@ -27188,7 +29261,7 @@ let LDM = {
    "4390"
   ]
  ],
- "Democr.": [
+ "DEMOCR.": [
   "DEMOCRITUS",
   {
    "Epigramma (001)": "Epigramma (001)"
@@ -27215,7 +29288,7 @@ let LDM = {
    "1305"
   ]
  ],
- "Democr. Eph.": [
+ "DEMOCR. EPH.": [
   "DEMOCRITUS",
   {
    "Testimonia (001)": "Testimonia (001)",
@@ -27230,7 +29303,7 @@ let LDM = {
    "1304"
   ]
  ],
- "Demod.": [
+ "DEMOD.": [
   "DEMODAMAS",
   {
    "FGrH #428": "testimonia (001)",
@@ -27291,6 +29364,19 @@ let LDM = {
    "fragmenta (001)": "fragmenta (001)"
   },
   [
+   "70",
+   "170",
+   "Phil.",
+   "Cyprius",
+   "2969"
+  ]
+ ],
+ "DEMONAX $1": [
+  "DEMONAX",
+  {
+   "fragmenta (001)": "fragmenta (001)"
+  },
+  [
    "-800",
    "1600",
    "<Trag.>",
@@ -27326,7 +29412,7 @@ let LDM = {
    "1308"
   ]
  ],
- "Demosth.": [
+ "DEMOSTH.": [
   "DEMOSTHENES",
   {
    "Olynthiaca 1 {001}": "Olynthiaca 1 {001}",
@@ -27411,7 +29497,7 @@ let LDM = {
    "14"
   ]
  ],
- "DEMOSTHENES Philalethes": [
+ "DEMOSTHENES PHILALETHES": [
   "DEMOSTHENES Philalethes",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum",
@@ -27479,7 +29565,7 @@ let LDM = {
    "2036"
   ]
  ],
- "Theodorus DEXIUS": [
+ "THEODORUS DEXIUS": [
   "Theodorus DEXIUS",
   {
    "Appelatio adversus Joannem Cantacuzenum {001}": "Appelatio adversus Joannem Cantacuzenum {001}",
@@ -27495,7 +29581,7 @@ let LDM = {
    "3253"
   ]
  ],
- "Anthimus DIACRUSES": [
+ "ANTHIMUS DIACRUSES": [
   "Anthimus DIACRUSES",
   {
    "\u1f49 \u039a\u03c1\u03b7\u03c4\u03b9\u03ba\u1f78\u03c2 \u03a0\u03cc\u03bb\u03b5\u03bc\u03bf\u03c2 (001)": "\u1f49 \u039a\u03c1\u03b7\u03c4\u03b9\u03ba\u1f78\u03c2 \u03a0\u03cc\u03bb\u03b5\u03bc\u03bf\u03c2 (001)",
@@ -27529,6 +29615,20 @@ let LDM = {
  "DIAGORAS": [
   "DIAGORAS",
   {
+   "Fragmenta (001)": "Fragmenta (001)",
+   "Fragmenta (002)": "Fragmenta (002)"
+  },
+  [
+   "-482",
+   "-401",
+   "Lyr.",
+   "Melius",
+   "371"
+  ]
+ ],
+ "DIAGORAS $1": [
+  "DIAGORAS",
+  {
    "fragmentum ap. Oribasium": "fragmentum ap. Oribasium",
    "Fragmentum ap. A\u00ebtium (lib 7)": "Fragmentum ap. A\u00ebtium (lib 7)"
   },
@@ -27540,7 +29640,7 @@ let LDM = {
    "854"
   ]
  ],
- "DIALEXEIS (\u0394\u03b9\u03c3\u03c3\u03bf\u1f76 \u03bb\u1f79\u03b3\u03bf\u03b9)": [
+ "DIALEXEIS (\u0394\u0399\u03a3\u03a3\u039f\u1fda \u039b\u1ff9\u0393\u039f\u0399)": [
   "DIALEXEIS (\u0394\u03b9\u03c3\u03c3\u03bf\u1f76 \u03bb\u1f79\u03b3\u03bf\u03b9)",
   {
    "Fragmenta (001)": "Fragmenta (001)"
@@ -27554,6 +29654,35 @@ let LDM = {
   ]
  ],
  "DICAEARCHUS": [
+  "DICAEARCHUS",
+  {
+   "Fragmenta (001)": "Fragmenta (001)",
+   "Biographica: frr. 26-27, 29-35b, 37-42, 44-46": "Biographica: frr. 26-27, 29-35b, 37-42, 44-46",
+   "Dubia, spuria et fragmenta incertae sedis: frr. 117-118": "Dubia, spuria et fragmenta incertae sedis: frr. 117-118",
+   "Proverbia: frr. 100-103.1": "Proverbia: frr. 100-103.1",
+   "Quaestiones Homericae: frr. 90-93": "Quaestiones Homericae: frr. 90-93",
+   "\u0392\u03af\u03bf\u03c2 \u1f19\u03bb\u03bb\u03ac\u03b4\u03bf\u03c2: frr. 49, 52-66 (= \u0392\u03af\u03bf\u03c2 \u03c4\u1fc6\u03c2 \u1f19\u03bb\u03bb\u03ac\u03b4\u03bf\u03c2 (Perseus)": "\u0392\u03af\u03bf\u03c2 \u1f19\u03bb\u03bb\u03ac\u03b4\u03bf\u03c2: frr. 49, 52-66 (= \u0392\u03af\u03bf\u03c2 \u03c4\u1fc6\u03c2 \u1f19\u03bb\u03bb\u03ac\u03b4\u03bf\u03c2 (Perseus)",
+   "\u0395\u1f30\u03c2 \u03a4\u03c1\u03bf\u03c6\u03c9\u03bd\u03af\u03bf\u03c5 \u03ba\u03b1\u03c4\u03ac\u03b2\u03b1\u03c3\u03b9\u03c2: frr. 13a-b, 19, 21-22": "\u0395\u1f30\u03c2 \u03a4\u03c1\u03bf\u03c6\u03c9\u03bd\u03af\u03bf\u03c5 \u03ba\u03b1\u03c4\u03ac\u03b2\u03b1\u03c3\u03b9\u03c2: frr. 13a-b, 19, 21-22",
+   "\u03a0\u03b5\u03c1\u1f76 \u1f08\u03bb\u03ba\u03b1\u03af\u03bf\u03c5: frr. 94-99": "\u03a0\u03b5\u03c1\u1f76 \u1f08\u03bb\u03ba\u03b1\u03af\u03bf\u03c5: frr. 94-99",
+   "\u03a0\u03b5\u03c1\u1f76 \u03bc\u03bf\u03c5\u03c3\u03b9\u03ba\u1ff6\u03bd \u1f00\u03b3\u03ce\u03bd\u03c9\u03bd. \u03a0\u03b5\u03c1\u1f76 \u03b4\u03b9\u03bf\u03bd\u03c5\u03c3\u03b9\u03b1\u03ba\u1ff6\u03bd \u1f00\u03b3\u03ce\u03bd\u03c9\u03bd. \u03a0\u03b1\u03bd\u03b1\u03b8\u03b7\u03bd\u03b1\u03ca\u03ba\u03cc\u03c2. \u1f48\u03bb\u03c5\u03bc\u03c0\u03b9\u03ba\u03cc\u03c2: frr. 73-89": "\u03a0\u03b5\u03c1\u1f76 \u03bc\u03bf\u03c5\u03c3\u03b9\u03ba\u1ff6\u03bd \u1f00\u03b3\u03ce\u03bd\u03c9\u03bd. \u03a0\u03b5\u03c1\u1f76 \u03b4\u03b9\u03bf\u03bd\u03c5\u03c3\u03b9\u03b1\u03ba\u1ff6\u03bd \u1f00\u03b3\u03ce\u03bd\u03c9\u03bd. \u03a0\u03b1\u03bd\u03b1\u03b8\u03b7\u03bd\u03b1\u03ca\u03ba\u03cc\u03c2. \u1f48\u03bb\u03c5\u03bc\u03c0\u03b9\u03ba\u03cc\u03c2: frr. 73-89",
+   "\u03a0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u1f10\u03bd \u1f38\u03bb\u03af\u1ff3 \u03b8\u03c5\u03c3\u03af\u03b1\u03c2: fr. 23": "\u03a0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u1f10\u03bd \u1f38\u03bb\u03af\u1ff3 \u03b8\u03c5\u03c3\u03af\u03b1\u03c2: fr. 23",
+   "\u03a0\u03b5\u03c1\u1f76 \u03c8\u03c5\u03c7\u1fc6\u03c2. \u039a\u03bf\u03c1\u03b9\u03bd\u03b8\u03b9\u03b1\u03ba\u03bf\u1f76 \u03bb\u03cc\u03b3\u03bf\u03b9. \u039b\u03b5\u03c3\u03b2\u03b9\u03b1\u03ba\u03bf\u1f76 \u03bb\u03cc\u03b3\u03bf\u03b9: frr. 5, 8a-b, 8g, 8i-k, 10a, 11-12e": "\u03a0\u03b5\u03c1\u1f76 \u03c8\u03c5\u03c7\u1fc6\u03c2. \u039a\u03bf\u03c1\u03b9\u03bd\u03b8\u03b9\u03b1\u03ba\u03bf\u1f76 \u03bb\u03cc\u03b3\u03bf\u03b9. \u039b\u03b5\u03c3\u03b2\u03b9\u03b1\u03ba\u03bf\u1f76 \u03bb\u03cc\u03b3\u03bf\u03b9: frr. 5, 8a-b, 8g, 8i-k, 10a, 11-12e",
+   "\u03a0\u03b5\u03c1\u03af\u03bf\u03b4\u03bf\u03c2 \u03b3\u1fc6\u03c2. \u03a0\u03af\u03bd\u03b1\u03ba\u03b5\u03c2. \u039a\u03b1\u03c4\u03b1\u03bc\u03b5\u03c4\u03c1\u03ae\u03c3\u03b5\u03b9\u03c2 \u03c4\u1ff6\u03bd \u1f10\u03bd \u03a0\u03b5\u03bb\u03bf\u03c0\u03bf\u03bd\u03bd\u03ae\u03c3\u1ff3 \u1f40\u03c1\u1ff6\u03bd: frr. 104, 106-107, 109-114": "\u03a0\u03b5\u03c1\u03af\u03bf\u03b4\u03bf\u03c2 \u03b3\u1fc6\u03c2. \u03a0\u03af\u03bd\u03b1\u03ba\u03b5\u03c2. \u039a\u03b1\u03c4\u03b1\u03bc\u03b5\u03c4\u03c1\u03ae\u03c3\u03b5\u03b9\u03c2 \u03c4\u1ff6\u03bd \u1f10\u03bd \u03a0\u03b5\u03bb\u03bf\u03c0\u03bf\u03bd\u03bd\u03ae\u03c3\u1ff3 \u1f40\u03c1\u1ff6\u03bd: frr. 104, 106-107, 109-114",
+   "\u03a0\u03bf\u03bb\u03b9\u03c4\u03b5\u03af\u03b1 \u03a3\u03c0\u03b1\u03c1\u03c4\u03b9\u03b1\u03c4\u1ff6\u03bd. \u03a4\u03c1\u03b9\u03c0\u03bf\u03bb\u03b9\u03c4\u03b9\u03ba\u03cc\u03c2. \u03a0\u03b5\u03bb\u03bb\u03b7\u03bd\u03b1\u03af\u03c9\u03bd, \u039a\u03bf\u03c1\u03b9\u03bd\u03b8\u03af\u03c9\u03bd, \u1f08\u03b8\u03b7\u03bd\u03b1\u03af\u03c9\u03bd \u03c0\u03bf\u03bb\u03b9\u03c4\u03b5\u03af\u03b1: frr. 70.1-72": "\u03a0\u03bf\u03bb\u03b9\u03c4\u03b5\u03af\u03b1 \u03a3\u03c0\u03b1\u03c1\u03c4\u03b9\u03b1\u03c4\u1ff6\u03bd. \u03a4\u03c1\u03b9\u03c0\u03bf\u03bb\u03b9\u03c4\u03b9\u03ba\u03cc\u03c2. \u03a0\u03b5\u03bb\u03bb\u03b7\u03bd\u03b1\u03af\u03c9\u03bd, \u039a\u03bf\u03c1\u03b9\u03bd\u03b8\u03af\u03c9\u03bd, \u1f08\u03b8\u03b7\u03bd\u03b1\u03af\u03c9\u03bd \u03c0\u03bf\u03bb\u03b9\u03c4\u03b5\u03af\u03b1: frr. 70.1-72",
+   "\u03a6\u03b1\u03af\u03b4\u03c1\u03bf\u03c5 \u03c0\u03b5\u03c1\u03b9\u03c3\u03c3\u1ff6\u03bd": "\u03a6\u03b1\u03af\u03b4\u03c1\u03bf\u03c5 \u03c0\u03b5\u03c1\u03b9\u03c3\u03c3\u1ff6\u03bd",
+   "\u03a0\u03b5\u03c1\u1f76 \u1f08\u03bb\u03ba\u03b1\u03af\u03bf\u03c5": "\u03a0\u03b5\u03c1\u1f76 \u1f08\u03bb\u03ba\u03b1\u03af\u03bf\u03c5",
+   "\u1f51\u03c0\u03bf\u03b8\u03ad\u03c3\u03b5\u03b9\u03c2 \u03c4\u1ff6\u03bd \u0395\u1f50\u03c1\u03b9\u03c0\u03af\u03b4\u03bf\u03c5 \u03ba\u03b1\u1f76 \u03a3\u03bf\u03c6\u03bf\u03ba\u03bb\u03ad\u03bf\u03bd\u03c2 \u03bc\u03cd\u03b8\u03c9\u03bd": "\u1f51\u03c0\u03bf\u03b8\u03ad\u03c3\u03b5\u03b9\u03c2 \u03c4\u1ff6\u03bd \u0395\u1f50\u03c1\u03b9\u03c0\u03af\u03b4\u03bf\u03c5 \u03ba\u03b1\u1f76 \u03a3\u03bf\u03c6\u03bf\u03ba\u03bb\u03ad\u03bf\u03bd\u03c2 \u03bc\u03cd\u03b8\u03c9\u03bd",
+   "\u03a0\u03b5\u03c1\u1f76 \u03c4\u1ff6\u03bd \u1f10\u03bd \u03c4\u1fc7 \u1f19\u03bb\u03bb\u03ac\u03b4\u03b9 \u03c0\u03cc\u03bb\u03b5\u03c9\u03bd": "\u03a0\u03b5\u03c1\u1f76 \u03c4\u1ff6\u03bd \u1f10\u03bd \u03c4\u1fc7 \u1f19\u03bb\u03bb\u03ac\u03b4\u03b9 \u03c0\u03cc\u03bb\u03b5\u03c9\u03bd"
+  },
+  [
+   "-375",
+   "-301 /-285",
+   "Phil.",
+   "Messianus",
+   "66"
+  ]
+ ],
+ "DICAEARCHUS $1": [
   "DICAEARCHUS",
   {},
   [
@@ -27617,7 +29746,7 @@ let LDM = {
    "2618"
   ]
  ],
- "Did.": [
+ "DID.": [
   "DIDYMUS",
   {
    "FGrH #340": "fragmentum (001)",
@@ -27654,7 +29783,7 @@ let LDM = {
    "855"
   ]
  ],
- "Did. Caec.": [
+ "DID. CAEC.": [
   "DIDYMUS CAECUS",
   {
    "comm. In Job": "Commentarii in Job (12.1-16.8a) (partim in catenis) {004}",
@@ -27704,7 +29833,7 @@ let LDM = {
    "2102"
   ]
  ],
- "Claudius DIDYMUS Junior": [
+ "CLAUDIUS DIDYMUS JUNIOR": [
   "Claudius DIDYMUS Junior",
   {
    "fragmentum (001)": "fragmentum (001)"
@@ -27717,7 +29846,7 @@ let LDM = {
    "1809"
   ]
  ],
- "Didym.": [
+ "DIDYM.": [
   "DIDYMUS Scriptor De Mensuris",
   {
    "mens.": "mensurae marmorum ac lignorum (001)"
@@ -27730,7 +29859,7 @@ let LDM = {
    "357"
   ]
  ],
- "Dieuch.": [
+ "DIEUCH.": [
   "DIEUCHES",
   {
    "fragmentum (001)": "fragmentum (001)",
@@ -27744,7 +29873,7 @@ let LDM = {
    "856"
   ]
  ],
- "Dieuchid.": [
+ "DIEUCHID.": [
   "DIEUCHIDAS",
   {
    "FGrH #485": "fragmenta (002)"
@@ -27773,7 +29902,7 @@ let LDM = {
    "3026"
   ]
  ],
- "Din.": [
+ "DIN.": [
   "DINARCHUS",
   {
    "In Demosthenem (004)": "In Demosthenem (004)",
@@ -27793,6 +29922,19 @@ let LDM = {
  "DINARCHUS": [
   "DINARCHUS",
   {
+   "FGrH #399": "fragmenta"
+  },
+  [
+   "4 B. C. ?",
+   "",
+   "Hist.",
+   "Delius",
+   "2280"
+  ]
+ ],
+ "DINARCHUS $1": [
+  "DINARCHUS",
+  {
    "FGrH #465": "testimonium (001)"
   },
   [
@@ -27803,7 +29945,7 @@ let LDM = {
    "2324"
   ]
  ],
- "Dinias": [
+ "DINIAS": [
   "DINIAS",
   {
    "FGrH #306": "testimonium (001)",
@@ -27818,7 +29960,7 @@ let LDM = {
    "1314"
   ]
  ],
- "Dinol.": [
+ "DINOL.": [
   "DINOLOCHUS",
   {
    "fragmentum (001)": "fragmentum (001)",
@@ -27832,7 +29974,7 @@ let LDM = {
    "1315"
   ]
  ],
- "Dino": [
+ "DINO": [
   "DINON",
   {
    "FGrH #690": "Fragmenta (002)",
@@ -27860,7 +30002,7 @@ let LDM = {
    "285"
   ]
  ],
- "Dio Chrys.": [
+ "DIO CHRYS.": [
   "DIO CHRYSOSTOMUS",
   {
    "Encomium comae (002)": "Encomium comae (002)",
@@ -27955,7 +30097,7 @@ let LDM = {
    "612"
   ]
  ],
- "Diocl. Com.": [
+ "DIOCL. COM.": [
   "DIOCLES",
   {
    "Fragmenta {001}": "Fragmenta {001}",
@@ -27974,6 +30116,19 @@ let LDM = {
  "DIOCLES": [
   "DIOCLES",
   {
+   "FGrH #820": "titulus (002)"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "Peparethius",
+   "2549"
+  ]
+ ],
+ "DIOCLES $1": [
+  "DIOCLES",
+  {
    "FGrH #693": "Fragmenta {001}"
   },
   [
@@ -27984,7 +30139,7 @@ let LDM = {
    "2470"
   ]
  ],
- "Dioicl. Math.": [
+ "DIOICL. MATH.": [
   "DIOCLES",
   {
    "fragmenta de speculis causticis (001)": "fragmenta de speculis causticis (001)"
@@ -27997,7 +30152,20 @@ let LDM = {
    "1317"
   ]
  ],
- "Diocl. Med. ?": [
+ "DIOCL. MED. ?": [
+  "DIOCLES",
+  {
+   "fr.": "fragmentum apud Galenum"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "Chalcedonius",
+   "884"
+  ]
+ ],
+ "DIOCL. MED. ? $1": [
   "DIOCLES",
   {
    "fragmentum": "fragmentum",
@@ -28019,7 +30187,7 @@ let LDM = {
    "664"
   ]
  ],
- "Julius DIOCLES": [
+ "JULIUS DIOCLES": [
   "Julius DIOCLES",
   {
    "epigrammata": "epigrammata"
@@ -28045,7 +30213,7 @@ let LDM = {
    "4253"
   ]
  ],
- "Diod.": [
+ "DIOD.": [
   "DIODORUS",
   {
    "epigrammata (001)": "epigrammata (001)"
@@ -28058,7 +30226,7 @@ let LDM = {
    "163"
   ]
  ],
- "Diod. Sard.": [
+ "DIOD. SARD.": [
   "DIODORUS",
   {
    "epigrammata (001)": "epigrammata (001)",
@@ -28072,7 +30240,7 @@ let LDM = {
    "165"
   ]
  ],
- "Diodor. T.": [
+ "DIODOR. T.": [
   "DIODORUS",
   {
    "CRom.": "Fragmenta in epistulam ad Romanos (in catenis)",
@@ -28095,7 +30263,7 @@ let LDM = {
    "4134"
   ]
  ],
- "Diod. Tars.": [
+ "DIOD. TARS.": [
   "DIODORUS",
   {
    "epigrammata (001)": "epigrammata (001)"
@@ -28111,17 +30279,17 @@ let LDM = {
  "DIODORUS": [
   "DIODORUS",
   {
-   "fragmentum (001)": "fragmentum (001)"
+   "FGrH #452": "fragmentum (001)"
   },
   [
-   "-200",
-   "-101",
-   "Phil.",
-   "Tyrius",
-   "2383"
+   "?",
+   "?",
+   "Hist.",
+   "",
+   "2315"
   ]
  ],
- "Diod. Med.": [
+ "DIOD. MED.": [
   "DIODORUS",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -28134,7 +30302,7 @@ let LDM = {
    "857"
   ]
  ],
- "Diodorus scriptor corinthiacorum": [
+ "DIODORUS SCRIPTOR CORINTHIACORUM": [
   "DIODORUS",
   {
    "titulus (001)": "titulus (001)",
@@ -28148,7 +30316,7 @@ let LDM = {
    "2652"
   ]
  ],
- "Diod. Ath.": [
+ "DIOD. ATH.": [
   "DIODORUS",
   {
    "FGrH #372": "Fragmenta {001}",
@@ -28162,7 +30330,7 @@ let LDM = {
    "2265"
   ]
  ],
- "Diod. Com.": [
+ "DIOD. COM.": [
   "DIODORUS",
   {
    "Fragmenta {001}": "Fragmenta {001}",
@@ -28176,7 +30344,33 @@ let LDM = {
    "444"
   ]
  ],
- "Diod. Rh. ?": [
+ "DIODORUS $1": [
+  "DIODORUS",
+  {
+   "fragmentum (001)": "fragmentum (001)"
+  },
+  [
+   "-400",
+   "-301",
+   "Phil.",
+   "Aspendius",
+   "2681"
+  ]
+ ],
+ "DIODORUS $2": [
+  "DIODORUS",
+  {
+   "fragmentum (001)": "fragmentum (001)"
+  },
+  [
+   "-200",
+   "-101",
+   "Phil.",
+   "Tyrius",
+   "2383"
+  ]
+ ],
+ "DIOD. RH. ?": [
   "DIODORUS",
   {
    "Fragmentum de viris duobus": "Fragmentum de viris duobus"
@@ -28189,7 +30383,7 @@ let LDM = {
    "1318"
   ]
  ],
- "Diod. Sic.": [
+ "DIOD. SIC.": [
   "DIODORUS SICULUS",
   {
    "Bibliotheca historica (lib. 1-20)": "Bibliotheca historica (lib. 1-20)",
@@ -28212,7 +30406,7 @@ let LDM = {
    "60"
   ]
  ],
- "Diodorus Cronus": [
+ "DIODORUS CRONUS": [
   "DIODORUS CRONUS",
   {
    "testimonia (001)": "testimonia (001)"
@@ -28225,7 +30419,7 @@ let LDM = {
    "73"
   ]
  ],
- "Zon.": [
+ "ZON.": [
   "DIODORUS ZONAS",
   {
    "epigrammata (001)": "epigrammata (001)"
@@ -28239,6 +30433,156 @@ let LDM = {
   ]
  ],
  "DIOGENES": [
+  "DIOGENES",
+  {
+   "FGrH #747": "fragmenta (002)",
+   "fragmenta (003)": "fragmenta (003)"
+  },
+  [
+   "350",
+   "400",
+   "Hist.",
+   "Cyzicenus",
+   "2328"
+  ]
+ ],
+ "DIOGENES $1": [
+  "DIOGENES",
+  {
+   "fragmenta (011)": "fragmenta (011)",
+   "frr. 1-135, 137-177, 180-181 Physica (frr. 1-27): pp. 147-189 Ethica (frr. 28-61): pp. 193-247 Epistulae (frr. 62-75): pp. 251-271 Fragmenta incertae sedis (frr. 76-96): pp. 275-283 Sententiae (frr. 97-116): pp. 287-297 Ad familiares et amicos (frr. 117-118): pp. 301-302 Scripta varia (frr. 119-135): pp. 305-323 De senectute (frr. 137-177): pp. 327-358 Fragmenta incertae sedis (frr. 180-181): p. 363": "frr. 1-135, 137-177, 180-181 Physica (frr. 1-27): pp. 147-189 Ethica (frr. 28-61): pp. 193-247 Epistulae (frr. 62-75): pp. 251-271 Fragmenta incertae sedis (frr. 76-96): pp. 275-283 Sententiae (frr. 97-116): pp. 287-297 Ad familiares et amicos (frr. 117-118): pp. 301-302 Scripta varia (frr. 119-135): pp. 305-323 De senectute (frr. 137-177): pp. 327-358 Fragmenta incertae sedis (frr. 180-181): p. 363",
+   "Fragmenta (NF 1-4)": "Fragmenta (NF 1-4)",
+   "Fragmenta (NF 5-11, 14-167)": "Fragmenta (NF 5-11, 14-167)",
+   "Fragmenta (NF 17-18)": "Fragmenta (NF 17-18)",
+   "Fragmenta (NF 19-31": "Fragmenta (NF 19-31",
+   "Fragmenta (NF 12-13)": "Fragmenta (NF 12-13)",
+   "Fragmenta (NF 32-38)": "Fragmenta (NF 32-38)",
+   "Fragmenta (NF 39-51)": "Fragmenta (NF 39-51)",
+   "Fragmenta": "Fragmenta",
+   "Fragmenta (NF 52-106)": "Fragmenta (NF 52-106)",
+   "Fragmenta (NF 107-114)": "Fragmenta (NF 107-114)"
+  },
+  [
+   "101",
+   "200",
+   "Phil.",
+   "Oenoandensis",
+   "1321"
+  ]
+ ],
+ "DIOGENES $2": [
+  "DIOGENES",
+  {
+   "testimonia (001)": "testimonia (001)",
+   "fragmenta (002)": "fragmenta (002)"
+  },
+  [
+   "-500",
+   "-401",
+   "Phil.",
+   "Apolloniates",
+   "1319"
+  ]
+ ],
+ "DIOGENES $3": [
+  "DIOGENES",
+  {
+   "fragmentum (001)": "fragmentum (001)"
+  },
+  [
+   "-450",
+   "-400",
+   "Trag.",
+   "Atheniensis",
+   "320"
+  ]
+ ],
+ "DIOGENES $4": [
+  "DIOGENES",
+  {
+   "testimonium (001)": "testimonium (001)"
+  },
+  [
+   "-380",
+   "-320",
+   "Phil.",
+   "Smyrnaeus",
+   "2314"
+  ]
+ ],
+ "DIOGENES $5": [
+  "DIOGENES",
+  {
+   "testimonia et fragmenta (001)": "testimonia et fragmenta (001)",
+   "Testimonia (frr. 1-16): pp. 210-212": "Testimonia (frr. 1-16): pp. 210-212",
+   "Logica (frr. 17-26): pp. 212-215": "Logica (frr. 17-26): pp. 212-215",
+   "Physica (frr. 27-37): pp. 215-218": "Physica (frr. 27-37): pp. 215-218",
+   "Ethica (frr. 38-53): pp. 218-221": "Ethica (frr. 38-53): pp. 218-221",
+   "De musica (frr. 54-90): pp. 221-235": "De musica (frr. 54-90): pp. 221-235",
+   "De rhetorica (frr. 91-126): pp. 235-243": "De rhetorica (frr. 91-126): pp. 235-243"
+  },
+  [
+   "-240",
+   "-150",
+   "Phil.",
+   "Babylonius",
+   "1320"
+  ]
+ ],
+ "DIOGENES $6": [
+  "DIOGENES",
+  {
+   "fragmenta": "fragmenta",
+   "epigramma": "epigramma"
+  },
+  [
+   "-412",
+   "-321",
+   "Phil. Trag.",
+   "Sinopensis",
+   "334"
+  ]
+ ],
+ "DIOGENES $7": [
+  "DIOGENES",
+  {
+   "epigramma (001)": "epigramma (001)"
+  },
+  [
+   "?",
+   "?",
+   "Epigr.",
+   "Amisenus",
+   "2128"
+  ]
+ ],
+ "DIOGENES $8": [
+  "DIOGENES",
+  {
+   "FGrH #503": "testimonium (001)"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "Sicyonius",
+   "2348"
+  ]
+ ],
+ "DIOGENES $9": [
+  "DIOGENES",
+  {
+   "FGrH #692": "fragmenta"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "",
+   "2469"
+  ]
+ ],
+ "DIOGENES $10": [
   "DIOGENES",
   {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum",
@@ -28362,17 +30706,116 @@ let LDM = {
  "DIONYSIUS": [
   "DIONYSIUS",
   {
-   "Momodia de Chaeronea (fragmentum ap. Philostratum, Vitae sophistarum)": "Momodia de Chaeronea (fragmentum ap. Philostratum, Vitae sophistarum)"
+   "Descriptio Graeciae  (001)": "Descriptio Graeciae  (001)"
   },
   [
-   "A. D. 1-2",
+   "101",
+   "200",
+   "Geogr.",
    "",
-   "Soph.",
-   "Milesius, Lesbius, Ephesius",
-   "4230"
+   "69"
   ]
  ],
- "DIONYSIUS \u039c\u03b5\u03c4\u03b1\u03b8\u1f73\u03bc\u03b5\u03bd\u03bf\u03c2": [
+ "DIONYSIUS $1": [
+  "DIONYSIUS",
+  {
+   "Titulus (002)": "Titulus (002)",
+   "Per Bosporum navigatio (003)": "Per Bosporum navigatio (003)"
+  },
+  [
+   "101",
+   "200",
+   "Geogr.",
+   "Byzantius",
+   "83"
+  ]
+ ],
+ "DIONYSIUS $2": [
+  "DIONYSIUS",
+  {
+   "Orbis descriptio {001}": "Orbis descriptio {001}",
+   "Lithiaca vel lithica {002}": "Lithiaca vel lithica {002}",
+   "Ixeuticon sive De aucupio {003}": "Ixeuticon sive De aucupio {003}"
+  },
+  [
+   "101",
+   "200",
+   "Perieg.",
+   "fort. Alexandrinus",
+   "84"
+  ]
+ ],
+ "DIONYSIUS $3": [
+  "DIONYSIUS",
+  {
+   "Fragmenta {001}": "Fragmenta {001}",
+   "Fragmenta {002}": "Fragmenta {002}",
+   "Fragmentum {003}": "Fragmentum {003}"
+  },
+  [
+   "-500",
+   "-301",
+   "Comic.",
+   "Sinopensis",
+   "445"
+  ]
+ ],
+ "DIONYSIUS $4": [
+  "DIONYSIUS",
+  {
+   "Fragmenta {002}": "Fragmenta {002}",
+   "FGrH #308": "Fragmentaum {001}"
+  },
+  [
+   "-400",
+   "-201",
+   "Hist.",
+   "Argivus",
+   "1324"
+  ]
+ ],
+ "DIONYSIUS $5": [
+  "DIONYSIUS",
+  {
+   "Fragmenta {001}": "Fragmenta {001}"
+  },
+  [
+   "-800",
+   "200",
+   "Epic.",
+   "",
+   "1326"
+  ]
+ ],
+ "DIONYSIUS $6": [
+  "DIONYSIUS",
+  {
+   "fragmenta (001)": "fragmenta (001)"
+  },
+  [
+   "-380",
+   "-320",
+   "Hist.",
+   "Chalcidensis",
+   "1328"
+  ]
+ ],
+ "DIONYSIUS $7": [
+  "DIONYSIUS",
+  {
+   "fragmenta (001)": "fragmenta (001)",
+   "Epistula ad Romanos: pp. 179-181": "Epistula ad Romanos: pp. 179-181",
+   "De reliquis septem epistulis: pp. 181-183": "De reliquis septem epistulis: pp. 181-183"
+  },
+  [
+   "101",
+   "200",
+   "Scr. Eccl.",
+   "Corinthius",
+   "1329"
+  ]
+ ],
+ "DIONYSIUS \u039c\u0395\u03a4\u0391\u0398\u1fc9\u039c\u0395\u039d\u039f\u03a3": [
   "DIONYSIUS \u039c\u03b5\u03c4\u03b1\u03b8\u1f73\u03bc\u03b5\u03bd\u03bf\u03c2",
   {
    "fragmenta (001)": "fragmenta (001)"
@@ -28385,7 +30828,87 @@ let LDM = {
    "2185"
   ]
  ],
- "DIONYSIUS \u1f41 \u1f10\u03ba \u03a6\u03bf\u03c5\u03c1\u03bd\u1fb6": [
+ "DIONYSIUS $8": [
+  "DIONYSIUS",
+  {
+   "Fragmenta (002)": "Fragmenta (002)",
+   "FGrH #511": "testimonium (001)"
+  },
+  [
+   "-800",
+   "1600",
+   "Hist.",
+   "Rhodius",
+   "2354"
+  ]
+ ],
+ "DIONYSIUS $9": [
+  "DIONYSIUS",
+  {
+   "fragmenta (003)": "fragmenta (003)",
+   "FGrH #687": "fragmenta (002)"
+  },
+  [
+   "-500",
+   "-401",
+   "Hist.",
+   "",
+   "2466"
+  ]
+ ],
+ "DIONYSIUS $10": [
+  "DIONYSIUS",
+  {
+   "tituli (001)": "tituli (001)"
+  },
+  [
+   "-800",
+   "1600",
+   "Epic.",
+   "Corinthius",
+   "2619"
+  ]
+ ],
+ "DIONYSIUS $11": [
+  "DIONYSIUS",
+  {
+   "Fragmentum (ap. Artemidorum Daldianum)": "Fragmentum (ap. Artemidorum Daldianum)"
+  },
+  [
+   "a. A. D. 2",
+   "",
+   "Onir.",
+   "Heliopolitanus",
+   "4182"
+  ]
+ ],
+ "DIONYSIUS $12": [
+  "DIONYSIUS",
+  {
+   "\u03a4\u03ad\u03c7\u03bd\u03b7 \u03bc\u03bf\u03c5\u03c3\u03b9\u03ba\u03ae": "\u03a4\u03ad\u03c7\u03bd\u03b7 \u03bc\u03bf\u03c5\u03c3\u03b9\u03ba\u03ae"
+  },
+  [
+   "A. D. 10",
+   "",
+   "Mus.",
+   "",
+   "4183"
+  ]
+ ],
+ "DIONYSIUS $13": [
+  "DIONYSIUS",
+  {
+   "epistulae (001)": "epistulae (001)"
+  },
+  [
+   "451",
+   "550",
+   "Soph.",
+   "Antiochenus",
+   "4184"
+  ]
+ ],
+ "DIONYSIUS \u1f49 \u1f18\u039a \u03a6\u039f\u03a5\u03a1\u039d\u0391\u0342": [
   "DIONYSIUS \u1f41 \u1f10\u03ba \u03a6\u03bf\u03c5\u03c1\u03bd\u1fb6",
   {
    "\u1f19\u03c1\u03bc\u03b7\u03bd\u03b5\u03af\u03b1 \u03c4\u1fc6\u03c2 \u03b6\u03c9\u03b3\u03c1\u03b1\u03c6\u03b9\u03ba\u1fc6\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2": "\u1f19\u03c1\u03bc\u03b7\u03bd\u03b5\u03af\u03b1 \u03c4\u1fc6\u03c2 \u03b6\u03c9\u03b3\u03c1\u03b1\u03c6\u03b9\u03ba\u1fc6\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2",
@@ -28418,7 +30941,7 @@ let LDM = {
    "246"
   ]
  ],
- "Dion. Hal.": [
+ "DION. HAL.": [
   "DIONYSIUS HALICARNASSENSIS",
   {
    "ant.": "Antiquitates Romanae {001}",
@@ -28553,6 +31076,299 @@ let LDM = {
    "63"
   ]
  ],
+ "DIONYSIUS $14": [
+  "DIONYSIUS",
+  {
+   "Epistulae (001)": "Epistulae (001)"
+  },
+  [
+   "A. D. 3",
+   "",
+   "Scr. Eccl.",
+   "Alexandrinus",
+   "2952"
+  ]
+ ],
+ "DIONYSIUS $15": [
+  "DIONYSIUS",
+  {
+   "epigrammata": "epigrammata"
+  },
+  [
+   "?",
+   "?",
+   "",
+   "?",
+   "167"
+  ]
+ ],
+ "DIONYSIUS $16": [
+  "DIONYSIUS",
+  {
+   "epigramma": "epigramma"
+  },
+  [
+   "?",
+   "?",
+   "",
+   "Andrius",
+   "168"
+  ]
+ ],
+ "DIONYSIUS $17": [
+  "DIONYSIUS",
+  {
+   "epigrammata": "epigrammata"
+  },
+  [
+   "?",
+   "?",
+   "Epigr.",
+   "Cyzicenus",
+   "169"
+  ]
+ ],
+ "DIONYSIUS $18": [
+  "DIONYSIUS",
+  {
+   "epigramma": "epigramma"
+  },
+  [
+   "?",
+   "?",
+   "",
+   "Rhodius",
+   "170"
+  ]
+ ],
+ "DIONYSIUS $19": [
+  "DIONYSIUS",
+  {
+   "\u03c0\u03b5\u03c1\u03af \u1f40\u03bd\u03bf\u03bc\u03b1\u03c3\u03b9\u1ff6\u03bd (fragmenta ap. Athenaeum)": "\u03c0\u03b5\u03c1\u03af \u1f40\u03bd\u03bf\u03bc\u03b1\u03c3\u03b9\u1ff6\u03bd (fragmenta ap. Athenaeum)",
+   "\u03c0\u03b5\u03c1\u03af \u1f40\u03bd\u03bf\u03bc\u03b1\u03c3\u03b9\u1ff6\u03bd (fragmenta ap. Stephanum Byzantium)": "\u03c0\u03b5\u03c1\u03af \u1f40\u03bd\u03bf\u03bc\u03b1\u03c3\u03b9\u1ff6\u03bd (fragmenta ap. Stephanum Byzantium)"
+  },
+  [
+   "1 B. C. - A. D. 1",
+   "",
+   "Gramm.",
+   "",
+   "4177"
+  ]
+ ],
+ "DIONYSIUS $20": [
+  "DIONYSIUS",
+  {
+   "Fragmenta grammatica in Homeri opera (in scholiis)": "Fragmenta grammatica in Homeri opera (in scholiis)"
+  },
+  [
+   "2 B. C.",
+   "",
+   "Gramm.",
+   "",
+   "4178"
+  ]
+ ],
+ "DIONYSIUS $21": [
+  "DIONYSIUS",
+  {
+   "\u03a0\u03b5\u03c1\u03af \u03b1\u03c0\u03cc\u03c1\u03c9\u03bd  (fragmentum in scholiss ad Homerum)": "\u03a0\u03b5\u03c1\u03af \u03b1\u03c0\u03cc\u03c1\u03c9\u03bd  (fragmentum in scholiss ad Homerum)"
+  },
+  [
+   "a. A. D. 3",
+   "",
+   "Gramm.",
+   "",
+   "4179"
+  ]
+ ],
+ "DIONYSIUS $22": [
+  "DIONYSIUS",
+  {
+   "fragmenta grammatica in Euripidem (in scholiis)": "fragmenta grammatica in Euripidem (in scholiis)"
+  },
+  [
+   "Incertum",
+   "",
+   "Gramm.",
+   "",
+   "4180"
+  ]
+ ],
+ "DIONYSIUS $23": [
+  "DIONYSIUS",
+  {
+   "\u03a0\u03b5\u03c1\u1f76 \u1f41\u03bc\u03bf\u03b9\u03bf\u03c4\u03ae\u03c4\u03c9\u03bd (fragmentum ap. Porphyrium)": "\u03a0\u03b5\u03c1\u1f76 \u1f41\u03bc\u03bf\u03b9\u03bf\u03c4\u03ae\u03c4\u03c9\u03bd (fragmentum ap. Porphyrium)",
+   "historia musica (fragmentum ap. Stephanum Byztanium)": "historia musica (fragmentum ap. Stephanum Byztanium)",
+   "fragmentum in illud: \u1f48\u03c1\u03c6\u03b5\u03cd\u03c2  \u1f48\u03b4\u03c1\u03cd\u03c3\u03b7\u03c2 (ap. Sudam)": "fragmentum in illud: \u1f48\u03c1\u03c6\u03b5\u03cd\u03c2  \u1f48\u03b4\u03c1\u03cd\u03c3\u03b7\u03c2 (ap. Sudam)"
+  },
+  [
+   "A. D. 2",
+   "",
+   "Gramm. Et Mus.",
+   "Halicarnassensis",
+   "4181"
+  ]
+ ],
+ "DIONYSIUS $24": [
+  "DIONYSIUS",
+  {
+   "De Antimachi carminibus (fragmentum ap. Vitam Nicandri)": "De Antimachi carminibus (fragmentum ap. Vitam Nicandri)",
+   "De poetis (fragmentum ap. Vitam Nicandri)": "De poetis (fragmentum ap. Vitam Nicandri)",
+   "De comparatione Arati et Homeri (fragmentum ap tertiam vitam Arati)": "De comparatione Arati et Homeri (fragmentum ap tertiam vitam Arati)",
+   "fragmentum in illud: :\u1f48\u03c1\u03c6\u03b5\u03cd\u03c2  \u1f48\u03b4\u03c1\u03cd\u03c3\u03b7\u03c2 (fort. Auctore Dionysio Halicarnassensi Gramm. Et Mus.)": "fragmentum in illud: :\u1f48\u03c1\u03c6\u03b5\u03cd\u03c2  \u1f48\u03b4\u03c1\u03cd\u03c3\u03b7\u03c2 (fort. Auctore Dionysio Halicarnassensi Gramm. Et Mus.)",
+   "De poetis sive Commentarium de Pindaro (fragmentum in scholiis)": "De poetis sive Commentarium de Pindaro (fragmentum in scholiis)"
+  },
+  [
+   "a. 1 B. C.",
+   "",
+   "Gramm.",
+   "Phaselinus",
+   "4186"
+  ]
+ ],
+ "DIONYSIUS $25": [
+  "DIONYSIUS",
+  {
+   "FGrH #357": "testimonium (001)"
+  },
+  [
+   "5-4- B. C.",
+   "",
+   "Hist.",
+   "?",
+   "2257"
+  ]
+ ],
+ "DIONYSIUS $26": [
+  "DIONYSIUS",
+  {
+   "FGrH #804": "fragmentum (001)"
+  },
+  [
+   "p. 4 B. C. ?",
+   "",
+   "Hist.",
+   "?",
+   "2538"
+  ]
+ ],
+ "DIONYSIUS $27": [
+  "DIONYSIUS",
+  {
+   "FGrH #717": "fragmentum (002)"
+  },
+  [
+   "3 B. C.",
+   "",
+   "Hist.",
+   "?",
+   "2483"
+  ]
+ ],
+ "DIONYSIUS $28": [
+  "DIONYSIUS",
+  {
+   "FGrH #653": "fragmentum (001)"
+  },
+  [
+   "2 B. C. / A. D. 1?",
+   "",
+   "Hist.",
+   "?",
+   "2446"
+  ]
+ ],
+ "DIONYSIUS $29": [
+  "DIONYSIUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "3/1 B. C.",
+   "",
+   "Med.",
+   "Aegaeus",
+   "793"
+  ]
+ ],
+ "DIONYSIUS $30": [
+  "DIONYSIUS",
+  {
+   "fragmentum ap. Oribasium": "fragmentum ap. Oribasium"
+  },
+  [
+   "A. D. 2 ?",
+   "",
+   "Med.",
+   "fort. Hierapolitanus",
+   "864"
+  ]
+ ],
+ "DIONYSIUS $31": [
+  "DIONYSIUS",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "",
+   "",
+   "Med.",
+   "Samius",
+   "865"
+  ]
+ ],
+ "DIONYSIUS $32": [
+  "DIONYSIUS",
+  {
+   "Testimonia (001)": "Testimonia (001)"
+  },
+  [
+   "",
+   "",
+   "Phil.",
+   "Bthynius, Chalcedonius, Atheniensis",
+   "4254"
+  ]
+ ],
+ "DIONYSIUS $33": [
+  "DIONYSIUS",
+  {
+   "epigramma sepulcrale": "epigramma sepulcrale"
+  },
+  [
+   "",
+   "",
+   "Poeta",
+   "Magnes",
+   "2683"
+  ]
+ ],
+ "DIONYSIUS $34": [
+  "DIONYSIUS",
+  {
+   "Epistula ad Dionysium Alexandrinum": "Epistula ad Dionysium Alexandrinum"
+  },
+  [
+   "A. D. 3",
+   "",
+   "Scr. Eccl.",
+   "Romanus",
+   "2953"
+  ]
+ ],
+ "DIONYSIUS $35": [
+  "DIONYSIUS",
+  {
+   "Momodia de Chaeronea (fragmentum ap. Philostratum, Vitae sophistarum)": "Momodia de Chaeronea (fragmentum ap. Philostratum, Vitae sophistarum)"
+  },
+  [
+   "A. D. 1-2",
+   "",
+   "Soph.",
+   "Milesius, Lesbius, Ephesius",
+   "4230"
+  ]
+ ],
  "DIONYSIUS CYRTUS": [
   "DIONYSIUS CYRTUS",
   {
@@ -28566,7 +31382,7 @@ let LDM = {
    "862"
   ]
  ],
- "DIONYSIUS Empiricus": [
+ "DIONYSIUS EMPIRICUS": [
   "DIONYSIUS Empiricus",
   {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum"
@@ -28592,7 +31408,7 @@ let LDM = {
    "4185"
   ]
  ],
- "DIONYSIUS \u1f41 \u03ba\u03c5\u03ba\u03bb\u03bf\u03b3\u03c1\u03ac\u03c6\u03bf\u03c2": [
+ "DIONYSIUS \u1f49 \u039a\u03a5\u039a\u039b\u039f\u0393\u03a1\u0386\u03a6\u039f\u03a3": [
   "DIONYSIUS \u1f41 \u03ba\u03c5\u03ba\u03bb\u03bf\u03b3\u03c1\u03ac\u03c6\u03bf\u03c2",
   {
    "FGrH #15": "fragmenta (002)"
@@ -28605,7 +31421,7 @@ let LDM = {
    "1331"
   ]
  ],
- "DIONYSIUS Sophista": [
+ "DIONYSIUS SOPHISTA": [
   "DIONYSIUS Sophista",
   {
    "epigrammata": "epigrammata"
@@ -28660,6 +31476,71 @@ let LDM = {
  "DIOPHANTUS": [
   "DIOPHANTUS",
   {
+   "fragmentum (001)": "fragmentum (001)",
+   "fragmenta (002)": "fragmenta (002)"
+  },
+  [
+   "-800",
+   "1600",
+   "Comic.",
+   "",
+   "395"
+  ]
+ ],
+ "DIOPHANTUS $1": [
+  "DIOPHANTUS",
+  {
+   "epigramma exhortatorium et supplicatorium": "epigramma exhortatorium et supplicatorium"
+  },
+  [
+   "Incertum",
+   "",
+   "Epigr.",
+   "Atheniensis",
+   "2712"
+  ]
+ ],
+ "DIOPHANTUS $2": [
+  "DIOPHANTUS",
+  {
+   "FGrH #805": "fragmenta (002)",
+   "fragmenta (003)": "fragmenta (003)"
+  },
+  [
+   "-300",
+   "-201",
+   "Hist.",
+   "",
+   "2539"
+  ]
+ ],
+ "DIOPHANTUS $3": [
+  "DIOPHANTUS",
+  {
+   "Arithmeticorum libri sex": "Arithmeticorum libri sex",
+   "Lib. 1: pp. 2-80": "Lib. 1: pp. 2-80",
+   "Lib. 2: pp. 82-136": "Lib. 2: pp. 82-136",
+   "Lib. 3: pp. 138-188": "Lib. 3: pp. 138-188",
+   "Lib. 4: pp. 190-308": "Lib. 4: pp. 190-308",
+   "Lib. 5: pp. 310-390": "Lib. 5: pp. 310-390",
+   "Lib. 6: pp. 392-448": "Lib. 6: pp. 392-448",
+   "De polygonis numeris": "De polygonis numeris",
+   "Fragmentum [Sp.] (e cod. Paris. suppl. gr. 387, fol. 181r)": "Fragmentum [Sp.] (e cod. Paris. suppl. gr. 387, fol. 181r)",
+   "Fragmentum [Sp.] (e cod. Paris. 453)": "Fragmentum [Sp.] (e cod. Paris. 453)",
+   "Fragmentum [Sp.] (e cod. Paris. gr. 2448)": "Fragmentum [Sp.] (e cod. Paris. gr. 2448)",
+   "problema": "problema"
+  },
+  [
+   "201",
+   "301",
+   "Math.",
+   "Alexandrinus",
+   "2039"
+  ]
+ ],
+ "DIOPHANTUS $4": [
+  "DIOPHANTUS",
+  {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum"
   },
   [
@@ -28670,7 +31551,7 @@ let LDM = {
    "867"
   ]
  ],
- "DIOPHILUS vel DIOPHILA": [
+ "DIOPHILUS VEL DIOPHILA": [
   "DIOPHILUS vel DIOPHILA",
   {
    "fragmentum (001)": "fragmentum (001)"
@@ -28683,7 +31564,7 @@ let LDM = {
    "2621"
   ]
  ],
- "DIOSCORIDES Phacas": [
+ "DIOSCORIDES PHACAS": [
   "DIOSCORIDES Phacas",
   {
    "fragmentum ap. Paulum": "fragmentum ap. Paulum"
@@ -28728,6 +31609,47 @@ let LDM = {
  "DIOSCORUS": [
   "DIOSCORUS",
   {
+   "fragmenta (001)": "fragmenta (001)",
+   "fr. 1: Encomium Justini II (P. Cairo Cat. 2.67183): pp. 128-129": "fr. 1: Encomium Justini II (P. Cairo Cat. 2.67183): pp. 128-129",
+   "fr. 2: Encomium Joannis (P. Cairo Cat. 1.67055v): pp. 129-130": "fr. 2: Encomium Joannis (P. Cairo Cat. 1.67055v): pp. 129-130",
+   "fr. 3: Encomium Joannis (P. Berol. 10580 + P. Cairo Cat. 3.67317): pp. 130-133": "fr. 3: Encomium Joannis (P. Berol. 10580 + P. Cairo Cat. 3.67317): pp. 130-133",
+   "fr. 4: Encomium Athanasii (P. Cairo Cat. 1.67097v B C): pp. 133-134": "fr. 4: Encomium Athanasii (P. Cairo Cat. 1.67097v B C): pp. 133-134",
+   "fr. 5: Encomium Callinici (P. Cairo Cat. 3.67315v): pp. 134-136": "fr. 5: Encomium Callinici (P. Cairo Cat. 3.67315v): pp. 134-136",
+   "fr. 6: Encomium (P. Cairo Cat. 2.67177): pp. 136-137": "fr. 6: Encomium (P. Cairo Cat. 2.67177): pp. 136-137",
+   "fr. 7: Encomium (P. Cairo Cat. 3.67316v): pp. 137-138": "fr. 7: Encomium (P. Cairo Cat. 3.67316v): pp. 137-138",
+   "fr. 8: Encomium (P. Walters Art Gallery, Baltimore, inv. 517): p. 138": "fr. 8: Encomium (P. Walters Art Gallery, Baltimore, inv. 517): p. 138",
+   "fr. 9: Encomium (P. Cairo Cat. 1.67097 E): pp. 138-139": "fr. 9: Encomium (P. Cairo Cat. 1.67097 E): pp. 138-139",
+   "fr. 10: Encomium (P. Cairo Cat. 2.67131v): pp. 139-140": "fr. 10: Encomium (P. Cairo Cat. 2.67131v): pp. 139-140",
+   "fr. 11: Encomium (P. Cairo Cat. 3.67279v): pp. 140-141": "fr. 11: Encomium (P. Cairo Cat. 3.67279v): pp. 140-141",
+   "fr. 12: Encomium Romani domini (Brit. Mus. inv. 1552 + P. Rain. 2070): pp. 141-142": "fr. 12: Encomium Romani domini (Brit. Mus. inv. 1552 + P. Rain. 2070): pp. 141-142",
+   "fr. 13: Encomium Constantini dioecetae (P. Cairo Cat. 1.67120v): pp. 142-143": "fr. 13: Encomium Constantini dioecetae (P. Cairo Cat. 1.67120v): pp. 142-143",
+   "fr. 14: Encomium Dorothei comitis (P. Cairo Cat. 1.67120v): p. 143": "fr. 14: Encomium Dorothei comitis (P. Cairo Cat. 1.67120v): p. 143",
+   "fr. 15: Encomium Constantini (P. Cairo Cat. 1.67120v): pp. 143-144": "fr. 15: Encomium Constantini (P. Cairo Cat. 1.67120v): pp. 143-144",
+   "fr. 16: \u0395\u1f30\u03c2 \u03c4\u1f74\u03bd \u03c4\u03cd\u03c7\u03b7\u03bd \u03c4\u1fc6\u03c2 \u03b3\u03b5\u03bd\u03b5\u03b8\u03bb\u03af\u03b1\u03c2 (P. Cairo Cat. 1.67120v): p. 144": "fr. 16: \u0395\u1f30\u03c2 \u03c4\u1f74\u03bd \u03c4\u03cd\u03c7\u03b7\u03bd \u03c4\u1fc6\u03c2 \u03b3\u03b5\u03bd\u03b5\u03b8\u03bb\u03af\u03b1\u03c2 (P. Cairo Cat. 1.67120v): p. 144",
+   "fr. 17: Encomium Colluthi comitis (P. Cairo Cat. 1.67120v): pp. 144-145": "fr. 17: Encomium Colluthi comitis (P. Cairo Cat. 1.67120v): pp. 144-145",
+   "fr. 18: Encomium Joannis jurisconsulti (Brit. Mus. inv. 1728 + 1745v): p. 145": "fr. 18: Encomium Joannis jurisconsulti (Brit. Mus. inv. 1728 + 1745v): p. 145",
+   "fr. 19: Encomium Hypatii excubitoris praefecti (P. Cairo Cat. 2.67185v A): pp. 145-146": "fr. 19: Encomium Hypatii excubitoris praefecti (P. Cairo Cat. 2.67185v A): pp. 145-146",
+   "fr. 20: Encomium Pauli cancellarii (P. Cairo Cat. 2.67185v B): p. 146": "fr. 20: Encomium Pauli cancellarii (P. Cairo Cat. 2.67185v B): p. 146",
+   "fr. 21: Epithalamium Callinici comitis (P. Cairo Cat. 2.67179 A): pp. 146-147": "fr. 21: Epithalamium Callinici comitis (P. Cairo Cat. 2.67179 A): pp. 146-147",
+   "fr. 22: Epithalamium (Brit. Mus. inv. 1733 + P. Cairo Cat. 2.67181 et 67180): pp. 147-148": "fr. 22: Epithalamium (Brit. Mus. inv. 1733 + P. Cairo Cat. 2.67181 et 67180): pp. 147-148",
+   "fr. 23: Epithalamium acrostichum (P. Cairo Cat. 3.67318): pp. 148-149": "fr. 23: Epithalamium acrostichum (P. Cairo Cat. 3.67318): pp. 148-149",
+   "fr. 24: Epithalamium (Brit. Mus. inv. 1728 + 1745v): pp. 149-150": "fr. 24: Epithalamium (Brit. Mus. inv. 1728 + 1745v): pp. 149-150",
+   "fr. 25: Epithalamium (Brit. Mus. inv. 1745v): p. 150": "fr. 25: Epithalamium (Brit. Mus. inv. 1745v): p. 150",
+   "fr. 26: Achilles de Polyxena (P. Cairo Cat. 3.67316v): p. 151": "fr. 26: Achilles de Polyxena (P. Cairo Cat. 3.67316v): p. 151",
+   "fr. 27: Apollo de Hyacintho et Daphne (P. Cairo Cat. 2.67188v): p. 151": "fr. 27: Apollo de Hyacintho et Daphne (P. Cairo Cat. 2.67188v): p. 151",
+   "fr. 28: Symposiaca (P. Cairo Cat. 1.67097v F): pp. 151-152": "fr. 28: Symposiaca (P. Cairo Cat. 1.67097v F): pp. 151-152"
+  },
+  [
+   "520",
+   "585",
+   "Poeta",
+   "Aphroditensis (Aegypti)",
+   "2121"
+  ]
+ ],
+ "DIOSCORUS $1": [
+  "DIOSCORUS",
+  {
    "fragmentum ap Galenum": "fragmentum ap Galenum"
   },
   [
@@ -28768,6 +31690,47 @@ let LDM = {
  "DIOTIMUS": [
   "DIOTIMUS",
   {
+   "testimonia (001)": "testimonia (001)"
+  },
+  [
+   "-400",
+   "-301",
+   "Phil.",
+   "Tyrius",
+   "2340"
+  ]
+ ],
+ "DIOTIMUS $1": [
+  "DIOTIMUS",
+  {
+   "Epigrammata": "Epigrammata",
+   "Fragmentum et titulus": "Fragmentum et titulus",
+   "Fragmentum": "Fragmentum"
+  },
+  [
+   "-300",
+   "-201",
+   "Epic.",
+   "Adramyttenus",
+   "174"
+  ]
+ ],
+ "DIOTIMUS $2": [
+  "DIOTIMUS",
+  {
+   "epigrammata": "epigrammata"
+  },
+  [
+   "4 B. C.",
+   "",
+   "Epigr.",
+   "Atheniensis",
+   "175"
+  ]
+ ],
+ "DIOTIMUS $3": [
+  "DIOTIMUS",
+  {
    "epigrammata": "epigrammata"
   },
   [
@@ -28778,7 +31741,7 @@ let LDM = {
    "176"
   ]
  ],
- "Diox.": [
+ "DIOX.": [
   "DIOXIPPUS",
   {
    "Fragmenta (001)": "Fragmenta (001)",
@@ -28808,17 +31771,30 @@ let LDM = {
  "DIPHILUS": [
   "DIPHILUS",
   {
-   "testimonium": "testimonium"
+   "fragmentum (001)": "fragmentum (001)"
+  },
+  [
+   "-800",
+   "1600",
+   "Epic. Iamb.",
+   "",
+   "248"
+  ]
+ ],
+ "DIPHILUS $1": [
+  "DIPHILUS",
+  {
+   "AG 11.439AP 11.439": "Epigramma (001)"
   },
   [
    "?",
    "?",
-   "Phil.",
-   "Bosporianus, Atheniensis",
-   "4269"
+   "Epigr.",
+   "Atheniensis",
+   "177"
   ]
  ],
- "Diph.": [
+ "DIPH.": [
   "DIPHILUS",
   {
    "Fragmenta (001)": "Fragmenta (001)",
@@ -28834,7 +31810,7 @@ let LDM = {
    "447"
   ]
  ],
- "Diph. Siph.": [
+ "DIPH. SIPH.": [
   "DIPHILUS",
   {
    "fragmenta ap. Athenaeum": "fragmenta ap. Athenaeum"
@@ -28845,6 +31821,19 @@ let LDM = {
    "Med.",
    "Siphnius",
    "872"
+  ]
+ ],
+ "DIPHILUS $2": [
+  "DIPHILUS",
+  {
+   "testimonium": "testimonium"
+  },
+  [
+   "?",
+   "?",
+   "Phil.",
+   "Bosporianus, Atheniensis",
+   "4269"
   ]
  ],
  "DISCIPULORUM CANTIUNCULA": [
@@ -28860,7 +31849,7 @@ let LDM = {
    "279"
   ]
  ],
- "David DISHYPATUS": [
+ "DAVID DISHYPATUS": [
   "David DISHYPATUS",
   {
    "Ad Nicolaum Cabasilam contra Barlaam et Acindynum {001}": "Ad Nicolaum Cabasilam contra Barlaam et Acindynum {001}",
@@ -28875,7 +31864,7 @@ let LDM = {
    "3257"
   ]
  ],
- "Dius Hist.": [
+ "DIUS HIST.": [
   "DIUS",
   {
    "FGrH #785": "testimonium (001)",
@@ -28890,7 +31879,7 @@ let LDM = {
    "1330"
   ]
  ],
- "Dius (?)": [
+ "DIUS (?)": [
   "DIUS",
   {
    "fragmenta (001)": "fragmenta (001)"
@@ -28903,7 +31892,7 @@ let LDM = {
    "1334"
   ]
  ],
- "Diyll.": [
+ "DIYLL.": [
   "DIYLLUS",
   {
    "FGrH #73": "testimonia (001)",
@@ -28917,7 +31906,7 @@ let LDM = {
    "1911"
   ]
  ],
- "Joannes DOCEIANUS": [
+ "JOANNES DOCEIANUS": [
   "Joannes DOCEIANUS",
   {
    "Encomium in imperatorem Constantinum Palaeologum {001}": "Encomium in imperatorem Constantinum Palaeologum {001}",
@@ -29046,7 +32035,7 @@ let LDM = {
    "5346"
   ]
  ],
- "DOMINICUS Gradensis": [
+ "DOMINICUS GRADENSIS": [
   "DOMINICUS Gradensis",
   {
    "Epistula ad Petrum III patriarcham": "Epistula ad Petrum III patriarcham"
@@ -29117,17 +32106,43 @@ let LDM = {
  "?": [
   "DOROTHEUS",
   {
-   "fragmenta ap. Galenum": "fragmenta ap. Galenum"
+   "Visio Dorothei": "Visio Dorothei"
   },
   [
-   "ante A. D. 1",
+   "?",
+   "?",
+   "Poeta",
    "",
-   "Med.",
-   "Heliopolitanus",
-   "874"
+   "2761"
   ]
  ],
- "Doroth. Ath.": [
+ "? $1": [
+  "DOROTHEUS Mytilenaeus",
+  {
+   "Didaskalia": "Didaskalia"
+  },
+  [
+   "A. D. 15",
+   "",
+   "Theol.",
+   "Mytilenensis Metropolita",
+   "3349"
+  ]
+ ],
+ "? $2": [
+  "[DOROTHEUS]",
+  {
+   "FGrH # 289": "fragmenta (001)"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "Chaldaeus",
+   "2197"
+  ]
+ ],
+ "DOROTH. ATH.": [
   "DOROTHEUS",
   {
    "FGrH #145": "fragmenta (002)"
@@ -29140,7 +32155,7 @@ let LDM = {
    "1336"
   ]
  ],
- "Dor. Ab.": [
+ "DOR. AB.": [
   "DOROTHEUS",
   {
    "doct.": "Doctrinae diversae i-xvii",
@@ -29184,7 +32199,7 @@ let LDM = {
    "2852"
   ]
  ],
- "Doroth.": [
+ "DOROTH.": [
   "DOROTHEUS",
   {
    "fragmenta graeca": "fragmenta graeca",
@@ -29199,7 +32214,20 @@ let LDM = {
    "1337"
   ]
  ],
- "Dosiad. Hist.": [
+ "? $3": [
+  "DOROTHEUS",
+  {
+   "fragmenta ap. Galenum": "fragmenta ap. Galenum"
+  },
+  [
+   "ante A. D. 1",
+   "",
+   "Med.",
+   "Heliopolitanus",
+   "874"
+  ]
+ ],
+ "DOSIAD. HIST.": [
   "DOSIADAS",
   {
    "FGrH #458": "fragmenta (002)"
@@ -29240,7 +32268,7 @@ let LDM = {
    "875"
   ]
  ],
- "Dosith. Hist.": [
+ "DOSITH. HIST.": [
   "DOSITHEUS",
   {
    "FGrH #54": "fragmenta (001)"
@@ -29253,7 +32281,7 @@ let LDM = {
    "1896"
   ]
  ],
- "Dosith.": [
+ "DOSITH.": [
   "DOSITHEUS Magister",
   {
    "gramm.": "Ars grammatica"
@@ -29293,7 +32321,7 @@ let LDM = {
    "9061"
   ]
  ],
- "Nilus DOXAPATRES": [
+ "NILUS DOXAPATRES": [
   "Nilus DOXAPATRES",
   {
    "Notitia patriarchatuum (001)": "Notitia patriarchatuum (001)"
@@ -29319,7 +32347,7 @@ let LDM = {
    "2249"
   ]
  ],
- "Dromo": [
+ "DROMO": [
   "DROMO",
   {
    "fragmenta (001)": "fragmenta (001)",
@@ -29346,7 +32374,7 @@ let LDM = {
    "3146"
   ]
  ],
- "Neophytus DUCAS": [
+ "NEOPHYTUS DUCAS": [
   "Neophytus DUCAS",
   {
    "Epistulae (a. 1818-1835)": "Epistulae (a. 1818-1835)",
@@ -29373,7 +32401,7 @@ let LDM = {
    "178"
   ]
  ],
- "Duris": [
+ "DURIS $1": [
   "DURIS",
   {
    "fragmenta (003)": "fragmenta (003)",
@@ -29389,7 +32417,7 @@ let LDM = {
    "1339"
   ]
  ],
- "Callistr. Hist.": [
+ "CALLISTR. HIST.": [
   "Domitius CALLISTRATUS",
   {
    "FGH 433": "fragmenta (002)"
@@ -29572,7 +32600,7 @@ let LDM = {
    "1897"
   ]
  ],
- "ELIAS Syncellus": [
+ "ELIAS SYNCELLUS": [
   "ELIAS Syncellus",
   {
    "Carmina anacreontea (001)": "Carmina anacreontea (001)",
@@ -29737,7 +32765,7 @@ let LDM = {
    "1343"
   ]
  ],
- "Antonius EPARCHUS": [
+ "ANTONIUS EPARCHUS": [
   "Antonius EPARCHUS",
   {
    "Epistulae (001)": "Epistulae (001)",
@@ -29776,6 +32804,21 @@ let LDM = {
  "EPHIPPUS": [
   "EPHIPPUS",
   {
+   "Fragmenta (001)": "Fragmenta (001)",
+   "Fragmenta (002)": "Fragmenta (002)",
+   "Fragmenta (003)": "Fragmenta (003)"
+  },
+  [
+   "-375",
+   "-340",
+   "Comic.",
+   "",
+   "450"
+  ]
+ ],
+ "EPHIPPUS $1": [
+  "EPHIPPUS",
+  {
    "FGrH #126": "Fragmenta (002)"
   },
   [
@@ -29802,7 +32845,7 @@ let LDM = {
    "536"
   ]
  ],
- "EPHORUS Junior": [
+ "EPHORUS JUNIOR": [
   "EPHORUS Junior",
   {
    "FGrH #212": "Testimonium (001)"
@@ -29818,6 +32861,19 @@ let LDM = {
  "EPHRAEM": [
   "EPHRAEM",
   {
+   "De miraculo Clementis Romani (001)": "De miraculo Clementis Romani (001)"
+  },
+  [
+   "301",
+   "400",
+   "Scr. Eccl.",
+   "Chersonensis",
+   "1346"
+  ]
+ ],
+ "EPHRAEM $1": [
+  "EPHRAEM",
+  {
    "Ad Acacium philosophum et presbyterum Apameensem. Capita xii (fragmentum) {005}": "Ad Acacium philosophum et presbyterum Apameensem. Capita xii (fragmentum) {005}",
    "Capita xii {006}": "Capita xii {006}",
    "De substantia [Sp.] {010}": "De substantia [Sp.] {010}"
@@ -29830,7 +32886,7 @@ let LDM = {
    "2818"
   ]
  ],
- "EPHRAEM Aeniensis": [
+ "EPHRAEM AENIENSIS": [
   "EPHRAEM Aeniensis",
   {
    "Catalogus patriarcharum novae Romae (002)": "Catalogus patriarcharum novae Romae (002)",
@@ -30316,7 +33372,7 @@ let LDM = {
    "1345"
   ]
  ],
- "EPICHARMUS et PSEUDEPICHARMEA": [
+ "EPICHARMUS ET PSEUDEPICHARMEA": [
   "EPICHARMUS et PSEUDEPICHARMEA",
   {
    "Fragmenta Epicharmi {001}": "Fragmenta Epicharmi {001}",
@@ -30447,6 +33503,19 @@ let LDM = {
  "EPIGONUS": [
   "EPIGONUS",
   {
+   "Epigramma": "Epigramma"
+  },
+  [
+   "1 B. C. ?",
+   "",
+   "Epigr.",
+   "Thessalonicensis",
+   "179"
+  ]
+ ],
+ "EPIGONUS $1": [
+  "EPIGONUS",
+  {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum"
   },
   [
@@ -30457,7 +33526,7 @@ let LDM = {
    "881"
   ]
  ],
- "EPIGONUS vel HERMON": [
+ "EPIGONUS VEL HERMON": [
   "EPIGONUS vel HERMON",
   {
    "Fragmentum ap. A\u00ebtium (lib. 15)": "Fragmentum ap. A\u00ebtium (lib. 15)"
@@ -30599,7 +33668,7 @@ let LDM = {
    "2021"
   ]
  ],
- "EPIPHANIUS Monachus": [
+ "EPIPHANIUS MONACHUS": [
   "EPIPHANIUS Monachus",
   {
    "Sermo de vitae Deiparae {001}": "Sermo de vitae Deiparae {001}",
@@ -30758,7 +33827,7 @@ let LDM = {
    "690"
   ]
  ],
- "ERASTUS et CORISCUS": [
+ "ERASTUS ET CORISCUS": [
   "ERASTUS et CORISCUS",
   {
    "Testimonia (001)": "Testimonia (001)",
@@ -30785,7 +33854,7 @@ let LDM = {
    "2502"
   ]
  ],
- "ERATOSTHENES et ERATOSTHENICA": [
+ "ERATOSTHENES ET ERATOSTHENICA": [
   "ERATOSTHENES et ERATOSTHENICA",
   {
    "Catasterismi {001}": "Catasterismi {001}",
@@ -30813,7 +33882,7 @@ let LDM = {
    "222"
   ]
  ],
- "ERATOSTHENES Scholasticus": [
+ "ERATOSTHENES SCHOLASTICUS": [
   "ERATOSTHENES Scholasticus",
   {
    "Epigrammata": "Epigrammata",
@@ -30970,6 +34039,19 @@ let LDM = {
   ]
  ],
  "ERYCIUS": [
+  "ERYCIUS",
+  {
+   "Fragmentum (001)": "Fragmentum (001)"
+  },
+  [
+   "-100",
+   "-1",
+   "Poeta",
+   "",
+   "2653"
+  ]
+ ],
+ "ERYCIUS $1": [
   "ERYCIUS",
   {
    "Epigrammata (001)": "Epigrammata (001)"
@@ -31136,6 +34218,20 @@ let LDM = {
  "EUANGELUS": [
   "EUANGELUS",
   {
+   "Fragmentum (001)": "Fragmentum (001)",
+   "Fragmenta (002)": "Fragmenta (002)"
+  },
+  [
+   "-300",
+   "1600",
+   "Comic.",
+   "",
+   "456"
+  ]
+ ],
+ "EUANGELUS $1": [
+  "EUANGELUS",
+  {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
   },
   [
@@ -31189,6 +34285,20 @@ let LDM = {
  "EUBULIDES": [
   "EUBULIDES",
   {
+   "Fragmentum (001)": "Fragmentum (001)",
+   "Fragmentum (002)": "Fragmentum (002)"
+  },
+  [
+   "-400",
+   "-301",
+   "Comic.",
+   "",
+   "457"
+  ]
+ ],
+ "EUBULIDES $1": [
+  "EUBULIDES",
+  {
    "Testimonia (001)": "Testimonia (001)"
   },
   [
@@ -31200,6 +34310,25 @@ let LDM = {
   ]
  ],
  "EUBULUS": [
+  "EUBULUS",
+  {
+   "Fragmenta {001}": "Fragmenta {001}",
+   "Fragmenta {002}": "Fragmenta {002}",
+   "Fragmenta {003}": "Fragmenta {003}",
+   "Titulus {004}": "Titulus {004}",
+   "Fragmentum {005}": "Fragmentum {005}",
+   "Fragmentum {006}": "Fragmentum {006}",
+   "Aenigmata": "Aenigmata"
+  },
+  [
+   "-400",
+   "-330",
+   "Comic.",
+   "",
+   "458"
+  ]
+ ],
+ "EUBULUS $1": [
   "EUBULUS",
   {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum"
@@ -31231,6 +34360,50 @@ let LDM = {
  "EUCLIDES": [
   "EUCLIDES",
   {
+   "Fragmenta (001)": "Fragmenta (001)"
+  },
+  [
+   "-800",
+   "-601",
+   "Comic. vel Iamb.",
+   "fort. Atheniensis",
+   "250"
+  ]
+ ],
+ "EUCLIDES $1": [
+  "EUCLIDES",
+  {
+   "Elementa {001}": "Elementa {001}",
+   "Elementa {002}": "Elementa {002}",
+   "Elementa {003}": "Elementa {003}",
+   "Elementa {004}": "Elementa {004}",
+   "Elementa {005}": "Elementa {005}",
+   "Elementa {006}": "Elementa {006}",
+   "Data {007}": "Data {007}",
+   "Data {008}": "Data {008}",
+   "Optica {009}": "Optica {009}",
+   "Opticorum recensio Theonis {010}": "Opticorum recensio Theonis {010}",
+   "Catoptrica {011}": "Catoptrica {011}",
+   "Phaenomena {012}": "Phaenomena {012}",
+   "Phaenomena {013}": "Phaenomena {013}",
+   "Phaenomena {014}": "Phaenomena {014}",
+   "Sectio canonis {015}": "Sectio canonis {015}",
+   "Fragmenta {016}": "Fragmenta {016}",
+   "Epigramma {017}": "Epigramma {017}",
+   "Problema": "Problema",
+   "Introductio harmonica": "Introductio harmonica"
+  },
+  [
+   "-300",
+   "-201",
+   "Geom.",
+   "Alexandrinus",
+   "1799"
+  ]
+ ],
+ "EUCLIDES $2": [
+  "EUCLIDES",
+  {
    "Testimonia (001)": "Testimonia (001)"
   },
   [
@@ -31257,6 +34430,83 @@ let LDM = {
  "EUDEMUS": [
   "EUDEMUS",
   {
+   "FGrH # 497": "Testimonia (001)"
+  },
+  [
+   "5 B. C. ?",
+   "",
+   "Hist.",
+   "Naxius vel Parius",
+   "2343"
+  ]
+ ],
+ "EUDEMUS $1": [
+  "EUDEMUS",
+  {
+   "FGrH # 524": "Titulus (001)"
+  },
+  [
+   "4 B. C. ?",
+   "",
+   "Hist.",
+   "",
+   "2365"
+  ]
+ ],
+ "EUDEMUS $2": [
+  "EUDEMUS",
+  {
+   "Fragmenta (001)": "Fragmenta (001)"
+  },
+  [
+   "3 B. C.",
+   "",
+   "Med.",
+   "Alexandrinus",
+   "735"
+  ]
+ ],
+ "EUDEMUS $3": [
+  "EUDEMUS",
+  {
+   "Fragmentum (001)": "Fragmentum (001)",
+   "fragmenta ap. Galenum": "fragmenta ap. Galenum"
+  },
+  [
+   "1",
+   "100",
+   "Poet. Med.",
+   "",
+   "888"
+  ]
+ ],
+ "EUDEMUS $4": [
+  "EUDEMUS",
+  {
+   "Fragmenta (001)": "Fragmenta (001)",
+   "\u039a\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1\u03b9 (?): frr. 7-8": "\u039a\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1\u03b9 (?): frr. 7-8",
+   "\u1f08\u03bd\u03b1\u03bb\u03c5\u03c4\u03b9\u03ba\u03ac: frr. 9-16, 18-20, 22, 24": "\u1f08\u03bd\u03b1\u03bb\u03c5\u03c4\u03b9\u03ba\u03ac: frr. 9-16, 18-20, 22, 24",
+   "\u03a0\u03b5\u03c1\u1f76 \u03bb\u03ad\u03be\u03b5\u03c9\u03c2: frr. 25-29": "\u03a0\u03b5\u03c1\u1f76 \u03bb\u03ad\u03be\u03b5\u03c9\u03c2: frr. 25-29",
+   "\u03a0\u03b5\u03c1\u1f76 \u03b3\u03c9\u03bd\u03af\u03b1\u03c2: fr. 30": "\u03a0\u03b5\u03c1\u1f76 \u03b3\u03c9\u03bd\u03af\u03b1\u03c2: fr. 30",
+   "\u03a6\u03c5\u03c3\u03b9\u03ba\u03ac: frr. 31-123b": "\u03a6\u03c5\u03c3\u03b9\u03ba\u03ac: frr. 31-123b",
+   "\u03a4\u1f70 \u03bc\u03b5\u03c4\u1f70 \u03c4\u1f70 \u03c6\u03c5\u03c3\u03b9\u03ba\u03ac (?): fr. 124": "\u03a4\u1f70 \u03bc\u03b5\u03c4\u1f70 \u03c4\u1f70 \u03c6\u03c5\u03c3\u03b9\u03ba\u03ac (?): fr. 124",
+   "Historia animalium (?): frr. 126-132": "Historia animalium (?): frr. 126-132",
+   "\u0393\u03b5\u03c9\u03bc\u03b5\u03c4\u03c1\u03b9\u03ba\u1f74 \u1f31\u03c3\u03c4\u03bf\u03c1\u03af\u03b1: frr. 133-141": "\u0393\u03b5\u03c9\u03bc\u03b5\u03c4\u03c1\u03b9\u03ba\u1f74 \u1f31\u03c3\u03c4\u03bf\u03c1\u03af\u03b1: frr. 133-141",
+   "\u1f08\u03c1\u03b9\u03b8\u03bc\u03b7\u03c4\u03b9\u03ba\u1f74 \u1f31\u03c3\u03c4\u03bf\u03c1\u03af\u03b1: fr. 142": "\u1f08\u03c1\u03b9\u03b8\u03bc\u03b7\u03c4\u03b9\u03ba\u1f74 \u1f31\u03c3\u03c4\u03bf\u03c1\u03af\u03b1: fr. 142",
+   "\u1f08\u03c3\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03b9\u03ba\u1f74 \u1f31\u03c3\u03c4\u03bf\u03c1\u03af\u03b1: frr. 143-149": "\u1f08\u03c3\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03b9\u03ba\u1f74 \u1f31\u03c3\u03c4\u03bf\u03c1\u03af\u03b1: frr. 143-149",
+   "Historia theologiae (?): fr. 150": "Historia theologiae (?): fr. 150"
+  },
+  [
+   "-360",
+   "-301",
+   "Phil.",
+   "Rhodius",
+   "1357"
+  ]
+ ],
+ "EUDEMUS $5": [
+  "EUDEMUS",
+  {
    "\u03a0\u03b5\u03c1\u1f76 \u03bb\u03ad\u03be\u03b5\u03c9\u03bd \u1fe5\u03b7\u03c4\u03bf\u03c1\u03b9\u03ba\u1ff6\u03bd (excerpta)": "\u03a0\u03b5\u03c1\u1f76 \u03bb\u03ad\u03be\u03b5\u03c9\u03bd \u1fe5\u03b7\u03c4\u03bf\u03c1\u03b9\u03ba\u1ff6\u03bd (excerpta)"
   },
   [
@@ -31267,7 +34517,7 @@ let LDM = {
    "1376"
   ]
  ],
- "EUDEMUS  Senior": [
+ "EUDEMUS  SENIOR": [
   "EUDEMUS  Senior",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -31308,6 +34558,19 @@ let LDM = {
  "EUDORUS": [
   "EUDORUS",
   {
+   "FGrH # 650": "Testimonium (001)"
+  },
+  [
+   "1 B. C.",
+   "",
+   "Hist.",
+   "Alexandrinus",
+   "1847"
+  ]
+ ],
+ "EUDORUS $1": [
+  "EUDORUS",
+  {
    "De simulacris in speculis ( P. Oxy. 13.1609)": "De simulacris in speculis ( P. Oxy. 13.1609)",
    "Commentarius in Platonius Theaetetum": "Commentarius in Platonius Theaetetum"
   },
@@ -31320,6 +34583,35 @@ let LDM = {
   ]
  ],
  "EUDOXUS": [
+  "EUDOXUS",
+  {
+   "Fragmenta (001)": "Fragmenta (001)",
+   "Fragmenta = Selenodromium secundum cyclum duodecim annorum (fragmenta) [Sp.] (e cod. Berol. phil. 1577) (002)": "Fragmenta = Selenodromium secundum cyclum duodecim annorum (fragmenta) [Sp.] (e cod. Berol. phil. 1577) (002)",
+   "Ars arstonomica [Sp.] (P. Par. 1)": "Ars arstonomica [Sp.] (P. Par. 1)"
+  },
+  [
+   "-391",
+   "-338",
+   "Astron.",
+   "Cnidius",
+   "1358"
+  ]
+ ],
+ "EUDOXUS $1": [
+  "EUDOXUS",
+  {
+   "Fragmenta (001)": "Fragmenta (001)",
+   "Tituli (002)": "Tituli (002)"
+  },
+  [
+   "-350",
+   "-251",
+   "Comic.",
+   "Siceliota",
+   "399"
+  ]
+ ],
+ "EUDOXUS $2": [
   "EUDOXUS",
   {
    "FGrH #79": "Fragmenta (002)",
@@ -31349,6 +34641,33 @@ let LDM = {
  "EUENUS": [
   "EUENUS",
   {
+   "Fragmenta (001)": "Fragmenta (001)",
+   "Epigrammata exhortatoria et supplicatoria": "Epigrammata exhortatoria et supplicatoria"
+  },
+  [
+   "-450",
+   "-351",
+   "Eleg.",
+   "Parius",
+   "251"
+  ]
+ ],
+ "EUENUS $1": [
+  "EUENUS",
+  {
+   "Epigramma": "Epigramma"
+  },
+  [
+   "1 B. C. ?",
+   "",
+   "Epigr.",
+   "Atheniensis",
+   "183"
+  ]
+ ],
+ "EUENUS $2": [
+  "EUENUS",
+  {
    "Epigrammata": "Epigrammata"
   },
   [
@@ -31375,14 +34694,14 @@ let LDM = {
  "EUGENIUS": [
   "EUGENIUS",
   {
-   "\u0395\u1f50\u03b3\u03b5\u03bd\u03af\u03bf\u03c5 <\u03b4\u03af\u03c0\u03bb\u03c9\u03c3\u03b9\u03c2> (e cod. Venet. Marc. 299, fol. 185r)": "\u0395\u1f50\u03b3\u03b5\u03bd\u03af\u03bf\u03c5 <\u03b4\u03af\u03c0\u03bb\u03c9\u03c3\u03b9\u03c2> (e cod. Venet. Marc. 299, fol. 185r)"
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
   },
   [
-   "1",
-   "300",
-   "Alchem.",
+   "A. D. 1-2",
    "",
-   "4323"
+   "Med.",
+   "",
+   "891"
   ]
  ],
  "EUGERASIA": [
@@ -31398,7 +34717,7 @@ let LDM = {
    "892"
   ]
  ],
- "Nicetas EUGENIANUS": [
+ "NICETAS EUGENIANUS": [
   "Nicetas EUGENIANUS",
   {
    "De Drosillae et Chariclis amoribus": "De Drosillae et Chariclis amoribus",
@@ -31440,7 +34759,7 @@ let LDM = {
    "3095"
   ]
  ],
- "Marcus EUGENICUS": [
+ "MARCUS EUGENICUS": [
   "Marcus EUGENICUS",
   {
    "Oratio ad Eugenium papam quartum {001}": "Oratio ad Eugenium papam quartum {001}",
@@ -31486,7 +34805,7 @@ let LDM = {
    "3283"
   ]
  ],
- "Joannes EUGENICUS": [
+ "JOANNES EUGENICUS": [
   "Joannes EUGENICUS",
   {
    "Ecphraseis laudantes Corinthum et Petrinam {001}": "Ecphraseis laudantes Corinthum et Petrinam {001}",
@@ -31560,7 +34879,7 @@ let LDM = {
    "3287"
   ]
  ],
- "EUGENIUS Panormitanus": [
+ "EUGENIUS PANORMITANUS": [
   "EUGENIUS Panormitanus",
   {
    "Versus Iambici": "Versus Iambici",
@@ -31595,6 +34914,19 @@ let LDM = {
    "Poeta, Transl.",
    "Panormitanus, Siculus",
    "3033"
+  ]
+ ],
+ "EUGENIUS $1": [
+  "EUGENIUS",
+  {
+   "\u0395\u1f50\u03b3\u03b5\u03bd\u03af\u03bf\u03c5 <\u03b4\u03af\u03c0\u03bb\u03c9\u03c3\u03b9\u03c2> (e cod. Venet. Marc. 299, fol. 185r)": "\u0395\u1f50\u03b3\u03b5\u03bd\u03af\u03bf\u03c5 <\u03b4\u03af\u03c0\u03bb\u03c9\u03c3\u03b9\u03c2> (e cod. Venet. Marc. 299, fol. 185r)"
+  },
+  [
+   "1",
+   "300",
+   "Alchem.",
+   "",
+   "4323"
   ]
  ],
  "EUHEMERUS": [
@@ -31655,6 +34987,28 @@ let LDM = {
   ]
  ],
  "EUMELUS": [
+  "EUMELUS",
+  {
+   "Fragmentum {001}": "Fragmentum {001}",
+   "Fragmenta {002}": "Fragmenta {002}",
+   "FGrH #451": "Testimonia {003}",
+   "Corinthiaca {004}": "Corinthiaca {004}",
+   "Fragmenta epica {005}": "Fragmenta epica {005}",
+   "frr. 2-3, 8, 12, 16, 19": "frr. 2-3, 8, 12, 16, 19",
+   "frr. 2-3, 8: Corinthiaca": "frr. 2-3, 8: Corinthiaca",
+   "fr. 12: Europa": "fr. 12: Europa",
+   "fr. 16: fragmentum incerti operis": "fr. 16: fragmentum incerti operis",
+   "fr. 19: dubium est": "fr. 19: dubium est"
+  },
+  [
+   "-800",
+   "-601",
+   "Epic.",
+   "Corinthius",
+   "298"
+  ]
+ ],
+ "EUMELUS $1": [
   "EUMELUS",
   {
    "FGrH # 77": "Fragmenta (001)"
@@ -31874,7 +35228,7 @@ let LDM = {
    "2129"
   ]
  ],
- "EUPOLEMUS Judaeus": [
+ "EUPOLEMUS JUDAEUS": [
   "EUPOLEMUS Judaeus",
   {
    "FGrH #723": "Fragmenta (002)"
@@ -32055,6 +35409,54 @@ let LDM = {
  "EUSEBIUS": [
   "EUSEBIUS",
   {
+   "FGrH #101": "Fragmenta (002)"
+  },
+  [
+   "A. D. 3",
+   "",
+   "Hist.",
+   "",
+   "246"
+  ]
+ ],
+ "EUSEBIUS $1": [
+  "EUSEBIUS",
+  {
+   "Fragmenta (001)": "Fragmenta (001)"
+  },
+  [
+   "301",
+   "400",
+   "Phil.",
+   "Myndius",
+   "2640"
+  ]
+ ],
+ "EUSEBIUS $2": [
+  "EUSEBIUS",
+  {
+   "Fragmenta in epistulam ad Romanos {007}": "Fragmenta in epistulam ad Romanos {007}",
+   "Fragmenta in epistulam ad Galatas {008}": "Fragmenta in epistulam ad Galatas {008}",
+   "Fragmentum in epistulam i ad Corinthios {009}": "Fragmentum in epistulam i ad Corinthios {009}",
+   "Commentarii in Genesim (fragmenta e catenis) {014}": "Commentarii in Genesim (fragmenta e catenis) {014}",
+   "DE arbitrio, voluntate Pauli et domini passione (fragmenta ap. Theodoretum, Eranistes)": "DE arbitrio, voluntate Pauli et domini passione (fragmenta ap. Theodoretum, Eranistes)",
+   "Homilia de paenitentia (olim sub auctore Basilio)": "Homilia de paenitentia (olim sub auctore Basilio)",
+   "Fragmenta in Octateuchum (in catenis)": "Fragmenta in Octateuchum (in catenis)",
+   "Fragementa in Reges (In catenis)": "Fragementa in Reges (In catenis)",
+   "Fragmenta in Octateuchum (in catenis) [Dub.]": "Fragmenta in Octateuchum (in catenis) [Dub.]",
+   "Fragmentum in Isaiam (in catenis) [Dub.]": "Fragmentum in Isaiam (in catenis) [Dub.]"
+  },
+  [
+   "301",
+   "400",
+   "Scr. Eccl.",
+   "Emesenus",
+   "4124"
+  ]
+ ],
+ "EUSEBIUS $3": [
+  "EUSEBIUS",
+  {
    "Praeparatio evangelica {001}": "Praeparatio evangelica {001}",
    "Historia ecclesiastica {002}": "Historia ecclesiastica {002}",
    "*Lib. 1-4: vol. 1": "*Lib. 1-4: vol. 1",
@@ -32121,6 +35523,123 @@ let LDM = {
   ]
  ],
  "EUSTATHIUS": [
+  "EUSTATHIUS",
+  {
+   "Epigramma exhortatorium et supplicatorium": "Epigramma exhortatorium et supplicatorium"
+  },
+  [
+   "A. D. 11",
+   "",
+   "Epigr.",
+   "Iconiensis",
+   "2717"
+  ]
+ ],
+ "EUSTATHIUS $1": [
+  "EUSTATHIUS",
+  {
+   "Fragmenta (001)": "Fragmenta (001)"
+  },
+  [
+   "A. D. 5-6",
+   "",
+   "Hist.",
+   "Epiphaniensis",
+   "2637"
+  ]
+ ],
+ "EUSTATHIUS $2": [
+  "EUSTATHIUS",
+  {
+   "Commentarii ad Homeri Iliadem {001}": "Commentarii ad Homeri Iliadem {001}",
+   "Vol. 1 = lib. \u0391\u2014\u0394": "Vol. 1 = lib. \u0391\u2014\u0394",
+   "Vol. 2 = lib. \u0395\u2014\u0399": "Vol. 2 = lib. \u0395\u2014\u0399",
+   "Vol. 3 = lib. \u039a\u2014\u03a0": "Vol. 3 = lib. \u039a\u2014\u03a0",
+   "Vol. 4 = lib. \u03a1\u2014\u03a9": "Vol. 4 = lib. \u03a1\u2014\u03a9",
+   "Commentarii ad Homeri Iliadem (lib. \u03a3-\u03a9) {002}": "Commentarii ad Homeri Iliadem (lib. \u03a3-\u03a9) {002}",
+   "Commentarii ad Homeri Odysseam {003}": "Commentarii ad Homeri Odysseam {003}",
+   "De capta Thessalonica {004}": "De capta Thessalonica {004}",
+   "Prooemium commentarii in Pindari opera {005}": "Prooemium commentarii in Pindari opera {005}",
+   "Commentarium in Dionysii periegetae orbis descriptionem {006}": "Commentarium in Dionysii periegetae orbis descriptionem {006}",
+   "Sermones {007}": "Sermones {007}",
+   "Oratio \u0391\u0374: pp. 3-16": "Oratio \u0391\u0374: pp. 3-16",
+   "Oratio \u0392\u0374: pp. 17-45": "Oratio \u0392\u0374: pp. 17-45",
+   "Oratio \u0393\u0374: pp. 46-54": "Oratio \u0393\u0374: pp. 46-54",
+   "Oratio \u0394\u0374: pp. 55-60": "Oratio \u0394\u0374: pp. 55-60",
+   "Oratio \u0395\u0374: pp. 61-77": "Oratio \u0395\u0374: pp. 61-77",
+   "Oratio \u03da\u0374: pp. 78-99": "Oratio \u03da\u0374: pp. 78-99",
+   "Oratio \u0396\u0374: pp. 100-140": "Oratio \u0396\u0374: pp. 100-140",
+   "Oratio \u0397\u0374: pp. 141-151": "Oratio \u0397\u0374: pp. 141-151",
+   "Oratio \u0398\u0374: pp. 152-169": "Oratio \u0398\u0374: pp. 152-169",
+   "Oratio \u0399\u0374: pp. 170-181": "Oratio \u0399\u0374: pp. 170-181",
+   "Oratio \u039a\u0374: pp. 182-194": "Oratio \u039a\u0374: pp. 182-194",
+   "Oratio \u039b\u0374: pp. 195-201": "Oratio \u039b\u0374: pp. 195-201",
+   "Oratio \u039c\u0374: pp. 202-228": "Oratio \u039c\u0374: pp. 202-228",
+   "Oratio \u039d\u0374: pp. 229-249": "Oratio \u039d\u0374: pp. 229-249",
+   "Oratio \u039e\u0374: pp. 250-260": "Oratio \u039e\u0374: pp. 250-260",
+   "Oratio \u039f\u0374: pp. 261-288": "Oratio \u039f\u0374: pp. 261-288",
+   "Oratio \u03a0\u0374: pp. 289-293": "Oratio \u03a0\u0374: pp. 289-293",
+   "Oratio \u03a1\u0374: pp. 294-310": "Oratio \u03a1\u0374: pp. 294-310",
+   "Epitaphius in Nicolaum Hagiotheodoritam metropolitam Atheniensem {008}": "Epitaphius in Nicolaum Hagiotheodoritam metropolitam Atheniensem {008}",
+   "De emendanda vita monachica {009}": "De emendanda vita monachica {009}",
+   "Epistulae {010}": "Epistulae {010}",
+   "Sermones {011}": "Sermones {011}",
+   "Monodia in Nicephorum Comnenum {013}": "Monodia in Nicephorum Comnenum {013}",
+   "Epitaphius in imperatorem Manuelem I Comnenum {014}": "Epitaphius in imperatorem Manuelem I Comnenum {014}",
+   "Orationes {015}": "Orationes {015}",
+   "Oratio super Psalm XVLIII, 8, pp. 7-13": "Oratio super Psalm XVLIII, 8, pp. 7-13",
+   "Oratio de obedientia magistratui christiano debita, pp. 13-29": "Oratio de obedientia magistratui christiano debita, pp. 13-29",
+   "Oratio de Alpheo, Zosimo, Alexandro et Marco martyribus, pp. 30-35": "Oratio de Alpheo, Zosimo, Alexandro et Marco martyribus, pp. 30-35",
+   "Alphei, Zosimi, Alexandri martyrum invocationes, pp. 36-37": "Alphei, Zosimi, Alexandri martyrum invocationes, pp. 36-37",
+   "In eum, qui papa dici recusabat, pp. 37-41": "In eum, qui papa dici recusabat, pp. 37-41",
+   "Ad Isaacium Angelum imperator post Scythas fugatos allocutio Philippopoli, pp. 41-45": "Ad Isaacium Angelum imperator post Scythas fugatos allocutio Philippopoli, pp. 41-45",
+   "Epistola super dicto: Si ausus fueris, pp. 46-49": "Epistola super dicto: Si ausus fueris, pp. 46-49",
+   "Oratio in Ananiam, Azariam, Misaelem martyres, pp. 49-53": "Oratio in Ananiam, Azariam, Misaelem martyres, pp. 49-53",
+   "De simulatione, pp. 88-98": "De simulatione, pp. 88-98",
+   "Adversus implacabilitatis accusationem, pp. 98-125": "Adversus implacabilitatis accusationem, pp. 98-125",
+   "Dialogus Theophilus et Hierocles, pp. 141-145": "Dialogus Theophilus et Hierocles, pp. 141-145",
+   "Oratio in Sancti Philotheum Opsicianum, pp. 145-151": "Oratio in Sancti Philotheum Opsicianum, pp. 145-151",
+   "Oratio anno auspicando habita, pp. 152-157": "Oratio anno auspicando habita, pp. 152-157",
+   "Epistola ad Thessalonicenses, pp. 158-165": "Epistola ad Thessalonicenses, pp. 158-165",
+   "Sancti Demetrii Myroblytae invocationes, pp. 165-167": "Sancti Demetrii Myroblytae invocationes, pp. 165-167",
+   "Oratio in Sancti Demetrium myroblyten, pp. 167-182": "Oratio in Sancti Demetrium myroblyten, pp. 167-182",
+   "Oratio ad stylitam quendam Thessalonicensem, pp. 182-196": "Oratio ad stylitam quendam Thessalonicensem, pp. 182-196",
+   "Exegesis in canonem iambicum pentecostalem {016}": "Exegesis in canonem iambicum pentecostalem {016}",
+   "Proemium, pp. 7-21": "Proemium, pp. 7-21",
+   "Acrostichis, pp. 22-25": "Acrostichis, pp. 22-25",
+   "Ode I, pp. 26-80": "Ode I, pp. 26-80",
+   "Ode III, pp. 81-111": "Ode III, pp. 81-111",
+   "Ode IV, pp. 112-142": "Ode IV, pp. 112-142",
+   "Ode V, pp. 143-159": "Ode V, pp. 143-159",
+   "Ode VI, pp. 160-174": "Ode VI, pp. 160-174",
+   "Ode VII, pp. 175-196": "Ode VII, pp. 175-196",
+   "Ode VIII, pp. 197-229": "Ode VIII, pp. 197-229",
+   "Ode IX, pp. 230-264": "Ode IX, pp. 230-264",
+   "Scholia in Aristophanis nubes": "Scholia in Aristophanis nubes"
+  },
+  [
+   "1115",
+   "1198",
+   "Scr. Eccl. et Philol.",
+   "Thessalonicensis",
+   "4083"
+  ]
+ ],
+ "EUSTATHIUS $3": [
+  "EUSTATHIUS",
+  {
+   "Epistula de duabus naturis": "Epistula de duabus naturis",
+   "Epistula ad Timotheum scholasticum de duabus naturis adversus Severum (e cod. Vat. gr. 2195, pp. 185-208)": "Epistula ad Timotheum scholasticum de duabus naturis adversus Severum (e cod. Vat. gr. 2195, pp. 185-208)"
+  },
+  [
+   "A. D. 6",
+   "",
+   "Theol.",
+   "Constantinopolitanus",
+   "2810"
+  ]
+ ],
+ "EUSTATHIUS $4": [
   "EUSTATHIUS",
   {
    "De engastrimytho contra Origenem {001}": "De engastrimytho contra Origenem {001}",
@@ -32194,7 +35713,7 @@ let LDM = {
    "4031"
   ]
  ],
- "EUSTRATIUS Presbyter": [
+ "EUSTRATIUS PRESBYTER": [
   "EUSTRATIUS Presbyter",
   {
    "Vita Eutychii {001}": "Vita Eutychii {001}",
@@ -32283,6 +35802,25 @@ let LDM = {
  "EUTHYMIUS": [
   "EUTHYMIUS",
   {
+   "Laudatio in conceptionem sanctae Annae {001}": "Laudatio in conceptionem sanctae Annae {001}",
+   "Laudatio altera in conceptionem sanctae Annae {002}": "Laudatio altera in conceptionem sanctae Annae {002}",
+   "Encomium in conceptionem Annae {003}": "Encomium in conceptionem Annae {003}",
+   "Encomium in venerationem zonae Deiparae necnon in dedicationem sanctae ipsius capsae in Chalcopratiis {004}": "Encomium in venerationem zonae Deiparae necnon in dedicationem sanctae ipsius capsae in Chalcopratiis {004}",
+   "Canon in Deiparam {005}": "Canon in Deiparam {005}",
+   "Laudatio Thomae apostoli {006}": "Laudatio Thomae apostoli {006}",
+   "De praesentatione (BHG 1112q) {007}": "De praesentatione (BHG 1112q) {007}"
+  },
+  [
+   "",
+   "",
+   "Scr. Eccl.",
+   "Constantinopolitanus, Seleuciensis",
+   "3036"
+  ]
+ ],
+ "EUTHYMIUS $1": [
+  "EUTHYMIUS",
+  {
    "Oratio de ordinatione episcoporum": "Oratio de ordinatione episcoporum"
   },
   [
@@ -32293,7 +35831,7 @@ let LDM = {
    "3340"
   ]
  ],
- "EUTHYMIUS Protasecretis": [
+ "EUTHYMIUS PROTASECRETIS": [
   "EUTHYMIUS Protasecretis",
   {
    "Encomium in Mariam Aegyptiacam {001}": "Encomium in Mariam Aegyptiacam {001}",
@@ -32474,6 +36012,20 @@ let LDM = {
  "EUTYCHIANUS": [
   "EUTYCHIANUS",
   {
+   "FGrH #226": "Fragmentum (001)",
+   "Fragmentum (002)": "Fragmentum (002)"
+  },
+  [
+   "301",
+   "400",
+   "Hist.",
+   "Cappadox",
+   "2158"
+  ]
+ ],
+ "EUTYCHIANUS $1": [
+  "EUTYCHIANUS",
+  {
    "fragmentum ap. Oribasium": "fragmentum ap. Oribasium"
   },
   [
@@ -32534,7 +36086,7 @@ let LDM = {
    "4110"
   ]
  ],
- "EVAGRIUS Scholasticus": [
+ "EVAGRIUS SCHOLASTICUS": [
   "EVAGRIUS Scholasticus",
   {
    "Historia ecclesiastica {001}": "Historia ecclesiastica {001}"
@@ -32745,7 +36297,7 @@ let LDM = {
    "9038"
   ]
  ],
- "Fauorin. /Favorin.": [
+ "FAUORIN. /FAVORIN.": [
   "FAVORINUS",
   {
    "fr.": "fragmenta",
@@ -32777,7 +36329,7 @@ let LDM = {
    "1377"
   ]
  ],
- "Firm. Caes.": [
+ "FIRM. CAES.": [
   "FIRMUS",
   {
    "ep.": "epistulae",
@@ -32901,7 +36453,7 @@ let LDM = {
    "2646"
   ]
  ],
- "Alch. Fr. Pap. (?)": [
+ "ALCH. FR. PAP. (?)": [
   "FRAGMENTA ALCHEMICA",
   {
    "fragmentum": "fragmentum",
@@ -32984,7 +36536,7 @@ let LDM = {
    "1379"
   ]
  ],
- "FRAGMENTA ANONYMA (PsVTGr)": [
+ "FRAGMENTA ANONYMA (PSVTGR)": [
   "FRAGMENTA ANONYMA (PsVTGr)",
   {
    "fragmenta": "fragmenta"
@@ -33055,7 +36607,7 @@ let LDM = {
    "1381"
   ]
  ],
- "Fr. Tel.": [
+ "FR. TEL.": [
   "FRAGMENTUM TELIAMBICUM",
   {
    "Fragmentum teliambicum (P. Oxy. 1.15)": "Fragmentum teliambicum (P. Oxy. 1.15)"
@@ -33068,7 +36620,7 @@ let LDM = {
    "1382"
   ]
  ],
- "Flavius Claudius JULIANUS Imperator": [
+ "FLAVIUS CLAUDIUS JULIANUS IMPERATOR": [
   "Flavius Claudius JULIANUS Imperator",
   {
    "\u1f18\u03b3\u03ba\u03ce\u03bc\u03b9\u03bf\u03bd \u03b5\u1f30\u03c2 \u03c4\u1f78\u03bd \u03b1\u1f50\u03c4\u03bf\u03ba\u03c1\u03ac\u03c4\u03bf\u03c1\u03b1 \u039a\u03c9\u03bd\u03c3\u03c4\u03ac\u03bd\u03c4\u03b9\u03bf\u03bd {001}": "\u1f18\u03b3\u03ba\u03ce\u03bc\u03b9\u03bf\u03bd \u03b5\u1f30\u03c2 \u03c4\u1f78\u03bd \u03b1\u1f50\u03c4\u03bf\u03ba\u03c1\u03ac\u03c4\u03bf\u03c1\u03b1 \u039a\u03c9\u03bd\u03c3\u03c4\u03ac\u03bd\u03c4\u03b9\u03bf\u03bd {001}",
@@ -33100,7 +36652,7 @@ let LDM = {
    "2003"
   ]
  ],
- "Flavius JOSEPHUS": [
+ "FLAVIUS JOSEPHUS": [
   "Flavius JOSEPHUS",
   {
    "Antiquitates Judaicae {001}": "Antiquitates Judaicae {001}",
@@ -33116,7 +36668,7 @@ let LDM = {
    "526"
   ]
  ],
- "Flavius JUSTINIANUS Imperator": [
+ "FLAVIUS JUSTINIANUS IMPERATOR": [
   "Flavius JUSTINIANUS Imperator",
   {
    "Contra monophysitas {001}": "Contra monophysitas {001}",
@@ -33146,7 +36698,7 @@ let LDM = {
    "2734"
   ]
  ],
- "Flavius PHILOSTRATUS": [
+ "FLAVIUS PHILOSTRATUS": [
   "Flavius PHILOSTRATUS",
   {
    "Vita Apollonii {001}": "Vita Apollonii {001}",
@@ -33384,7 +36936,7 @@ let LDM = {
    "3051"
   ]
  ],
- "GEORGIUS Monachus": [
+ "GEORGIUS MONACHUS": [
   "GEORGIUS Monachus",
   {},
   [
@@ -33432,6 +36984,17 @@ let LDM = {
   "GLAUCUS",
   {},
   [
+   "-450",
+   "-351",
+   "Hist.",
+   "",
+   "4391"
+  ]
+ ],
+ "GLAUCUS $1": [
+  "GLAUCUS",
+  {},
+  [
    "-200",
    "300",
    "Hist.",
@@ -33462,6 +37025,17 @@ let LDM = {
   ]
  ],
  "GORGIAS": [
+  "GORGIAS",
+  {},
+  [
+   "-480",
+   "-380",
+   "Rhet. Soph.",
+   "",
+   "593"
+  ]
+ ],
+ "GORGIAS $1": [
   "GORGIAS",
   {},
   [
@@ -33538,7 +37112,18 @@ let LDM = {
    "2118"
   ]
  ],
- "Gaius ASINIUS QUADRATUS": [
+ "GAIUS ACILIUS $1": [
+  "Gaius ACILIUS",
+  {},
+  [
+   "-300",
+   "-201",
+   "Hist. Phil.",
+   "",
+   "2545"
+  ]
+ ],
+ "GAIUS ASINIUS QUADRATUS": [
   "Gaius ASINIUS QUADRATUS",
   {
    "AG 7.312AP 7.312": "Epigrammata",
@@ -33553,23 +37138,18 @@ let LDM = {
    "2122"
   ]
  ],
- "Gaius MUSONIUS RUFUS": [
+ "GAIUS MUSONIUS RUFUS": [
   "Gaius MUSONIUS RUFUS",
-  {
-   "dissertationum a Lucio digestarum reliquiae {001}": "dissertationum a Lucio digestarum reliquiae {001}",
-   "Fragmenta minora {002}": "Fragmenta minora {002}",
-   "Epistulae spuriae {003}": "Epistulae spuriae {003}",
-   "Fragmentum": "Fragmentum"
-  },
+  {},
   [
-   "?",
-   "?",
+   "1",
+   "100",
    "Phil.",
-   "Volsiniensis",
+   "",
    "628"
   ]
  ],
- "Gaius SUETONIUS TRANQUILLUS": [
+ "GAIUS SUETONIUS TRANQUILLUS": [
   "Gaius SUETONIUS TRANQUILLUS",
   {
    "\u03a0\u03b5\u03c1\u1f76 \u03b2\u03bb\u03b1\u03c3\u03c6\u03b7\u03bc\u03b9\u1ff6\u03bd \u03ba\u03b1\u1f76 \u03c0\u03cc\u03b8\u03b5\u03bd \u1f11\u03ba\u03ac\u03c3\u03c4\u03b7 {001}": "\u03a0\u03b5\u03c1\u1f76 \u03b2\u03bb\u03b1\u03c3\u03c6\u03b7\u03bc\u03b9\u1ff6\u03bd \u03ba\u03b1\u1f76 \u03c0\u03cc\u03b8\u03b5\u03bd \u1f11\u03ba\u03ac\u03c3\u03c4\u03b7 {001}",
@@ -33583,7 +37163,7 @@ let LDM = {
    "1760"
   ]
  ],
- "Georgius ACROPOLITES": [
+ "GEORGIUS ACROPOLITES": [
   "Georgius ACROPOLITES",
   {},
   [
@@ -33594,7 +37174,7 @@ let LDM = {
    "3141"
   ]
  ],
- "Georgius CEDRENUS": [
+ "GEORGIUS CEDRENUS": [
   "Georgius CEDRENUS",
   {},
   [
@@ -33605,7 +37185,7 @@ let LDM = {
    "3018"
   ]
  ],
- "Georgius CHOEROBOSCUS": [
+ "GEORGIUS CHOEROBOSCUS": [
   "Georgius CHOEROBOSCUS",
   {},
   [
@@ -33616,7 +37196,7 @@ let LDM = {
    "4093"
   ]
  ],
- "Georgius PACHYMERES": [
+ "GEORGIUS PACHYMERES": [
   "Georgius PACHYMERES",
   {},
   [
@@ -33627,7 +37207,7 @@ let LDM = {
    "3142"
   ]
  ],
- "Georgius SPHRANTZES": [
+ "GEORGIUS SPHRANTZES": [
   "Georgius SPHRANTZES",
   {
    "Chronicon sive Minus [Sp.]": "Chronicon sive Minus [Sp.]"
@@ -33643,6 +37223,19 @@ let LDM = {
  "HABRON": [
   "HABRON",
   {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "?",
+   "?",
+   "Gramm.",
+   "Phrygius, Rhodius",
+   "1758"
+  ]
+ ],
+ "HABRON $1": [
+  "HABRON",
+  {
    "FGrH #359": "testimonium"
   },
   [
@@ -33653,7 +37246,7 @@ let LDM = {
    "2259"
   ]
  ],
- "Hadr.": [
+ "HADR.": [
   "HADRIANUS",
   {
    "epigrammata": "epigrammata",
@@ -33667,7 +37260,7 @@ let LDM = {
    "195"
   ]
  ],
- "Hadr. Mon.": [
+ "HADR. MON.": [
   "HADRIANUS",
   {
    "Isagoge scripturae sacrae": "Isagoge scripturae sacrae",
@@ -33707,6 +37300,24 @@ let LDM = {
    "2359"
   ]
  ],
+ "(H)AGIAS-DERCYLUS $1": [
+  "(H)AGIAS-DERCYLUS",
+  {
+   "FGrH #305": "fragmenta",
+   "Frr. 1-4": "Frr. 1-4",
+   "fr. 1a dup. 1387 002 (fr. 3)": "fr. 1a dup. 1387 002 (fr. 3)",
+   "fr. 1b (p. 670) dup. 1387 002 (fr. 1)": "fr. 1b (p. 670) dup. 1387 002 (fr. 1)",
+   "fr. 2 dup. 1387 002 (fr. 2)": "fr. 2 dup. 1387 002 (fr. 2)",
+   "fr. 3 dup. 1387 002 (fr. 7)": "fr. 3 dup. 1387 002 (fr. 7)"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "?",
+   "1387"
+  ]
+ ],
  "HAGIOGRAPHICA VARIA": [
   "HAGIOGRAPHICA VARIA",
   {
@@ -33734,7 +37345,7 @@ let LDM = {
    "909"
   ]
  ],
- "Constantinus HARMENOPULUS": [
+ "CONSTANTINUS HARMENOPULUS": [
   "Constantinus HARMENOPULUS",
   {
    "Manuale legum sive Hexabiblos": "Manuale legum sive Hexabiblos"
@@ -33747,7 +37358,7 @@ let LDM = {
    "9030"
   ]
  ],
- "HANNIBAL Rex Carthaginiensium": [
+ "HANNIBAL REX CARTHAGINIENSIUM": [
   "HANNIBAL Rex Carthaginiensium",
   {
    "Encomium in sanctum Demetrium": "Encomium in sanctum Demetrium",
@@ -33761,7 +37372,7 @@ let LDM = {
    "1974"
   ]
  ],
- "Harmod.": [
+ "HARMOD.": [
   "HARMODIUS",
   {
    "FGrH #319": "fragmenta"
@@ -33816,6 +37427,33 @@ let LDM = {
  "HARPOCRATION": [
   "HARPOCRATION",
   {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "?",
+   "913"
+  ]
+ ],
+ "HARPOCRATION $1": [
+  "HARPOCRATION",
+  {
+   "De facultatibus animalium, herbarum et lapidum (excerpta) (e cod. Mus. Hist. Mosq. gr. 508, fol. 124v)": "De facultatibus animalium, herbarum et lapidum (excerpta) (e cod. Mus. Hist. Mosq. gr. 508, fol. 124v)",
+   "Opuscula de plantis duodecim signis et septem planetis subiectis (e cod. Matrit. Bibl. Nat. 4631, fol. 75 [olim cod. Matrit. gr. 110])": "Opuscula de plantis duodecim signis et septem planetis subiectis (e cod. Matrit. Bibl. Nat. 4631, fol. 75 [olim cod. Matrit. gr. 110])"
+  },
+  [
+   "?",
+   "?",
+   "Astrol.",
+   "Alexandrinus",
+   "4366"
+  ]
+ ],
+ "HARPOCRATION $2": [
+  "HARPOCRATION",
+  {
    "Lexicon in decem oratores (=  Lexicon in decem oratores Atticos (Berkowitz))": "Lexicon in decem oratores (=  Lexicon in decem oratores Atticos (Berkowitz))"
   },
   [
@@ -33839,7 +37477,7 @@ let LDM = {
    "691"
   ]
  ],
- "Hecat. Thas.": [
+ "HECAT. THAS.": [
   "HECATAEUS",
   {
    "epigramma": "epigramma"
@@ -33852,7 +37490,7 @@ let LDM = {
    "196"
   ]
  ],
- "Hecat.": [
+ "HECAT.": [
   "HECATAEUS",
   {
    "FGrH #1 : A1-7": "testimonia",
@@ -33867,7 +37505,7 @@ let LDM = {
    "538"
   ]
  ],
- "Hecat. Abd.": [
+ "HECAT. ABD.": [
   "HECATAEUS",
   {
    "FGrH # 264 : 3A: 11-12": "Testimonia {001}",
@@ -33883,7 +37521,7 @@ let LDM = {
    "1390"
   ]
  ],
- "Hedyle (?)": [
+ "HEDYLE (?)": [
   "HEDYLE",
   {
    "fragmentum": "fragmentum"
@@ -33896,7 +37534,7 @@ let LDM = {
    "197"
   ]
  ],
- "Hedyl.": [
+ "HEDYL.": [
   "HEDYLUS",
   {
    "Epigrammata": "Epigrammata",
@@ -33915,7 +37553,7 @@ let LDM = {
    "198"
   ]
  ],
- "Hegem.": [
+ "HEGEM.": [
   "HEGEMON",
   {
    "fragmentum": "fragmentum",
@@ -33942,7 +37580,7 @@ let LDM = {
    "1925"
   ]
  ],
- "Hegem. Hist.": [
+ "HEGEM. HIST.": [
   "HEGEMON",
   {
    "epigramma": "epigramma",
@@ -33957,7 +37595,7 @@ let LDM = {
    "1391"
   ]
  ],
- "Hegesand.": [
+ "HEGESAND.": [
   "HEGESANDER",
   {
    "fragmenta": "fragmenta"
@@ -33970,7 +37608,7 @@ let LDM = {
    "1392"
   ]
  ],
- "Hegesian.": [
+ "HEGESIAN.": [
   "HEGESIANAX",
   {
    "fragmenta": "fragmenta",
@@ -33986,7 +37624,7 @@ let LDM = {
    "1393"
   ]
  ],
- "Hegesias (?)": [
+ "HEGESIAS (?)": [
   "HEGESIAS",
   {
    "FGrH #142 : 2B: 804-806": "testimonia",
@@ -34000,7 +37638,7 @@ let LDM = {
    "1394"
   ]
  ],
- "Hegesipp.": [
+ "HEGESIPP.": [
   "HEGESIPPUS",
   {
    "epigrammata": "epigrammata"
@@ -34026,7 +37664,7 @@ let LDM = {
    "1398"
   ]
  ],
- "Hegesipp. Cmoic.": [
+ "HEGESIPP. CMOIC.": [
   "HEGESIPPUS",
   {
    "fragmenta": "fragmenta"
@@ -34039,7 +37677,7 @@ let LDM = {
    "464"
   ]
  ],
- "Hegesipp. Hist.": [
+ "HEGESIPP. HIST.": [
   "HEGESIPPUS",
   {
    "FGrH #391 3B: 273": "testimonia",
@@ -34053,7 +37691,7 @@ let LDM = {
    "1397"
   ]
  ],
- "Hegetor (?)": [
+ "HEGETOR (?)": [
   "HEGETOR",
   {
    "fragmentum ap. Apollonium": "fragmentum ap. Apollonium"
@@ -34095,18 +37733,31 @@ let LDM = {
  "HELIODORUS": [
   "HELIODORUS",
   {
-   "Commentarium in Paulum Alexandrinum": "Commentarium in Paulum Alexandrinum",
-   "\u03a0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03c0\u03bf\u03bb\u03b5\u03cd\u03bf\u03bd\u03c4\u03bf\u03c2 \u03ba\u03b1\u1f76 \u03b4\u03b9\u03ad\u03c0\u03bf\u03bd\u03c4\u03bf\u03c2 (excerptum e cod. Monac. 287, fol. 114v)": "\u03a0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03c0\u03bf\u03bb\u03b5\u03cd\u03bf\u03bd\u03c4\u03bf\u03c2 \u03ba\u03b1\u1f76 \u03b4\u03b9\u03ad\u03c0\u03bf\u03bd\u03c4\u03bf\u03c2 (excerptum e cod. Monac. 287, fol. 114v)"
+   "\u1f29\u03bb\u03b9\u03bf\u03b4\u03ce\u03c1\u03bf\u03c5 \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03bf\u03c5 \u03c0\u03c1\u1f78\u03c2 \u0398\u03b5\u03bf\u03b4\u03cc\u03c3\u03b9\u03bf\u03bd \u03c4\u1f78\u03bd \u03bc\u03ad\u03b3\u03b1\u03bd \u03b2\u03b1\u03c3\u03b9\u03bb\u03ad\u03b1 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u03c4\u1ff6\u03bd \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03c9\u03bd \u03bc\u03c5\u03c3\u03c4\u03b9\u03ba\u1fc6\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2 \u03b4\u03b9\u1f70 \u03c3\u03c4\u03af\u03c7\u03c9\u03bd \u1f30\u03ac\u03bc\u03b2\u03c9\u03bd (e cod.Casselano)": "\u1f29\u03bb\u03b9\u03bf\u03b4\u03ce\u03c1\u03bf\u03c5 \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03bf\u03c5 \u03c0\u03c1\u1f78\u03c2 \u0398\u03b5\u03bf\u03b4\u03cc\u03c3\u03b9\u03bf\u03bd \u03c4\u1f78\u03bd \u03bc\u03ad\u03b3\u03b1\u03bd \u03b2\u03b1\u03c3\u03b9\u03bb\u03ad\u03b1 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u03c4\u1ff6\u03bd \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03c9\u03bd \u03bc\u03c5\u03c3\u03c4\u03b9\u03ba\u1fc6\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2 \u03b4\u03b9\u1f70 \u03c3\u03c4\u03af\u03c7\u03c9\u03bd \u1f30\u03ac\u03bc\u03b2\u03c9\u03bd (e cod.Casselano)"
   },
   [
-   "?",
-   "?",
-   "Astrol.",
-   "Antiochenus",
-   "4367"
+   "-400",
+   "-301",
+   "Alchem. Poeta",
+   "",
+   "4337"
   ]
  ],
- "Heliod. Hist.": [
+ "HELIODORUS $1": [
+  "HELIODORUS",
+  {
+   "\u1f38\u03c4\u03b1\u03bb\u03b9\u03ba\u1f70 \u03b8\u03b1\u03cd\u03bc\u03b1\u03c4\u03b1": "\u1f38\u03c4\u03b1\u03bb\u03b9\u03ba\u1f70 \u03b8\u03b1\u03cd\u03bc\u03b1\u03c4\u03b1",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-800",
+   "-101",
+   "Trag.",
+   "Atheniensis",
+   "750"
+  ]
+ ],
+ "HELIOD. HIST.": [
   "HELIODORUS",
   {
    "FGrH # 373": "fragmenta"
@@ -34119,7 +37770,7 @@ let LDM = {
    "1400"
   ]
  ],
- "Hld.": [
+ "HLD.": [
   "HELIODORUS",
   {
    "Aethiopica": "Aethiopica",
@@ -34133,7 +37784,21 @@ let LDM = {
    "658"
   ]
  ],
- "Heliod.": [
+ "HELIODORUS $2": [
+  "HELIODORUS",
+  {
+   "Commentarium in Paulum Alexandrinum": "Commentarium in Paulum Alexandrinum",
+   "\u03a0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03c0\u03bf\u03bb\u03b5\u03cd\u03bf\u03bd\u03c4\u03bf\u03c2 \u03ba\u03b1\u1f76 \u03b4\u03b9\u03ad\u03c0\u03bf\u03bd\u03c4\u03bf\u03c2 (excerptum e cod. Monac. 287, fol. 114v)": "\u03a0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03c0\u03bf\u03bb\u03b5\u03cd\u03bf\u03bd\u03c4\u03bf\u03c2 \u03ba\u03b1\u1f76 \u03b4\u03b9\u03ad\u03c0\u03bf\u03bd\u03c4\u03bf\u03c2 (excerptum e cod. Monac. 287, fol. 114v)"
+  },
+  [
+   "?",
+   "?",
+   "Astrol.",
+   "Antiochenus",
+   "4367"
+  ]
+ ],
+ "HELIOD.": [
   "HELIODORUS",
   {
    "fragmenta ap. Oribasium": "fragmenta ap. Oribasium",
@@ -34147,7 +37812,20 @@ let LDM = {
    "692"
   ]
  ],
- "Hellad.": [
+ "HELLAD.": [
+  "HELLADIUS",
+  {
+   "epigramma": "epigramma"
+  },
+  [
+   "?",
+   "?",
+   "Epigr.",
+   "?",
+   "1401"
+  ]
+ ],
+ "HELLAD. $1": [
   "HELLADIUS",
   {
    "FGrH #635": "testimonium"
@@ -34160,7 +37838,7 @@ let LDM = {
    "2438"
   ]
  ],
- "Hellanic. Gramm.": [
+ "HELLANIC. GRAMM.": [
   "HELLANICUS",
   {
    "fragmenta grammatica": "fragmenta grammatica"
@@ -34173,7 +37851,7 @@ let LDM = {
    "4245"
   ]
  ],
- "Hellanic.": [
+ "HELLANIC.": [
   "HELLANICUS",
   {
    "FGrH #4 #323a #687a": "testimonia",
@@ -34205,7 +37883,7 @@ let LDM = {
    "558"
   ]
  ],
- "Henioch.": [
+ "HENIOCH.": [
   "HENIOCHUS",
   {
    "fragmenta": "fragmenta"
@@ -34218,7 +37896,7 @@ let LDM = {
    "465"
   ]
  ],
- "Heph. Astrol.": [
+ "HEPH. ASTROL.": [
   "HEPHAESTION",
   {
    "Apotelesmatica": "Apotelesmatica",
@@ -34240,7 +37918,7 @@ let LDM = {
    "2043"
   ]
  ],
- "Heph.": [
+ "HEPH.": [
   "HEPHAESTION",
   {
    "Enchiridion de metris {001}": "Enchiridion de metris {001}",
@@ -34258,7 +37936,7 @@ let LDM = {
    "1402"
   ]
  ],
- "Heracl.": [
+ "HERACL.": [
   "HERACLAS",
   {
    "En Orib.": "fragmentum ap. Oribasium"
@@ -34279,6 +37957,19 @@ let LDM = {
   [
    "?",
    "?",
+   "Gnost.",
+   "?",
+   "1403"
+  ]
+ ],
+ "HERACLEON $1": [
+  "HERACLEON",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "?",
+   "?",
    "Gramm.",
    "Ephesius",
    "567"
@@ -34287,17 +37978,59 @@ let LDM = {
  "HERACLIDES": [
   "HERACLIDES",
   {
-   "fragmentum ap. Oribasium": "fragmentum ap. Oribasium"
+   "epigrammata": "epigrammata"
   },
   [
    "?",
    "?",
-   "Med",
-   "Ephesius",
-   "915"
+   "Epigr.",
+   "Sinopensis",
+   "1410"
   ]
  ],
- "Heraclid. Cum.": [
+ "HERACLIDES $1": [
+  "HERACLIDES",
+  {
+   "testimonium": "testimonium"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "Magnes",
+   "1979"
+  ]
+ ],
+ "HERACLIDES $2": [
+  "HERACLIDES",
+  {
+   "fragmenta ap. Galenum": "fragmenta ap. Galenum",
+   "Fragmentum ap. A\u00ebtium (lib 6)": "Fragmentum ap. A\u00ebtium (lib 6)",
+   "fragmenta ap. Athenaeum": "fragmenta ap. Athenaeum",
+   "fragmenta ap. Hippiatrica": "fragmenta ap. Hippiatrica"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "Tarentinus",
+   "694"
+  ]
+ ],
+ "HERACLIDES $3": [
+  "HERACLIDES",
+  {
+   "fragementum": "fragementum"
+  },
+  [
+   "-200",
+   "-101",
+   "Phil.",
+   "Tarsensis",
+   "1954"
+  ]
+ ],
+ "HERACLID. CUM.": [
   "HERACLIDES",
   {
    "FGrH #689": "fragmenta"
@@ -34310,7 +38043,7 @@ let LDM = {
    "1406"
   ]
  ],
- "Heracl. Mil.": [
+ "HERACL. MIL.": [
   "HERACLIDES",
   {
    "fragmenta": "fragmenta",
@@ -34324,7 +38057,7 @@ let LDM = {
    "1408"
   ]
  ],
- "Heraclid. Com.": [
+ "HERACLID. COM.": [
   "HERACLIDES",
   {
    "fragmentum": "fragmentum"
@@ -34337,7 +38070,46 @@ let LDM = {
    "466"
   ]
  ],
- "HERACLIDES Criticus": [
+ "HERACLIDES $4": [
+  "HERACLIDES",
+  {
+   "fragmentum ap. Paulum": "fragmentum ap. Paulum"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "Erythraeus",
+   "916"
+  ]
+ ],
+ "HERACLIDES $5": [
+  "HERACLIDES",
+  {
+   "fragmentum ap. Alexandrum Trallianum": "fragmentum ap. Alexandrum Trallianum"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "?",
+   "1033"
+  ]
+ ],
+ "HERACLIDES $6": [
+  "HERACLIDES",
+  {
+   "fragmentum ap. Oribasium": "fragmentum ap. Oribasium"
+  },
+  [
+   "?",
+   "?",
+   "Med",
+   "Ephesius",
+   "915"
+  ]
+ ],
+ "HERACLIDES CRITICUS": [
   "HERACLIDES Criticus",
   {
    "Descriptio Graeciae (sub auctore Dicaearcho vel Athenaeo)": "Descriptio Graeciae (sub auctore Dicaearcho vel Athenaeo)"
@@ -34350,7 +38122,7 @@ let LDM = {
    "1405"
   ]
  ],
- "Heraclid. Lemb.": [
+ "HERACLID. LEMB.": [
   "HERACLIDES LEMBUS",
   {
    "Excerpta politiarum": "Excerpta politiarum",
@@ -34366,7 +38138,7 @@ let LDM = {
    "1407"
   ]
  ],
- "Heraclid. Pont.": [
+ "HERACLID. PONT.": [
   "HERACLIDES PONTICUS",
   {
    "fragmenta": "fragmenta",
@@ -34411,7 +38183,7 @@ let LDM = {
    "1409"
   ]
  ],
- "Heraclid. Pont. Gr.": [
+ "HERACLID. PONT. GR.": [
   "HERACLIDES PONTICUS Junior",
   {
    "fragmenta": "fragmenta",
@@ -34438,17 +38210,32 @@ let LDM = {
    "1411"
   ]
  ],
- "Heraclit.": [
+ "HERACLIT.": [
   "HERACLITUS",
   {
-   "all.": "allegoriae (= quaestiones homericae)"
+   "testimonia": "testimonia",
+   "fragmenta": "fragmenta",
+   "epi.": "epistulae"
   },
   [
-   "1",
-   "100",
+   "-550",
+   "-451",
    "Phil.",
+   "Ephesius",
+   "626"
+  ]
+ ],
+ "HERACLIT. $1": [
+  "HERACLITUS",
+  {
+   "epigramma": "epigramma"
+  },
+  [
    "?",
-   "1414"
+   "?",
+   "Epigr.",
+   "Halicarnassensis",
+   "1415"
   ]
  ],
  "HERACLITUS": [
@@ -34464,7 +38251,7 @@ let LDM = {
    "1962"
   ]
  ],
- "Heraclit. Par.": [
+ "HERACLIT. PAR.": [
   "HERACLITUS",
   {
    "de incredibilibus": "de incredibilibus"
@@ -34475,6 +38262,19 @@ let LDM = {
    "Paradox.",
    "?",
    "1413"
+  ]
+ ],
+ "HERACLIT. $2": [
+  "HERACLITUS",
+  {
+   "all.": "allegoriae (= quaestiones homericae)"
+  },
+  [
+   "1",
+   "100",
+   "Phil.",
+   "?",
+   "1414"
   ]
  ],
  "HERA[CLIDES]": [
@@ -34532,7 +38332,7 @@ let LDM = {
    "2336"
   ]
  ],
- "Herill. Stoic.": [
+ "HERILL. STOIC.": [
   "HERILLUS",
   {
    "fragmenta": "fragmenta"
@@ -34545,7 +38345,7 @@ let LDM = {
    "2169"
   ]
  ],
- "Hermaeus (?)": [
+ "HERMAEUS (?)": [
   "HERMAEUS",
   {
    "FGrH #620": "fragmenta",
@@ -34559,7 +38359,7 @@ let LDM = {
    "2426"
   ]
  ],
- "Hermag.": [
+ "HERMAG.": [
   "HERMAGORAS",
   {
    "fragmenta": "fragmenta",
@@ -34573,7 +38373,7 @@ let LDM = {
    "1417"
   ]
  ],
- "HERMAGORAS Minor": [
+ "HERMAGORAS MINOR": [
   "HERMAGORAS Minor",
   {
    "fragmenta": "fragmenta"
@@ -34626,6 +38426,19 @@ let LDM = {
  "HERMAS": [
   "HERMAS",
   {
+   "fragmentum ap. Philumenum": "fragmentum ap. Philumenum"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "?",
+   "974"
+  ]
+ ],
+ "HERMAS $1": [
+  "HERMAS",
+  {
    "pastor": "pastor",
    "fragmenta (ap. Antiochum)": "fragmenta (ap. Antiochum)",
    "fragmenta (P. Oxy. 3.404)": "fragmenta (P. Oxy. 3.404)",
@@ -34652,7 +38465,7 @@ let LDM = {
    "2437"
   ]
  ],
- "Hermesian.": [
+ "HERMESIAN.": [
   "HERMESIANAX",
   {
    "fragmenta": "fragmenta",
@@ -34667,6 +38480,88 @@ let LDM = {
   ]
  ],
  "HERMIAS": [
+  "HERMIAS",
+  {
+   "in platonis phaedrum scholia": "in platonis phaedrum scholia",
+   "Schol. \u0391\u0374, pp. 1-86": "Schol. \u0391\u0374, pp. 1-86",
+   "Schol. \u0392\u0374, pp. 87-180": "Schol. \u0392\u0374, pp. 87-180",
+   "Schol. \u0393\u0374, pp. 181-280": "Schol. \u0393\u0374, pp. 181-280"
+  },
+  [
+   "401",
+   "500",
+   "Phil.",
+   "Alexandrinus",
+   "2317"
+  ]
+ ],
+ "HERMIAS $1": [
+  "HERMIAS",
+  {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "-300",
+   "-201",
+   "Iamb.",
+   "Curiensis",
+   "1420"
+  ]
+ ],
+ "HERMIAS $2": [
+  "HERMIAS",
+  {
+   "FGrH # 558": "fragmentum",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-400",
+   "-301",
+   "Hist.",
+   "Methymnaeus",
+   "2384"
+  ]
+ ],
+ "HERMIAS $3": [
+  "HERMIAS",
+  {
+   "Irrisio gentilium philosophorum": "Irrisio gentilium philosophorum"
+  },
+  [
+   "151",
+   "250",
+   "Apol.",
+   "?",
+   "531"
+  ]
+ ],
+ "HERMIAS $4": [
+  "HERMIAS",
+  {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "-300",
+   "-201",
+   "Poeta",
+   "?",
+   "2624"
+  ]
+ ],
+ "HERMIAS $5": [
+  "HERMIAS",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "?",
+   "919"
+  ]
+ ],
+ "HERMIAS $6": [
   "HERMIAS",
   {
    "testimonium": "testimonium"
@@ -34692,7 +38587,7 @@ let LDM = {
    "1796"
   ]
  ],
- "Hermipp.": [
+ "HERMIPP.": [
   "HERMIPPUS",
   {
    "Fragmenta": "Fragmenta",
@@ -34707,7 +38602,7 @@ let LDM = {
    "252"
   ]
  ],
- "Hermipp. Hist.": [
+ "HERMIPP. HIST.": [
   "HERMIPPUS",
   {
    "fragmenta": "fragmenta",
@@ -34726,7 +38621,7 @@ let LDM = {
    "1421"
   ]
  ],
- "Hermipp. Beryt.": [
+ "HERMIPP. BERYT.": [
   "HERMIPPUS",
   {
    "FGH ( C) 1061": "Peri hebdomados"
@@ -34739,7 +38634,7 @@ let LDM = {
    "/"
   ]
  ],
- "Hermocl.": [
+ "HERMOCL.": [
   "HERMOCLES",
   {
    "ithyphalli": "ithyphalli"
@@ -34752,7 +38647,7 @@ let LDM = {
    "207"
   ]
  ],
- "Hermod. Syr.": [
+ "HERMOD. SYR.": [
   "HERMODORUS",
   {
    "testimonia et fragmenta": "testimonia et fragmenta",
@@ -34779,7 +38674,7 @@ let LDM = {
    "1423"
   ]
  ],
- "Hermog.": [
+ "HERMOG.": [
   "HERMOGENES",
   {
    "prog.": "Progymnasmata {001}",
@@ -34797,7 +38692,7 @@ let LDM = {
    "592"
   ]
  ],
- "Hermog. Hist.": [
+ "HERMOG. HIST.": [
   "HERMOGENES",
   {
    "FGrH # 795": "De Phrygia"
@@ -34813,6 +38708,19 @@ let LDM = {
  "HERMOGENES": [
   "HERMOGENES",
   {
+   "FGrH # 481": "testimonia"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "fort. Prinaeus",
+   "2143"
+  ]
+ ],
+ "HERMOGENES $1": [
+  "HERMOGENES",
+  {
    "FGrH # 579": "testimonium",
    "fragmentum ap. Oribasium": "fragmentum ap. Oribasium"
   },
@@ -34824,7 +38732,7 @@ let LDM = {
    "921"
   ]
  ],
- "Hermol. Lyr.": [
+ "HERMOL. LYR.": [
   "HERMOLOCHUS",
   {
    "fragmentum": "fragmentum"
@@ -34850,7 +38758,7 @@ let LDM = {
    "1425"
   ]
  ],
- "Constantinus HERMONIACUS": [
+ "CONSTANTINUS HERMONIACUS": [
   "Constantinus HERMONIACUS",
   {
    "Metaphrasis Iliadis": "Metaphrasis Iliadis"
@@ -34863,7 +38771,7 @@ let LDM = {
    "4469"
   ]
  ],
- "Charitonymus HERMONYMUS": [
+ "CHARITONYMUS HERMONYMUS": [
   "Charitonymus HERMONYMUS",
   {
    "Epitaphius ad Catharinam Palaeologinam {001}": "Epitaphius ad Catharinam Palaeologinam {001}",
@@ -34922,7 +38830,7 @@ let LDM = {
    "650"
   ]
  ],
- "Herodes Iud.": [
+ "HERODES IUD.": [
   "HERODES I Rex Judaeorum",
   {
    "FGrH #236": "fragmentum"
@@ -34984,7 +38892,7 @@ let LDM = {
    "2625"
   ]
  ],
- "Herodor.": [
+ "HERODOR.": [
   "HERODORUS",
   {
    "FGrH #31": "fragmenta"
@@ -34997,7 +38905,7 @@ let LDM = {
    "1427"
   ]
  ],
- "Hdt.": [
+ "HDT.": [
   "HERODOTUS",
   {
    "historiae": "historiae",
@@ -35019,7 +38927,7 @@ let LDM = {
    "16"
   ]
  ],
- "Herod. Med.": [
+ "HEROD. MED.": [
   "HERODOTUS",
   {
    "\u03a0\u03b5\u03c1\u1f76 \u03b2\u03bf\u03b7\u03b8\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd ( P. Tebt. 2 272) = De remediis": "\u03a0\u03b5\u03c1\u1f76 \u03b2\u03bf\u03b7\u03b8\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd ( P. Tebt. 2 272) = De remediis",
@@ -35039,7 +38947,7 @@ let LDM = {
    "926"
   ]
  ],
- "HERODOTUS et PHILUMENUS": [
+ "HERODOTUS ET PHILUMENUS": [
   "HERODOTUS et PHILUMENUS",
   {
    "Fragmentum ap. A\u00ebtium (lib 5)": "Fragmentum ap. A\u00ebtium (lib 5)"
@@ -35055,17 +38963,32 @@ let LDM = {
  "HERON": [
   "HERON",
   {
-   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+   "Belopoeica {012}": "Belopoeica {012}",
+   "Catoptrica {005}": "Catoptrica {005}",
+   "De automatis {002}": "De automatis {002}",
+   "De mensuris {011}": "De mensuris {011}",
+   "Definitiones {008}": "Definitiones {008}",
+   "Dioptra {007}": "Dioptra {007}",
+   "Fragmenta de horoscopiis {003}": "Fragmenta de horoscopiis {003}",
+   "Fragmenta Heroniana {014}": "Fragmenta Heroniana {014}",
+   "Geodaesia {015}": "Geodaesia {015}",
+   "Geometrica {009}": "Geometrica {009}",
+   "Liber geeponicus {016}": "Liber geeponicus {016}",
+   "Mechanicorum fragmenta {004}": "Mechanicorum fragmenta {004}",
+   "Metrica {006}": "Metrica {006}",
+   "Pneumatica {001}": "Pneumatica {001}",
+   "Stereometrica {010}": "Stereometrica {010}",
+   "\u03a7\u03b5\u03b9\u03c1\u03bf\u03b2\u03b1\u03bb\u03bb\u03af\u03c3\u03c4\u03c1\u03b1\u03c2 \u03ba\u03b1\u03c4\u03b1\u03c3\u03ba\u03b5\u03c5\u1f74 \u03ba\u03b1\u1f76 \u03c3\u03c5\u03bc\u03bc\u03b5\u03c4\u03c1\u03af\u03b1 {013}": "\u03a7\u03b5\u03b9\u03c1\u03bf\u03b2\u03b1\u03bb\u03bb\u03af\u03c3\u03c4\u03c1\u03b1\u03c2 \u03ba\u03b1\u03c4\u03b1\u03c3\u03ba\u03b5\u03c5\u1f74 \u03ba\u03b1\u1f76 \u03c3\u03c5\u03bc\u03bc\u03b5\u03c4\u03c1\u03af\u03b1 {013}"
   },
   [
-   "ante A. D. 1",
-   "",
-   "Med.",
-   "",
-   "927"
+   "1",
+   "100",
+   "Mech.",
+   "Alexandrinus",
+   "559"
   ]
  ],
- "HERON Byzantius": [
+ "HERON BYZANTIUS": [
   "HERON Byzantius",
   {
    "De strategematibus": "De strategematibus",
@@ -35079,7 +39002,20 @@ let LDM = {
    "A. D. 10"
   ]
  ],
- "Herophanes (?)": [
+ "HERON $1": [
+  "HERON",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "ante A. D. 1",
+   "",
+   "Med.",
+   "",
+   "927"
+  ]
+ ],
+ "HEROPHANES (?)": [
   "HEROPHANES",
   {
    "FGrH #605": "fragmentum"
@@ -35092,7 +39028,7 @@ let LDM = {
    "2419"
   ]
  ],
- "Herophil.": [
+ "HEROPHIL.": [
   "HEROPHILUS",
   {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum",
@@ -35159,6 +39095,20 @@ let LDM = {
  "HESTIAEUS": [
   "HESTIAEUS",
   {
+   "testimonia": "testimonia",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "B. C.",
+   "",
+   "Phil.",
+   "Perinthius",
+   "225"
+  ]
+ ],
+ "HESTIAEUS $1": [
+  "HESTIAEUS",
+  {
    "FGrH #786": "fragmenta"
   },
   [
@@ -35169,7 +39119,7 @@ let LDM = {
    "1428"
   ]
  ],
- "Hsch.": [
+ "HSCH.": [
   "HESYCHIUS",
   {
    "epistula ad Eulogium": "epistula ad Eulogium",
@@ -35235,7 +39185,7 @@ let LDM = {
    "2797"
   ]
  ],
- "Hsch. Mil.": [
+ "HSCH. MIL.": [
   "HESYCHIUS Illustrius",
   {
    "Homilia in natalem Christi (fort. pars operis Historia Romana atque omnigena)": "Homilia in natalem Christi (fort. pars operis Historia Romana atque omnigena)",
@@ -35260,7 +39210,7 @@ let LDM = {
    "2274"
   ]
  ],
- "HESYCHIUS Sina\u00efta": [
+ "HESYCHIUS SINA\u00cfTA": [
   "HESYCHIUS Sina\u00efta",
   {
    "De temperantia et virtute": "De temperantia et virtute"
@@ -35273,7 +39223,7 @@ let LDM = {
    "A. D. 7"
   ]
  ],
- "Theodorus HEXAPTERYGUS": [
+ "THEODORUS HEXAPTERYGUS": [
   "Theodorus HEXAPTERYGUS",
   {
    "Progymnasmata": "Progymnasmata",
@@ -35293,7 +39243,7 @@ let LDM = {
    "A. D. 12-13"
   ]
  ],
- "Hices.": [
+ "HICES.": [
   "HICESIUS",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum",
@@ -35348,7 +39298,7 @@ let LDM = {
    "2370"
   ]
  ],
- "Hierocl. Hist.": [
+ "HIEROCL. HIST.": [
   "HIEROCLES",
   {
    "FHG 4": "fragmenta"
@@ -35361,7 +39311,36 @@ let LDM = {
    "2408"
   ]
  ],
- "Hierocl.": [
+ "HIEROCL.": [
+  "HIEROCLES",
+  {
+   "in CA": "in aureum carmen",
+   "prou.": "de providentia et fato"
+  },
+  [
+   "401",
+   "500",
+   "Phil.",
+   "",
+   "2571"
+  ]
+ ],
+ "HIEROCL. $1": [
+  "HIEROCLES",
+  {
+   "fr.": "Fragmenta (ap. Sudam) = Excerpta (DGE)",
+   "evc.": "Fragmenta ethica (ap. Stobaeum) = fragmenta (DGE)",
+   "\u1f28\u03b8\u03b9\u03ba\u1f74 \u03c3\u03c4\u03bf\u03b9\u03c7\u03b5\u03af\u03c9\u03c3\u03b9\u03c2": "\u1f28\u03b8\u03b9\u03ba\u1f74 \u03c3\u03c4\u03bf\u03b9\u03c7\u03b5\u03af\u03c9\u03c3\u03b9\u03c2"
+  },
+  [
+   "101",
+   "200",
+   "Phil.",
+   "",
+   "1429"
+  ]
+ ],
+ "HIEROCL. $2": [
   "HIEROCLES et PHILAGRIUS",
   {
    "facet.": "facetiae"
@@ -35387,7 +39366,7 @@ let LDM = {
    "2360"
   ]
  ],
- "Hieronym. Hist.": [
+ "HIERONYM. HIST.": [
   "HIERONYMUS",
   {
    "FGrH #154": "fragmenta",
@@ -35414,7 +39393,7 @@ let LDM = {
    "2526"
   ]
  ],
- "Hieronym. Phil.": [
+ "HIERONYM. PHIL.": [
   "HIERONYMUS",
   {
    "fragmenta": "fragmenta",
@@ -35468,6 +39447,19 @@ let LDM = {
  "HIEROTHEUS": [
   "HIEROTHEUS",
   {
+   "\u1f39\u03b5\u03c1\u03bf\u03b8\u03ad\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u1f31\u03b5\u03c1\u1fb6\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2 (e cod. Paris. B.N. gr. 2249, fol. 94r)": "\u1f39\u03b5\u03c1\u03bf\u03b8\u03ad\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u1f31\u03b5\u03c1\u1fb6\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2 (e cod. Paris. B.N. gr. 2249, fol. 94r)"
+  },
+  [
+   "751",
+   "850",
+   "Alchem.",
+   "",
+   "4331"
+  ]
+ ],
+ "HIEROTHEUS $1": [
+  "HIEROTHEUS",
+  {
    "\u1f39\u03b5\u03c1\u03bf\u03b8\u03ad\u03bf\u03c5 \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u03b8\u03b5\u03af\u03b1\u03c2 \u03ba\u03b1\u1f76 \u1f31\u03b5\u03c1\u1fb6\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2 \u03b4\u03b9\u1f70 \u03c3\u03c4\u03af\u03c7\u03c9\u03bd <\u1f30\u03ac\u03bc\u03b2\u03c9\u03bd> (fort. auctore Heliodoro alchemista et poeta) (e cod.Casselano)": "\u1f39\u03b5\u03c1\u03bf\u03b8\u03ad\u03bf\u03c5 \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u03b8\u03b5\u03af\u03b1\u03c2 \u03ba\u03b1\u1f76 \u1f31\u03b5\u03c1\u1fb6\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2 \u03b4\u03b9\u1f70 \u03c3\u03c4\u03af\u03c7\u03c9\u03bd <\u1f30\u03ac\u03bc\u03b2\u03c9\u03bd> (fort. auctore Heliodoro alchemista et poeta) (e cod.Casselano)"
   },
   [
@@ -35478,7 +39470,7 @@ let LDM = {
    "4332"
   ]
  ],
- "HIEROTHEUS Hieromonachus": [
+ "HIEROTHEUS HIEROMONACHUS": [
   "HIEROTHEUS Hieromonachus",
   {
    "Orationes": "Orationes",
@@ -35496,7 +39488,7 @@ let LDM = {
    "5506"
   ]
  ],
- "Him.": [
+ "HIM.": [
   "HIMERIUS",
   {
    "Declamationes et orationes": "Declamationes et orationes",
@@ -35587,7 +39579,7 @@ let LDM = {
    "2051/ TLG Online, aber Berkowitz doppelt vergeben\u2026"
   ]
  ],
- "Hippagoras": [
+ "HIPPAGORAS": [
   "HIPPAGORAS",
   {
    "FGrh #743": "fragmentum"
@@ -35600,7 +39592,7 @@ let LDM = {
    "2051"
   ]
  ],
- "Hipparch.": [
+ "HIPPARCH.": [
   "HIPPARCHUS",
   {
    "fragmenta": "fragmenta",
@@ -35621,14 +39613,14 @@ let LDM = {
    "fragmenta": "fragmenta"
   },
   [
-   "-800",
-   "100",
-   "Parodius",
-   "",
-   "2626"
+   "-550",
+   "-501",
+   "<Epigr.>",
+   "Atheniensis",
+   "1433"
   ]
  ],
- "Hipparch. Com.": [
+ "HIPPARCH. COM.": [
   "HIPPARCHUS",
   {
    "fragmenta": "fragmenta"
@@ -35639,6 +39631,19 @@ let LDM = {
    "Comic.",
    "",
    "468"
+  ]
+ ],
+ "HIPPARCHUS $1": [
+  "HIPPARCHUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-800",
+   "100",
+   "Parodius",
+   "",
+   "2626"
   ]
  ],
  "HIPPASUS": [
@@ -35655,7 +39660,7 @@ let LDM = {
    "2406"
   ]
  ],
- "Hippas.": [
+ "HIPPAS.": [
   "HIPPASUS",
   {
    "testimonia": "testimonia",
@@ -35669,7 +39674,7 @@ let LDM = {
    "2260"
   ]
  ],
- "Hippias Eryth.": [
+ "HIPPIAS ERYTH.": [
   "HIPPIAS",
   {
    "FGrh #421": "fragmentum"
@@ -35698,7 +39703,7 @@ let LDM = {
    "1434"
   ]
  ],
- "Hippiatr.": [
+ "HIPPIATR.": [
   "HIPPIATRICA",
   {
    "Hippiatrica Berolinensia {001}": "Hippiatrica Berolinensia {001}",
@@ -35733,7 +39738,7 @@ let LDM = {
    "2992"
   ]
  ],
- "Hippocr. Ch.": [
+ "HIPPOCR. CH.": [
   "HIPPOCRATES",
   {
    "testimonia": "testimonia"
@@ -35746,7 +39751,7 @@ let LDM = {
    "2235"
   ]
  ],
- "HIPPOCRATES et CORPUS HIPPOCRATICUM": [
+ "HIPPOCRATES ET CORPUS HIPPOCRATICUM": [
   "HIPPOCRATES et CORPUS HIPPOCRATICUM",
   {
    "De prisca medicina {001}": "De prisca medicina {001}",
@@ -35940,7 +39945,7 @@ let LDM = {
    "1437"
   ]
  ],
- "Hippon.": [
+ "HIPPON.": [
   "HIPPONAX",
   {
    "fragmenta": "fragmenta",
@@ -36070,7 +40075,7 @@ let LDM = {
    "3001"
   ]
  ],
- "Manuel HOLOBOLUS": [
+ "MANUEL HOLOBOLUS": [
   "Manuel HOLOBOLUS",
   {
    "Oratio catechetica {003}": "Oratio catechetica {003}",
@@ -36110,7 +40115,7 @@ let LDM = {
    "1802"
   ]
  ],
- "Hom.": [
+ "HOM.": [
   "HOMERUS",
   {
    "Il.": "Ilias",
@@ -36128,7 +40133,7 @@ let LDM = {
    "12"
   ]
  ],
- "Honest.": [
+ "HONEST.": [
   "HONESTUS",
   {
    "epigrammata": "epigrammata",
@@ -36142,7 +40147,7 @@ let LDM = {
    "1440"
   ]
  ],
- "Horap.": [
+ "HORAP.": [
   "HORAPOLLO",
   {
    "Hieroglyphica (translatio Philippi)": "Hieroglyphica (translatio Philippi)",
@@ -36169,7 +40174,7 @@ let LDM = {
    "5359"
   ]
  ],
- "HORTUS SYMBOLICUS (e codice Oxon. Clarciano XI)": [
+ "HORTUS SYMBOLICUS (E CODICE OXON. CLARCIANO XI)": [
   "HORTUS SYMBOLICUS (e codice Oxon. Clarciano XI)",
   {
    "Hortus symbolicus": "Hortus symbolicus"
@@ -36349,7 +40354,7 @@ let LDM = {
    "A. D. 6-15"
   ]
  ],
- "HYPATIUS Magister": [
+ "HYPATIUS MAGISTER": [
   "HYPATIUS Magister",
   {},
   [
@@ -36361,6 +40366,20 @@ let LDM = {
   ]
  ],
  "HYPATIUS": [
+  "HYPATIUS",
+  {
+   "Fragmenta in prophetas minores": "Fragmenta in prophetas minores",
+   "Fragmenta in Psalmos": "Fragmenta in Psalmos"
+  },
+  [
+   "A. D. 4",
+   "",
+   "",
+   "Nicaenus",
+   "CPG  6807"
+  ]
+ ],
+ "HYPATIUS $1": [
   "HYPATIUS",
   {
    "Decretum de mortuis sepeliendis {001}": "Decretum de mortuis sepeliendis {001}",
@@ -36378,7 +40397,7 @@ let LDM = {
    "2809"
   ]
  ],
- "Hyp.": [
+ "HYP.": [
   "HYPERIDES",
   {
    "dem.": "In Demosthenem {001}",
@@ -36435,7 +40454,7 @@ let LDM = {
    "5005"
   ]
  ],
- "Hypsicl.": [
+ "HYPSICL.": [
   "HYPSICLES",
   {
    "anaphoricus": "anaphoricus",
@@ -36467,6 +40486,19 @@ let LDM = {
  "IAMBICA ADESPOTA (ALG)": [
   "IAMBICA ADESPOTA (ALG)",
   {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "?",
+   "?",
+   "",
+   "?",
+   "9026"
+  ]
+ ],
+ "IAMBICA ADESPOTA (ALG) $1": [
+  "IAMBICA ADESPOTA (ALG)",
+  {
    "fragmenta iambica adespota": "fragmenta iambica adespota",
    "anonymum iambica": "anonymum iambica"
   },
@@ -36491,7 +40523,7 @@ let LDM = {
    "235"
   ]
  ],
- "Iambl. Alch.": [
+ "IAMBL. ALCH.": [
   "IAMBLICHUS",
   {
    "Fragmenta alchemica (e cod. Paris. B.N. gr. 2327, fol. 266r)": "Fragmenta alchemica (e cod. Paris. B.N. gr. 2327, fol. 266r)",
@@ -36508,7 +40540,25 @@ let LDM = {
    "2140"
   ]
  ],
- "Iambl.": [
+ "IAMBL.": [
+  "IAMBLICHUS",
+  {
+   "babyloniaca": "babyloniaca",
+   "epit.": "epitome",
+   "Fragmenta (frr. 1-89): pp. 5-69": "Fragmenta (frr. 1-89): pp. 5-69",
+   "fr.": "fragmenta",
+   "Fragmenta incertae sedis (frr. 90-100): pp. 70-72": "Fragmenta incertae sedis (frr. 90-100): pp. 70-72",
+   "Fragmenta dubia (frr. 101-126): pp. 73-79": "Fragmenta dubia (frr. 101-126): pp. 73-79"
+  },
+  [
+   "101",
+   "200",
+   "Scr. Erot.",
+   "Syrus",
+   "1441"
+  ]
+ ],
+ "IAMBL. $1": [
   "IAMBLICHUS",
   {
    "de an.": "De anima {010}",
@@ -36531,7 +40581,7 @@ let LDM = {
    "2023"
   ]
  ],
- "Ibyc.": [
+ "IBYC.": [
   "IBYCUS",
   {
    "fragmenta": "fragmenta",
@@ -36552,7 +40602,7 @@ let LDM = {
    "293"
   ]
  ],
- "Iccus (?)": [
+ "ICCUS (?)": [
   "ICCUS",
   {
    "testimonia": "testimonia"
@@ -36594,6 +40644,19 @@ let LDM = {
  "IDAEUS": [
   "IDAEUS",
   {
+   "Testimonium": "Testimonium"
+  },
+  [
+   "-500",
+   "-401",
+   "Phil.",
+   "Himeraeus",
+   "2304"
+  ]
+ ],
+ "IDAEUS $1": [
+  "IDAEUS",
+  {
    "titulus": "titulus"
   },
   [
@@ -36630,7 +40693,7 @@ let LDM = {
    "2380"
   ]
  ],
- "Idom.": [
+ "IDOM.": [
   "IDOMENEUS",
   {
    "FGH\u00a0n. 338.": "fragmenta (= fragmenta historica (DGE))",
@@ -36646,6 +40709,19 @@ let LDM = {
   ]
  ],
  "IGNATIUS": [
+  "IGNATIUS",
+  {
+   "epigramma": "epigramma"
+  },
+  [
+   "?",
+   "?",
+   "Epigr.",
+   "?",
+   "9011"
+  ]
+ ],
+ "IGNATIUS $1": [
   "IGNATIUS",
   {
    "Vita Nicephori {002}": "Vita Nicephori {002}",
@@ -36742,7 +40818,7 @@ let LDM = {
    "9012"
   ]
  ],
- "Ign.": [
+ "IGN.": [
   "IGNATIUS Diaconus",
   {
    "Epistulae vii genuinae {001}\u00a0 (Patres apostolici (DGE)": "Epistulae vii genuinae {001}\u00a0 (Patres apostolici (DGE)",
@@ -36775,7 +40851,7 @@ let LDM = {
    "1443"
   ]
  ],
- "Manuel II PALAEOLOGUS Imperator": [
+ "MANUEL II PALAEOLOGUS IMPERATOR": [
   "Manuel II PALAEOLOGUS Imperator",
   {
    "Epistulae {001}": "Epistulae {001}",
@@ -36900,7 +40976,7 @@ let LDM = {
    "3200"
   ]
  ],
- "Theodorus II PALAEOLOGUS": [
+ "THEODORUS II PALAEOLOGUS": [
   "Theodorus II PALAEOLOGUS",
   {
    "Argyrobulla": "Argyrobulla",
@@ -36916,7 +40992,7 @@ let LDM = {
    "3314"
   ]
  ],
- "Andronicus II PALAEOLOGUS": [
+ "ANDRONICUS II PALAEOLOGUS": [
   "Andronicus II PALAEOLOGUS",
   {
    "Chrysobullum": "Chrysobullum"
@@ -36929,7 +41005,7 @@ let LDM = {
    "3366"
   ]
  ],
- "Joannes III Ducas VATATZES": [
+ "JOANNES III DUCAS VATATZES": [
   "Joannes III Ducas VATATZES",
   {
    "Epistula ad Gregorium papam": "Epistula ad Gregorium papam"
@@ -36955,7 +41031,7 @@ let LDM = {
    "3282"
   ]
  ],
- "Il. Paru.": [
+ "IL. PARU.": [
   "ILIAS PARVA",
   {
    "Ilias parva (fragmenta)": "Ilias parva (fragmenta)",
@@ -36973,7 +41049,7 @@ let LDM = {
    "1444"
   ]
  ],
- "Il. Pers.": [
+ "IL. PERS.": [
   "ILIU PERSIS",
   {
    "Iliu persis (fragmenta)": "Iliu persis (fragmenta)"
@@ -36999,7 +41075,7 @@ let LDM = {
    "2731"
   ]
  ],
- "Io Sam.": [
+ "IO SAM.": [
   "ION",
   {
    "AG 7.43, AG 7.44AP 7.43, AP 7.44": "epigrammata",
@@ -37013,7 +41089,7 @@ let LDM = {
    "1446"
   ]
  ],
- "Io.": [
+ "IO.": [
   "ION",
   {
    "satyr., Trag.": "Fragmenta {0308.001} (=Fragmenta (TGF) (Perseus)",
@@ -37036,7 +41112,7 @@ let LDM = {
    "308"
   ]
  ],
- "Iopho.": [
+ "IOPHO.": [
   "IOPHON",
   {
    "fragmenta": "fragmenta"
@@ -37062,7 +41138,7 @@ let LDM = {
    "4071"
   ]
  ],
- "Iren. Lugd.": [
+ "IREN. LUGD.": [
   "IRENAEUS",
   {
    "haer.": "Adversus haereses (liber 5)",
@@ -37087,7 +41163,7 @@ let LDM = {
    "1447"
   ]
  ],
- "Is.": [
+ "IS.": [
   "ISAEUS",
   {
    "7": "De Apollodoro",
@@ -37112,7 +41188,7 @@ let LDM = {
    "17"
   ]
  ],
- "Isid. Hisp.": [
+ "ISID. HISP.": [
   "Isidorus Hispalensis",
   {
    "etym.": "Etymologiae",
@@ -37143,7 +41219,7 @@ let LDM = {
    "/"
   ]
  ],
- "Isid. Pel.": [
+ "ISID. PEL.": [
   "ISIDORUS Pelusiota",
   {
    "ep.": "epistulae reliquae",
@@ -37953,17 +42029,30 @@ let LDM = {
  "ISIDORUS": [
   "ISIDORUS",
   {
-   "Fragmentum ap. A\u00ebtium (lib 7)": "Fragmentum ap. A\u00ebtium (lib 7)"
+   "epigrammata": "epigrammata"
   },
   [
    "?",
    "?",
-   "Med.",
-   "Memphiticus",
-   "939"
+   "Epigr.",
+   "Aegeates",
+   "1449"
   ]
  ],
- "Isid. Char.": [
+ "ISIDORUS $1": [
+  "ISIDORUS",
+  {
+   "epigrammata": "epigrammata"
+  },
+  [
+   "?",
+   "?",
+   "Epigr.",
+   "Bolbythiotus",
+   "4052"
+  ]
+ ],
+ "ISID. CHAR.": [
   "ISIDORUS",
   {
    "testimonia": "testimonia",
@@ -37977,7 +42066,46 @@ let LDM = {
    "70"
   ]
  ],
- "Isid. Trag.": [
+ "ISIDORUS $2": [
+  "ISIDORUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "?",
+   "?",
+   "Gnost.",
+   "?",
+   "1448"
+  ]
+ ],
+ "ISIDORUS $3": [
+  "ISIDORUS",
+  {
+   "fragmenta ap. Galenum": "fragmenta ap. Galenum"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "Antiochenus",
+   "938"
+  ]
+ ],
+ "ISIDORUS $4": [
+  "ISIDORUS",
+  {
+   "Fragmentum ap. A\u00ebtium (lib 7)": "Fragmentum ap. A\u00ebtium (lib 7)"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "Memphiticus",
+   "939"
+  ]
+ ],
+ "ISID. TRAG.": [
   "ISIDORUS",
   {
    "fragmenta": "fragmenta"
@@ -37990,7 +42118,7 @@ let LDM = {
    "352"
   ]
  ],
- "ISIDORUS Scriptor Hymnorum": [
+ "ISIDORUS SCRIPTOR HYMNORUM": [
   "ISIDORUS Scriptor Hymnorum",
   {
    "Hymni in Isim": "Hymni in Isim"
@@ -38003,7 +42131,7 @@ let LDM = {
    "359"
   ]
  ],
- "ISIDORUS Kiovjensis": [
+ "ISIDORUS KIOVJENSIS": [
   "ISIDORUS Kiovjensis",
   {
    "Ad synodum Florentiae {001}": "Ad synodum Florentiae {001}",
@@ -38033,7 +42161,7 @@ let LDM = {
    "3084"
   ]
  ],
- "Isig.": [
+ "ISIG.": [
   "ISIGONUS",
   {
    "FHG 4: 435-437": "fragmenta"
@@ -38046,7 +42174,7 @@ let LDM = {
    "1083"
   ]
  ],
- "Isocr.": [
+ "ISOCR.": [
   "ISOCRATES",
   {
    "ep. 5": "Ad Alexandrum",
@@ -38092,7 +42220,7 @@ let LDM = {
    "10"
   ]
  ],
- "Ister": [
+ "ISTER": [
   "ISTER",
   {
    "FHG i p. 418 FGrH 334": "fragmenta",
@@ -38110,7 +42238,7 @@ let LDM = {
    "1450"
   ]
  ],
- "Isyll.": [
+ "ISYLL.": [
   "ISYLLUS",
   {
    "fragmenta": "fragmenta"
@@ -38123,7 +42251,7 @@ let LDM = {
    "201"
   ]
  ],
- "Michael ITALICUS": [
+ "MICHAEL ITALICUS": [
   "Michael ITALICUS",
   {
    "Epistulae": "Epistulae",
@@ -38183,7 +42311,7 @@ let LDM = {
    "3081"
   ]
  ],
- "Nicolaus IV MUZALO": [
+ "NICOLAUS IV MUZALO": [
   "Nicolaus IV MUZALO",
   {
    "Versus de abdicatione {001}": "Versus de abdicatione {001}",
@@ -38197,7 +42325,7 @@ let LDM = {
    "3101"
   ]
  ],
- "Constantinus IVANCUS": [
+ "CONSTANTINUS IVANCUS": [
   "Constantinus IVANCUS",
   {
    "Monodia in Isidorum Glabam metropolitam Thessalonicensem": "Monodia in Isidorum Glabam metropolitam Thessalonicensem",
@@ -38212,6 +42340,61 @@ let LDM = {
   ]
  ],
  "JOANNES": [
+  "JOANNES",
+  {},
+  [
+   "1001",
+   "1100",
+   "Rhet.",
+   "",
+   "4235"
+  ]
+ ],
+ "JOANNES $1": [
+  "JOANNES",
+  {},
+  [
+   "701",
+   "800",
+   "Theol.",
+   "",
+   "3173"
+  ]
+ ],
+ "JOANNES $2": [
+  "JOANNES",
+  {},
+  [
+   "501",
+   "600",
+   "Gramm. Poeta",
+   "",
+   "2578"
+  ]
+ ],
+ "JOANNES $3": [
+  "JOANNES",
+  {},
+  [
+   "-800",
+   "900",
+   "Rhet.",
+   "",
+   "4157"
+  ]
+ ],
+ "JOANNES $4": [
+  "JOANNES",
+  {},
+  [
+   "501",
+   "600",
+   "Gramm. Theol.",
+   "",
+   "2816"
+  ]
+ ],
+ "JOANNES $5": [
   "JOANNES",
   {},
   [
@@ -38244,7 +42427,7 @@ let LDM = {
    "4394"
   ]
  ],
- "JOANNES Archiereus": [
+ "JOANNES ARCHIEREUS": [
   "JOANNES Archiereus",
   {},
   [
@@ -38321,7 +42504,7 @@ let LDM = {
    "4015"
   ]
  ],
- "JOANNES Protospatharius": [
+ "JOANNES PROTOSPATHARIUS": [
   "JOANNES Protospatharius",
   {},
   [
@@ -38376,7 +42559,7 @@ let LDM = {
    "1451"
   ]
  ],
- "JUBA II Rex Mauretaniae": [
+ "JUBA II REX MAURETANIAE": [
   "JUBA II Rex Mauretaniae",
   {},
   [
@@ -38398,7 +42581,7 @@ let LDM = {
    "4105"
   ]
  ],
- "JULIANUS Scriptor Legis De Medicis": [
+ "JULIANUS SCRIPTOR LEGIS DE MEDICIS": [
   "JULIANUS Scriptor Legis De Medicis",
   {},
   [
@@ -38442,7 +42625,7 @@ let LDM = {
    "645"
   ]
  ],
- "Joannes ANAGNOSTES": [
+ "JOANNES ANAGNOSTES": [
   "Joannes ANAGNOSTES",
   {},
   [
@@ -38453,7 +42636,7 @@ let LDM = {
    "3145"
   ]
  ],
- "Joannes ARGYROPULUS": [
+ "JOANNES ARGYROPULUS": [
   "Joannes ARGYROPULUS",
   {},
   [
@@ -38464,7 +42647,7 @@ let LDM = {
    "4237"
   ]
  ],
- "Joannes CAMATERUS": [
+ "JOANNES CAMATERUS": [
   "Joannes CAMATERUS",
   {},
   [
@@ -38475,7 +42658,7 @@ let LDM = {
    "3014"
   ]
  ],
- "Joannes CAMENIATES": [
+ "JOANNES CAMENIATES": [
   "Joannes CAMENIATES",
   {},
   [
@@ -38486,7 +42669,7 @@ let LDM = {
    "3015"
   ]
  ],
- "Joannes CANANUS": [
+ "JOANNES CANANUS": [
   "Joannes CANANUS",
   {},
   [
@@ -38497,7 +42680,7 @@ let LDM = {
    "3144"
   ]
  ],
- "Joannes CINNAMUS": [
+ "JOANNES CINNAMUS": [
   "Joannes CINNAMUS",
   {},
   [
@@ -38508,7 +42691,7 @@ let LDM = {
    "3020"
   ]
  ],
- "Joannes DOXAPATRES": [
+ "JOANNES DOXAPATRES": [
   "Joannes DOXAPATRES",
   {
    "Prolegomena in Aphthonii progymnasmata {001}": "Prolegomena in Aphthonii progymnasmata {001}",
@@ -38528,7 +42711,7 @@ let LDM = {
    "3027"
   ]
  ],
- "Joannes GALENUS": [
+ "JOANNES GALENUS": [
   "Joannes GALENUS",
   {},
   [
@@ -38539,7 +42722,7 @@ let LDM = {
    "3039"
   ]
  ],
- "Joannes Laurentius LYDUS": [
+ "JOANNES LAURENTIUS LYDUS": [
   "Joannes Laurentius LYDUS",
   {
    "De magistratibus populi Romani {001}": "De magistratibus populi Romani {001}",
@@ -38556,7 +42739,7 @@ let LDM = {
    "2580"
   ]
  ],
- "Joannes PEDIASIMUS": [
+ "JOANNES PEDIASIMUS": [
   "Joannes PEDIASIMUS",
   {},
   [
@@ -38567,7 +42750,7 @@ let LDM = {
    "2592"
   ]
  ],
- "Joannes STOBAEUS Anthologus": [
+ "JOANNES STOBAEUS ANTHOLOGUS": [
   "Joannes STOBAEUS Anthologus",
   {
    "Anthologium": "Anthologium"
@@ -38580,7 +42763,7 @@ let LDM = {
    "2037"
   ]
  ],
- "Joannes TZETZES": [
+ "JOANNES TZETZES": [
   "Joannes TZETZES",
   {
    "Chiliades {001}": "Chiliades {001}",
@@ -38674,7 +42857,7 @@ let LDM = {
    "9022"
   ]
  ],
- "Joannes ZONARAS": [
+ "JOANNES ZONARAS": [
   "Joannes ZONARAS",
   {},
   [
@@ -38685,7 +42868,7 @@ let LDM = {
    "3135"
   ]
  ],
- "Josephus GENESIUS": [
+ "JOSEPHUS GENESIUS": [
   "Josephus GENESIUS",
   {},
   [
@@ -38696,7 +42879,7 @@ let LDM = {
    "3040"
   ]
  ],
- "Julia BALBILLA": [
+ "JULIA BALBILLA": [
   "Julia BALBILLA",
   {
    "epigrammata": "epigrammata",
@@ -38714,7 +42897,7 @@ let LDM = {
    "1213"
   ]
  ],
- "Julius POLLUX": [
+ "JULIUS POLLUX": [
   "Julius POLLUX",
   {},
   [
@@ -38738,7 +42921,7 @@ let LDM = {
    "1455"
   ]
  ],
- "Georgius LACAPEUS": [
+ "GEORGIUS LACAPEUS": [
   "Georgius LACAPEUS",
   {
    "Epistulae": "Epistulae",
@@ -38790,7 +42973,7 @@ let LDM = {
    "2937"
   ]
  ],
- "Laco (?)": [
+ "LACO (?)": [
   "LACO",
   {
    "epigramma": "epigramma"
@@ -38803,7 +42986,7 @@ let LDM = {
    "1456"
   ]
  ],
- "Laetus (?)": [
+ "LAETUS (?)": [
   "LAETUS",
   {
    "FGrH # 784": "fragmenta"
@@ -38846,7 +43029,7 @@ let LDM = {
    "9037"
   ]
  ],
- "Nicolaus LAMPENUS": [
+ "NICOLAUS LAMPENUS": [
   "Nicolaus LAMPENUS",
   {
    "Laudatio Andronici II. Palaeologi {001}": "Laudatio Andronici II. Palaeologi {001}",
@@ -38876,7 +43059,7 @@ let LDM = {
    "945"
   ]
  ],
- "Lamprocl.": [
+ "LAMPROCL.": [
   "LAMPROCLES",
   {
    "fragmenta": "fragmenta"
@@ -38889,7 +43072,7 @@ let LDM = {
    "370"
   ]
  ],
- "Lamyn. Lyr.": [
+ "LAMYN. LYR.": [
   "LAMYNTHIUS",
   {
    "titulus": "titulus"
@@ -38915,7 +43098,7 @@ let LDM = {
    "946"
   ]
  ],
- "Lao (?)": [
+ "LAO (?)": [
   "LAON",
   {
    "fragmenta": "fragmenta"
@@ -38941,7 +43124,7 @@ let LDM = {
    "2321"
   ]
  ],
- "Georgius LAPITHES": [
+ "GEORGIUS LAPITHES": [
   "Georgius LAPITHES",
   {
    "Versus politici": "Versus politici",
@@ -38968,7 +43151,7 @@ let LDM = {
    "9040"
   ]
  ],
- "Joannes Ryndacenos LASCARIS": [
+ "JOANNES RYNDACENOS LASCARIS": [
   "Joannes Ryndacenos LASCARIS",
   {
    "Epistula ad Sergium Stissum": "Epistula ad Sergium Stissum",
@@ -38982,7 +43165,7 @@ let LDM = {
    "3302"
   ]
  ],
- "Athanasius LASCARIS": [
+ "ATHANASIUS LASCARIS": [
   "Athanasius LASCARIS",
   {
    "Epistula ad Florentinos pro despota Demetrio Palaeologo": "Epistula ad Florentinos pro despota Demetrio Palaeologo"
@@ -38995,7 +43178,7 @@ let LDM = {
    "3318"
   ]
  ],
- "Constantinus LASCARIS": [
+ "CONSTANTINUS LASCARIS": [
   "Constantinus LASCARIS",
   {
    "Epistula ad Joannem Pardum": "Epistula ad Joannem Pardum"
@@ -39008,7 +43191,7 @@ let LDM = {
    "3328"
   ]
  ],
- "Lasus (?)": [
+ "LASUS (?)": [
   "LASUS",
   {
    "fragmentum": "fragmentum",
@@ -39022,7 +43205,7 @@ let LDM = {
    "366"
   ]
  ],
- "Joannes LAZAROPULUS": [
+ "JOANNES LAZAROPULUS": [
   "Joannes LAZAROPULUS",
   {
    "Oratio ad sanctum Eugenium": "Oratio ad sanctum Eugenium",
@@ -39052,6 +43235,73 @@ let LDM = {
  "LEO": [
   "LEO",
   {
+   "FGrH # 132": "fragmenta"
+  },
+  [
+   "-400",
+   "-301",
+   "Hist.",
+   "Byzantius",
+   "1941"
+  ]
+ ],
+ "LEO $1": [
+  "LEO",
+  {
+   "De natura hominum synopsis": "De natura hominum synopsis",
+   "Conspectus medicinae": "Conspectus medicinae"
+  },
+  [
+   "801",
+   "900",
+   "Phil., Med.",
+   "Constantinopolitanus",
+   "723"
+  ]
+ ],
+ "LEO $2": [
+  "LEO",
+  {
+   "FGrH # 659": "fragmenta"
+  },
+  [
+   "-400",
+   "-201",
+   "Hist.",
+   "Pellaeus",
+   "1978"
+  ]
+ ],
+ "LEO $3": [
+  "LEO",
+  {
+   "FGrH # 278": "testimonium",
+   "FGrH # 279": "fragmenta"
+  },
+  [
+   "-200",
+   "200",
+   "Hist.",
+   "Alabandeus",
+   "2186"
+  ]
+ ],
+ "LEO $4": [
+  "LEO",
+  {
+   "FGrH # 540": "testimonium"
+  },
+  [
+   "2 B. C.",
+   "",
+   "Hist.",
+   "Samius",
+   "2375"
+  ]
+ ],
+ "LEO $5": [
+  "LEO",
+  {
    "testimonium": "testimonium",
    "fragmenta": "fragmenta",
    "doctrina": "doctrina"
@@ -39064,7 +43314,7 @@ let LDM = {
    "78"
   ]
  ],
- "LEO VI SAPIENS Imperator": [
+ "LEO VI SAPIENS IMPERATOR": [
   "LEO VI SAPIENS Imperator",
   {
    "Sententiae (exordium) (e cod. Petropol. XX Aa-8, fol. 65v) {003}": "Sententiae (exordium) (e cod. Petropol. XX Aa-8, fol. 65v) {003}",
@@ -39108,7 +43358,7 @@ let LDM = {
    "2710"
   ]
  ],
- "LEO Philosophus": [
+ "LEO PHILOSOPHUS": [
   "LEO Philosophus",
   {
    "epigrammata": "epigrammata",
@@ -39125,7 +43375,7 @@ let LDM = {
    "9016"
   ]
  ],
- "LEO Constantinopolitanus": [
+ "LEO CONSTANTINOPOLITANUS": [
   "LEO Constantinopolitanus",
   {
    "De fine mundi homilia": "De fine mundi homilia"
@@ -39138,7 +43388,7 @@ let LDM = {
    "3262"
   ]
  ],
- "LEO Achridensis": [
+ "LEO ACHRIDENSIS": [
   "LEO Achridensis",
   {
    "Capita de tentationibus et affectionibus (e cod. theol. gr. Vindob. 167 fol. 69r-72v)": "Capita de tentationibus et affectionibus (e cod. theol. gr. Vindob. 167 fol. 69r-72v)",
@@ -39155,7 +43405,7 @@ let LDM = {
    "4429"
   ]
  ],
- "LEO Russiae Metropolita": [
+ "LEO RUSSIAE METROPOLITA": [
   "LEO Russiae Metropolita",
   {
    "De azymis": "De azymis"
@@ -39181,7 +43431,7 @@ let LDM = {
    "5501"
   ]
  ],
- "LEO IX papa": [
+ "LEO IX PAPA": [
   "LEO IX papa",
   {
    "Epistula ad Petrum III patriarcham": "Epistula ad Petrum III patriarcham"
@@ -39207,7 +43457,7 @@ let LDM = {
    "4470"
   ]
  ],
- "LEO Diaconus": [
+ "LEO DIACONUS": [
   "LEO Diaconus",
   {
    "Historia": "Historia",
@@ -39262,6 +43512,34 @@ let LDM = {
  "LEONIDAS": [
   "LEONIDAS",
   {
+   "epigrammata": "epigrammata",
+   "zu viele": "zu viele",
+   "epigrammata exhortatorium et supplicatorium": "epigrammata exhortatorium et supplicatorium"
+  },
+  [
+   "",
+   "",
+   "Epigr.",
+   "Tarentinus",
+   "1458"
+  ]
+ ],
+ "JULIUS LEONIDAS": [
+  "Julius LEONIDAS",
+  {
+   "epigrammata": "epigrammata"
+  },
+  [
+   "A. D. 1",
+   "",
+   "Math. Et Astrol.",
+   "Alexandrinus",
+   "1457"
+  ]
+ ],
+ "LEONIDAS $1": [
+  "LEONIDAS",
+  {
    "fragmentum ap. Paulum": "fragmentum ap. Paulum",
    "Fragmentum ap. A\u00ebtium (lib 6-7)": "Fragmentum ap. A\u00ebtium (lib 6-7)",
    "Fragmenta ap. A\u00ebtium (lib. 15)": "Fragmenta ap. A\u00ebtium (lib. 15)",
@@ -39273,19 +43551,6 @@ let LDM = {
    "Med.",
    "Alexandrinus",
    "948"
-  ]
- ],
- "Julius LEONIDAS": [
-  "Julius LEONIDAS",
-  {
-   "epigrammata": "epigrammata"
-  },
-  [
-   "A. D. 1",
-   "",
-   "Math. Et Astrol.",
-   "Alexandrinus",
-   "1457"
   ]
  ],
  "LEONIDES": [
@@ -39302,6 +43567,20 @@ let LDM = {
   ]
  ],
  "LEONTIUS": [
+  "LEONTIUS",
+  {
+   "De sphaerae Arateae constructione": "De sphaerae Arateae constructione",
+   "de zodiaco (olim sub auctore Leontino)": "de zodiaco (olim sub auctore Leontino)"
+  },
+  [
+   "601",
+   "700",
+   "Mech.",
+   "",
+   "4167"
+  ]
+ ],
+ "LEONTIUS $1": [
   "LEONTIUS",
   {
    "In natale sancti Joannis prophetae (homilia 1) {001}": "In natale sancti Joannis prophetae (homilia 1) {001}",
@@ -39331,6 +43610,44 @@ let LDM = {
  "LEONTINUS": [
   "LEONTINUS",
   {
+   "Libri tres {007}": "Libri tres {007}",
+   "Protheoria, pp. 116-122": "Protheoria, pp. 116-122",
+   "Contra Nestorianos et Eutychianos, pp. 126-264 (even pages)": "Contra Nestorianos et Eutychianos, pp. 126-264 (even pages)",
+   "Contra Aphthartodocetas, pp. 338-408 (even pages)": "Contra Aphthartodocetas, pp. 338-408 (even pages)",
+   "Deprehensio et triumphus super Nestorianos, pp. 412-522 (even pages)": "Deprehensio et triumphus super Nestorianos, pp. 412-522 (even pages)",
+   "Epilyseis sive solutio argumentorum a Severo objectorum {008}": "Epilyseis sive solutio argumentorum a Severo objectorum {008}",
+   "\u0395\u03c0\u03b1\u03c0\u03bf\u03c1\u03ae\u03bc\u03b1\u03c4\u03b1 sive Triginta capita adversus Severum {009}": "\u0395\u03c0\u03b1\u03c0\u03bf\u03c1\u03ae\u03bc\u03b1\u03c4\u03b1 sive Triginta capita adversus Severum {009}",
+   "Adversus fraudes Apollinaristarum {010}": "Adversus fraudes Apollinaristarum {010}",
+   "Fragmenta incerta (Dub.) {011}": "Fragmenta incerta (Dub.) {011}",
+   "Excerpta Leontina (Dub.) {012}": "Excerpta Leontina (Dub.) {012}"
+  },
+  [
+   "A. D. 5-6",
+   "",
+   "Theol.",
+   "Byzantius",
+   "2811"
+  ]
+ ],
+ "LEONTINUS $1": [
+  "LEONTINUS",
+  {
+   "contra monophysitas": "contra monophysitas",
+   "contra nestorianos": "contra nestorianos",
+   "Testimonia sanctorum {003}": "Testimonia sanctorum {003}",
+   "Quaestiones adversus eos qui unam dicunt naturam compositam {004}": "Quaestiones adversus eos qui unam dicunt naturam compositam {004}"
+  },
+  [
+   "A. D. 6",
+   "",
+   "Theol.",
+   "Hierosolymitanus",
+   "2819"
+  ]
+ ],
+ "LEONTINUS $2": [
+  "LEONTINUS",
+  {
    "Vita Joannis Eleemosynarii episcopi Alexandrini {001}": "Vita Joannis Eleemosynarii episcopi Alexandrini {001}",
    "Vita et miracula sancti Symeonis Sali {002}": "Vita et miracula sancti Symeonis Sali {002}",
    "Fragmenta apologiae contra Judaeos {003}": "Fragmenta apologiae contra Judaeos {003}",
@@ -39346,7 +43663,7 @@ let LDM = {
    "2913"
   ]
  ],
- "LEONTINUS Monachus": [
+ "LEONTINUS MONACHUS": [
   "LEONTINUS Monachus",
   {
    "Vita et miracula sancti Gregorii Agrigenti": "Vita et miracula sancti Gregorii Agrigenti",
@@ -39364,7 +43681,7 @@ let LDM = {
    "3385"
   ]
  ],
- "LEONTINUS Minotaurus": [
+ "LEONTINUS MINOTAURUS": [
   "LEONTINUS Minotaurus",
   {
    "epigrammaza": "epigrammaza"
@@ -39402,6 +43719,19 @@ let LDM = {
   ]
  ],
  "LESBONAX": [
+  "LESBONAX",
+  {
+   "de figuris": "de figuris"
+  },
+  [
+   "-800",
+   "100",
+   "Gramm.",
+   "",
+   "1460"
+  ]
+ ],
+ "LESBONAX $1": [
   "LESBONAX",
   {
    "\u03a0\u03bf\u03bb\u03b9\u03c4\u03b9\u03ba\u03cc\u03c2 {001}": "\u03a0\u03bf\u03bb\u03b9\u03c4\u03b9\u03ba\u03cc\u03c2 {001}",
@@ -39659,7 +43989,7 @@ let LDM = {
    "4294"
   ]
  ],
- "LEXICON \u03b1\u1f31\u03bc\u03c9\u03b4\u03b5\u1fd6\u03bd": [
+ "LEXICON \u0391\u1f39\u039c\u03a9\u0394\u0395\u0399\u0342\u039d": [
   "LEXICON \u03b1\u1f31\u03bc\u03c9\u03b4\u03b5\u1fd6\u03bd",
   {
    "Lexicon \u03b1\u1f31\u03bc\u03c9\u03b4\u03b5\u1fd6\u03bd quod vocatur seu verius \u1f18\u03c4\u03c5\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1\u03b9 \u03b4\u03b9\u03ac\u03c6\u03bf\u03c1\u03bf\u03b9": "Lexicon \u03b1\u1f31\u03bc\u03c9\u03b4\u03b5\u1fd6\u03bd quod vocatur seu verius \u1f18\u03c4\u03c5\u03bc\u03bf\u03bb\u03bf\u03b3\u03af\u03b1\u03b9 \u03b4\u03b9\u03ac\u03c6\u03bf\u03c1\u03bf\u03b9"
@@ -39801,7 +44131,7 @@ let LDM = {
    "374"
   ]
  ],
- "Emmanuel LIMENITES": [
+ "EMMANUEL LIMENITES": [
   "Emmanuel LIMENITES",
   {
    "Narratio de plagae Rhodi": "Narratio de plagae Rhodi"
@@ -39887,6 +44217,20 @@ let LDM = {
  "LOLLIANUS": [
   "LOLLIANUS",
   {
+   "\u03a6\u03bf\u03b9\u03bd\u03b9\u03ba\u03b9\u03ba\u03ac (fragmenta) (P. Colon. inv. 3328)": "\u03a6\u03bf\u03b9\u03bd\u03b9\u03ba\u03b9\u03ba\u03ac (fragmenta) (P. Colon. inv. 3328)",
+   "\u03a6\u03bf\u03b9\u03bd\u03b9\u03ba\u03b9\u03ba\u03ac (fragmentum) (P. Oxy. 11.1368)": "\u03a6\u03bf\u03b9\u03bd\u03b9\u03ba\u03b9\u03ba\u03ac (fragmentum) (P. Oxy. 11.1368)"
+  },
+  [
+   "101",
+   "200",
+   "Scr. Erot.",
+   "",
+   "1466"
+  ]
+ ],
+ "LOLLIANUS $1": [
+  "LOLLIANUS",
+  {
    "fragmenta": "fragmenta"
   },
   [
@@ -39923,7 +44267,7 @@ let LDM = {
    "561"
   ]
  ],
- "Nicolaus LUCANUS": [
+ "NICOLAUS LUCANUS": [
   "Nicolaus LUCANUS",
   {
    "Metaphrasis Iliadis (fragm.)": "Metaphrasis Iliadis (fragm.)",
@@ -39947,7 +44291,7 @@ let LDM = {
    "9504"
   ]
  ],
- "Cyrillus LUCARES": [
+ "CYRILLUS LUCARES": [
   "Cyrillus LUCARES",
   {
    "Dialogus brevis (e cod. Sabb. 91, ff. 445r-472r)": "Dialogus brevis (e cod. Sabb. 91, ff. 445r-472r)",
@@ -39961,7 +44305,7 @@ let LDM = {
    "9066"
   ]
  ],
- "LUCAS Archimandrita": [
+ "LUCAS ARCHIMANDRITA": [
   "LUCAS Archimandrita",
   {
    "Recapitulatio typici monasterii Christi Salvatoris in Messenae (e cod. Mess. gr. 115) {001}": "Recapitulatio typici monasterii Christi Salvatoris in Messenae (e cod. Mess. gr. 115) {001}",
@@ -39978,6 +44322,91 @@ let LDM = {
   ]
  ],
  "LUCIANUS": [
+  "LUCIANUS",
+  {
+   "Phalaris {001}": "Phalaris {001}",
+   "Hippias {002}": "Hippias {002}",
+   "Bacchus {003}": "Bacchus {003}",
+   "Hercules {004}": "Hercules {004}",
+   "Electrum {005}": "Electrum {005}",
+   "Muscae encomium {006}": "Muscae encomium {006}",
+   "Nigrinus {007}": "Nigrinus {007}",
+   "Demonax {008}": "Demonax {008}",
+   "De domo {009}": "De domo {009}",
+   "Patriae encomium {010}": "Patriae encomium {010}",
+   "Macrobii {011}": "Macrobii {011}",
+   "Verae historiae {012}": "Verae historiae {012}",
+   "Calumniae non temere credendum {013}": "Calumniae non temere credendum {013}",
+   "Lis consonantium {014}": "Lis consonantium {014}",
+   "Symposium {015}": "Symposium {015}",
+   "Cataplus {016}": "Cataplus {016}",
+   "Juppiter confutatus {017}": "Juppiter confutatus {017}",
+   "Juppiter tragoedus {018}": "Juppiter tragoedus {018}",
+   "Gallus {019}": "Gallus {019}",
+   "Prometheus {020}": "Prometheus {020}",
+   "Icaromenippus {021}": "Icaromenippus {021}",
+   "Timon {022}": "Timon {022}",
+   "Charon sive contemplantes {023}": "Charon sive contemplantes {023}",
+   "Vitarum auctio {024}": "Vitarum auctio {024}",
+   "Revivescentes sive piscator {025}": "Revivescentes sive piscator {025}",
+   "Bis accusatus sive tribunalia {026}": "Bis accusatus sive tribunalia {026}",
+   "De sacrificiis {027}": "De sacrificiis {027}",
+   "Adversus indoctum et libros multos ementem {028}": "Adversus indoctum et libros multos ementem {028}",
+   "Somnium sive vita Luciani {029}": "Somnium sive vita Luciani {029}",
+   "De parasito sive artem esse parasiticam {030}": "De parasito sive artem esse parasiticam {030}",
+   "Philopseudes sive incredulus {031}": "Philopseudes sive incredulus {031}",
+   "Dearum judicium {032}": "Dearum judicium {032}",
+   "De mercede conductis potentium familiaribus {033}": "De mercede conductis potentium familiaribus {033}",
+   "Anacharsis {034}": "Anacharsis {034}",
+   "Menippus sive necyomantia {035}": "Menippus sive necyomantia {035}",
+   "De luctu {036}": "De luctu {036}",
+   "Rhetorum praeceptor {037}": "Rhetorum praeceptor {037}",
+   "Alexander {038}": "Alexander {038}",
+   "Imagines {039}": "Imagines {039}",
+   "Pro imaginibus {040}": "Pro imaginibus {040}",
+   "De Syria dea {041}": "De Syria dea {041}",
+   "De morte Peregrini {042}": "De morte Peregrini {042}",
+   "Fugitivi {043}": "Fugitivi {043}",
+   "Toxaris vel amicitia {044}": "Toxaris vel amicitia {044}",
+   "De saltatione {045}": "De saltatione {045}",
+   "Lexiphanes {046}": "Lexiphanes {046}",
+   "Eunuchus {047}": "Eunuchus {047}",
+   "De astrologia {048}": "De astrologia {048}",
+   "Pseudologista {049}": "Pseudologista {049}",
+   "Deorum concilium {050}": "Deorum concilium {050}",
+   "Tyrannicida {051}": "Tyrannicida {051}",
+   "Abdicatus {052}": "Abdicatus {052}",
+   "Quomodo historia conscribenda sit {053}": "Quomodo historia conscribenda sit {053}",
+   "Dipsades {054}": "Dipsades {054}",
+   "Saturnalia {055}": "Saturnalia {055}",
+   "Herodotus {056}": "Herodotus {056}",
+   "Zeuxis {057}": "Zeuxis {057}",
+   "Pro lapsu inter salutandum {058}": "Pro lapsu inter salutandum {058}",
+   "Apologia {059}": "Apologia {059}",
+   "Harmonides {060}": "Harmonides {060}",
+   "Hesiodus {061}": "Hesiodus {061}",
+   "Scytha {062}": "Scytha {062}",
+   "Hermotimus {063}": "Hermotimus {063}",
+   "Prometheus es in verbis {064}": "Prometheus es in verbis {064}",
+   "Navigium {065}": "Navigium {065}",
+   "Dialogi mortuorum {066}": "Dialogi mortuorum {066}",
+   "Dialogi marini {067}": "Dialogi marini {067}",
+   "Dialogi deorum {068}": "Dialogi deorum {068}",
+   "Dialogi meretricii {069}": "Dialogi meretricii {069}",
+   "Soloecista {070}": "Soloecista {070}",
+   "Podagra {071}": "Podagra {071}",
+   "epigrammata": "epigrammata",
+   "oracula ficta": "oracula ficta"
+  },
+  [
+   "115 - 125",
+   "180er bis Anfang 190er",
+   "Soph.",
+   "Samosatenus",
+   "62"
+  ]
+ ],
+ "LUCIANUS $1": [
   "LUCIANUS",
   {
    "in Job 2.9-10 (fragmentum)": "in Job 2.9-10 (fragmentum)",
@@ -40004,7 +44433,7 @@ let LDM = {
    "1468"
   ]
  ],
- "Constantinus LUCITES": [
+ "CONSTANTINUS LUCITES": [
   "Constantinus LUCITES",
   {
    "Laudatio sanctorum Eugenii, Valeriani, Canidii et Aquilae": "Laudatio sanctorum Eugenii, Valeriani, Canidii et Aquilae",
@@ -40046,7 +44475,7 @@ let LDM = {
    "2686"
   ]
  ],
- "Lucius Licinius LUCULLUS": [
+ "LUCIUS LICINIUS LUCULLUS": [
   "Lucius Licinius LUCULLUS",
   {
    "FGrH # 185": "testimonia",
@@ -40076,6 +44505,20 @@ let LDM = {
  "LYCEAS": [
   "LYCEAS",
   {
+   "FGrH #312": "fragmenta",
+   "titulus": "titulus"
+  },
+  [
+   "-800",
+   "100",
+   "Hist.",
+   "Naucratites",
+   "2212"
+  ]
+ ],
+ "LYCEAS $1": [
+  "LYCEAS",
+  {
    "FGrH #613": "fragmenta",
    "fragmentum": "fragmentum"
   },
@@ -40103,6 +44546,19 @@ let LDM = {
  "LYCON": [
   "LYCON",
   {
+   "testimonia": "testimonia"
+  },
+  [
+   "-400",
+   "-301",
+   "Phil.",
+   "Tarentinus vel Iasensis",
+   "2246"
+  ]
+ ],
+ "LYCON $1": [
+  "LYCON",
+  {
    "fragmenta": "fragmenta"
   },
   [
@@ -40114,6 +44570,19 @@ let LDM = {
   ]
  ],
  "LYCOPHRON": [
+  "LYCOPHRON",
+  {
+   "testimonia": "testimonia"
+  },
+  [
+   "-400",
+   "-301",
+   "Soph.",
+   "",
+   "2444"
+  ]
+ ],
+ "LYCOPHRON $1": [
   "LYCOPHRON",
   {
    "fragmenta": "fragmenta",
@@ -40169,6 +44638,46 @@ let LDM = {
   ]
  ],
  "LYCUS": [
+  "LYCUS",
+  {
+   "FGrH #570": "fragmenta",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-350",
+   "-251",
+   "Hist.",
+   "Rheginus",
+   "1470"
+  ]
+ ],
+ "LYCUS $1": [
+  "LYCUS",
+  {
+   "FGrH #380": "fragmenta"
+  },
+  [
+   "p. 4. B. C.",
+   "",
+   "Hist.",
+   "",
+   "2267"
+  ]
+ ],
+ "LYCUS $2": [
+  "LYCUS",
+  {
+   "fragmenta ap. Galenum": "fragmenta ap. Galenum"
+  },
+  [
+   "A. D. 2",
+   "",
+   "Med.",
+   "Macedonius",
+   "954"
+  ]
+ ],
+ "LYCUS $3": [
   "LYCUS",
   {
    "fragmenta ap. Oribasium": "fragmenta ap. Oribasium",
@@ -40319,6 +44828,19 @@ let LDM = {
  "LYSIAS": [
   "LYSIAS",
   {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "a. A. D. 1",
+   "",
+   "Med.",
+   "",
+   "956"
+  ]
+ ],
+ "LYSIAS $1": [
+  "LYSIAS",
+  {
    "Fragmenta {035}": "Fragmenta {035}",
    "\u03a0\u03c1\u1f78\u03c2 \u1f39\u03c0\u03c0\u03bf\u03b8\u03ad\u03c1\u03c3\u03b7\u03bd, \u1f51\u03c0\u1f72\u03c1 \u03b8\u03b5\u03c1\u03b1\u03c0\u03b1\u03af\u03bd\u03b7\u03c2: pp. 394-397": "\u03a0\u03c1\u1f78\u03c2 \u1f39\u03c0\u03c0\u03bf\u03b8\u03ad\u03c1\u03c3\u03b7\u03bd, \u1f51\u03c0\u1f72\u03c1 \u03b8\u03b5\u03c1\u03b1\u03c0\u03b1\u03af\u03bd\u03b7\u03c2: pp. 394-397",
    "\u03a0\u03c1\u1f78\u03c2 \u0398\u03b5\u03cc\u03bc\u03bd\u03b7\u03c3\u03c4\u03bf\u03bd: pp. 397-398": "\u03a0\u03c1\u1f78\u03c2 \u0398\u03b5\u03cc\u03bc\u03bd\u03b7\u03c3\u03c4\u03bf\u03bd: pp. 397-398",
@@ -40399,6 +44921,32 @@ let LDM = {
  "LYSIMACHUS": [
   "LYSIMACHUS",
   {
+   "FGrH #170": "testimonium"
+  },
+  [
+   "3-2 B. C.",
+   "",
+   "Hist.",
+   "",
+   "1965"
+  ]
+ ],
+ "LYSIMACHUS $1": [
+  "LYSIMACHUS",
+  {
+   "FGrH #621": "fragmenta"
+  },
+  [
+   "1 B. C. - A. D. 1 ?",
+   "",
+   "Hist.",
+   "",
+   "2427"
+  ]
+ ],
+ "LYSIMACHUS $2": [
+  "LYSIMACHUS",
+  {
    "FGrH #382": "fragmenta",
    "fragmenta": "fragmenta"
   },
@@ -40437,7 +44985,7 @@ let LDM = {
    "1472"
   ]
  ],
- "Laonicus CHALCOCONDYLES": [
+ "LAONICUS CHALCOCONDYLES": [
   "Laonicus CHALCOCONDYLES",
   {
    "Historiae": "Historiae"
@@ -40450,7 +44998,7 @@ let LDM = {
    "3139"
   ]
  ],
- "Lucius Annaeus CORNUTUS": [
+ "LUCIUS ANNAEUS CORNUTUS": [
   "Lucius Annaeus CORNUTUS",
   {
    "De natura deorum": "De natura deorum"
@@ -40463,7 +45011,7 @@ let LDM = {
    "654"
   ]
  ],
- "Lucius CINCIUS ALIMENTUS": [
+ "LUCIUS CINCIUS ALIMENTUS": [
   "Lucius CINCIUS ALIMENTUS",
   {
    "fragmenta": "fragmenta"
@@ -40477,6 +45025,19 @@ let LDM = {
   ]
  ],
  "MACARIUS": [
+  "MACARIUS",
+  {
+   "Apocriticus seu \u039c\u03bf\u03bd\u03bf\u03b3\u03b5\u03bd\u03ae\u03c2": "Apocriticus seu \u039c\u03bf\u03bd\u03bf\u03b3\u03b5\u03bd\u03ae\u03c2"
+  },
+  [
+   "A. D. 4-5",
+   "",
+   "Scr. Eccl.",
+   "Magnes",
+   "2776"
+  ]
+ ],
+ "MACARIUS $1": [
   "MACARIUS",
   {
    "fragmenta": "fragmenta"
@@ -40557,7 +45118,7 @@ let LDM = {
    "473"
   ]
  ],
- "Eustathius MACREMBOLITES": [
+ "EUSTATHIUS MACREMBOLITES": [
   "Eustathius MACREMBOLITES",
   {
    "Hysmine et Hysminias": "Hysmine et Hysminias"
@@ -40570,7 +45131,7 @@ let LDM = {
    "3072"
   ]
  ],
- "Alexius MACREMBOLITES": [
+ "ALEXIUS MACREMBOLITES": [
   "Alexius MACREMBOLITES",
   {
    "oratio historica": "oratio historica",
@@ -40585,7 +45146,7 @@ let LDM = {
    "4409"
   ]
  ],
- "Macarius MACRES": [
+ "MACARIUS MACRES": [
   "Macarius MACRES",
   {
    "Orationes IV ad eos qui successu impiorum offenduntur {001}": "Orationes IV ad eos qui successu impiorum offenduntur {001}",
@@ -40630,7 +45191,7 @@ let LDM = {
    "2339"
   ]
  ],
- "Maec.": [
+ "MAEC.": [
   "Quintus MAECIUS",
   {
    "AG. 6.33, AG 6.89, AG 6.230, AG 6.233AP. 6.33, AP 6.89, AP 6.230, AP 6.233": "Epigrammata"
@@ -40735,7 +45296,7 @@ let LDM = {
    "5002"
   ]
  ],
- "Thomas MAGISTER": [
+ "THOMAS MAGISTER": [
   "Thomas MAGISTER",
   {
    "Ecloga nominum et verborum Atticorum {001}": "Ecloga nominum et verborum Atticorum {001}",
@@ -40772,7 +45333,7 @@ let LDM = {
    "9023"
   ]
  ],
- "Demetrius MAGISTRUS Poeta": [
+ "DEMETRIUS MAGISTRUS POETA": [
   "Demetrius MAGISTRUS Poeta",
   {
    "Versus (ad mortem Theodori Palaeologi)": "Versus (ad mortem Theodori Palaeologi)"
@@ -40802,6 +45363,61 @@ let LDM = {
  "MAGNUS": [
   "MAGNUS",
   {
+   "testimonium": "testimonium",
+   "fragmenta": "fragmenta",
+   "fragmentum": "fragmentum"
+  },
+  [
+   "301",
+   "400",
+   "Hist.",
+   "Carrhaeus",
+   "2157"
+  ]
+ ],
+ "MAGNUS $1": [
+  "MAGNUS",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "A. D. 1",
+   "",
+   "Med.",
+   "Philadelphus",
+   "961"
+  ]
+ ],
+ "MAGNUS $2": [
+  "MAGNUS",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "a. A. D. 2",
+   "",
+   "Med.",
+   "Tarsensis",
+   "962"
+  ]
+ ],
+ "MAGNUS $3": [
+  "MAGNUS",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum",
+   "fragmentum ap. Oribasium": "fragmentum ap. Oribasium"
+  },
+  [
+   "A. D. 2",
+   "",
+   "Med.",
+   "Ephesius",
+   "965"
+  ]
+ ],
+ "MAGNUS $4": [
+  "MAGNUS",
+  {
    "epigramma": "epigramma"
   },
   [
@@ -40812,7 +45428,7 @@ let LDM = {
    "959"
   ]
  ],
- "MAGNUS Archiatrus": [
+ "MAGNUS ARCHIATRUS": [
   "MAGNUS Archiatrus",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -40825,7 +45441,7 @@ let LDM = {
    "960"
   ]
  ],
- "MAGNUS \u03bf \u03b1\u03bb\u03b9\u03bd\u03b9\u03ba\u03bf\u03c3": [
+ "MAGNUS \u039f \u0391\u039b\u0399\u039d\u0399\u039a\u039f\u03a3": [
   "MAGNUS \u03bf \u03b1\u03bb\u03b9\u03bd\u03b9\u03ba\u03bf\u03c3",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -40877,7 +45493,7 @@ let LDM = {
    "2382"
   ]
  ],
- "Manuel MALAXUS": [
+ "MANUEL MALAXUS": [
   "Manuel MALAXUS",
   {
    "Historia politica Constantinopoleos (a 1454 usque ad 1578 annum Christi)": "Historia politica Constantinopoleos (a 1454 usque ad 1578 annum Christi)"
@@ -40933,6 +45549,20 @@ let LDM = {
  "MANETHO": [
   "MANETHO",
   {
+   "testimonia": "testimonia",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-300",
+   "-201",
+   "Hist.",
+   "Aegyptius",
+   "1477"
+  ]
+ ],
+ "MANETHO $1": [
+  "MANETHO",
+  {
    "Apotelesmatica": "Apotelesmatica"
   },
   [
@@ -40956,7 +45586,7 @@ let LDM = {
    "967"
   ]
  ],
- "Joannes MANTHUS": [
+ "JOANNES MANTHUS": [
   "Joannes MANTHUS",
   {
    "De Moreae calamitate": "De Moreae calamitate"
@@ -41012,6 +45642,19 @@ let LDM = {
  "MARCELLINUS": [
   "MARCELLINUS",
   {
+   "Vita Thucydidis": "Vita Thucydidis"
+  },
+  [
+   "301",
+   "400",
+   "Biogr.",
+   "",
+   "2585"
+  ]
+ ],
+ "MARCELLINUS $1": [
+  "MARCELLINUS",
+  {
    "introductio in prolegomena hermogenis artis rhetoricae (fort. Auctore Marcellino Gramm. Et Rhet.)": "introductio in prolegomena hermogenis artis rhetoricae (fort. Auctore Marcellino Gramm. Et Rhet.)"
   },
   [
@@ -41052,6 +45695,47 @@ let LDM = {
  "MARCELLUS": [
   "MARCELLUS",
   {
+   "epigrammata dedicatoria": "epigrammata dedicatoria"
+  },
+  [
+   "A. D. 2?",
+   "",
+   "Epigr.",
+   "",
+   "2676"
+  ]
+ ],
+ "MARCELLUS $1": [
+  "MARCELLUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-800",
+   "1599",
+   "Hist.",
+   "",
+   "2458"
+  ]
+ ],
+ "MARCELLUS $2": [
+  "MARCELLUS",
+  {
+   "De piscibus fragmentum": "De piscibus fragmentum",
+   "fragmentum ap. Paulum": "fragmentum ap. Paulum",
+   "fragmentum ap. A\u00ebtium": "fragmentum ap. A\u00ebtium"
+  },
+  [
+   "101",
+   "200",
+   "Poet. Med.",
+   "Sidetes",
+   "281"
+  ]
+ ],
+ "MARCELLUS $3": [
+  "MARCELLUS",
+  {
    "Fragmenta {001}": "Fragmenta {001}",
    "Expositio fidei {004}": "Expositio fidei {004}",
    "De incarnatione et contra Arianos {005}": "De incarnatione et contra Arianos {005}",
@@ -41084,6 +45768,39 @@ let LDM = {
  "MARCIANUS": [
   "MARCIANUS",
   {
+   "Periplus maris exteri {001}": "Periplus maris exteri {001}",
+   "Menippi periplus maris interni {002}": "Menippi periplus maris interni {002}",
+   "Artemidori geographia {003}": "Artemidori geographia {003}"
+  },
+  [
+   "201",
+   "500",
+   "Geogr.",
+   "Heracleensis",
+   "4003"
+  ]
+ ],
+ "MARCIANUS $1": [
+  "MARCIANUS",
+  {
+   "fragmentum ap. Oribasium": "fragmentum ap. Oribasium",
+   "Fragmentum ap. A\u00ebtium (lib 7)": "Fragmentum ap. A\u00ebtium (lib 7)",
+   "Fragmentum ap. A\u00ebtium (lib. 8)": "Fragmentum ap. A\u00ebtium (lib. 8)",
+   "Fragmentum ap. A\u00ebtium (lib. 9)": "Fragmentum ap. A\u00ebtium (lib. 9)",
+   "Fragmentum ap. A\u00ebtium (lib. 11)": "Fragmentum ap. A\u00ebtium (lib. 11)",
+   "Fragmentum ap. A\u00ebtium (lib. 12)": "Fragmentum ap. A\u00ebtium (lib. 12)"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "Africanus",
+   "969"
+  ]
+ ],
+ "MARCIANUS $2": [
+  "MARCIANUS",
+  {
    "fragmentum ap. Alexandrum Trallianum": "fragmentum ap. Alexandrum Trallianum"
   },
   [
@@ -41112,6 +45829,19 @@ let LDM = {
  "MARCUS": [
   "MARCUS",
   {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "?",
+   "?",
+   "Gnost.",
+   "?",
+   "1823"
+  ]
+ ],
+ "MARCUS $1": [
+  "MARCUS",
+  {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
   },
   [
@@ -41122,7 +45852,7 @@ let LDM = {
    "970"
   ]
  ],
- "MARCUS AURELIUS ANTONINUS Imperator": [
+ "MARCUS AURELIUS ANTONINUS IMPERATOR": [
   "MARCUS AURELIUS ANTONINUS Imperator",
   {
    "\u03a4\u1f70 \u03b5\u1f30\u03c2 \u1f11\u03b1\u03c5\u03c4\u03cc\u03bd": "\u03a4\u1f70 \u03b5\u1f30\u03c2 \u1f11\u03b1\u03c5\u03c4\u03cc\u03bd"
@@ -41135,7 +45865,7 @@ let LDM = {
    "562"
   ]
  ],
- "MARCUS Diaconus": [
+ "MARCUS DIACONUS": [
   "MARCUS Diaconus",
   {
    "Vita Porphyrii episcopi Gazensis": "Vita Porphyrii episcopi Gazensis"
@@ -41148,7 +45878,7 @@ let LDM = {
    "2806"
   ]
  ],
- "MARCUS Eremita": [
+ "MARCUS EREMITA": [
   "MARCUS Eremita",
   {
    "De lege spirituali {002}": "De lege spirituali {002}",
@@ -41170,7 +45900,7 @@ let LDM = {
    "3291"
   ]
  ],
- "MARCUS Monachus": [
+ "MARCUS MONACHUS": [
   "MARCUS Monachus",
   {
    "Florilegium {001}": "Florilegium {001}",
@@ -41217,6 +45947,45 @@ let LDM = {
  "MARINUS": [
   "MARINUS",
   {
+   "epigrammata": "epigrammata"
+  },
+  [
+   "?",
+   "?",
+   "Epigr.",
+   "?",
+   "4073"
+  ]
+ ],
+ "MARINUS $1": [
+  "MARINUS",
+  {
+   "epigrammata": "epigrammata"
+  },
+  [
+   "?",
+   "?",
+   "Epigr.",
+   "?",
+   "4074"
+  ]
+ ],
+ "MARINUS $2": [
+  "MARINUS",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "fort. Alexandrinus",
+   "973"
+  ]
+ ],
+ "MARINUS $3": [
+  "MARINUS",
+  {
    "Commentarium in Euclidis data": "Commentarium in Euclidis data",
    "Vita Procli sive de felicitate": "Vita Procli sive de felicitate",
    "epigrammata": "epigrammata"
@@ -41242,7 +46011,7 @@ let LDM = {
    "2432"
   ]
  ],
- "MARSYAS Pellaeus et MARSYAS Philippeus": [
+ "MARSYAS PELLAEUS ET MARSYAS PHILIPPEUS": [
   "MARSYAS Pellaeus et MARSYAS Philippeus",
   {
    "testimonia": "testimonia",
@@ -41428,8 +46197,8 @@ let LDM = {
    "Martyrium Potamiaenae et Basilidis": "Martyrium Potamiaenae et Basilidis"
   },
   [
-   "?",
-   "?",
+   "301",
+   "1600",
    "Hagiogr.",
    "?",
    "2007"
@@ -41515,6 +46284,19 @@ let LDM = {
    "Hagiogr.",
    "?",
    "2016"
+  ]
+ ],
+ "MARTYRIUM POTAMIAENAE ET BASILIDIS $1": [
+  "MARTYRIUM POTAMIAENAE ET BASILIDIS",
+  {
+   "Martyrium Potamiaenae et Basilidis": "Martyrium Potamiaenae et Basilidis"
+  },
+  [
+   "?",
+   "?",
+   "Hagiogr.",
+   "?",
+   "2007"
   ]
  ],
  "MARTYRIUM ROMANI": [
@@ -41679,7 +46461,7 @@ let LDM = {
    "1486"
   ]
  ],
- "MATTHAEUS I Patriarcha": [
+ "MATTHAEUS I PATRIARCHA": [
   "MATTHAEUS I Patriarcha",
   {
    "Testamentum Matthaei I patriarchae": "Testamentum Matthaei I patriarchae"
@@ -41718,7 +46500,7 @@ let LDM = {
    "1560"
   ]
  ],
- "Joannes MAUROPUS": [
+ "JOANNES MAUROPUS": [
   "Joannes MAUROPUS",
   {
    "Epigramma demonstrativum": "Epigramma demonstrativum"
@@ -41747,6 +46529,59 @@ let LDM = {
  "MAXIMUS": [
   "MAXIMUS",
   {
+   "Fragmentum ex libro de materia": "Fragmentum ex libro de materia"
+  },
+  [
+   "101",
+   "200",
+   "Theol.",
+   "",
+   "1488"
+  ]
+ ],
+ "MAXIMUS $1": [
+  "MAXIMUS",
+  {
+   "Dissertationes": "Dissertationes"
+  },
+  [
+   "101",
+   "200",
+   "Soph.",
+   "Tyrius",
+   "563"
+  ]
+ ],
+ "MAXIMUS $2": [
+  "MAXIMUS",
+  {
+   "\u03a0\u03b5\u03c1\u1f76 \u03c4\u1ff6\u03bd \u1f00\u03bb\u03cd\u03c4\u03c9\u03bd \u1f00\u03bd\u03c4\u03b9\u03b8\u03ad\u03c3\u03b5\u03c9\u03bd (fort. auctore Maximo Byzantio)": "\u03a0\u03b5\u03c1\u1f76 \u03c4\u1ff6\u03bd \u1f00\u03bb\u03cd\u03c4\u03c9\u03bd \u1f00\u03bd\u03c4\u03b9\u03b8\u03ad\u03c3\u03b5\u03c9\u03bd (fort. auctore Maximo Byzantio)"
+  },
+  [
+   "301",
+   "400",
+   "Rhet.",
+   "Byzantius vel Epirota",
+   "2025"
+  ]
+ ],
+ "MAXIMUS $3": [
+  "MAXIMUS",
+  {
+   "\u03a0\u03b5\u03c1\u1f76 \u03ba\u03b1\u03c4\u03b1\u03c1\u03c7\u1ff6\u03bd": "\u03a0\u03b5\u03c1\u1f76 \u03ba\u03b1\u03c4\u03b1\u03c1\u03c7\u1ff6\u03bd",
+   "\u03a0\u03b5\u03c1\u1f76 \u03ba\u03b1\u03c4\u03b1\u03c1\u03c7\u1ff6\u03bd (epitome)": "\u03a0\u03b5\u03c1\u1f76 \u03ba\u03b1\u03c4\u03b1\u03c1\u03c7\u1ff6\u03bd (epitome)"
+  },
+  [
+   "101",
+   "400",
+   "Astrol.",
+   "",
+   "1487"
+  ]
+ ],
+ "MAXIMUS $4": [
+  "MAXIMUS",
+  {
    "epigramma dedicatorium": "epigramma dedicatorium"
   },
   [
@@ -41757,7 +46592,7 @@ let LDM = {
    "2675"
   ]
  ],
- "MAXIMUS Neamonites": [
+ "MAXIMUS NEAMONITES": [
   "MAXIMUS Neamonites",
   {
    "Epistula Maximi Neamonitae ad Gregorium archiepiscopum Bulgariae": "Epistula Maximi Neamonitae ad Gregorium archiepiscopum Bulgariae"
@@ -41839,7 +46674,7 @@ let LDM = {
    "976"
   ]
  ],
- "MELAMPUS Scriptor De Divinatione": [
+ "MELAMPUS SCRIPTOR DE DIVINATIONE": [
   "MELAMPUS Scriptor De Divinatione",
   {
    "\u03a0\u03b5\u03c1\u1f76 \u1f10\u03bb\u03b1\u03b9\u1ff6\u03bd \u03c4\u03bf\u1fe6 \u03c3\u03ce\u03bc\u03b1\u03c4\u03bf\u03c2 \u03c0\u03c1\u1f78\u03c2 \u03a0\u03c4\u03bf\u03bb\u03b5\u03bc\u03b1\u1fd6\u03bf\u03bd \u03b2\u03b1\u03c3\u03b9\u03bb\u03ad\u03b1 {001}": "\u03a0\u03b5\u03c1\u1f76 \u1f10\u03bb\u03b1\u03b9\u1ff6\u03bd \u03c4\u03bf\u1fe6 \u03c3\u03ce\u03bc\u03b1\u03c4\u03bf\u03c2 \u03c0\u03c1\u1f78\u03c2 \u03a0\u03c4\u03bf\u03bb\u03b5\u03bc\u03b1\u1fd6\u03bf\u03bd \u03b2\u03b1\u03c3\u03b9\u03bb\u03ad\u03b1 {001}",
@@ -41871,6 +46706,33 @@ let LDM = {
   ]
  ],
  "MELANTHIUS": [
+  "MELANTHIUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-400",
+   "-301",
+   "Hist.",
+   "fort. Atheniensis",
+   "1491"
+  ]
+ ],
+ "MELANTHIUS $1": [
+  "MELANTHIUS",
+  {
+   "fragmentum": "fragmentum",
+   "titulus": "titulus"
+  },
+  [
+   "-500",
+   "-401",
+   "Eleg. Trag.",
+   "Atheniensis",
+   "254"
+  ]
+ ],
+ "MELANTHIUS $2": [
   "MELANTHIUS",
   {
    "fragmentum": "fragmentum"
@@ -41923,7 +46785,7 @@ let LDM = {
    "977"
   ]
  ],
- "MELETUS Junior": [
+ "MELETUS JUNIOR": [
   "MELETUS Junior",
   {
    "titulus": "titulus"
@@ -41979,6 +46841,48 @@ let LDM = {
  "MELITO": [
   "MELITO",
   {
+   "de pascha": "de pascha",
+   "fragmentum": "fragmentum",
+   "fragmenta": "fragmenta",
+   "deprecatio": "deprecatio"
+  },
+  [
+   "101",
+   "200",
+   "Apol.",
+   "Sardianus",
+   "1495"
+  ]
+ ],
+ "MELITO $1": [
+  "MELITO",
+  {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "A. D. 2?",
+   "",
+   "Hist.",
+   "fort. Atheniensis",
+   "2250"
+  ]
+ ],
+ "MELITO $2": [
+  "MELITO",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "A. D. 1",
+   "",
+   "Med.",
+   "",
+   "978"
+  ]
+ ],
+ "MELITO $3": [
+  "MELITO",
+  {
    "titulus": "titulus"
   },
   [
@@ -41989,7 +46893,7 @@ let LDM = {
    "825"
   ]
  ],
- "MELITUS et MELITIANI": [
+ "MELITUS ET MELITIANI": [
   "MELITUS et MELITIANI",
   {
    "epistulae melitianorum": "epistulae melitianorum",
@@ -42006,6 +46910,20 @@ let LDM = {
  "MEMNON": [
   "MEMNON",
   {
+   "testimonium": "testimonium",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-50",
+   "50",
+   "Hist.",
+   "fort. Heracleota",
+   "1496"
+  ]
+ ],
+ "MEMNON $1": [
+  "MEMNON",
+  {
    "testimonium": "testimonium"
   },
   [
@@ -42017,6 +46935,21 @@ let LDM = {
   ]
  ],
  "MENAECHMUS": [
+  "MENAECHMUS",
+  {
+   "Testimonia": "Testimonia",
+   "fragmenta": "fragmenta",
+   "sicyonis historia": "sicyonis historia"
+  },
+  [
+   "4 B. C.",
+   "",
+   "Hist.",
+   "Sicyonius",
+   "1497"
+  ]
+ ],
+ "MENAECHMUS $1": [
   "MENAECHMUS",
   {
    "testimonia": "testimonia",
@@ -42034,6 +46967,80 @@ let LDM = {
  "MENANDER": [
   "MENANDER",
   {
+   "\u0394\u03b9\u03b1\u03af\u03c1\u03b5\u03c3\u03b9\u03c2 \u03c4\u1ff6\u03bd \u1f10\u03c0\u03b9\u03b4\u03b5\u03b9\u03ba\u03c4\u03b9\u03ba\u1ff6\u03bd (olim sub auctore Genethlio)": "\u0394\u03b9\u03b1\u03af\u03c1\u03b5\u03c3\u03b9\u03c2 \u03c4\u1ff6\u03bd \u1f10\u03c0\u03b9\u03b4\u03b5\u03b9\u03ba\u03c4\u03b9\u03ba\u1ff6\u03bd (olim sub auctore Genethlio)",
+   "\u03a0\u03b5\u03c1\u1f76 \u1f10\u03c0\u03b9\u03b4\u03b5\u03b9\u03ba\u03c4\u03b9\u03ba\u1ff6\u03bd": "\u03a0\u03b5\u03c1\u1f76 \u1f10\u03c0\u03b9\u03b4\u03b5\u03b9\u03ba\u03c4\u03b9\u03ba\u1ff6\u03bd"
+  },
+  [
+   "251",
+   "300",
+   "Rhet.",
+   "Laodicensis",
+   "2586"
+  ]
+ ],
+ "MENANDER $1": [
+  "MENANDER",
+  {
+   "Aspis {001}": "Aspis {001}",
+   "Aspidis fragmenta aliunde nota {002}": "Aspidis fragmenta aliunde nota {002}",
+   "Georgus {003}": "Georgus {003}",
+   "Georgi fragmenta aliunde nota {004}": "Georgi fragmenta aliunde nota {004}",
+   "Dis exapaton {005}": "Dis exapaton {005}",
+   "Dis exapatontis fragmenta aliunde nota {006}": "Dis exapatontis fragmenta aliunde nota {006}",
+   "Dyscolus {007}": "Dyscolus {007}",
+   "Epitrepontum fragmenta {008}": "Epitrepontum fragmenta {008}",
+   "Epitrepontes {009}": "Epitrepontes {009}",
+   "Heros {010}": "Heros {010}",
+   "Herois fragmenta aliunde nota {011}": "Herois fragmenta aliunde nota {011}",
+   "Theophorumene {012}": "Theophorumene {012}",
+   "Theophorumenae fragmentum dubium {013}": "Theophorumenae fragmentum dubium {013}",
+   "Theophorumenae fragmenta aliunde nota {014}": "Theophorumenae fragmenta aliunde nota {014}",
+   "Carchedonius {015}": "Carchedonius {015}",
+   "Carchedonii fragmenta aliunde nota {016}": "Carchedonii fragmenta aliunde nota {016}",
+   "Citharista {017}": "Citharista {017}",
+   "Citharistae fragmenta aliunde nota {018}": "Citharistae fragmenta aliunde nota {018}",
+   "Colax {019}": "Colax {019}",
+   "Colacis fragmenta aliunde nota {020}": "Colacis fragmenta aliunde nota {020}",
+   "Coneazomenae {021}": "Coneazomenae {021}",
+   "Coneazomenarum fragmentum aliunde notum {022}": "Coneazomenarum fragmentum aliunde notum {022}",
+   "Misumenus {023}": "Misumenus {023}",
+   "Misumeni fragmenta {024}": "Misumeni fragmenta {024}",
+   "Periciromene {025}": "Periciromene {025}",
+   "Periciromenae fragmenta aliunde nota {026}": "Periciromenae fragmenta aliunde nota {026}",
+   "Perinthia {027}": "Perinthia {027}",
+   "Perinthiae fragmenta aliunde nota {028}": "Perinthiae fragmenta aliunde nota {028}",
+   "Samia {029}": "Samia {029}",
+   "Samiae fragmentum aliunde notum {030}": "Samiae fragmentum aliunde notum {030}",
+   "Sicyonius {031}": "Sicyonius {031}",
+   "Sicyonii fragmenta aliunde nota {032}": "Sicyonii fragmenta aliunde nota {032}",
+   "Phasma {033}": "Phasma {033}",
+   "Fabula incerta {034}": "Fabula incerta {034}",
+   "Fragmentum dubium {035}": "Fragmentum dubium {035}",
+   "Fragmenta longiora apud alios auctores servata {036}": "Fragmenta longiora apud alios auctores servata {036}",
+   "Fragmenta {037}": "Fragmenta {037}",
+   "Misumeni nova fragmenta {038}": "Misumeni nova fragmenta {038}",
+   "Fragmenta {039}": "Fragmenta {039}",
+   "Fragmenta {040}": "Fragmenta {040}",
+   "Fragmenta {041}": "Fragmenta {041}",
+   "Sententiae e codicibus Byzantinis {042}": "Sententiae e codicibus Byzantinis {042}",
+   "Epigrammata {044}": "Epigrammata {044}",
+   "Fragmenta {045}": "Fragmenta {045}",
+   "Epigramma {046}": "Epigramma {046}",
+   "Sententiae {047}": "Sententiae {047}",
+   "Sententiae e papyris {048}": "Sententiae e papyris {048}",
+   "Fragmenta\u00a0(049)": "Fragmenta\u00a0(049)"
+  },
+  [
+   "-342",
+   "-291",
+   "Comic.",
+   "Atheniensis",
+   "541"
+  ]
+ ],
+ "MENANDER $2": [
+  "MENANDER",
+  {
    "testimonia": "testimonia",
    "fragmenta": "fragmenta"
   },
@@ -42045,7 +47052,7 @@ let LDM = {
    "1498"
   ]
  ],
- "MENANDER Protector": [
+ "MENANDER PROTECTOR": [
   "MENANDER Protector",
   {
    "De legationibus Romanorum ad gentes (fragmenta ap. Constantinum Porphyrogenitum, De legationibus)": "De legationibus Romanorum ad gentes (fragmenta ap. Constantinum Porphyrogenitum, De legationibus)",
@@ -42079,6 +47086,32 @@ let LDM = {
  "MENECLES": [
   "MENECLES",
   {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-200",
+   "-101",
+   "Hist.",
+   "Barcaeus",
+   "1499"
+  ]
+ ],
+ "MENECLES $1": [
+  "MENECLES",
+  {
+   "testimonium": "testimonium"
+  },
+  [
+   "2 B. C.",
+   "",
+   "Hist.",
+   "Teius",
+   "2325"
+  ]
+ ],
+ "MENECLES $2": [
+  "MENECLES",
+  {
    "epigramma sepulcrale": "epigramma sepulcrale"
   },
   [
@@ -42092,6 +47125,124 @@ let LDM = {
  "MENECRATES": [
   "MENECRATES",
   {
+   "fragmentum et titulus": "fragmentum et titulus"
+  },
+  [
+   "-400",
+   "-301",
+   "Poet. Phil.",
+   "Ephesius",
+   "1500"
+  ]
+ ],
+ "MENECRATES $1": [
+  "MENECRATES",
+  {
+   "titulus": "titulus",
+   "fragmentum": "fragmentum"
+  },
+  [
+   "-400",
+   "1600",
+   "Comic.",
+   "",
+   "523"
+  ]
+ ],
+ "MENECRATES $2": [
+  "MENECRATES",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-800",
+   "100",
+   "Hist.",
+   "Tyrius",
+   "4346"
+  ]
+ ],
+ "MENECRATES $3": [
+  "MENECRATES",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-400",
+   "-301",
+   "Hist.",
+   "Elaita",
+   "4344"
+  ]
+ ],
+ "MENECRATES $4": [
+  "MENECRATES",
+  {
+   "epigrammata": "epigrammata"
+  },
+  [
+   "4-3 B. C.",
+   "",
+   "Epigr.",
+   "Samius",
+   "1501"
+  ]
+ ],
+ "MENECRATES $5": [
+  "MENECRATES",
+  {
+   "epigramma": "epigramma"
+  },
+  [
+   "1 B. C.",
+   "",
+   "Epigr.",
+   "Smyrnaeus",
+   "1502"
+  ]
+ ],
+ "MENECRATES $6": [
+  "MENECRATES",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-400",
+   "-301",
+   "Hist.",
+   "Xanthius",
+   "1503"
+  ]
+ ],
+ "MENECRATES $7": [
+  "MENECRATES",
+  {
+   "epistula": "epistula"
+  },
+  [
+   "-400",
+   "-301",
+   "Med.",
+   "Syracusanus",
+   "639"
+  ]
+ ],
+ "MENECRATES $8": [
+  "MENECRATES",
+  {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "-800",
+   "1600",
+   "Hist.",
+   "fort. Olynthius vel Lycius",
+   "4345"
+  ]
+ ],
+ "MENECRATES $9": [
+  "MENECRATES",
+  {
    "fragmenta": "fragmenta"
   },
   [
@@ -42102,7 +47253,7 @@ let LDM = {
    "2475"
   ]
  ],
- "Tiberius Claudius MENECRATES": [
+ "TIBERIUS CLAUDIUS MENECRATES": [
   "Tiberius Claudius MENECRATES",
   {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum"
@@ -42143,6 +47294,21 @@ let LDM = {
   ]
  ],
  "MENELAUS": [
+  "MENELAUS",
+  {
+   "Fragmenta et titulus": "Fragmenta et titulus",
+   "fragmenta": "fragmenta",
+   "testimonia": "testimonia"
+  },
+  [
+   "1",
+   "1600",
+   "Epic.",
+   "Aegaeus",
+   "1504"
+  ]
+ ],
+ "MENELAUS $1": [
   "MENELAUS",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -42223,6 +47389,46 @@ let LDM = {
  "MENIPPUS": [
   "MENIPPUS",
   {
+   "fragmenta": "fragmenta",
+   "menippi periplus maris interni (epitome Marciani)": "menippi periplus maris interni (epitome Marciani)"
+  },
+  [
+   "-100",
+   "-1",
+   "Geogr.",
+   "Pergamenus",
+   "79"
+  ]
+ ],
+ "MENIPPUS $1": [
+  "MENIPPUS",
+  {
+   "epistula": "epistula"
+  },
+  [
+   "-300",
+   "-201",
+   "Phil.",
+   "Gadarensis",
+   "52"
+  ]
+ ],
+ "MENIPPUS $2": [
+  "MENIPPUS",
+  {
+   "titulus": "titulus"
+  },
+  [
+   "a. 1 B. C.",
+   "",
+   "Hist.",
+   "",
+   "2517"
+  ]
+ ],
+ "MENIPPUS $3": [
+  "MENIPPUS",
+  {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
   },
   [
@@ -42234,6 +47440,19 @@ let LDM = {
   ]
  ],
  "MENODOTUS": [
+  "MENODOTUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-300",
+   "-201",
+   "Hist.",
+   "Samius",
+   "1506"
+  ]
+ ],
+ "MENODOTUS $1": [
   "MENODOTUS",
   {
    "testimonium": "testimonium"
@@ -42360,6 +47579,60 @@ let LDM = {
  "METRODORUS": [
   "METRODORUS",
   {
+   "fragmenta": "fragmenta",
+   "testimonia": "testimonia"
+  },
+  [
+   "-400",
+   "-301",
+   "Phil.",
+   "Chius",
+   "1508"
+  ]
+ ],
+ "METRODORUS $1": [
+  "METRODORUS",
+  {
+   "testimonia": "testimonia",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-100",
+   "-1",
+   "Hist.",
+   "Scepsius",
+   "1976"
+  ]
+ ],
+ "METRODORUS MAJOR": [
+  "METRODORUS Major",
+  {
+   "testimonia": "testimonia"
+  },
+  [
+   "-600",
+   "-501",
+   "Phil.",
+   "Lampsacenus",
+   "1811"
+  ]
+ ],
+ "METRODORUS THEOREMATICUS": [
+  "METRODORUS Theorematicus",
+  {
+   "testimonium": "testimonium"
+  },
+  [
+   "?",
+   "?",
+   "Phil.",
+   "Atheniensis",
+   "4270"
+  ]
+ ],
+ "METRODORUS $2": [
+  "METRODORUS",
+  {
    "fragmenta": "fragmenta"
   },
   [
@@ -42370,7 +47643,7 @@ let LDM = {
    "1773"
   ]
  ],
- "METRODORUS Major": [
+ "METRODORUS MAJOR $1": [
   "METRODORUS Major",
   {
    "epigrammata": "epigrammata",
@@ -42382,19 +47655,6 @@ let LDM = {
    "Epigr.",
    "?",
    "4077"
-  ]
- ],
- "METRODORUS Theorematicus": [
-  "METRODORUS Theorematicus",
-  {
-   "testimonium": "testimonium"
-  },
-  [
-   "?",
-   "?",
-   "Phil.",
-   "Atheniensis",
-   "4270"
   ]
  ],
  "METROPHANES": [
@@ -42412,6 +47672,32 @@ let LDM = {
   ]
  ],
  "MICHAEL": [
+  "MICHAEL",
+  {
+   "epigramma": "epigramma"
+  },
+  [
+   "?",
+   "?",
+   "Epigr.",
+   "?",
+   "9017"
+  ]
+ ],
+ "MICHAEL $1": [
+  "MICHAEL",
+  {
+   "epigrammata demonstrativa": "epigrammata demonstrativa"
+  },
+  [
+   "?",
+   "?",
+   "Epigr.",
+   "?",
+   "2704"
+  ]
+ ],
+ "MICHAEL $2": [
   "MICHAEL",
   {
    "In ethica Nicomachea ix-x commentaria {001}": "In ethica Nicomachea ix-x commentaria {001}",
@@ -42483,6 +47769,20 @@ let LDM = {
  "MIMNERMUS": [
   "MIMNERMUS",
   {
+   "fragmenta": "fragmenta",
+   "epigramma": "epigramma"
+  },
+  [
+   "-650",
+   "-601",
+   "Eleg.",
+   "Colophonius, Smyrnaeus",
+   "255"
+  ]
+ ],
+ "MIMNERMUS $1": [
+  "MIMNERMUS",
+  {
    "fragmenta": "fragmenta"
   },
   [
@@ -42496,6 +47796,19 @@ let LDM = {
  "MINUCIANUS": [
   "MINUCIANUS",
   {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum"
+  },
+  [
+   "1 B. C. - A . D. 1",
+   "",
+   "Med.",
+   "",
+   "991"
+  ]
+ ],
+ "MINUCIANUS $1": [
+  "MINUCIANUS",
+  {
    "fragmenta": "fragmenta",
    "fragmenum": "fragmenum"
   },
@@ -42507,7 +47820,7 @@ let LDM = {
    "2890"
   ]
  ],
- "MINUCIANUS Junior": [
+ "MINUCIANUS JUNIOR": [
   "MINUCIANUS Junior",
   {
    "\u03a0\u03b5\u03c1\u1f76 \u1f10\u03c0\u03b9\u03c7\u03b5\u03b9\u03c1\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd": "\u03a0\u03b5\u03c1\u1f76 \u1f10\u03c0\u03b9\u03c7\u03b5\u03b9\u03c1\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd"
@@ -42534,7 +47847,7 @@ let LDM = {
    "1512"
   ]
  ],
- "MITHRIDATES VI Eupator": [
+ "MITHRIDATES VI EUPATOR": [
   "MITHRIDATES VI Eupator",
   {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum",
@@ -42579,6 +47892,19 @@ let LDM = {
  "MNASEAS": [
   "MNASEAS",
   {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-300",
+   "-201",
+   "Perieg.",
+   "Patrensis",
+   "1514"
+  ]
+ ],
+ "MNASEAS $1": [
+  "MNASEAS",
+  {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum",
    "fragmenta ap. Oribasium": "fragmenta ap. Oribasium",
    "fragmentum ap. Paulum": "fragmentum ap. Paulum",
@@ -42594,6 +47920,19 @@ let LDM = {
   ]
  ],
  "MNESIMACHUS": [
+  "MNESIMACHUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-400",
+   "-201",
+   "Hist.",
+   "Phaselinus",
+   "2565"
+  ]
+ ],
+ "MNESIMACHUS $1": [
   "MNESIMACHUS",
   {
    "fragmenta": "fragmenta"
@@ -42620,6 +47959,34 @@ let LDM = {
   ]
  ],
  "MNESITHEUS": [
+  "MNESITHEUS",
+  {
+   "fragmentum ap. Oribasium": "fragmentum ap. Oribasium"
+  },
+  [
+   "4/3 B. C. ?",
+   "",
+   "Med.",
+   "",
+   "805"
+  ]
+ ],
+ "MNESITHEUS $1": [
+  "MNESITHEUS",
+  {
+   "fragmenta ap. Galenum": "fragmenta ap. Galenum",
+   "fragmenta ap. Oribasium": "fragmenta ap. Oribasium",
+   "fragmenta ap. Athenaeum": "fragmenta ap. Athenaeum"
+  },
+  [
+   "4 B. C.",
+   "",
+   "Med.",
+   "Atheniensis",
+   "701"
+  ]
+ ],
+ "MNESITHEUS $2": [
   "MNESITHEUS",
   {
    "fragmentum ap. Oribasium": "fragmentum ap. Oribasium"
@@ -42727,7 +48094,7 @@ let LDM = {
    "1044"
   ]
  ],
- "MONTANUS et MONTANISTAE": [
+ "MONTANUS ET MONTANISTAE": [
   "MONTANUS et MONTANISTAE",
   {
    "oracula": "oracula",
@@ -42756,7 +48123,7 @@ let LDM = {
    "314"
   ]
  ],
- "Moschio. Trag.": [
+ "MOSCHIO. TRAG.": [
   "MOSCHION",
   {
    "fragmenta": "fragmenta"
@@ -42772,6 +48139,19 @@ let LDM = {
  "MOSCHION": [
   "MOSCHION",
   {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "3 B. C. ?",
+   "",
+   "Hist. Et Paradox.",
+   "",
+   "1517"
+  ]
+ ],
+ "MOSCHION $1": [
+  "MOSCHION",
+  {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum",
    "Fragmentum ap. A\u00ebtium (lib. 15)": "Fragmentum ap. A\u00ebtium (lib. 15)",
    "fragmentum ap. Alexandrum Trallianum": "fragmentum ap. Alexandrum Trallianum",
@@ -42785,7 +48165,7 @@ let LDM = {
    "994"
   ]
  ],
- "Manuel MOSCHOPULUS": [
+ "MANUEL MOSCHOPULUS": [
   "Manuel MOSCHOPULUS",
   {
    "Paraphrasis in Homeri Iliadem (lib. 1) {004}": "Paraphrasis in Homeri Iliadem (lib. 1) {004}",
@@ -42816,7 +48196,7 @@ let LDM = {
    "9025"
   ]
  ],
- "Mosch.": [
+ "MOSCH.": [
   "MOSCHUS",
   {
    "Eros drapeta {001}": "Eros drapeta {001}",
@@ -42834,7 +48214,7 @@ let LDM = {
    "35"
   ]
  ],
- "Demetrius MOSCHUS": [
+ "DEMETRIUS MOSCHUS": [
   "Demetrius MOSCHUS",
   {
    "Circa Helenam et Alexandrum": "Circa Helenam et Alexandrum",
@@ -42848,7 +48228,7 @@ let LDM = {
    "4231"
   ]
  ],
- "Joannes MOSCHUS": [
+ "JOANNES MOSCHUS": [
   "Joannes MOSCHUS",
   {
    "Pratum spirituale {001}": "Pratum spirituale {001}",
@@ -42936,7 +48316,7 @@ let LDM = {
    "576"
   ]
  ],
- "MUSAEUS Grammaticus": [
+ "MUSAEUS GRAMMATICUS": [
   "MUSAEUS Grammaticus",
   {
    "Hero et Leander": "Hero et Leander"
@@ -42960,6 +48340,22 @@ let LDM = {
    "Epigr.",
    "?",
    "1520"
+  ]
+ ],
+ "GAIUS MUSONIUS RUFUS $1": [
+  "Gaius MUSONIUS RUFUS",
+  {
+   "dissertationum a Lucio digestarum reliquiae {001}": "dissertationum a Lucio digestarum reliquiae {001}",
+   "Fragmenta minora {002}": "Fragmenta minora {002}",
+   "Epistulae spuriae {003}": "Epistulae spuriae {003}",
+   "Fragmentum": "Fragmentum"
+  },
+  [
+   "?",
+   "?",
+   "Phil.",
+   "Volsiniensis",
+   "628"
   ]
  ],
  "MYRINUS": [
@@ -43043,7 +48439,7 @@ let LDM = {
    "477"
   ]
  ],
- "Macarius CHRYSOCEPHALUS": [
+ "MACARIUS CHRYSOCEPHALUS": [
   "Macarius CHRYSOCEPHALUS",
   {
    "Paroemiae": "Paroemiae",
@@ -43058,7 +48454,7 @@ let LDM = {
    "9008"
   ]
  ],
- "Manuel PHILES": [
+ "MANUEL PHILES": [
   "Manuel PHILES",
   {
    "Carmina {001}": "Carmina {001}",
@@ -43119,7 +48515,7 @@ let LDM = {
    "2718"
   ]
  ],
- "Marcus Antonius POLEMON": [
+ "MARCUS ANTONIUS POLEMON": [
   "Marcus Antonius POLEMON",
   {
    "Fragmentum physiognomonicum": "Fragmentum physiognomonicum",
@@ -43135,7 +48531,7 @@ let LDM = {
    "1617"
   ]
  ],
- "Marcus Cornelius FRONTO": [
+ "MARCUS CORNELIUS FRONTO": [
   "Marcus Cornelius FRONTO",
   {
    "ep.": "epistula",
@@ -43156,7 +48552,7 @@ let LDM = {
    "186"
   ]
  ],
- "Michael APOSTOLIUS": [
+ "MICHAEL APOSTOLIUS": [
   "Michael APOSTOLIUS",
   {
    "Collectio paroemiarum {001}": "Collectio paroemiarum {001}",
@@ -43307,7 +48703,7 @@ let LDM = {
    "9009"
   ]
  ],
- "Michael CRITOBULUS": [
+ "MICHAEL CRITOBULUS": [
   "Michael CRITOBULUS",
   {
    "\u039c\u03bf\u03bd\u1ff3\u03b4\u03af\u03b1 \u03b5\u1f30\u03c2 \u03c4\u1f78\u03bd \u039c\u03b1\u03bd\u03bf\u03c5\u1f74\u03bb \u03c4\u1f78\u03bd \u039a\u03b1\u03bb\u03bf\u03c4\u03ac\u03c1\u03b7\u03bd, pp. 145-146.": "\u039c\u03bf\u03bd\u1ff3\u03b4\u03af\u03b1 \u03b5\u1f30\u03c2 \u03c4\u1f78\u03bd \u039c\u03b1\u03bd\u03bf\u03c5\u1f74\u03bb \u03c4\u1f78\u03bd \u039a\u03b1\u03bb\u03bf\u03c4\u03ac\u03c1\u03b7\u03bd, pp. 145-146.",
@@ -43324,7 +48720,7 @@ let LDM = {
    "3147"
   ]
  ],
- "Michael GLYCAS": [
+ "MICHAEL GLYCAS": [
   "Michael GLYCAS",
   {
    "Annales {001}": "Annales {001}"
@@ -43337,7 +48733,124 @@ let LDM = {
    "3047"
   ]
  ],
- "Michael PSELLUS": [
+ "MICHAEL PSELLUS": [
+  "Michael PSELLUS",
+  {
+   "Annales (lectiones variae) {002}": "Annales (lectiones variae) {002}",
+   "Lectiones e cod. Claromontano: pp. 254-255": "Lectiones e cod. Claromontano: pp. 254-255",
+   "Lectiones e Labbei cod.: pp. 295-296": "Lectiones e Labbei cod.: pp. 295-296",
+   "Lectiones e cod. Frontisebraldensi: pp. 387, 395-396": "Lectiones e cod. Frontisebraldensi: pp. 387, 395-396",
+   "Lectiones e codd. Claromontano + Frontisebraldensi: pp. 457-459": "Lectiones e codd. Claromontano + Frontisebraldensi: pp. 457-459",
+   "Versus in carcere scripti {003}": "Versus in carcere scripti {003}",
+   "Versus in Manuelem Comnenum {004}": "Versus in Manuelem Comnenum {004}",
+   "Proverbia {005}": "Proverbia {005}",
+   "Quaestiones in sacram scripturam (Cap. 3-40) {006}": "Quaestiones in sacram scripturam (Cap. 3-40) {006}",
+   "Cap. 3: pp. 1-10": "Cap. 3: pp. 1-10",
+   "Cap. 4: pp. 11-60": "Cap. 4: pp. 11-60",
+   "Cap. 5: pp. 61-66": "Cap. 5: pp. 61-66",
+   "Cap. 6: pp. 67-70": "Cap. 6: pp. 67-70",
+   "Cap. 7: pp. 71-88": "Cap. 7: pp. 71-88",
+   "Cap. 8: pp. 89-115": "Cap. 8: pp. 89-115",
+   "Cap. 9: pp. 116-128": "Cap. 9: pp. 116-128",
+   "Cap. 10: pp. 129-135": "Cap. 10: pp. 129-135",
+   "Cap. 11: pp. 136-149": "Cap. 11: pp. 136-149",
+   "Cap. 12: pp. 150-154": "Cap. 12: pp. 150-154",
+   "Cap. 13: pp. 155-166": "Cap. 13: pp. 155-166",
+   "Cap. 14: pp. 167-172": "Cap. 14: pp. 167-172",
+   "Cap. 15: pp. 173-177": "Cap. 15: pp. 173-177",
+   "Cap. 16: pp. 178-217": "Cap. 16: pp. 178-217",
+   "Cap. 17: pp. 218-221": "Cap. 17: pp. 218-221",
+   "Cap. 18: pp. 222-224": "Cap. 18: pp. 222-224",
+   "Cap. 19: pp. 225-239": "Cap. 19: pp. 225-239",
+   "Cap. 20: pp. 240-246": "Cap. 20: pp. 240-246",
+   "Cap. 21: pp. 247-257": "Cap. 21: pp. 247-257",
+   "Cap. 22: pp. 258-266": "Cap. 22: pp. 258-266",
+   "Cap. 23: pp. 267-272": "Cap. 23: pp. 267-272",
+   "Cap. 24: pp. 273-277": "Cap. 24: pp. 273-277",
+   "Cap. 25: pp. 278-280": "Cap. 25: pp. 278-280",
+   "Cap. 26: pp. 281-286": "Cap. 26: pp. 281-286",
+   "Cap. 27: pp. 287-289": "Cap. 27: pp. 287-289",
+   "Cap. 28: pp. 290-292": "Cap. 28: pp. 290-292",
+   "Cap. 29: pp. 293-334": "Cap. 29: pp. 293-334",
+   "Cap. 30: pp. 335-360": "Cap. 30: pp. 335-360",
+   "Cap. 31: pp. 361-366": "Cap. 31: pp. 361-366",
+   "Cap. 32: pp. 367-368": "Cap. 32: pp. 367-368",
+   "Cap. 33: pp. 369-372": "Cap. 33: pp. 369-372",
+   "Cap. 34: pp. 373-375": "Cap. 34: pp. 373-375",
+   "Cap. 35: pp. 376-378": "Cap. 35: pp. 376-378",
+   "Cap. 36: pp. 379-415": "Cap. 36: pp. 379-415",
+   "Cap. 37: pp. 416-461": "Cap. 37: pp. 416-461",
+   "Cap. 38: pp. 462-467": "Cap. 38: pp. 462-467",
+   "Cap. 39: pp. 468-475": "Cap. 39: pp. 468-475",
+   "Cap. 40: pp. 476-500": "Cap. 40: pp. 476-500",
+   "Quaestiones in sacram scripturam (Cap. 41-98) {007}": "Quaestiones in sacram scripturam (Cap. 41-98) {007}",
+   "Cap. 41: pp. 1-7": "Cap. 41: pp. 1-7",
+   "Cap. 42: pp. 8-11": "Cap. 42: pp. 8-11",
+   "Cap. 43: pp. 12-15": "Cap. 43: pp. 12-15",
+   "Cap. 44: pp. 16-18": "Cap. 44: pp. 16-18",
+   "Cap. 45: pp. 19-29": "Cap. 45: pp. 19-29",
+   "Cap. 46: pp. 30-36": "Cap. 46: pp. 30-36",
+   "Cap. 47: pp. 37-45": "Cap. 47: pp. 37-45",
+   "Cap. 48: pp. 46-51": "Cap. 48: pp. 46-51",
+   "Cap. 49: pp. 52-54": "Cap. 49: pp. 52-54",
+   "Cap. 50: pp. 55-61": "Cap. 50: pp. 55-61",
+   "Cap. 51: pp. 62-68": "Cap. 51: pp. 62-68",
+   "Cap. 52: pp. 69-77": "Cap. 52: pp. 69-77",
+   "Cap. 53: pp. 78-91": "Cap. 53: pp. 78-91",
+   "Cap. 54: pp. 92-107": "Cap. 54: pp. 92-107",
+   "Cap. 55: pp. 108-112": "Cap. 55: pp. 108-112",
+   "Cap. 56: pp. 113-117": "Cap. 56: pp. 113-117",
+   "Cap. 57: pp. 118-127": "Cap. 57: pp. 118-127",
+   "Cap. 58: pp. 128-132": "Cap. 58: pp. 128-132",
+   "Cap. 59: pp. 133-135": "Cap. 59: pp. 133-135",
+   "Cap. 60: pp. 136-138": "Cap. 60: pp. 136-138",
+   "Cap. 61: pp. 139-155": "Cap. 61: pp. 139-155",
+   "Cap. 62: pp. 156-159": "Cap. 62: pp. 156-159",
+   "Cap. 63: pp. 160-174": "Cap. 63: pp. 160-174",
+   "Cap. 64: pp. 175-179": "Cap. 64: pp. 175-179",
+   "Cap. 65: pp. 180-197": "Cap. 65: pp. 180-197",
+   "Cap. 66: pp. 198-200": "Cap. 66: pp. 198-200",
+   "Cap. 67: pp. 201-207": "Cap. 67: pp. 201-207",
+   "Cap. 68: pp. 208-214": "Cap. 68: pp. 208-214",
+   "Cap. 69: pp. 215-229": "Cap. 69: pp. 215-229",
+   "Cap. 70: pp. 230-237": "Cap. 70: pp. 230-237",
+   "Cap. 71: pp. 238-241": "Cap. 71: pp. 238-241",
+   "Cap. 72: pp. 242-245": "Cap. 72: pp. 242-245",
+   "Cap. 73: pp. 246-251": "Cap. 73: pp. 246-251",
+   "Cap. 74: pp. 252-255": "Cap. 74: pp. 252-255",
+   "Cap. 75: pp. 256-258": "Cap. 75: pp. 256-258",
+   "Cap. 76: pp. 259-266": "Cap. 76: pp. 259-266",
+   "Cap. 77: pp. 267-272": "Cap. 77: pp. 267-272",
+   "Cap. 78: pp. 273-274": "Cap. 78: pp. 273-274",
+   "Cap. 79: pp. 275-315": "Cap. 79: pp. 275-315",
+   "Cap. 80: pp. 316-321": "Cap. 80: pp. 316-321",
+   "Cap. 81: pp. 322-341": "Cap. 81: pp. 322-341",
+   "Cap. 82: pp. 342-345": "Cap. 82: pp. 342-345",
+   "Cap. 83: pp. 346-347": "Cap. 83: pp. 346-347",
+   "Cap. 84: pp. 348-379": "Cap. 84: pp. 348-379",
+   "Cap. 85: pp. 380-382": "Cap. 85: pp. 380-382",
+   "Cap. 86: pp. 383-387": "Cap. 86: pp. 383-387",
+   "Cap. 87: pp. 388-392": "Cap. 87: pp. 388-392",
+   "Cap. 88: pp. 393-402": "Cap. 88: pp. 393-402",
+   "Cap. 89: pp. 403-404": "Cap. 89: pp. 403-404",
+   "Cap. 90: pp. 405-409": "Cap. 90: pp. 405-409",
+   "Cap. 91: pp. 410-417": "Cap. 91: pp. 410-417",
+   "Cap. 92: pp. 418-435": "Cap. 92: pp. 418-435",
+   "Cap. 93: pp. 436-444": "Cap. 93: pp. 436-444",
+   "Cap. 94: pp. 445-452": "Cap. 94: pp. 445-452",
+   "Cap. 96: pp. 453-455": "Cap. 96: pp. 453-455",
+   "Cap. 97: pp. 456-458": "Cap. 97: pp. 456-458",
+   "Cap. 98: pp. 459-463": "Cap. 98: pp. 459-463"
+  },
+  [
+   "1018",
+   "1100",
+   "Polyhist.",
+   "?",
+   "2702"
+  ]
+ ],
+ "MICHAEL PSELLUS $1": [
   "Michael PSELLUS",
   {
    "Chronographia {001}": "Chronographia {001}",
@@ -43623,7 +49136,7 @@ let LDM = {
    "2702"
   ]
  ],
- "Naumach.": [
+ "NAUMACH.": [
   "NAUMACHIUS",
   {
    "fragmentum": "fragmentum"
@@ -43636,7 +49149,7 @@ let LDM = {
    "1524"
   ]
  ],
- "Nausicr.": [
+ "NAUSICR.": [
   "NAUSICRATES",
   {
    "fragmenta": "fragmenta",
@@ -43650,7 +49163,7 @@ let LDM = {
    "478"
   ]
  ],
- "Nausiph.": [
+ "NAUSIPH.": [
   "NAUSIPHANES",
   {
    "testimonia": "testimonia",
@@ -43691,7 +49204,7 @@ let LDM = {
    "4155"
   ]
  ],
- "Neanth. Cyz.": [
+ "NEANTH. CYZ.": [
   "NEANTHES",
   {
    "testimonia": "testimonia",
@@ -43705,7 +49218,7 @@ let LDM = {
    "1525"
   ]
  ],
- "Neanth. Cyz. Iun.": [
+ "NEANTH. CYZ. IUN.": [
   "NEANTHES Junior",
   {
    "fragmentum": "fragmentum"
@@ -43718,7 +49231,7 @@ let LDM = {
    "1966"
   ]
  ],
- "Nearch.": [
+ "NEARCH.": [
   "NEARCHUS",
   {
    "FGH n. 133": "testimonia",
@@ -43758,7 +49271,7 @@ let LDM = {
    "4079"
   ]
  ],
- "Nemes.": [
+ "NEMES.": [
   "NEMESIUS",
   {
    "nat. hom.": "de natura hominis"
@@ -43784,7 +49297,7 @@ let LDM = {
    "25"
   ]
  ],
- "Neophr.": [
+ "NEOPHR.": [
   "NEOPHRON",
   {
    "fragmenta": "fragmenta"
@@ -43797,7 +49310,7 @@ let LDM = {
    "307"
   ]
  ],
- "Neoptol.": [
+ "NEOPTOL.": [
   "NEOPTOLEMUS",
   {
    "fragmenta": "fragmenta",
@@ -43824,7 +49337,7 @@ let LDM = {
    "1527"
   ]
  ],
- "NERO Imperator": [
+ "NERO IMPERATOR": [
   "NERO Imperator",
   {
    "fragmentum ap. Paulum": "fragmentum ap. Paulum"
@@ -43865,7 +49378,7 @@ let LDM = {
    "1528"
   ]
  ],
- "Nicaenet.": [
+ "NICAENET.": [
   "NICAENETUS",
   {
    "fragmenta": "fragmenta",
@@ -43883,6 +49396,52 @@ let LDM = {
  "NICANDER": [
   "NICANDER",
   {
+   "FGrH #700": "fragmenta"
+  },
+  [
+   "-200",
+   "-101",
+   "Hist.",
+   "Chalcedonius",
+   "2474"
+  ]
+ ],
+ "NIC.": [
+  "NICANDER",
+  {
+   "Th.": "Theriaca  (001)",
+   "al.": "Alexipharmaca  (002)",
+   "fr.": "fragmenta prosaica",
+   "Oetaica (frr. 16, 18): p. 138": "Oetaica (frr. 16, 18): p. 138",
+   "Thebaica (fr. 19): p. 138": "Thebaica (fr. 19): p. 138",
+   "Sicelia (frr. 21-22): pp. 138-140": "Sicelia (frr. 21-22): pp. 138-140",
+   "Europia (frr. 26-27): p. 140": "Europia (frr. 26-27): p. 140",
+   "Ophiaca (frr. 31-32): p. 142": "Ophiaca (frr. 31-32): p. 142",
+   "Heteroeumena (frr. 43, 50, 59, 62): pp. 142-144": "Heteroeumena (frr. 43, 50, 59, 62): pp. 142-144",
+   "Georgica (frr. 68-76, 78-87, 90-91): pp. 144-160": "Georgica (frr. 68-76, 78-87, 90-91): pp. 144-160",
+   "Cynegetica (?) (frr. 98, 100): p. 162": "Cynegetica (?) (frr. 98, 100): p. 162",
+   "Hymnus in Attalum (?) (fr. 104): p. 162": "Hymnus in Attalum (?) (fr. 104): p. 162",
+   "Epigrammata (frr. 105-107): pp. 162-164": "Epigrammata (frr. 105-107): pp. 162-164",
+   "Incertae sedis fragmenta (frr. 108-112): pp. 164-166": "Incertae sedis fragmenta (frr. 108-112): pp. 164-166",
+   "frr. 562-563a": "frr. 562-563a",
+   "fr. 562: P. Oxy. 37.2812": "fr. 562: P. Oxy. 37.2812",
+   "fr. 563 (commentarius in Theriaca): P. Oxy. 19.2221": "fr. 563 (commentarius in Theriaca): P. Oxy. 19.2221",
+   "fr. 563a (commentarius in Theriaca): P. Mil. Vogl. 2.45": "fr. 563a (commentarius in Theriaca): P. Mil. Vogl. 2.45",
+   "Epigrammata (006)": "Epigrammata (006)",
+   "FGrH #271-272": "fragmenta (= fragmetna historica (DGE))",
+   "sch.": "scholia vetera"
+  },
+  [
+   "-300",
+   "-101",
+   "Epic.",
+   "Colophonius",
+   "22"
+  ]
+ ],
+ "NICANDER $1": [
+  "NICANDER",
+  {
    "FGrH #271-272": "testimonium",
    "fragmenta": "fragmenta"
   },
@@ -43894,21 +49453,7 @@ let LDM = {
    "1933"
   ]
  ],
- "Nic.": [
-  "NICIAS",
-  {
-   "FGH\u00a0n. 318": "fragmentum",
-   "Arc.": "arcadia"
-  },
-  [
-   "-800",
-   "200",
-   "Hist.",
-   "",
-   "2217"
-  ]
- ],
- "Nicand. Thyat.": [
+ "NICAND. THYAT.": [
   "NICANDER",
   {
    "FGH n. 343": "testimonium",
@@ -43925,6 +49470,21 @@ let LDM = {
  "NICANOR": [
   "NICANOR",
   {
+   "FHG 3: 632-634 FGrH #628FGrH #628": "testimonium",
+   "\u03a0\u03b5\u03c1\u03b9 \u0399\u03bb\u03b9\u03b1\u03ba\u03b7\u03c3 \u03c3\u03c4\u03b9\u03b3\u03bc\u03b7\u03c3": "\u03a0\u03b5\u03c1\u03b9 \u0399\u03bb\u03b9\u03b1\u03ba\u03b7\u03c3 \u03c3\u03c4\u03b9\u03b3\u03bc\u03b7\u03c3",
+   "Od.": "\u03a0\u03b5\u03c1\u03b9 \u039f\u03b4\u03c5\u03c3\u03c3\u03b5\u03b9\u03b1\u03ba\u03b7\u03c3 \u03c3\u03c4\u03b9\u03b3\u03bc\u03b7\u03c3"
+  },
+  [
+   "101",
+   "200",
+   "Gramm.",
+   "Alexandrinus",
+   "1530"
+  ]
+ ],
+ "NICANOR $1": [
+  "NICANOR",
+  {
    "FGrH #146": "fragmenta"
   },
   [
@@ -43935,7 +49495,7 @@ let LDM = {
    "1948"
   ]
  ],
- "Nicarch. Hist.": [
+ "NICARCH. HIST.": [
   "NICARCHUS",
   {
    "FGrH #731": "fragmentum"
@@ -43961,7 +49521,7 @@ let LDM = {
    "1531"
   ]
  ],
- "Nicarch.": [
+ "NICARCH.": [
   "NICARCHUS II",
   {
    "epigrammata": "epigrammata"
@@ -44289,7 +49849,7 @@ let LDM = {
    "3086"
   ]
  ],
- "NICEPHORUS II PHOCAS Imperator": [
+ "NICEPHORUS II PHOCAS IMPERATOR": [
   "NICEPHORUS II PHOCAS Imperator",
   {
    "De velitatione bellica {001}": "De velitatione bellica {001}",
@@ -44304,6 +49864,19 @@ let LDM = {
   ]
  ],
  "NICERATUS": [
+  "NICERATUS",
+  {
+   "titulus": "titulus"
+  },
+  [
+   "-500",
+   "-401",
+   "Epic.",
+   "Heracleota",
+   "2633"
+  ]
+ ],
+ "NICERATUS $1": [
   "NICERATUS",
   {
    "fragmentum ap Galenum": "fragmentum ap Galenum"
@@ -44443,6 +50016,20 @@ let LDM = {
    "46"
   ]
  ],
+ "NIC. $1": [
+  "NICIAS",
+  {
+   "FGH\u00a0n. 318": "fragmentum",
+   "Arc.": "arcadia"
+  },
+  [
+   "-800",
+   "200",
+   "Hist.",
+   "",
+   "2217"
+  ]
+ ],
  "NICIAS": [
   "NICIAS",
   {
@@ -44457,7 +50044,7 @@ let LDM = {
    "1533"
   ]
  ],
- "Nicias Gramm.": [
+ "NICIAS GRAMM.": [
   "NICIAS",
   {
    "fragenta": "fragenta"
@@ -44497,7 +50084,7 @@ let LDM = {
    "1937"
   ]
  ],
- "Nicoch.": [
+ "NICOCH.": [
   "NICOCHARES",
   {
    "fragmenta": "fragmenta"
@@ -44523,19 +50110,17 @@ let LDM = {
    "2279"
   ]
  ],
- "Nicol.": [
-  "NICOLAUS",
+ "NICOL.": [
+  "NICOCLES",
   {
-   "Prog.": "Progymnasmata",
-   "Progymnasmata (capita \u03c0\u03b5\u03c1\u1f76 \u03c3\u03c5\u03b3\u03ba\u03c1\u03af\u03c3\u03b5\u03c9\u03c2, \u03c0\u03b5\u03c1\u1f76 \u1f20\u03b8\u03bf\u03c0\u03bf\u03b9\u03af\u03b1\u03c2, \u03c0\u03b5\u03c1\u1f76 \u1f10\u03ba\u03c6\u03c1\u03ac\u03c3\u03b5\u03c9\u03c2, \u03c0\u03b5\u03c1\u1f76 \u03b8\u03ad\u03c3\u03b5\u03c9\u03c2, \u03c0\u03b5\u03c1\u1f76 \u03bd\u03cc\u03bc\u03bf\u03c5 \u03b5\u1f30\u03c3\u03c6\u03bf\u03c1\u1fb6\u03c2) (e cod. Ambros. 523)": "Progymnasmata (capita \u03c0\u03b5\u03c1\u1f76 \u03c3\u03c5\u03b3\u03ba\u03c1\u03af\u03c3\u03b5\u03c9\u03c2, \u03c0\u03b5\u03c1\u1f76 \u1f20\u03b8\u03bf\u03c0\u03bf\u03b9\u03af\u03b1\u03c2, \u03c0\u03b5\u03c1\u1f76 \u1f10\u03ba\u03c6\u03c1\u03ac\u03c3\u03b5\u03c9\u03c2, \u03c0\u03b5\u03c1\u1f76 \u03b8\u03ad\u03c3\u03b5\u03c9\u03c2, \u03c0\u03b5\u03c1\u1f76 \u03bd\u03cc\u03bc\u03bf\u03c5 \u03b5\u1f30\u03c3\u03c6\u03bf\u03c1\u1fb6\u03c2) (e cod. Ambros. 523)",
-   "Progymnasmata (caput \u03c0\u03b5\u03c1\u1f76 \u03c3\u03c5\u03b3\u03ba\u03c1\u03af\u03c3\u03b5\u03c9\u03c2) (e cod. Brit. Mus. addit. 11889)": "Progymnasmata (caput \u03c0\u03b5\u03c1\u1f76 \u03c3\u03c5\u03b3\u03ba\u03c1\u03af\u03c3\u03b5\u03c9\u03c2) (e cod. Brit. Mus. addit. 11889)"
+   "FGH\u00a0n. 587": "fragmenta"
   },
   [
-   "401",
-   "500",
-   "Rhet. Soph.",
-   "Atheniensis, Constantinopolitanus, Myrensis (Lyciae)",
-   "2904"
+   "-800",
+   "-101",
+   "Hist.",
+   "Lacon",
+   "1534"
   ]
  ],
  "NICOCRATES": [
@@ -44551,7 +50136,7 @@ let LDM = {
    "1535"
   ]
  ],
- "Nicod.": [
+ "NICOD.": [
   "NICODEMUS",
   {
    "epigrammata": "epigrammata"
@@ -44567,6 +50152,50 @@ let LDM = {
  "NICOLAUS": [
   "NICOLAUS",
   {
+   "testimonia": "testimonia",
+   "fragmenta": "fragmenta",
+   "Vit. Caes.": "Vita Caesaris\u00a0(fr. 125-130)"
+  },
+  [
+   "101",
+   "150",
+   "Hist.",
+   "Damascenus",
+   "577"
+  ]
+ ],
+ "NICOL. $1": [
+  "NICOLAUS",
+  {
+   "Prog.": "Progymnasmata",
+   "Progymnasmata (capita \u03c0\u03b5\u03c1\u1f76 \u03c3\u03c5\u03b3\u03ba\u03c1\u03af\u03c3\u03b5\u03c9\u03c2, \u03c0\u03b5\u03c1\u1f76 \u1f20\u03b8\u03bf\u03c0\u03bf\u03b9\u03af\u03b1\u03c2, \u03c0\u03b5\u03c1\u1f76 \u1f10\u03ba\u03c6\u03c1\u03ac\u03c3\u03b5\u03c9\u03c2, \u03c0\u03b5\u03c1\u1f76 \u03b8\u03ad\u03c3\u03b5\u03c9\u03c2, \u03c0\u03b5\u03c1\u1f76 \u03bd\u03cc\u03bc\u03bf\u03c5 \u03b5\u1f30\u03c3\u03c6\u03bf\u03c1\u1fb6\u03c2) (e cod. Ambros. 523)": "Progymnasmata (capita \u03c0\u03b5\u03c1\u1f76 \u03c3\u03c5\u03b3\u03ba\u03c1\u03af\u03c3\u03b5\u03c9\u03c2, \u03c0\u03b5\u03c1\u1f76 \u1f20\u03b8\u03bf\u03c0\u03bf\u03b9\u03af\u03b1\u03c2, \u03c0\u03b5\u03c1\u1f76 \u1f10\u03ba\u03c6\u03c1\u03ac\u03c3\u03b5\u03c9\u03c2, \u03c0\u03b5\u03c1\u1f76 \u03b8\u03ad\u03c3\u03b5\u03c9\u03c2, \u03c0\u03b5\u03c1\u1f76 \u03bd\u03cc\u03bc\u03bf\u03c5 \u03b5\u1f30\u03c3\u03c6\u03bf\u03c1\u1fb6\u03c2) (e cod. Ambros. 523)",
+   "Progymnasmata (caput \u03c0\u03b5\u03c1\u1f76 \u03c3\u03c5\u03b3\u03ba\u03c1\u03af\u03c3\u03b5\u03c9\u03c2) (e cod. Brit. Mus. addit. 11889)": "Progymnasmata (caput \u03c0\u03b5\u03c1\u1f76 \u03c3\u03c5\u03b3\u03ba\u03c1\u03af\u03c3\u03b5\u03c9\u03c2) (e cod. Brit. Mus. addit. 11889)"
+  },
+  [
+   "401",
+   "500",
+   "Rhet. Soph.",
+   "Atheniensis, Constantinopolitanus, Myrensis (Lyciae)",
+   "2904"
+  ]
+ ],
+ "NICOLAUS $1": [
+  "NICOLAUS",
+  {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum",
+   "fragmentum ap. Paulum": "fragmentum ap. Paulum"
+  },
+  [
+   "a. A. D. 2",
+   "",
+   "Med.",
+   "",
+   "1001"
+  ]
+ ],
+ "NICOLAUS $2": [
+  "NICOLAUS",
+  {
    "epigrammata exhortatoria et supplicatoria": "epigrammata exhortatoria et supplicatoria"
   },
   [
@@ -44577,7 +50206,7 @@ let LDM = {
    "2713"
   ]
  ],
- "Nicol. Com.": [
+ "NICOL. COM.": [
   "NICOLAUS",
   {
    "fragmenta": "fragmenta",
@@ -44643,7 +50272,7 @@ let LDM = {
    "4144"
   ]
  ],
- "NICOLAUS I Mysticus": [
+ "NICOLAUS I MYSTICUS": [
   "NICOLAUS I Mysticus",
   {
    "epistulae": "epistulae",
@@ -44872,7 +50501,7 @@ let LDM = {
    "3100"
   ]
  ],
- "Nicom. Athen.": [
+ "NICOM. ATHEN.": [
   "NICOMACHUS",
   {
    "TrGF\u00a012, n. 36.": "Tituli"
@@ -44885,7 +50514,7 @@ let LDM = {
    "1843"
   ]
  ],
- "Nicom.": [
+ "NICOM.": [
   "NICOMACHUS",
   {
    "ar.": "Introductio arithmetica {001}",
@@ -44904,17 +50533,17 @@ let LDM = {
  "NICOMACHUS": [
   "NICOMACHUS",
   {
-   "fragmentum": "fragmentum"
+   "fragmenta": "fragmenta"
   },
   [
-   "?",
-   "?",
-   "Hist.",
-   "?",
-   "1961"
+   "-300",
+   "-201",
+   "Comic.",
+   "",
+   "482"
   ]
  ],
- "Nicom. Trag.": [
+ "NICOM. TRAG.": [
   "NICOMACHUS",
   {
    "TrGF\u00a012, n. 127": "fragmenta"
@@ -44927,7 +50556,59 @@ let LDM = {
    "342"
   ]
  ],
+ "NICOMACHUS $1": [
+  "NICOMACHUS",
+  {
+   "epigramma": "epigramma"
+  },
+  [
+   "?",
+   "?",
+   "Epigr.",
+   "?",
+   "1537"
+  ]
+ ],
+ "NICOMACHUS $2": [
+  "NICOMACHUS",
+  {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "?",
+   "1538"
+  ]
+ ],
+ "NICOMACHUS $3": [
+  "NICOMACHUS",
+  {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "?",
+   "1961"
+  ]
+ ],
  "NICOMEDES": [
+  "NICOMEDES",
+  {
+   "epigramma dedicatorum": "epigramma dedicatorum"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "?",
+   "2674"
+  ]
+ ],
+ "NICOMEDES $1": [
   "NICOMEDES",
   {
    "fragmenta": "fragmenta"
@@ -44953,7 +50634,7 @@ let LDM = {
    "483"
   ]
  ],
- "Nicostr. Com.": [
+ "NICOSTR. COM.": [
   "NICOSTRATUS",
   {
    "Fragmenta {001}": "Fragmenta {001}",
@@ -44971,6 +50652,45 @@ let LDM = {
   ]
  ],
  "NICOSTRATUS": [
+  "NICOSTRATUS",
+  {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "",
+   "2523"
+  ]
+ ],
+ "NICOSTRATUS $1": [
+  "NICOSTRATUS",
+  {
+   "testimonium": "testimonium"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "Trapezius",
+   "2144"
+  ]
+ ],
+ "NICOSTRATUS $2": [
+  "NICOSTRATUS",
+  {
+   "fragmenta ap. Galenum": "fragmenta ap. Galenum"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "?",
+   "1005"
+  ]
+ ],
+ "NICOSTRATUS $3": [
   "NICOSTRATUS",
   {
    "Fragmenta ap. Stobaeum": "Fragmenta ap. Stobaeum"
@@ -45016,7 +50736,7 @@ let LDM = {
    "1804"
   ]
  ],
- "Nonnos.": [
+ "NONNOS.": [
   "NONNOSUS",
   {
    "fragmenta": "fragmenta",
@@ -45031,7 +50751,7 @@ let LDM = {
    "4393"
   ]
  ],
- "Nonn.": [
+ "NONN.": [
   "NONNUS",
   {
    "D.": "Dionysiaca {001}",
@@ -45059,7 +50779,7 @@ let LDM = {
    "1006"
   ]
  ],
- "Noss.": [
+ "NOSS.": [
   "NOSSIS",
   {
    "epigrammata": "epigrammata"
@@ -45144,7 +50864,7 @@ let LDM = {
    "704"
   ]
  ],
- "Numen.": [
+ "NUMEN.": [
   "NUMENIUS",
   {
    "fragmenta": "fragmenta",
@@ -45163,7 +50883,7 @@ let LDM = {
    "1542"
   ]
  ],
- "Numen. Her.": [
+ "NUMEN. HER.": [
   "NUMENIUS",
   {
    "fragmenta et tituli": "fragmenta et tituli",
@@ -45191,7 +50911,7 @@ let LDM = {
    "1544"
   ]
  ],
- "Nymphod.": [
+ "NYMPHOD.": [
   "NYMPHODORUS",
   {
    "testimonia": "testimonia",
@@ -45220,7 +50940,21 @@ let LDM = {
    "1007"
   ]
  ],
- "Ocell.": [
+ "NICEPHORUS BLEMMYDES $2": [
+  "Nicephorus BLEMMYDES",
+  {
+   "\u039d\u03b9\u03ba\u03b7\u03c6\u03cc\u03c1\u03bf\u03c5 \u03c4\u03bf\u1fe6 \u0392\u03bb\u03b5\u03bc\u03bc\u03cd\u03b4\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u03c7\u03c1\u03c5\u03c3\u03bf\u03c0\u03bf\u03b9\u03af\u03b1\u03c2 (fort. auctore Nicephoro Blemmyde alio) (e cod. Paris. B.N. gr. 2509, fol. 137r)": "\u039d\u03b9\u03ba\u03b7\u03c6\u03cc\u03c1\u03bf\u03c5 \u03c4\u03bf\u1fe6 \u0392\u03bb\u03b5\u03bc\u03bc\u03cd\u03b4\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u03c7\u03c1\u03c5\u03c3\u03bf\u03c0\u03bf\u03b9\u03af\u03b1\u03c2 (fort. auctore Nicephoro Blemmyde alio) (e cod. Paris. B.N. gr. 2509, fol. 137r)",
+   "\u1f0d\u03c0\u03b5\u03c1 \u03c7\u03c1\u1fc4\u03b6\u03b5\u03b9 \u1f21 \u03c0\u03b1\u03c1\u03bf\u1fe6\u03c3\u03b1 \u03ba\u03b1\u03c4\u03b1\u03c3\u03ba\u03b5\u03c5\u03ae (fort. auctore Nicephoro Blemmyde alio) (e cod. Paris. B.N. gr. 2509, fol. 139r)": "\u1f0d\u03c0\u03b5\u03c1 \u03c7\u03c1\u1fc4\u03b6\u03b5\u03b9 \u1f21 \u03c0\u03b1\u03c1\u03bf\u1fe6\u03c3\u03b1 \u03ba\u03b1\u03c4\u03b1\u03c3\u03ba\u03b5\u03c5\u03ae (fort. auctore Nicephoro Blemmyde alio) (e cod. Paris. B.N. gr. 2509, fol. 139r)"
+  },
+  [
+   "1197",
+   "1272",
+   "Alchem.",
+   "Constantinopolitanus",
+   "4333"
+  ]
+ ],
+ "OCELL.": [
   "OCELLUS",
   {
    "de universi natura": "de universi natura",
@@ -45235,7 +50969,7 @@ let LDM = {
    "1545"
   ]
  ],
- "Od. XI Salom.": [
+ "OD. XI SALOM.": [
   "ODAE SALOMONIS",
   {
    "Oda Salominis (11.1-24) (P. Bodmer 11)": "Oda Salominis (11.1-24) (P. Bodmer 11)"
@@ -45262,7 +50996,7 @@ let LDM = {
    "1546"
   ]
  ],
- "Oecum.": [
+ "OECUM.": [
   "OECUMENIUS",
   {
    "Apoc.": "Commentarius in Apocalypsin {001}",
@@ -45304,7 +51038,7 @@ let LDM = {
    "1547"
   ]
  ],
- "Georgius OENAEOTES": [
+ "GEORGIUS OENAEOTES": [
   "Georgius OENAEOTES",
   {},
   [
@@ -45315,7 +51049,7 @@ let LDM = {
    "3239"
   ]
  ],
- "Oen. Lyr.": [
+ "OEN. LYR.": [
   "OENIADES",
   {
    "titulus": "titulus"
@@ -45328,7 +51062,7 @@ let LDM = {
    "971"
   ]
  ],
- "Oenom.": [
+ "OENOM.": [
   "OENOMAUS",
   {
    "fragmenta": "fragmenta",
@@ -45381,7 +51115,7 @@ let LDM = {
    "1008"
   ]
  ],
- "Olymp. Hist.": [
+ "OLYMP. HIST.": [
   "OLYMPIODORUS",
   {
    "fragmenta": "fragmenta",
@@ -45395,7 +51129,7 @@ let LDM = {
    "2590"
   ]
  ],
- "Olymp. Alch.": [
+ "OLYMP. ALCH.": [
   "OLYMPIODORUS",
   {
    "\u0395\u1f30\u03c2 \u03c4\u1f78 \u03ba\u03b1\u03c4\u2019 \u1f10\u03bd\u03ad\u03c1\u03b3\u03b5\u03b9\u03b1\u03bd \u03b6\u03c9\u03c3\u03af\u03bc\u03bf\u03c5 \u1f45\u03c3\u03b1 \u1f00\u03c0\u1f78 \u1f19\u03c1\u03bc\u03bf\u1fe6 \u03ba\u03b1\u1f76 \u03c4\u1ff6\u03bd \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03c9\u03bd \u1f26\u03c3\u03b1\u03bd \u03b5\u1f30\u03c1\u03b7\u03bc\u03ad\u03bd\u03b1 {001}": "\u0395\u1f30\u03c2 \u03c4\u1f78 \u03ba\u03b1\u03c4\u2019 \u1f10\u03bd\u03ad\u03c1\u03b3\u03b5\u03b9\u03b1\u03bd \u03b6\u03c9\u03c3\u03af\u03bc\u03bf\u03c5 \u1f45\u03c3\u03b1 \u1f00\u03c0\u1f78 \u1f19\u03c1\u03bc\u03bf\u1fe6 \u03ba\u03b1\u1f76 \u03c4\u1ff6\u03bd \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03c9\u03bd \u1f26\u03c3\u03b1\u03bd \u03b5\u1f30\u03c1\u03b7\u03bc\u03ad\u03bd\u03b1 {001}",
@@ -45410,7 +51144,30 @@ let LDM = {
    "2589"
   ]
  ],
- "Olymp.": [
+ "OLYMP.": [
+  "OLYMPIODORUS",
+  {
+   "prol.": "Prolegomena {001}",
+   "in cat.": "In Aristotelis categorias commentarium {002}",
+   "in Mete.": "In Aristotelis meteora commentaria {003}",
+   "in alc.": "In Platonis Alcibiadem commentarii {004}",
+   "in Grg.": "In Platonis Gorgiam commentaria {005}",
+   "in Phd.": "In Platonis Phaedonem commentaria {006}",
+   "Scholia in Aristotelis librum de interpretatione {008}": "Scholia in Aristotelis librum de interpretatione {008}",
+   "in Philebum": "in Philebum",
+   "epigramma demonstrativum": "epigramma demonstrativum",
+   "ethicorum nicomacheorum paraphrasis (olim sub auctore Olympiodoro)": "ethicorum nicomacheorum paraphrasis (olim sub auctore Olympiodoro)",
+   "Prolegomena philosoophiae platonicae": "Prolegomena philosoophiae platonicae"
+  },
+  [
+   "551",
+   "600",
+   "Phil.",
+   "Alexandrinus, Neoplatonicus",
+   "4019"
+  ]
+ ],
+ "OLYMP. $1": [
   "OLYMPIODORUS Diaconus",
   {
    "Iob.": "Commentarii in Job {001}",
@@ -45456,7 +51213,7 @@ let LDM = {
    "1990"
   ]
  ],
- "Onas.": [
+ "ONAS.": [
   "ONASANDER",
   {
    "strategicus": "strategicus"
@@ -45522,7 +51279,7 @@ let LDM = {
    "2362"
   ]
  ],
- "Ophel.": [
+ "OPHEL.": [
   "OPHELIO",
   {
    "fragmenta": "fragmenta"
@@ -45535,7 +51292,21 @@ let LDM = {
    "485"
   ]
  ],
- "Opp.": [
+ "OPP.": [
+  "OPPIANUS",
+  {
+   "C.": "cynegetica",
+   "sch.": "scholia"
+  },
+  [
+   "151",
+   "250",
+   "Epic.",
+   "Apamensis",
+   "24"
+  ]
+ ],
+ "OPP. $1": [
   "OPPIANUS",
   {
    "H.": "halieutica",
@@ -45609,7 +51380,7 @@ let LDM = {
    "5001"
   ]
  ],
- "Orac. Chald.": [
+ "ORAC. CHALD.": [
   "ORACULA CHALDAICA",
   {
    "Oracula (fragmenta) (olim sub auctore Juliano Theurgo)": "Oracula (fragmenta) (olim sub auctore Juliano Theurgo)",
@@ -45639,7 +51410,7 @@ let LDM = {
    "4456"
   ]
  ],
- "Orac. Sib.": [
+ "ORAC. SIB.": [
   "ORACULA SIBYLLINA",
   {
    "oracula": "oracula",
@@ -45721,7 +51492,7 @@ let LDM = {
    "1010"
   ]
  ],
- "Orib.": [
+ "ORIB.": [
   "ORIBASIUS",
   {
    "Collectiones medicae (lib. 1-16, 24-25, 43-50)": "Collectiones medicae (lib. 1-16, 24-25, 43-50)",
@@ -45905,6 +51676,24 @@ let LDM = {
  "ORION": [
   "ORION",
   {
+   "Etymologicum": "Etymologicum",
+   "Etymologicum (excerpta e cod. regio 2610)": "Etymologicum (excerpta e cod. regio 2610)",
+   "Etymologicum (excerpta e cod. regio Paris. 2630)": "Etymologicum (excerpta e cod. regio Paris. 2630)",
+   "Anthologion": "Anthologion",
+   "Etymologicum (excerpta e cod. Darmstadino 2773) (=Fragmenta Berkowitz)": "Etymologicum (excerpta e cod. Darmstadino 2773) (=Fragmenta Berkowitz)",
+   "Etymologicum (excerpta e cod. Vat. gr. 1456) (= Excerpta ex etymologico (Berkowitz)": "Etymologicum (excerpta e cod. Vat. gr. 1456) (= Excerpta ex etymologico (Berkowitz)"
+  },
+  [
+   "401",
+   "500",
+   "Gramm.",
+   "Alexandrinus, Thebanus (Aegypti), fort. Caesariensis (Palaestinae), fort. Constantinopolitanus",
+   "2591"
+  ]
+ ],
+ "ORION $1": [
+  "ORION",
+  {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum"
   },
   [
@@ -45915,7 +51704,7 @@ let LDM = {
    "1011"
   ]
  ],
- "Orph.": [
+ "ORPH.": [
   "ORPHICA",
   {
    "H.": "Hymni {001}",
@@ -45983,7 +51772,7 @@ let LDM = {
    "2995"
   ]
  ],
- "OSTANES Magus": [
+ "OSTANES MAGUS": [
   "OSTANES Magus",
   {
    "\u1f48\u03c3\u03c4\u03ac\u03bd\u03bf\u03c5 \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03bf\u03c5 \u03c0\u03c1\u1f78\u03c2 \u03a0\u03b5\u03c4\u03ac\u03c3\u03b9\u03bf\u03bd \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u1f31\u03b5\u03c1\u1fb6\u03c2 \u03c4\u03b1\u03cd\u03c4\u03b7\u03c2 \u03ba\u03b1\u1f76 \u03b8\u03b5\u03af\u03b1\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2 (e cod. Venet. Marc. 299, fol. 66r)": "\u1f48\u03c3\u03c4\u03ac\u03bd\u03bf\u03c5 \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03bf\u03c5 \u03c0\u03c1\u1f78\u03c2 \u03a0\u03b5\u03c4\u03ac\u03c3\u03b9\u03bf\u03bd \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u1f31\u03b5\u03c1\u1fb6\u03c2 \u03c4\u03b1\u03cd\u03c4\u03b7\u03c2 \u03ba\u03b1\u1f76 \u03b8\u03b5\u03af\u03b1\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2 (e cod. Venet. Marc. 299, fol. 66r)"
@@ -46062,7 +51851,7 @@ let LDM = {
    "2225"
   ]
  ],
- "Parm.": [
+ "PARM.": [
   "PARMENIDES",
   {
    "testimonia": "testimonia",
@@ -46169,6 +51958,17 @@ let LDM = {
   {},
   [
    "-400",
+   "-301",
+   "Trag.",
+   "",
+   "324"
+  ]
+ ],
+ "PATROCLES $1": [
+  "PATROCLES",
+  {},
+  [
+   "-400",
    "-201",
    "Hist.",
    "",
@@ -46179,6 +51979,17 @@ let LDM = {
   "PAULUS",
   {},
   [
+   "601",
+   "700",
+   "Med.",
+   "",
+   "715"
+  ]
+ ],
+ "PAULUS $1": [
+  "PAULUS",
+  {},
+  [
    "301",
    "400",
    "Astrol.",
@@ -46186,7 +51997,7 @@ let LDM = {
    "2053"
   ]
  ],
- "PAULUS Silentiarius": [
+ "PAULUS SILENTIARIUS": [
   "PAULUS Silentiarius",
   {},
   [
@@ -46209,6 +52020,28 @@ let LDM = {
   ]
  ],
  "PAUSANIAS": [
+  "PAUSANIAS",
+  {},
+  [
+   "101",
+   "200",
+   "Attic.",
+   "",
+   "1569"
+  ]
+ ],
+ "PAUSANIAS $1": [
+  "PAUSANIAS",
+  {},
+  [
+   "301",
+   "400",
+   "Hist.",
+   "",
+   "2573"
+  ]
+ ],
+ "PAUSANIAS $2": [
   "PAUSANIAS",
   {},
   [
@@ -46357,6 +52190,17 @@ let LDM = {
   "PHAEDIMUS",
   {},
   [
+   "-800",
+   "1600",
+   "Epic.",
+   "",
+   "1576"
+  ]
+ ],
+ "PHAEDIMUS $1": [
+  "PHAEDIMUS",
+  {},
+  [
    "-250",
    "-201",
    "Epigr.",
@@ -46445,6 +52289,17 @@ let LDM = {
   "PHERECYDES",
   {},
   [
+   "-500",
+   "-451",
+   "Hist.",
+   "",
+   "1584"
+  ]
+ ],
+ "PHERECYDES $1": [
+  "PHERECYDES",
+  {},
+  [
    "-600",
    "-501",
    "Myth. Phil.",
@@ -46496,7 +52351,7 @@ let LDM = {
    "487"
   ]
  ],
- "PHILEMON Junior": [
+ "PHILEMON JUNIOR": [
   "PHILEMON Junior",
   {},
   [
@@ -46577,6 +52432,17 @@ let LDM = {
   "PHILIPPUS",
   {},
   [
+   "-300",
+   "-201",
+   "Hist.",
+   "",
+   "1590"
+  ]
+ ],
+ "PHILIPPUS $1": [
+  "PHILIPPUS",
+  {},
+  [
    "-400",
    "-301",
    "Comic.",
@@ -46584,7 +52450,7 @@ let LDM = {
    "1781"
   ]
  ],
- "PHILIPPUS II Rex Macedonum": [
+ "PHILIPPUS II REX MACEDONUM": [
   "PHILIPPUS II Rex Macedonum",
   {},
   [
@@ -46595,7 +52461,7 @@ let LDM = {
    "48"
   ]
  ],
- "PHILIPPUS Sidensis": [
+ "PHILIPPUS SIDENSIS": [
   "PHILIPPUS Sidensis",
   {
    "003 Historia christiana": "003 Historia christiana"
@@ -46609,6 +52475,28 @@ let LDM = {
   ]
  ],
  "PHILISCUS": [
+  "PHILISCUS",
+  {},
+  [
+   "-400",
+   "-301",
+   "Trag.",
+   "",
+   "335"
+  ]
+ ],
+ "PHILISCUS $1": [
+  "PHILISCUS",
+  {},
+  [
+   "-400",
+   "-301",
+   "Comic.",
+   "",
+   "491"
+  ]
+ ],
+ "PHILISCUS $2": [
   "PHILISCUS",
   {},
   [
@@ -46642,6 +52530,39 @@ let LDM = {
   ]
  ],
  "PHILO": [
+  "PHILO",
+  {},
+  [
+   "-500",
+   "-401",
+   "Poeta",
+   "",
+   "2638"
+  ]
+ ],
+ "PHILO $1": [
+  "PHILO",
+  {},
+  [
+   "-250",
+   "-151",
+   "Mech.",
+   "",
+   "1599"
+  ]
+ ],
+ "PHILO $2": [
+  "PHILO",
+  {},
+  [
+   "301",
+   "600",
+   "Paradox.",
+   "",
+   "2595"
+  ]
+ ],
+ "PHILO $3": [
   "PHILO",
   {},
   [
@@ -46704,7 +52625,7 @@ let LDM = {
    "18"
   ]
  ],
- "PHILO Judaeus Senior": [
+ "PHILO JUDAEUS SENIOR": [
   "PHILO Judaeus Senior",
   {},
   [
@@ -46727,6 +52648,17 @@ let LDM = {
   ]
  ],
  "PHILOCLES": [
+  "PHILOCLES",
+  {},
+  [
+   "-450",
+   "-401",
+   "Trag.",
+   "",
+   "312"
+  ]
+ ],
+ "PHILOCLES $1": [
   "PHILOCLES",
   {},
   [
@@ -46867,6 +52799,17 @@ let LDM = {
   "PHILOSTEPHANUS",
   {},
   [
+   "-800",
+   "1600",
+   "Comic.",
+   "",
+   "493"
+  ]
+ ],
+ "PHILOSTEPHANUS $1": [
+  "PHILOSTEPHANUS",
+  {},
+  [
    "-250",
    "-201",
    "Hist.",
@@ -46885,7 +52828,7 @@ let LDM = {
    "2058"
   ]
  ],
- "PHILOSTRATUS Junior": [
+ "PHILOSTRATUS JUNIOR": [
   "PHILOSTRATUS Junior",
   {},
   [
@@ -46896,7 +52839,7 @@ let LDM = {
    "652"
   ]
  ],
- "PHILOSTRATUS Major": [
+ "PHILOSTRATUS MAJOR": [
   "PHILOSTRATUS Major",
   {},
   [
@@ -46908,6 +52851,28 @@ let LDM = {
   ]
  ],
  "PHILOXENUS": [
+  "PHILOXENUS",
+  {},
+  [
+   "-450",
+   "-351",
+   "Lyr.",
+   "",
+   "380"
+  ]
+ ],
+ "PHILOXENUS $1": [
+  "PHILOXENUS",
+  {},
+  [
+   "-100",
+   "-1",
+   "Gramm.",
+   "",
+   "1602"
+  ]
+ ],
+ "PHILOXENUS $2": [
   "PHILOXENUS",
   {},
   [
@@ -47041,6 +53006,28 @@ let LDM = {
   "PHRYNICHUS",
   {},
   [
+   "-500",
+   "-401",
+   "Comic.",
+   "",
+   "496"
+  ]
+ ],
+ "PHRYNICHUS $1": [
+  "PHRYNICHUS",
+  {},
+  [
+   "101",
+   "200",
+   "Attic.",
+   "",
+   "1608"
+  ]
+ ],
+ "PHRYNICHUS $2": [
+  "PHRYNICHUS",
+  {},
+  [
    "-600",
    "-501",
    "Trag.",
@@ -47109,6 +53096,17 @@ let LDM = {
   "PISANDER",
   {},
   [
+   "201",
+   "300",
+   "Epic.",
+   "",
+   "522"
+  ]
+ ],
+ "PISANDER $1": [
+  "PISANDER",
+  {},
+  [
    "-700",
    "-501",
    "Epic.",
@@ -47150,6 +53148,17 @@ let LDM = {
   ]
  ],
  "PLATO": [
+  "PLATO",
+  {},
+  [
+   "-450",
+   "-351",
+   "Comic.",
+   "",
+   "497"
+  ]
+ ],
+ "PLATO $1": [
   "PLATO",
   {
    "alc.": "Alcibiades",
@@ -47233,7 +53242,7 @@ let LDM = {
    "2000"
   ]
  ],
- "Plut.": [
+ "PLUT.": [
   "PLUTARCHUS",
   {
    "princ. inerud.": "Ad principem ineruditum (779d-782f)",
@@ -47453,6 +53462,17 @@ let LDM = {
   "POLYBIUS",
   {},
   [
+   "-199",
+   "-120",
+   "Hist.",
+   "",
+   "543"
+  ]
+ ],
+ "POLYBIUS $1": [
+  "POLYBIUS",
+  {},
+  [
    "-800",
    "1600",
    "Rhet.",
@@ -47494,6 +53514,17 @@ let LDM = {
   ]
  ],
  "POLYCRATES": [
+  "POLYCRATES",
+  {},
+  [
+   "101",
+   "200",
+   "Scr. Eccl.",
+   "",
+   "1626"
+  ]
+ ],
+ "POLYCRATES $1": [
   "POLYCRATES",
   {},
   [
@@ -47607,12 +53638,45 @@ let LDM = {
   [
    "-300",
    "-201",
+   "Epigr.",
+   "",
+   "1632"
+  ]
+ ],
+ "POSIDIPPUS $1": [
+  "POSIDIPPUS",
+  {},
+  [
+   "-300",
+   "-201",
    "Comic.",
    "",
    "500"
   ]
  ],
  "POSIDONIUS": [
+  "POSIDONIUS",
+  {},
+  [
+   "-800",
+   "100",
+   "Epic.",
+   "",
+   "2639"
+  ]
+ ],
+ "POSIDONIUS $1": [
+  "POSIDONIUS",
+  {},
+  [
+   "-135",
+   "-51",
+   "Phil.",
+   "",
+   "1052"
+  ]
+ ],
+ "POSIDONIUS $2": [
   "POSIDONIUS",
   {},
   [
@@ -47737,6 +53801,17 @@ let LDM = {
   "PRISCUS",
   {},
   [
+   "401",
+   "500",
+   "Hist. Rhet.",
+   "",
+   "2946"
+  ]
+ ],
+ "PRISCUS $1": [
+  "PRISCUS",
+  {},
+  [
    "-50",
    "50",
    "Epic.",
@@ -47783,7 +53858,7 @@ let LDM = {
    "4036"
   ]
  ],
- "Procl. Cpol.": [
+ "PROCL. CPOL.": [
   "PROCLUS",
   {
    "Ascens.": "de ascensione domini",
@@ -47825,7 +53900,7 @@ let LDM = {
    "2755"
   ]
  ],
- "Procop. Gaz.": [
+ "PROCOP. GAZ.": [
   "PROCOPIUS",
   {
    "Catena in Canticum canticorum {002}": "Catena in Canticum canticorum {002}",
@@ -47854,7 +53929,7 @@ let LDM = {
    "2598"
   ]
  ],
- "Procop.": [
+ "PROCOP.": [
   "PROCOPIUS",
   {
    "aed.": "De aedificiis (lib. 1-6)",
@@ -48092,7 +54167,7 @@ let LDM = {
    "1914"
   ]
  ],
- "PSEUDO-AUCTORES HELLENISTAE (PsVTGr)": [
+ "PSEUDO-AUCTORES HELLENISTAE (PSVTGR)": [
   "PSEUDO-AUCTORES HELLENISTAE (PsVTGr)",
   {},
   [
@@ -48115,6 +54190,28 @@ let LDM = {
   ]
  ],
  "PTOLEMAEUS": [
+  "PTOLEMAEUS",
+  {},
+  [
+   "-200",
+   "200",
+   "Gramm.",
+   "",
+   "1643"
+  ]
+ ],
+ "PTOLEMAEUS $1": [
+  "PTOLEMAEUS",
+  {},
+  [
+   "-250",
+   "-150",
+   "Hist.",
+   "",
+   "1646"
+  ]
+ ],
+ "PTOLEMAEUS $2": [
   "PTOLEMAEUS",
   {},
   [
@@ -48312,7 +54409,7 @@ let LDM = {
    "337"
   ]
  ],
- "Pseudo-AGATHON": [
+ "PSEUDO-AGATHON": [
   "Pseudo-AGATHON",
   {},
   [
@@ -48323,7 +54420,7 @@ let LDM = {
    "1775"
   ]
  ],
- "Pseudo-APOLLODORUS": [
+ "PSEUDO-APOLLODORUS": [
   "Pseudo-APOLLODORUS",
   {},
   [
@@ -48334,7 +54431,7 @@ let LDM = {
    "548"
   ]
  ],
- "Pseudo-ARCHYTAS": [
+ "PSEUDO-ARCHYTAS": [
   "Pseudo-ARCHYTAS",
   {},
   [
@@ -48345,7 +54442,7 @@ let LDM = {
    "1177"
   ]
  ],
- "Pseudo-CODINUS": [
+ "PSEUDO-CODINUS": [
   "Pseudo-CODINUS",
   {},
   [
@@ -48356,7 +54453,7 @@ let LDM = {
    "3168"
   ]
  ],
- "Pseudo-DEMOSTHENES": [
+ "PSEUDO-DEMOSTHENES": [
   "Pseudo-DEMOSTHENES",
   {
    "epigramma": "epigramma"
@@ -48369,7 +54466,7 @@ let LDM = {
    "1819"
   ]
  ],
- "Pseudo-DIONYSIUS AREOPAGITA": [
+ "PSEUDO-DIONYSIUS AREOPAGITA": [
   "Pseudo-DIONYSIUS AREOPAGITA",
   {
    "De caelesti hierarchia {001}": "De caelesti hierarchia {001}",
@@ -48396,7 +54493,7 @@ let LDM = {
    "2798"
   ]
  ],
- "Pseudo-DIOSCORIDES": [
+ "PSEUDO-DIOSCORIDES": [
   "Pseudo-DIOSCORIDES",
   {
    "De venenis eorumque praecautione et medicatione (= Alexipharmaca)": "De venenis eorumque praecautione et medicatione (= Alexipharmaca)",
@@ -48411,7 +54508,7 @@ let LDM = {
    "1118"
   ]
  ],
- "Ps. Dosith.": [
+ "PS. DOSITH.": [
   "Pseudo-DOSITHEUS anthologus et Pseudo-DOSITHEANA",
   {
    "frg. iur.:": "fragmentum Dositheanum vel de manumissionibus q. d. iurisconsulti cuiusdam graece et latine servatum inter Pseudodositheana hermeneumata (sc. quae interdum una cum DOSITH. traduntur)"
@@ -48424,7 +54521,7 @@ let LDM = {
    "TLL 1011"
   ]
  ],
- "Pseudo-ESDRAS": [
+ "PSEUDO-ESDRAS": [
   "Pseudo-ESDRAS",
   {
    "fragmentum ap. Paulum": "fragmentum ap. Paulum"
@@ -48437,7 +54534,7 @@ let LDM = {
    "885"
   ]
  ],
- "Pseudo-EUPOLEMUS Judaeus": [
+ "PSEUDO-EUPOLEMUS JUDAEUS": [
   "Pseudo-EUPOLEMUS Judaeus",
   {
    "FGrH #724": "Fragmenta (001)"
@@ -48450,7 +54547,7 @@ let LDM = {
    "2487"
   ]
  ],
- "Pseudo-EUSEBIUS": [
+ "PSEUDO-EUSEBIUS": [
   "Pseudo-EUSEBIUS",
   {},
   [
@@ -48461,7 +54558,7 @@ let LDM = {
    "2720"
   ]
  ],
- "PsGalen.": [
+ "PSGALEN.": [
   "Pseudo-GALENUS",
   {
    "Ad Gaurum quomodo animetur fetus {006}": "Ad Gaurum quomodo animetur fetus {006}",
@@ -48500,7 +54597,7 @@ let LDM = {
    "530"
   ]
  ],
- "Pseudo-HERACLITI EPISTULAE": [
+ "PSEUDO-HERACLITI EPISTULAE": [
   "Pseudo-HERACLITI EPISTULAE",
   {
    "epistulae": "epistulae",
@@ -48515,7 +54612,7 @@ let LDM = {
    "1412"
   ]
  ],
- "Pseudo-HIPPOCRATES": [
+ "PSEUDO-HIPPOCRATES": [
   "Pseudo-HIPPOCRATES",
   {
    "Epistula ad Ptolemaeum regem {001}": "Epistula ad Ptolemaeum regem {001}",
@@ -48533,7 +54630,7 @@ let LDM = {
    "751"
   ]
  ],
- "Pseudo-JUSTINUS MARTYR": [
+ "PSEUDO-JUSTINUS MARTYR": [
   "Pseudo-JUSTINUS MARTYR",
   {
    "Oratio ad gentiles {001}": "Oratio ad gentiles {001}",
@@ -48557,7 +54654,7 @@ let LDM = {
    "646"
   ]
  ],
- "Pseudo-LUCIANUS": [
+ "PSEUDO-LUCIANUS": [
   "Pseudo-LUCIANUS",
   {
    "Asinus {001}": "Asinus {001}",
@@ -48582,7 +54679,7 @@ let LDM = {
    "61"
   ]
  ],
- "Pseudo-MACARIUS": [
+ "PSEUDO-MACARIUS": [
   "Pseudo-MACARIUS",
   {
    "Apophthegmata": "Apophthegmata",
@@ -48607,7 +54704,7 @@ let LDM = {
    "2109"
   ]
  ],
- "Pseudo-MARTYRIUS": [
+ "PSEUDO-MARTYRIUS": [
   "Pseudo-MARTYRIUS",
   {
    "Oratio funebris in laudem Joannis Chrysostomi": "Oratio funebris in laudem Joannis Chrysostomi"
@@ -48620,7 +54717,7 @@ let LDM = {
    "2792"
   ]
  ],
- "Pseudo-MANETHO": [
+ "PSEUDO-MANETHO": [
   "Pseudo-MANETHO",
   {
    "fragmenta": "fragmenta"
@@ -48633,7 +54730,7 @@ let LDM = {
    "1478"
   ]
  ],
- "Pseudo-MAURICIUS": [
+ "PSEUDO-MAURICIUS": [
   "Pseudo-MAURICIUS",
   {
    "Strategicon (sub nomine Mauricii Imperatoris vel Urbicii)": "Strategicon (sub nomine Mauricii Imperatoris vel Urbicii)",
@@ -48649,7 +54746,7 @@ let LDM = {
    "3075"
   ]
  ],
- "Ps. Nonn.": [
+ "PS. NONN.": [
   "Pseudo-NONNUS",
   {
    "Comm. in Or.": "Commentarius in orationem iv (prooemium + historiae 1-97): pp. 67-169",
@@ -48666,7 +54763,7 @@ let LDM = {
    "3127"
   ]
  ],
- "Pseudo-OECUMENIUS": [
+ "PSEUDO-OECUMENIUS": [
   "Pseudo-OECUMENIUS",
   {
    "Prooemium commentarii in Apocalypsin (e cod. Coislin. 224)": "Prooemium commentarii in Apocalypsin (e cod. Coislin. 224)",
@@ -48680,7 +54777,7 @@ let LDM = {
    "4154"
   ]
  ],
- "Pseudo-PHOCYLIDES": [
+ "PSEUDO-PHOCYLIDES": [
   "Pseudo-PHOCYLIDES",
   {},
   [
@@ -48691,7 +54788,7 @@ let LDM = {
    "1605"
   ]
  ],
- "Pseudo-PLUTARCHUS": [
+ "PSEUDO-PLUTARCHUS": [
   "Pseudo-PLUTARCHUS",
   {},
   [
@@ -48702,7 +54799,7 @@ let LDM = {
    "94"
   ]
  ],
- "Pseudo-POLEMON": [
+ "PSEUDO-POLEMON": [
   "Pseudo-POLEMON",
   {},
   [
@@ -48713,7 +54810,7 @@ let LDM = {
    "2233"
   ]
  ],
- "Pseudo-PTOLEMAEUS": [
+ "PSEUDO-PTOLEMAEUS": [
   "Pseudo-PTOLEMAEUS",
   {},
   [
@@ -48724,7 +54821,7 @@ let LDM = {
    "1642"
   ]
  ],
- "Pseudo-SCYMNUS": [
+ "PSEUDO-SCYMNUS": [
   "Pseudo-SCYMNUS",
   {
    "Ad Nicomedem regem, vv. 1-980 (sub titulo Orbis descriptio)": "Ad Nicomedem regem, vv. 1-980 (sub titulo Orbis descriptio)"
@@ -48737,7 +54834,7 @@ let LDM = {
    "68"
   ]
  ],
- "Pseudo-SPHRANTZES": [
+ "PSEUDO-SPHRANTZES": [
   "Pseudo-SPHRANTZES",
   {
    "Chronicon sive Maius (partim sub auctore Macario Melisseno)": "Chronicon sive Maius (partim sub auctore Macario Melisseno)",
@@ -48753,7 +54850,7 @@ let LDM = {
    "3176"
   ]
  ],
- "Pseudo-SYMEON": [
+ "PSEUDO-SYMEON": [
   "Pseudo-SYMEON",
   {
    "Chronographia (partim edita e cod. Paris. gr. 1712)": "Chronographia (partim edita e cod. Paris. gr. 1712)"
@@ -48766,7 +54863,7 @@ let LDM = {
    "3182"
   ]
  ],
- "Zonar.": [
+ "ZONAR.": [
   "Pseudo-ZONARAS",
   {
    "lexicon": "lexicon"
@@ -48779,7 +54876,7 @@ let LDM = {
    "3136"
   ]
  ],
- "Publius Aelius PHLEGON": [
+ "PUBLIUS AELIUS PHLEGON": [
   "Publius Aelius PHLEGON",
   {
    "De mirabilibus {001}": "De mirabilibus {001}",
@@ -48795,7 +54892,7 @@ let LDM = {
    "585"
   ]
  ],
- "Publius Herennius DEXIPPUS": [
+ "PUBLIUS HERENNIUS DEXIPPUS": [
   "Publius Herennius DEXIPPUS",
   {
    "FGrH #100": "testimonia"
@@ -48808,7 +54905,7 @@ let LDM = {
    "2141"
   ]
  ],
- "Publius RUTILIUS RUFUS": [
+ "PUBLIUS RUTILIUS RUFUS": [
   "Publius RUTILIUS RUFUS",
   {
    "FGrH #815": "fragmenta",
@@ -48827,6 +54924,20 @@ let LDM = {
   ]
  ],
  "QUADRATUS": [
+  "QUADRATUS",
+  {
+   "fragmentum ap. Eusebium": "fragmentum ap. Eusebium",
+   "fr.": "fragmenta ex apologia"
+  },
+  [
+   "?",
+   "?",
+   "Apol.",
+   "Atheniensis",
+   "1652"
+  ]
+ ],
+ "QUADRATUS $1": [
   "QUADRATUS",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -48869,7 +54980,7 @@ let LDM = {
    "2046"
   ]
  ],
- "Quintus FABIUS PICTOR": [
+ "QUINTUS FABIUS PICTOR": [
   "Quintus FABIUS PICTOR",
   {
    "fragmenta (Frr. 1-29)": "fragmenta (Frr. 1-29)",
@@ -48939,7 +55050,7 @@ let LDM = {
    "5056"
   ]
  ],
- "Nicolaus Artabasdos RHABDAS": [
+ "NICOLAUS ARTABASDOS RHABDAS": [
   "Nicolaus Artabasdos RHABDAS",
   {
    "\u03a0\u03b1\u03c1\u03ac\u03b4\u03bf\u03c3\u03b9\u03c2 \u03c4\u1fc6\u03c2 \u03c8\u03b7\u03c6\u03bf\u03c6\u03bf\u03c1\u03b9\u03ba\u1fc6\u03c2 \u1f10\u03c0\u03b9\u03c3\u03c4\u03ae\u03bc\u03b7\u03c2": "\u03a0\u03b1\u03c1\u03ac\u03b4\u03bf\u03c3\u03b9\u03c2 \u03c4\u1fc6\u03c2 \u03c8\u03b7\u03c6\u03bf\u03c6\u03bf\u03c1\u03b9\u03ba\u1fc6\u03c2 \u1f10\u03c0\u03b9\u03c3\u03c4\u03ae\u03bc\u03b7\u03c2",
@@ -48953,7 +55064,7 @@ let LDM = {
    "4371"
   ]
  ],
- "Manuel RHAUL": [
+ "MANUEL RHAUL": [
   "Manuel RHAUL",
   {
    "Epistulae XII": "Epistulae XII",
@@ -48978,7 +55089,7 @@ let LDM = {
    "3222"
   ]
  ],
- "Theodora RHAULAENA CANTACUZENA PALAEOLOGINA": [
+ "THEODORA RHAULAENA CANTACUZENA PALAEOLOGINA": [
   "Theodora RHAULAENA CANTACUZENA PALAEOLOGINA",
   {
    "Vita Theophanis et Theodori Grapti (e cod. Metochii S. Sepulcri 244, f. 130-154)": "Vita Theophanis et Theodori Grapti (e cod. Metochii S. Sepulcri 244, f. 130-154)"
@@ -49038,7 +55149,7 @@ let LDM = {
    "598"
   ]
  ],
- "Rhetor.": [
+ "RHETOR.": [
   "RHETORIUS",
   {
    "Rhetorii quaestiones astrologicae ex Antiochi thesauris excerptae (e cod. Laurent. 28.34 et variis codicibus aliis) {001}": "Rhetorii quaestiones astrologicae ex Antiochi thesauris excerptae (e cod. Laurent. 28.34 et variis codicibus aliis) {001}",
@@ -49056,7 +55167,7 @@ let LDM = {
    "4321"
   ]
  ],
- "Rhian.": [
+ "RHIAN.": [
   "RHIANUS",
   {
    "Fragmenta {001}": "Fragmenta {001}",
@@ -49081,7 +55192,7 @@ let LDM = {
    "219"
   ]
  ],
- "Rinth.": [
+ "RINTH.": [
   "RHINTHON",
   {
    "fragmenta": "fragmenta",
@@ -49095,7 +55206,7 @@ let LDM = {
    "1654"
   ]
  ],
- "Rhod.": [
+ "RHOD.": [
   "RHODO",
   {
    "fragmentum ap. Eusebium": "fragmentum ap. Eusebium"
@@ -49121,7 +55232,7 @@ let LDM = {
    "1067"
   ]
  ],
- "Neophytus RHODINUS": [
+ "NEOPHYTUS RHODINUS": [
   "Neophytus RHODINUS",
   {
    "Paraphrasis vitae patriarchae Ignatii": "Paraphrasis vitae patriarchae Ignatii"
@@ -49134,7 +55245,7 @@ let LDM = {
    "9049"
   ]
  ],
- "Eustathius ROMAEUS": [
+ "EUSTATHIUS ROMAEUS": [
   "Eustathius ROMAEUS",
   {
    "\u03a0\u03b5\u1fd6\u03c1\u03b1 sive \u1f18\u03c0\u03b9\u03c4\u03bf\u03bc\u1f74 \u03bd\u03cc\u03bc\u03c9\u03bd": "\u03a0\u03b5\u1fd6\u03c1\u03b1 sive \u1f18\u03c0\u03b9\u03c4\u03bf\u03bc\u1f74 \u03bd\u03cc\u03bc\u03c9\u03bd"
@@ -49147,7 +55258,7 @@ let LDM = {
    "3148"
   ]
  ],
- "Rom. Mel.": [
+ "ROM. MEL.": [
   "ROMANUS MELODUS",
   {
    "Cantica {001}": "Cantica {001}",
@@ -49197,6 +55308,19 @@ let LDM = {
  "RUFUS": [
   "RUFUS",
   {
+   "epigramma sepulcrale": "epigramma sepulcrale"
+  },
+  [
+   "A. D. 3",
+   "",
+   "Epigr.",
+   "",
+   "2688"
+  ]
+ ],
+ "RUFUS $1": [
+  "RUFUS",
+  {
    "FGrH #826": "fragmentum"
   },
   [
@@ -49207,7 +55331,7 @@ let LDM = {
    "2553"
   ]
  ],
- "Ruf. Rh.": [
+ "RUF. RH.": [
   "RUFUS",
   {
    "ars rhetorica": "ars rhetorica"
@@ -49220,7 +55344,7 @@ let LDM = {
    "606"
   ]
  ],
- "Ruf.": [
+ "RUF.": [
   "RUFUS",
   {
    "Anat.": "Anatomia",
@@ -49267,7 +55391,7 @@ let LDM = {
    "1066"
   ]
  ],
- "Stephanus SACHLICES Poeta": [
+ "STEPHANUS SACHLICES POETA": [
   "Stephanus SACHLICES Poeta",
   {
    "carmina": "carmina",
@@ -49290,6 +55414,19 @@ let LDM = {
   ]
  ],
  "SALLUSTIUS": [
+  "SALLUSTIUS",
+  {
+   "hypothesis in sophoclis oedipum coloneum": "hypothesis in sophoclis oedipum coloneum"
+  },
+  [
+   "A. D. 5",
+   "",
+   "Gramm. Et Soph.",
+   "",
+   "3006"
+  ]
+ ],
+ "SALLUSTIUS $1": [
   "SALLUSTIUS",
   {
    "De deis et mundo": "De deis et mundo"
@@ -49355,7 +55492,7 @@ let LDM = {
    "1658"
   ]
  ],
- "Passiones SANCTORUM ONESIPHORI ET PORPHYRII": [
+ "PASSIONES SANCTORUM ONESIPHORI ET PORPHYRII": [
   "Passiones SANCTORUM ONESIPHORI ET PORPHYRII",
   {
    "Passio sanctorum Onesiphori et Porphyrii (BHG 2325) (e cods. Mosq. 162 Vlad. 380 et Mosq. 98 Vlad. 94)": "Passio sanctorum Onesiphori et Porphyrii (BHG 2325) (e cods. Mosq. 162 Vlad. 380 et Mosq. 98 Vlad. 94)"
@@ -49404,7 +55541,7 @@ let LDM = {
    "9"
   ]
  ],
- "SAPPHO et ALCAEUS": [
+ "SAPPHO ET ALCAEUS": [
   "SAPPHO et ALCAEUS",
   {
    "fragmenta (001)": "fragmenta (001)",
@@ -49419,7 +55556,7 @@ let LDM = {
    "1815"
   ]
  ],
- "SAPPHUS vel ALCAEI FRAGMENTA": [
+ "SAPPHUS VEL ALCAEI FRAGMENTA": [
   "SAPPHUS vel ALCAEI FRAGMENTA",
   {
    "fragmenta (001)": "fragmenta (001)",
@@ -49449,6 +55586,47 @@ let LDM = {
  "SATYRUS": [
   "SATYRUS",
   {
+   "Vita Euripidis (P. Oxy. 9.1176)": "Vita Euripidis (P. Oxy. 9.1176)",
+   "FHG 3": "fragmenta (002)"
+  },
+  [
+   "-300",
+   "-101",
+   "Biogr.",
+   "Oxyrhynchites",
+   "608"
+  ]
+ ],
+ "SATYRUS $1": [
+  "SATYRUS",
+  {
+   "Fragmentum (P. Oxy. 27.2465)": "Fragmentum (P. Oxy. 27.2465)",
+   "FGrH #631": "fragmentum"
+  },
+  [
+   "-300",
+   "-201",
+   "Hist.",
+   "Alexandrinus",
+   "1661"
+  ]
+ ],
+ "SATYRUS $2": [
+  "SATYRUS",
+  {
+   "epigrammata": "epigrammata"
+  },
+  [
+   "1 B C.",
+   "",
+   "Epigr.",
+   "",
+   "1660"
+  ]
+ ],
+ "SATYRUS $3": [
+  "SATYRUS",
+  {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
   },
   [
@@ -49459,7 +55637,7 @@ let LDM = {
    "1069"
   ]
  ],
- "\"SATYRUS  \"\"Zeta\"\"\"": [
+ "\"SATYRUS  \"\"ZETA\"\"\"": [
   "\"SATYRUS  \"\"Zeta\"\"\"",
   {
    "FGrH #20": "fragmenta"
@@ -49472,7 +55650,7 @@ let LDM = {
    "1873"
   ]
  ],
- "Muc. Scaeu.": [
+ "MUC. SCAEU.": [
   "Quintus Mucius SCAEVOLA",
   {
    "epigramma": "epigramma"
@@ -50772,7 +56950,7 @@ let LDM = {
    "273"
   ]
  ],
- "Nicolaus SCRIBAS": [
+ "NICOLAUS SCRIBAS": [
   "Nicolaus SCRIBAS",
   {
    "Oratio antirrhetica": "Oratio antirrhetica"
@@ -50839,7 +57017,7 @@ let LDM = {
    "3177"
   ]
  ],
- "Franciscus SCUFUS": [
+ "FRANCISCUS SCUFUS": [
   "Franciscus SCUFUS",
   {
    "\u1f49 \u0393\u03c1\u03b1\u03bc\u03bc\u03b1\u03c4\u03bf\u03c6\u03cc\u03c1\u03bf\u03c2": "\u1f49 \u0393\u03c1\u03b1\u03bc\u03bc\u03b1\u03c4\u03bf\u03c6\u03cc\u03c1\u03bf\u03c2"
@@ -50879,7 +57057,7 @@ let LDM = {
    "65"
   ]
  ],
- "Georgius SCYLITZES": [
+ "GEORGIUS SCYLITZES": [
   "Georgius SCYLITZES",
   {
    "Epigramma {001}": "Epigramma {001}",
@@ -50913,6 +57091,21 @@ let LDM = {
  "SCYTHINUS": [
   "SCYTHINUS",
   {
+   "fragmenta": "fragmenta",
+   "FGrH #12": "fragmentum",
+   "epigrammata": "epigrammata"
+  },
+  [
+   "-400",
+   "-301",
+   "Poet. Phil.",
+   "Teius",
+   "259"
+  ]
+ ],
+ "SCYTHINUS $1": [
+  "SCYTHINUS",
+  {
    "Epigrammata": "Epigrammata"
   },
   [
@@ -50923,7 +57116,7 @@ let LDM = {
    "2680"
   ]
  ],
- "Nicolaus SECUNDINUS": [
+ "NICOLAUS SECUNDINUS": [
   "Nicolaus SECUNDINUS",
   {
    "Epistula consolatoria ad amicum {001}": "Epistula consolatoria ad amicum {001}",
@@ -50952,6 +57145,34 @@ let LDM = {
   ]
  ],
  "SELEUCUS": [
+  "SELEUCUS",
+  {
+   "fragmenta": "fragmenta",
+   "\u03a0\u03b5\u03c1\u03b9 \u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03c3\u03bc\u03bf\u03c5 (fragmentum)": "\u03a0\u03b5\u03c1\u03b9 \u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03c3\u03bc\u03bf\u03c5 (fragmentum)",
+   "FGrH #341": "fragmenta"
+  },
+  [
+   "A. D. 1",
+   "",
+   "Gramm.",
+   "Alexandrinus",
+   "1810"
+  ]
+ ],
+ "SELEUCUS $1": [
+  "SELEUCUS",
+  {
+   "FGrH #780": "testimonium"
+  },
+  [
+   "A. D. 3-4",
+   "",
+   "Gramm.",
+   "Emesenus",
+   "2524"
+  ]
+ ],
+ "SELEUCUS $2": [
   "SELEUCUS",
   {
    "\u1f39\u03bb\u03b1\u03c1\u1f70 \u1f84\u03c3\u03bc\u03b1\u03c4\u03b1": "\u1f39\u03bb\u03b1\u03c1\u1f70 \u1f84\u03c3\u03bc\u03b1\u03c4\u03b1"
@@ -51004,7 +57225,7 @@ let LDM = {
    "1663"
   ]
  ],
- "Lucius Annaeus SENECA": [
+ "LUCIUS ANNAEUS SENECA": [
   "Lucius Annaeus SENECA",
   {
    "FGrH #644": "fragmenta"
@@ -51144,20 +57365,48 @@ let LDM = {
  "SERAPION": [
   "SERAPION",
   {
-   "fragmenta ap. Galenum": "fragmenta ap. Galenum",
-   "fragmentum ap. Oribasium": "fragmentum ap. Oribasium",
-   "fragmentum ap. Paulum": "fragmentum ap. Paulum",
-   "Fragmentum ap. A\u00ebtium (lib. 15)": "Fragmentum ap. A\u00ebtium (lib. 15)"
+   "fragmentum": "fragmentum"
   },
   [
-   "3 B. C.",
+   "1",
+   "100",
+   "Trag.",
    "",
-   "Med.",
-   "Alexandrinus",
-   "1070"
+   "347"
   ]
  ],
- "SERAPION Thmuitanus": [
+ "SERAPION $1": [
+  "SERAPION",
+  {
+   "Fragmenta {001}": "Fragmenta {001}",
+   "Fragmenta {002}": "Fragmenta {002}",
+   "Fragmenta {003}": "Fragmenta {003}",
+   "Fragmenta {004}": "Fragmenta {004}"
+  },
+  [
+   "1 B. C. ?",
+   "",
+   "",
+   "Antiochenus",
+   "1669"
+  ]
+ ],
+ "SERAPION $2": [
+  "SERAPION",
+  {
+   "fragmenta": "fragmenta",
+   "Fragmentum ex epistula ad Caricum et Pontium: pp. 451-452": "Fragmentum ex epistula ad Caricum et Pontium: pp. 451-452",
+   "Fragmentum ex libro de evangelio, quod sub nomine Petri ferebatur: pp. 452-453": "Fragmentum ex libro de evangelio, quod sub nomine Petri ferebatur: pp. 452-453"
+  },
+  [
+   "151",
+   "250",
+   "Scr. Eccl.",
+   "Antiochenus",
+   "1670"
+  ]
+ ],
+ "SERAPION THMUITANUS": [
   "SERAPION Thmuitanus",
   {
    "Euchologium": "Euchologium",
@@ -51201,7 +57450,37 @@ let LDM = {
    "3377"
   ]
  ],
+ "SERAPION $3": [
+  "SERAPION",
+  {
+   "fragmenta ap. Galenum": "fragmenta ap. Galenum",
+   "fragmentum ap. Oribasium": "fragmentum ap. Oribasium",
+   "fragmentum ap. Paulum": "fragmentum ap. Paulum",
+   "Fragmentum ap. A\u00ebtium (lib. 15)": "Fragmentum ap. A\u00ebtium (lib. 15)"
+  },
+  [
+   "3 B. C.",
+   "",
+   "Med.",
+   "Alexandrinus",
+   "1070"
+  ]
+ ],
  "SERENUS": [
+  "SERENUS",
+  {
+   "De sectione cylindri": "De sectione cylindri",
+   "De sectione coni": "De sectione coni"
+  },
+  [
+   "301",
+   "400",
+   "Geom.",
+   "Antinoensis",
+   "2055"
+  ]
+ ],
+ "SERENUS $1": [
   "SERENUS",
   {
    "fragmenta ap. Stobaeum": "fragmenta ap. Stobaeum"
@@ -51227,7 +57506,7 @@ let LDM = {
    "1072"
   ]
  ],
- "Clemens SERTORIUS": [
+ "CLEMENS SERTORIUS": [
   "Clemens SERTORIUS",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -51327,7 +57606,7 @@ let LDM = {
    "4139"
   ]
  ],
- "SEVERUS Iatrosophista": [
+ "SEVERUS IATROSOPHISTA": [
   "SEVERUS Iatrosophista",
   {
    "De instrumentis infusoriis seu clysteribus ad Timotheum": "De instrumentis infusoriis seu clysteribus ad Timotheum"
@@ -51341,6 +57620,33 @@ let LDM = {
   ]
  ],
  "SEVERUS": [
+  "SEVERUS",
+  {
+   "Narrationes vel \u03b4\u03b9\u03b7\u03b3\u03ae\u03bc\u03b1\u03c4\u03b1": "Narrationes vel \u03b4\u03b9\u03b7\u03b3\u03ae\u03bc\u03b1\u03c4\u03b1",
+   "Ethopoeiae": "Ethopoeiae"
+  },
+  [
+   "301",
+   "400",
+   "Soph.",
+   "Alexandrinus, Antiochenus, Constantinopolitanus",
+   "4239"
+  ]
+ ],
+ "SEVERUS $1": [
+  "SEVERUS",
+  {
+   "\u03a0\u03b5\u03c1\u1f76 \u03c8\u03c5\u03c7\u1fc6\u03c2 (fragmentum)": "\u03a0\u03b5\u03c1\u1f76 \u03c8\u03c5\u03c7\u1fc6\u03c2 (fragmentum)"
+  },
+  [
+   "101",
+   "200",
+   "Phil.",
+   "",
+   "2970"
+  ]
+ ],
+ "SEVERUS $2": [
   "SEVERUS",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum",
@@ -51384,6 +57690,32 @@ let LDM = {
  "SILENUS": [
   "SILENUS",
   {
+   "Titulus": "Titulus"
+  },
+  [
+   "-200",
+   "-201",
+   "Trag.",
+   "",
+   "603"
+  ]
+ ],
+ "SILENUS $1": [
+  "SILENUS",
+  {
+   "FGrH #175": "Fragmenta"
+  },
+  [
+   "-300",
+   "-201",
+   "Hist.",
+   "fort. Calactinus",
+   "1970"
+  ]
+ ],
+ "SILENUS $2": [
+  "SILENUS",
+  {
    "FGrH #27": "Fragmenta"
   },
   [
@@ -51412,6 +57744,32 @@ let LDM = {
  "SIMMIAS": [
   "SIMMIAS",
   {
+   "Epigrammata": "Epigrammata"
+  },
+  [
+   "5-4 B. C.",
+   "",
+   "Epigr.",
+   "Thebanus",
+   "1673"
+  ]
+ ],
+ "SIMMIAS $1": [
+  "SIMMIAS",
+  {
+   "Fragmentum ad Galenum": "Fragmentum ad Galenum"
+  },
+  [
+   "A.D. 2-3",
+   "",
+   "Med.",
+   "Medus",
+   "988"
+  ]
+ ],
+ "SIMMIAS $2": [
+  "SIMMIAS",
+  {
    "Testimonia": "Testimonia"
   },
   [
@@ -51422,7 +57780,7 @@ let LDM = {
    "4266"
   ]
  ],
- "SIMON Scriptor De Re Equestri": [
+ "SIMON SCRIPTOR DE RE EQUESTRI": [
   "SIMON Scriptor De Re Equestri",
   {
    "De forma et delectu equorum": "De forma et delectu equorum",
@@ -51437,6 +57795,41 @@ let LDM = {
   ]
  ],
  "SIMONIDES": [
+  "SIMONIDES",
+  {
+   "FGrH #55c": "testimonium",
+   "tituli": "tituli"
+  },
+  [
+   "-800",
+   "1600",
+   "Epic.",
+   "Carystius vel Eretrius",
+   "1906"
+  ]
+ ],
+ "SIMONIDES $1": [
+  "SIMONIDES",
+  {
+   "Fragmenta {001}": "Fragmenta {001}",
+   "Fragmenta {002}": "Fragmenta {002}",
+   "Epigrammata {003}": "Epigrammata {003}",
+   "FGrH #8": "Fragmenta {005}",
+   "epigrammata (App. Anth.)": "epigrammata (App. Anth.)",
+   "epigrammata dedicatoria": "epigrammata dedicatoria",
+   "epigrammata sepulcralis": "epigrammata sepulcralis",
+   "epigrammata demonstrativa": "epigrammata demonstrativa",
+   "epigrammata exhortatoria et supplicatoria": "epigrammata exhortatoria et supplicatoria"
+  },
+  [
+   "-556",
+   "-465",
+   "Lyr.",
+   "Ceus",
+   "261"
+  ]
+ ],
+ "SIMONIDES $2": [
   "SIMONIDES",
   {
    "FGrH #163": "Testimonium"
@@ -51482,6 +57875,33 @@ let LDM = {
   ]
  ],
  "SIMYLUS": [
+  "SIMYLUS",
+  {
+   "Fragmentum {001}": "Fragmentum {001}",
+   "Fragmentum {002": "Fragmentum {002"
+  },
+  [
+   "-350",
+   "-251",
+   "Comic.",
+   "",
+   "398"
+  ]
+ ],
+ "SIMYLUS $1": [
+  "SIMYLUS",
+  {
+   "Fragmenta": "Fragmenta"
+  },
+  [
+   "-300",
+   "-201",
+   "Eleg.",
+   "",
+   "1675"
+  ]
+ ],
+ "SIMYLUS $2": [
   "SIMYLUS",
   {
    "Fragmenta {001}": "Fragmenta {001}",
@@ -51537,17 +57957,58 @@ let LDM = {
  "SOCRATES": [
   "SOCRATES",
   {
-   "Fragmentum ap. Pseudo-Galenum": "Fragmentum ap. Pseudo-Galenum"
+   "Fragmenta": "Fragmenta",
+   "Epigrammata exhortatorium et supplicatorium": "Epigrammata exhortatorium et supplicatorium"
   },
   [
-   "A. D. 1 ?",
-   "",
-   "Med.",
-   "",
-   "1000"
+   "-470",
+   "-400",
+   "Phil.",
+   "Atheniensis",
+   "262"
   ]
  ],
- "SOCRATES Junior": [
+ "SOCRATES $1": [
+  "SOCRATES",
+  {
+   "FGrH #310": "fragmenta"
+  },
+  [
+   "-800",
+   "-101",
+   "Hist.",
+   "Argivus",
+   "1678"
+  ]
+ ],
+ "SOCRATES $2": [
+  "SOCRATES",
+  {
+   "FGrH #192": "Fragmenta",
+   "\u03a0\u03b5\u03c1\u1f76 \u1f10\u03bc\u03c6\u03c5\u03bb\u03af\u03bf\u03c5 \u03c0\u03bf\u03bb\u03ad\u03bc\u03bf\u03c5 (frr. 1-2): p. 326": "\u03a0\u03b5\u03c1\u1f76 \u1f10\u03bc\u03c6\u03c5\u03bb\u03af\u03bf\u03c5 \u03c0\u03bf\u03bb\u03ad\u03bc\u03bf\u03c5 (frr. 1-2): p. 326"
+  },
+  [
+   "-100",
+   "-1",
+   "Hist.",
+   "Rhodius",
+   "1679"
+  ]
+ ],
+ "SOCRATES $3": [
+  "SOCRATES",
+  {
+   "Epigramma": "Epigramma"
+  },
+  [
+   "Incertum",
+   "",
+   "Epigr.",
+   "",
+   "1677"
+  ]
+ ],
+ "SOCRATES JUNIOR": [
   "SOCRATES Junior",
   {
    "Testimonia": "Testimonia",
@@ -51561,7 +58022,20 @@ let LDM = {
    "21"
   ]
  ],
- "SOCRATES Scholasticus": [
+ "SOCRATES $4": [
+  "SOCRATES",
+  {
+   "Fragmentum ap. Pseudo-Galenum": "Fragmentum ap. Pseudo-Galenum"
+  },
+  [
+   "A. D. 1 ?",
+   "",
+   "Med.",
+   "",
+   "1000"
+  ]
+ ],
+ "SOCRATES SCHOLASTICUS": [
   "SOCRATES Scholasticus",
   {
    "Historia ecclesiastica": "Historia ecclesiastica"
@@ -51629,6 +58103,22 @@ let LDM = {
  "SOLON": [
   "SOLON",
   {
+   "fragmenta": "fragmenta",
+   "epigrammata": "epigrammata",
+   "epigramma demonstrativum": "epigramma demonstrativum",
+   "epigramma exhortatorium et supplicatorium": "epigramma exhortatorium et supplicatorium"
+  },
+  [
+   "-640",
+   "-551",
+   "Nomographus Poeta",
+   "Atheniensis",
+   "263"
+  ]
+ ],
+ "SOLON $1": [
+  "SOLON",
+  {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
   },
   [
@@ -51666,6 +58156,19 @@ let LDM = {
   ]
  ],
  "SOPATER": [
+  "SOPATER",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-350",
+   "-251",
+   "Comic.",
+   "Paphius",
+   "1682"
+  ]
+ ],
+ "SOPATER $1": [
   "SOPATER",
   {
    "\u0394\u03b9\u03b1\u03af\u03c1\u03b5\u03c3\u03b9\u03c2 \u03b6\u03b7\u03c4\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd {001}": "\u0394\u03b9\u03b1\u03af\u03c1\u03b5\u03c3\u03b9\u03c2 \u03b6\u03b7\u03c4\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd {001}",
@@ -51709,7 +58212,7 @@ let LDM = {
    "1684"
   ]
  ],
- "Nicolaus SOPHIANUS": [
+ "NICOLAUS SOPHIANUS": [
   "Nicolaus SOPHIANUS",
   {
    "Ars grammatica": "Ars grammatica"
@@ -51761,7 +58264,7 @@ let LDM = {
    "11"
   ]
  ],
- "SOPHOCLES Junior": [
+ "SOPHOCLES JUNIOR": [
   "SOPHOCLES Junior",
   {
    "fragmentum": "fragmentum"
@@ -51805,6 +58308,43 @@ let LDM = {
   ]
  ],
  "SOPHRONIUS": [
+  "SOPHRONIUS",
+  {
+   "epistula synodica": "epistula synodica",
+   "orationes": "orationes",
+   "in sanctissimae deiparae annuntiationem (orat. 2)": "in sanctissimae deiparae annuntiationem (orat. 2)",
+   "in excaltationem sanctae crucis (orat. 4)": "in excaltationem sanctae crucis (orat. 4)",
+   "de festo sanctae crucis (orat. 5)": "de festo sanctae crucis (orat. 5)",
+   "encomium in sanctum joannem baptisam (orat. 7)": "encomium in sanctum joannem baptisam (orat. 7)",
+   "in sanctos apostolos Petrum et Paulum (orat. 8)": "in sanctos apostolos Petrum et Paulum (orat. 8)",
+   "encomium de sancto Joanne evangelista (orat. 9)": "encomium de sancto Joanne evangelista (orat. 9)",
+   "de peccatorum confessione": "de peccatorum confessione",
+   "fragmentum de baptismate apostolorum": "fragmentum de baptismate apostolorum",
+   "Laudes in sanctos Cyrum et Joannem {005}": "Laudes in sanctos Cyrum et Joannem {005}",
+   "Narratio miraculorum sanctorum Cyri et Joannis {006}": "Narratio miraculorum sanctorum Cyri et Joannis {006}",
+   "de sanctis cyro et joanne": "de sanctis cyro et joanne",
+   "alia vita acephala sanctorum martyrum cyri et joannis": "alia vita acephala sanctorum martyrum cyri et joannis",
+   "Vita Mariae Aegyptiacae [Sp.] {009}": "Vita Mariae Aegyptiacae [Sp.] {009}",
+   "Anacreontica {010}": "Anacreontica {010}",
+   "triodium": "triodium",
+   "commentarius": "commentarius",
+   "oratio": "oratio",
+   "troparium horarum": "troparium horarum",
+   "fragmentum dogmaticum": "fragmentum dogmaticum",
+   "epigrammata": "epigrammata",
+   "Homilia in nativitatem Christi {017}": "Homilia in nativitatem Christi {017}",
+   "Homilia in Hypapanten {018}": "Homilia in Hypapanten {018}",
+   "Homilia in theophania (e cod. 228 Monast. Dion. in Monte Atho) {019}": "Homilia in theophania (e cod. 228 Monast. Dion. in Monte Atho) {019}"
+  },
+  [
+   "A. D. 6-7",
+   "",
+   "Epigr., Scr. Eccl., Soph.",
+   "Damascenus, Hierosolymitanus",
+   "4042"
+  ]
+ ],
+ "SOPHRONIUS $1": [
   "SOPHRONIUS",
   {
    "Excerpta ex Joannis Characis commentariis in Theodosii Alexandrini canones": "Excerpta ex Joannis Characis commentariis in Theodosii Alexandrini canones"
@@ -51876,6 +58416,19 @@ let LDM = {
  "SOSIBIUS": [
   "SOSIBIUS",
   {
+   "FGrH #595": "fragmentum"
+  },
+  [
+   "",
+   "",
+   "Gramm.",
+   "",
+   "1686"
+  ]
+ ],
+ "SOSIBIUS $1": [
+  "SOSIBIUS",
+  {
    "FGrH #595": "fragmenta",
    "Fragmentum (P. Oxy. 24.2389)": "Fragmentum (P. Oxy. 24.2389)",
    "Fragmenta {004}": "Fragmenta {004}"
@@ -51889,6 +58442,32 @@ let LDM = {
   ]
  ],
  "SOSICRATES": [
+  "SOSICRATES",
+  {
+   "FGrH #461": "fragmenta"
+  },
+  [
+   "-200",
+   "-101",
+   "Hist.",
+   "fort. Rhodius",
+   "1687"
+  ]
+ ],
+ "SOSICRATES $1": [
+  "SOSICRATES",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-300",
+   "-201",
+   "Comic.",
+   "",
+   "503"
+  ]
+ ],
+ "SOSICRATES $2": [
   "SOSICRATES",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -51956,6 +58535,20 @@ let LDM = {
  "SOSTRATUS": [
   "SOSTRATUS",
   {
+   "FGrH #23": "fragmenta",
+   "titulus": "titulus"
+  },
+  [
+   "-100",
+   "-1",
+   "Gramm.",
+   "Nyssensis",
+   "1688"
+  ]
+ ],
+ "SOSTRATUS $1": [
+  "SOSTRATUS",
+  {
    "tituli": "tituli"
   },
   [
@@ -51995,6 +58588,33 @@ let LDM = {
  "SOTADES": [
   "SOTADES",
   {
+   "fragmenta": "fragmenta",
+   "fragmentum": "fragmentum"
+  },
+  [
+   "-400",
+   "-301",
+   "Comic.",
+   "",
+   "505"
+  ]
+ ],
+ "SOTADES $1": [
+  "SOTADES",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-300",
+   "-201",
+   "Iamb.",
+   "",
+   "1691"
+  ]
+ ],
+ "SOTADES $2": [
+  "SOTADES",
+  {
    "FGrH #358": "testimonium"
   },
   [
@@ -52019,6 +58639,19 @@ let LDM = {
   ]
  ],
  "SOTION": [
+  "SOTION",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "3-2 B. C.",
+   "",
+   "Biogr.",
+   "Alexandrinus",
+   "1071"
+  ]
+ ],
+ "SOTION $1": [
   "SOTION",
   {
    "fragmenta": "fragmenta"
@@ -52159,7 +58792,7 @@ let LDM = {
    "1694"
   ]
  ],
- "Joannes STAURACIUS": [
+ "JOANNES STAURACIUS": [
   "Joannes STAURACIUS",
   {
    "Oratio de miraculis sancti Demetrii": "Oratio de miraculis sancti Demetrii",
@@ -52176,6 +58809,136 @@ let LDM = {
  "STEPHANUS": [
   "STEPHANUS",
   {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "-350",
+   "-251",
+   "Comic.",
+   "",
+   "506"
+  ]
+ ],
+ "STEPHANUS $1": [
+  "STEPHANUS",
+  {
+   "Commentarii in priorem Galeni librum therapeuticum ad Glauconem {001}": "Commentarii in priorem Galeni librum therapeuticum ad Glauconem {001}",
+   "Scholia in Hippocratis prognosticon {002}": "Scholia in Hippocratis prognosticon {002}",
+   "Collyrium ophthalmicum {003}": "Collyrium ophthalmicum {003}",
+   "Scholia in Hippocratis de fracturis {004}": "Scholia in Hippocratis de fracturis {004}",
+   "partiell": "In Hippocratis aphorismos commentaria I-II {007}",
+   "Dup. partim 0728 001": "Dup. partim 0728 001",
+   "Proemium: pp. 28-32": "Proemium: pp. 28-32",
+   "Commentarius I: pp. 32-136": "Commentarius I: pp. 32-136",
+   "Commentarius II: pp. 138-256": "Commentarius II: pp. 138-256",
+   "In Hippocratis aphorismos commentaria III-IV {008}": "In Hippocratis aphorismos commentaria III-IV {008}",
+   "Section III: pp. 16-202": "Section III: pp. 16-202",
+   "Section IV: pp. 204-432": "Section IV: pp. 204-432",
+   "In Hippocratis aphorismos commentaria V-VI {009}": "In Hippocratis aphorismos commentaria V-VI {009}",
+   "Section V: pp. 14-202": "Section V: pp. 14-202",
+   "Section VI: pp. 204-272": "Section VI: pp. 204-272",
+   "de pulsibus (fragmentum e commentario in Galeni librum therapeuticum)": "de pulsibus (fragmentum e commentario in Galeni librum therapeuticum)"
+  },
+  [
+   "501",
+   "700",
+   "Med. Phil.",
+   "Alexandrinus, Atheniensis",
+   "724"
+  ]
+ ],
+ "STEPHANUS $2": [
+  "STEPHANUS",
+  {
+   "In Magni sophistae librum de urinis": "In Magni sophistae librum de urinis"
+  },
+  [
+   "601",
+   "700",
+   "Med.",
+   "Alexandrinus",
+   "736"
+  ]
+ ],
+ "STEPHANUS DIACONUS": [
+  "STEPHANUS Diaconus",
+  {
+   "Vita Stephani Iunioris": "Vita Stephani Iunioris"
+  },
+  [
+   "A. D. 8/9",
+   "",
+   "Hagiogr.",
+   "Constantinopolitanus",
+   "3220"
+  ]
+ ],
+ "STEPHANUS $3": [
+  "STEPHANUS",
+  {
+   "Epistula ad Aretham": "Epistula ad Aretham"
+  },
+  [
+   "A. D. 9-10",
+   "",
+   "Epist.",
+   "Ephesius",
+   "3270"
+  ]
+ ],
+ "STEPHANUS $4": [
+  "STEPHANUS",
+  {
+   "Ethnica (epitome) {001}": "Ethnica (epitome) {001}",
+   "Epigramma {002}": "Epigramma {002}",
+   "Ethnica (Libri \u0391-\u0393) {003}": "Ethnica (Libri \u0391-\u0393) {003}",
+   "Ethnica (Libri \u0394-\u0399) {004}": "Ethnica (Libri \u0394-\u0399) {004}",
+   "Ethnica (Libri \u039a-\u039f) {005}": "Ethnica (Libri \u039a-\u039f) {005}",
+   "Ethnica (Libri \u03a0-\u03a5) {006}": "Ethnica (Libri \u03a0-\u03a5) {006}",
+   "Ethnica (Libri \u03a6-\u03a9) {007}": "Ethnica (Libri \u03a6-\u03a9) {007}"
+  },
+  [
+   "501",
+   "600",
+   "Gramm.",
+   "",
+   "4028"
+  ]
+ ],
+ "STEPHANUS $5": [
+  "STEPHANUS",
+  {
+   "In Aristotelis librum de interpretatione commentarium (001)": "In Aristotelis librum de interpretatione commentarium (001)",
+   "partiell": "Commentarium in Ptolemaei canones (cap. 1-16) (006)",
+   "Commentarium in Ptolemaei canones (excerpta e cod. Paris. Gr. 2162)": "Commentarium in Ptolemaei canones (excerpta e cod. Paris. Gr. 2162)",
+   "Commentarium in Ptolemaei canones (excerpta e codd. Cantabr. Coll. Trin. 1043 Vat. Urbin. 80 Vat. Gr. 304)": "Commentarium in Ptolemaei canones (excerpta e codd. Cantabr. Coll. Trin. 1043 Vat. Urbin. 80 Vat. Gr. 304)",
+   "de magna et sacra arte": "de magna et sacra arte",
+   "in aristotelis librum de anima": "in aristotelis librum de anima"
+  },
+  [
+   "601",
+   "700",
+   "Phil.",
+   "Alexandrinus, Atheniensis, Constantinopolitanus",
+   "9019"
+  ]
+ ],
+ "STEPHANUS $6": [
+  "STEPHANUS",
+  {
+   "In artem rhetoricam commentaria": "In artem rhetoricam commentaria"
+  },
+  [
+   "1101",
+   "1200",
+   "Gramm.",
+   "fort. Constantinopolitanus",
+   "9020"
+  ]
+ ],
+ "STEPHANUS $7": [
+  "STEPHANUS",
+  {
    "De magna et sacra arte (sub nomine Stephani Alexandrini philosophi)": "De magna et sacra arte (sub nomine Stephani Alexandrini philosophi)",
    "\u03a0\u03c1\u03ac\u03be\u03b5\u03b9\u03c2 1-2: pp. 199-208": "\u03a0\u03c1\u03ac\u03be\u03b5\u03b9\u03c2 1-2: pp. 199-208",
    "Epistula ad Theodorum: p. 208": "Epistula ad Theodorum: p. 208",
@@ -52190,20 +58953,7 @@ let LDM = {
    "9021"
   ]
  ],
- "STEPHANUS Diaconus": [
-  "STEPHANUS Diaconus",
-  {
-   "Vita Stephani Iunioris": "Vita Stephani Iunioris"
-  },
-  [
-   "A. D. 8/9",
-   "",
-   "Hagiogr.",
-   "Constantinopolitanus",
-   "3220"
-  ]
- ],
- "STEPHANUS Archiatrus": [
+ "STEPHANUS ARCHIATRUS": [
   "STEPHANUS Archiatrus",
   {
    "collyrium ophthalmicum": "collyrium ophthalmicum"
@@ -52291,7 +59041,7 @@ let LDM = {
    "1923"
   ]
  ],
- "Nicetas STETHATUS": [
+ "NICETAS STETHATUS": [
   "Nicetas STETHATUS",
   {
    "Vita Simeonis Novi Theologici {001}": "Vita Simeonis Novi Theologici {001}",
@@ -52340,7 +59090,7 @@ let LDM = {
    "315"
   ]
  ],
- "Constantinus STILBES": [
+ "CONSTANTINUS STILBES": [
   "Constantinus STILBES",
   {
    "\u0394\u03b9\u03b4\u03b1\u03c3\u03ba\u03b1\u03bb\u03af\u03b1 \u03c4\u03c1\u03af\u03c4\u03b7 {007}": "\u0394\u03b9\u03b4\u03b1\u03c3\u03ba\u03b1\u03bb\u03af\u03b1 \u03c4\u03c1\u03af\u03c4\u03b7 {007}",
@@ -52382,7 +59132,7 @@ let LDM = {
    "4262"
   ]
  ],
- "Sergius STISSUS": [
+ "SERGIUS STISSUS": [
   "Sergius STISSUS",
   {
    "Epistula ad Joannem Lascarim": "Epistula ad Joannem Lascarim"
@@ -52414,7 +59164,7 @@ let LDM = {
    "99"
   ]
  ],
- "Manuel STRABOROMANUS": [
+ "MANUEL STRABOROMANUS": [
   "Manuel STRABOROMANUS",
   {
    "Orationes ad imperatorem Alexium I Comnenum {001}": "Orationes ad imperatorem Alexium I Comnenum {001}",
@@ -52436,6 +59186,87 @@ let LDM = {
   ]
  ],
  "STRATON": [
+  "STRATON",
+  {
+   "Fragmentum {001}": "Fragmentum {001}",
+   "Fragmentum {002}": "Fragmentum {002}",
+   "Fragmentum {003}": "Fragmentum {003}"
+  },
+  [
+   "-400",
+   "-301",
+   "Comic.",
+   "",
+   "507"
+  ]
+ ],
+ "STRATON $1": [
+  "STRATON",
+  {
+   "fragmenta (001)": "fragmenta (001)",
+   "Scripta: fr. 18": "Scripta: fr. 18",
+   "Logica et topica (testimonium): fr. 19": "Logica et topica (testimonium): fr. 19",
+   "\u03a0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03c0\u03c1\u03bf\u03c4\u03ad\u03c1\u03bf\u03c5 \u03ba\u03b1\u1f76 \u1f51\u03c3\u03c4\u03ad\u03c1\u03bf\u03c5: frr. 27-30": "\u03a0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03c0\u03c1\u03bf\u03c4\u03ad\u03c1\u03bf\u03c5 \u03ba\u03b1\u1f76 \u1f51\u03c3\u03c4\u03ad\u03c1\u03bf\u03c5: frr. 27-30",
+   "\u03a0\u03b5\u03c1\u1f76 \u03b8\u03b5\u1ff6\u03bd: frr. 35-36": "\u03a0\u03b5\u03c1\u1f76 \u03b8\u03b5\u1ff6\u03bd: frr. 35-36",
+   "\u03a0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u1f44\u03bd\u03c4\u03bf\u03c2: frr. 40-41.2": "\u03a0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u1f44\u03bd\u03c4\u03bf\u03c2: frr. 40-41.2",
+   "\u03a0\u03b5\u03c1\u1f76 \u1f00\u03c1\u03c7\u1ff6\u03bd \u03c4\u03c1\u03af\u03b1 \u1f22 \u03b4\u03cd\u03bf (?). \u03a0\u03b5\u03c1\u1f76 \u03b1\u1f30\u03c4\u03b9\u1ff6\u03bd. \u03a0\u03b5\u03c1\u1f76 \u03b4\u03c5\u03bd\u03ac\u03bc\u03b5\u03c9\u03bd: frr. 42-43, 45, 48-49": "\u03a0\u03b5\u03c1\u1f76 \u1f00\u03c1\u03c7\u1ff6\u03bd \u03c4\u03c1\u03af\u03b1 \u1f22 \u03b4\u03cd\u03bf (?). \u03a0\u03b5\u03c1\u1f76 \u03b1\u1f30\u03c4\u03b9\u1ff6\u03bd. \u03a0\u03b5\u03c1\u1f76 \u03b4\u03c5\u03bd\u03ac\u03bc\u03b5\u03c9\u03bd: frr. 42-43, 45, 48-49",
+   "\u03a0\u03b5\u03c1\u1f76 \u03ba\u03bf\u03cd\u03c6\u03bf\u03c5 \u03ba\u03b1\u1f76 \u03b2\u03b1\u03c1\u03ad\u03bf\u03c2: frr. 50-52": "\u03a0\u03b5\u03c1\u1f76 \u03ba\u03bf\u03cd\u03c6\u03bf\u03c5 \u03ba\u03b1\u1f76 \u03b2\u03b1\u03c1\u03ad\u03bf\u03c2: frr. 50-52",
+   "\u03a0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03ba\u03b5\u03bd\u03bf\u1fe6 : frr. 54-57, 59-67": "\u03a0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03ba\u03b5\u03bd\u03bf\u1fe6 : frr. 54-57, 59-67",
+   "\u03a0\u03b5\u03c1\u1f76 \u03ba\u03b9\u03bd\u03ae\u03c3\u03b5\u03c9\u03c2. \u03a0\u03b5\u03c1\u1f76 \u03c7\u03c1\u03cc\u03bd\u03bf\u03c5: frr. 70-83": "\u03a0\u03b5\u03c1\u1f76 \u03ba\u03b9\u03bd\u03ae\u03c3\u03b5\u03c9\u03c2. \u03a0\u03b5\u03c1\u1f76 \u03c7\u03c1\u03cc\u03bd\u03bf\u03c5: frr. 70-83",
+   "\u03a0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03bf\u1f50\u03c1\u03b1\u03bd\u03bf\u1fe6: frr. 84-88, 90-91": "\u03a0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03bf\u1f50\u03c1\u03b1\u03bd\u03bf\u1fe6: frr. 84-88, 90-91",
+   "\u03a0\u03b5\u03c1\u1f76 \u03b6\u1ff3\u03bf\u03b3\u03bf\u03bd\u03af\u03b1\u03c2: frr. 95, 98-99": "\u03a0\u03b5\u03c1\u1f76 \u03b6\u1ff3\u03bf\u03b3\u03bf\u03bd\u03af\u03b1\u03c2: frr. 95, 98-99",
+   "\u03a0\u03b5\u03c1\u1f76 \u03b1\u1f30\u03c3\u03b8\u03ae\u03c3\u03b5\u03c9\u03c2. \u03a0\u03b5\u03c1\u1f76 \u1f44\u03c8\u03b5\u03c9\u03c2. \u03a0\u03b5\u03c1\u1f76 \u03c7\u03c1\u03c9\u03bc\u03ac\u03c4\u03c9\u03bd. \u03a0\u03b5\u03c1\u1f76 \u1f55\u03c0\u03bd\u03bf\u03c5. \u03a0\u03b5\u03c1\u1f76 \u1f10\u03bd\u03c5\u03c0\u03bd\u03af\u03c9\u03bd: frr. 109-115, 118-119b, 121-128, 130-131": "\u03a0\u03b5\u03c1\u1f76 \u03b1\u1f30\u03c3\u03b8\u03ae\u03c3\u03b5\u03c9\u03c2. \u03a0\u03b5\u03c1\u1f76 \u1f44\u03c8\u03b5\u03c9\u03c2. \u03a0\u03b5\u03c1\u1f76 \u03c7\u03c1\u03c9\u03bc\u03ac\u03c4\u03c9\u03bd. \u03a0\u03b5\u03c1\u1f76 \u1f55\u03c0\u03bd\u03bf\u03c5. \u03a0\u03b5\u03c1\u1f76 \u1f10\u03bd\u03c5\u03c0\u03bd\u03af\u03c9\u03bd: frr. 109-115, 118-119b, 121-128, 130-131",
+   "\u03a0\u03b5\u03c1\u1f76 \u03c4\u1f00\u03b3\u03b1\u03b8\u03bf\u1fe6: fr. 134": "\u03a0\u03b5\u03c1\u1f76 \u03c4\u1f00\u03b3\u03b1\u03b8\u03bf\u1fe6: fr. 134",
+   "\u0395\u1f51\u03c1\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd \u1f14\u03bb\u03b5\u03b3\u03c7\u03bf\u03b9 \u03b4\u03cd\u03bf: frr. 145-147": "\u0395\u1f51\u03c1\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd \u1f14\u03bb\u03b5\u03b3\u03c7\u03bf\u03b9 \u03b4\u03cd\u03bf: frr. 145-147"
+  },
+  [
+   "-300",
+   "-268",
+   "Phil.",
+   "Lampsacenus",
+   "1696"
+  ]
+ ],
+ "STRATON $2": [
+  "STRATON",
+  {
+   "epigrammata": "epigrammata"
+  },
+  [
+   "A. D. 2",
+   "",
+   "Epigr.",
+   "Sardianus",
+   "1697"
+  ]
+ ],
+ "STRATON $3": [
+  "STRATON",
+  {
+   "FGrH #168": "testimonium"
+  },
+  [
+   "2 B C.",
+   "",
+   "Hist.",
+   "",
+   "1963"
+  ]
+ ],
+ "STRATON $4": [
+  "STRATON",
+  {
+   "fragmenta ap. Philumenum": "fragmenta ap. Philumenum"
+  },
+  [
+   "3 B. C",
+   "",
+   "Med.",
+   "Alexandrinus",
+   "1080"
+  ]
+ ],
+ "STRATON $5": [
   "STRATON",
   {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum",
@@ -52463,6 +59294,24 @@ let LDM = {
   ]
  ],
  "STRATTIS": [
+  "STRATTIS",
+  {
+   "Fragmenta {001}": "Fragmenta {001}",
+   "Fragmenta {002}": "Fragmenta {002}",
+   "Fragmenta {003}": "Fragmenta {003}",
+   "Fragmenta {004}": "Fragmenta {004}",
+   "Fragmenta {005}": "Fragmenta {005}",
+   "Fragmenta {006}": "Fragmenta {006}"
+  },
+  [
+   "-409",
+   "-375",
+   "Comic.",
+   "Atheniensis",
+   "508"
+  ]
+ ],
+ "STRATTIS $1": [
   "STRATTIS",
   {
    "FGrH #118": "Testimonium"
@@ -52513,7 +59362,7 @@ let LDM = {
    "2416"
   ]
  ],
- "Lucius Cornelius SULLA FELIX": [
+ "LUCIUS CORNELIUS SULLA FELIX": [
   "Lucius Cornelius SULLA FELIX",
   {
    "epigramma dedicatorium": "epigramma dedicatorium"
@@ -52526,7 +59375,7 @@ let LDM = {
    "2660"
   ]
  ],
- "Gaius SULPICIUS GALBA": [
+ "GAIUS SULPICIUS GALBA": [
   "Gaius SULPICIUS GALBA",
   {
    "FGrH #92": "fragmenta"
@@ -52706,7 +59555,7 @@ let LDM = {
    "3115"
   ]
  ],
- "SYMEON Neotheologus": [
+ "SYMEON NEOTHEOLOGUS": [
   "SYMEON Neotheologus",
   {
    "Epistula de confessione (olim sub auctore Joanne Damasceno) et aliae epistulae {001}": "Epistula de confessione (olim sub auctore Joanne Damasceno) et aliae epistulae {001}",
@@ -52970,7 +59819,7 @@ let LDM = {
    "3070"
   ]
  ],
- "SYMEON II Patriarcha": [
+ "SYMEON II PATRIARCHA": [
   "SYMEON II Patriarcha",
   {
    "Epistula de Azymis [Dub.]": "Epistula de Azymis [Dub.]"
@@ -53042,7 +59891,7 @@ let LDM = {
    "3117"
   ]
  ],
- "SYMEON STYLITES Junior": [
+ "SYMEON STYLITES JUNIOR": [
   "SYMEON STYLITES Junior",
   {
    "Sermones ascetici i-iv": "Sermones ascetici i-iv",
@@ -53137,7 +59986,7 @@ let LDM = {
    "1769"
   ]
  ],
- "Papa SYNADINUS": [
+ "PAPA SYNADINUS": [
   "Papa SYNADINUS",
   {
    "\u03a7\u03c1\u03bf\u03bd\u03b9\u03ba\u1f78 \u03c4\u1ff6\u03bd \u03a3\u03b5\u03c1\u03c1\u1ff6\u03bd": "\u03a7\u03c1\u03bf\u03bd\u03b9\u03ba\u1f78 \u03c4\u1ff6\u03bd \u03a3\u03b5\u03c1\u03c1\u1ff6\u03bd"
@@ -53190,6 +60039,57 @@ let LDM = {
  "SYNESIUS": [
   "SYNESIUS",
   {
+   "Oratio de regno {002}": "Oratio de regno {002}",
+   "Aegyptii sive de providentia {003}": "Aegyptii sive de providentia {003}",
+   "Ad Paeonium de dono astrolabii {004}": "Ad Paeonium de dono astrolabii {004}",
+   "De insomniis {005}": "De insomniis {005}",
+   "Calvitii encomium {006}": "Calvitii encomium {006}",
+   "Dion {007}": "Dion {007}",
+   "Homiliae {008}": "Homiliae {008}",
+   "*Hom. 1: pp. 279-280": "*Hom. 1: pp. 279-280",
+   "*Hom. 2: pp. 281-282": "*Hom. 2: pp. 281-282",
+   "Catastases {009}": "Catastases {009}",
+   "Catastasis i: pp. 283-285": "Catastasis i: pp. 283-285",
+   "Catastasis ii: pp. 285-293": "Catastasis ii: pp. 285-293",
+   "Hymni {010}": "Hymni {010}",
+   "*Hymn. 1: pp. 33-91": "*Hymn. 1: pp. 33-91",
+   "*Hymn. 2: pp. 93-115": "*Hymn. 2: pp. 93-115",
+   "*Hymn. 3: pp. 117-121": "*Hymn. 3: pp. 117-121",
+   "*Hymn. 4: pp. 123-127": "*Hymn. 4: pp. 123-127",
+   "*Hymn. 5: pp. 129-135": "*Hymn. 5: pp. 129-135",
+   "*Hymn. 6: pp. 137-139": "*Hymn. 6: pp. 137-139",
+   "*Hymn. 7: pp. 141-145": "*Hymn. 7: pp. 141-145",
+   "*Hymn. 8: pp. 147-153": "*Hymn. 8: pp. 147-153",
+   "*Hymn. 9: pp. 155-167": "*Hymn. 9: pp. 155-167",
+   "Hymn. 10: cf. GEORGIUS PECCATOR Poeta (2971 001)": "Hymn. 10: cf. GEORGIUS PECCATOR Poeta (2971 001)",
+   "Epigrammata {011}": "Epigrammata {011}",
+   "Epistulae {012}": "Epistulae {012}",
+   "epigramma exhortatorium et supplicatorium": "epigramma exhortatorium et supplicatorium"
+  },
+  [
+   "370",
+   "413",
+   "Phil.",
+   "Cyrenensis",
+   "2006"
+  ]
+ ],
+ "SYNESIUS $1": [
+  "SYNESIUS",
+  {
+   "\u03a3\u03c5\u03bd\u03b5\u03c3\u03af\u03bf\u03c5 \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03bf\u03c5 \u03c0\u03c1\u1f78\u03c2 \u0394\u03b9\u03cc\u03c3\u03ba\u03bf\u03c1\u03bf\u03bd \u03b5\u1f30\u03c2 \u03c4\u1f74\u03bd \u03b2\u03af\u03b2\u03bb\u03bf\u03bd \u0394\u03b7\u03bc\u03bf\u03ba\u03c1\u03af\u03c4\u03bf\u03c5, \u1f61\u03c2 \u1f10\u03bd \u03c3\u03c7\u03bf\u03bb\u03af\u03bf\u03b9\u03c2 (e cod. Venet. Marc. 299, fol. 72v)": "\u03a3\u03c5\u03bd\u03b5\u03c3\u03af\u03bf\u03c5 \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03bf\u03c5 \u03c0\u03c1\u1f78\u03c2 \u0394\u03b9\u03cc\u03c3\u03ba\u03bf\u03c1\u03bf\u03bd \u03b5\u1f30\u03c2 \u03c4\u1f74\u03bd \u03b2\u03af\u03b2\u03bb\u03bf\u03bd \u0394\u03b7\u03bc\u03bf\u03ba\u03c1\u03af\u03c4\u03bf\u03c5, \u1f61\u03c2 \u1f10\u03bd \u03c3\u03c7\u03bf\u03bb\u03af\u03bf\u03b9\u03c2 (e cod. Venet. Marc. 299, fol. 72v)"
+  },
+  [
+   "301",
+   "400",
+   "Alchem.",
+   "",
+   "4324"
+  ]
+ ],
+ "SYNESIUS $2": [
+  "SYNESIUS",
+  {
    "epigramma": "epigramma"
   },
   [
@@ -53232,7 +60132,7 @@ let LDM = {
    "4407"
   ]
  ],
- "SYNTIPAS (Michael ANDREOPULUS)": [
+ "SYNTIPAS (MICHAEL ANDREOPULUS)": [
   "SYNTIPAS (Michael ANDREOPULUS)",
   {
    "Liber Suntipae (= Syntipas (translatio Michael Andreopuli))": "Liber Suntipae (= Syntipas (translatio Michael Andreopuli))",
@@ -53289,7 +60189,7 @@ let LDM = {
    "2973"
   ]
  ],
- "Joannes SYROPULUS": [
+ "JOANNES SYROPULUS": [
   "Joannes SYROPULUS",
   {
    "Oratio ad imperatorem Isaacum II Angelum": "Oratio ad imperatorem Isaacum II Angelum"
@@ -53302,7 +60202,7 @@ let LDM = {
    "3204"
   ]
  ],
- "Sylvester SYROPULUS": [
+ "SYLVESTER SYROPULUS": [
   "Sylvester SYROPULUS",
   {
    "historiae (001)": "historiae (001)",
@@ -53354,7 +60254,7 @@ let LDM = {
    "1827"
   ]
  ],
- "Salaminius Hermias SOZOMENUS": [
+ "SALAMINIUS HERMIAS SOZOMENUS": [
   "Salaminius Hermias SOZOMENUS",
   {
    "Historia ecclesiastica": "Historia ecclesiastica"
@@ -53367,7 +60267,7 @@ let LDM = {
    "2048"
   ]
  ],
- "Sextus JULIUS AFRICANUS": [
+ "SEXTUS JULIUS AFRICANUS": [
   "Sextus JULIUS AFRICANUS",
   {
    "Chronographiae {001}": "Chronographiae {001}",
@@ -53383,7 +60283,7 @@ let LDM = {
    "2956"
   ]
  ],
- "Publius Cornelius SCIPIO": [
+ "PUBLIUS CORNELIUS SCIPIO": [
   "Publius Cornelius SCIPIO",
   {
    "FGrH #811": "Testimonia"
@@ -53396,7 +60296,7 @@ let LDM = {
    "2514"
   ]
  ],
- "Publius Cornelius SCIPIO Major": [
+ "PUBLIUS CORNELIUS SCIPIO MAJOR": [
   "Publius Cornelius SCIPIO Major",
   {
    "FGrH #232": "fragmentum"
@@ -53409,7 +60309,7 @@ let LDM = {
    "2163"
   ]
  ],
- "Publius Cornelius SCIPIO NASICA CORCULUM": [
+ "PUBLIUS CORNELIUS SCIPIO NASICA CORCULUM": [
   "Publius Cornelius SCIPIO NASICA CORCULUM",
   {
    "FGrH #233": "fragmenta"
@@ -53422,7 +60322,7 @@ let LDM = {
    "2164"
   ]
  ],
- "Tat.": [
+ "TAT.": [
   "TATIANUS",
   {
    "orat.": "Oratio ad Graecos",
@@ -53463,7 +60363,7 @@ let LDM = {
    "1084"
   ]
  ],
- "Telecl.": [
+ "TELECL.": [
   "TELECLIDES",
   {
    "fragmenta": "fragmenta",
@@ -53477,7 +60377,7 @@ let LDM = {
    "510"
   ]
  ],
- "Telegon.": [
+ "TELEGON.": [
   "TELEGONIA",
   {
    "Telegonia (fragmentum)": "Telegonia (fragmentum)"
@@ -53491,6 +60391,19 @@ let LDM = {
   ]
  ],
  "TELEPHANES": [
+  "TELEPHANES",
+  {
+   "FGrH #371": "fragmentum"
+  },
+  [
+   "a. A. D. 3",
+   "",
+   "Hist.",
+   "",
+   "2264"
+  ]
+ ],
+ "TELEPHANES $1": [
   "TELEPHANES",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -53549,7 +60462,7 @@ let LDM = {
    "2211"
   ]
  ],
- "Telesill.": [
+ "TELESILL.": [
   "TELESILLA",
   {
    "fragmenta": "fragmenta"
@@ -53562,7 +60475,7 @@ let LDM = {
    "369"
   ]
  ],
- "Telest.": [
+ "TELEST.": [
   "TELESTES",
   {
    "fragmenta": "fragmenta",
@@ -53589,7 +60502,7 @@ let LDM = {
    "1903"
   ]
  ],
- "Terp.": [
+ "TERP.": [
   "TERPANDER",
   {
    "Fragmentum (fort. auctore Terpandro)": "Fragmentum (fort. auctore Terpandro)",
@@ -53603,7 +60516,7 @@ let LDM = {
    "299"
   ]
  ],
- "Test. XII": [
+ "TEST. XII": [
   "TESTAMENTA XII PATRIARCHARUM",
   {
    "testamenta XII Patriarcharum": "testamenta XII Patriarcharum",
@@ -53628,7 +60541,7 @@ let LDM = {
    "1700"
   ]
  ],
- "T. Abr. A, B": [
+ "T. ABR. A, B": [
   "TESTAMENTUM ABRAHAE",
   {
    "T.Abr.A": "Testamentum Abrahae (recensio A) (olim partim sub auctore Hesychio Hierosolymitano)",
@@ -53642,7 +60555,7 @@ let LDM = {
    "1701"
   ]
  ],
- "T. Ad. A,B": [
+ "T. AD. A,B": [
   "TESTAMENTUM ADAE",
   {
    "T. Ad. A": "recensio A.",
@@ -53656,7 +60569,7 @@ let LDM = {
    "RAC 6261"
   ]
  ],
- "Test. Job.": [
+ "TEST. JOB.": [
   "TESTAMENTUM JOBI",
   {
    "testamentum Jobi": "testamentum Jobi"
@@ -53669,7 +60582,7 @@ let LDM = {
    "1702"
   ]
  ],
- "Test. Sal.": [
+ "TEST. SAL.": [
   "TESTAMENTUM SALOMONIS",
   {
    "T.  Sal.": "Testamentum Salomonis (recensiones A et B) (mss. HIPQ)",
@@ -53703,7 +60616,7 @@ let LDM = {
    "2015"
   ]
  ],
- "Teucer Cyz.": [
+ "TEUCER CYZ.": [
   "TEUCER",
   {
    "FGrH #274": "testimonium"
@@ -53744,7 +60657,7 @@ let LDM = {
    "2288"
   ]
  ],
- "Thal.": [
+ "THAL.": [
   "THALES",
   {
    "fragmenta": "fragmenta",
@@ -53761,7 +60674,7 @@ let LDM = {
    "1705"
   ]
  ],
- "Thall. Hist": [
+ "THALL. HIST": [
   "THALLUS",
   {
    "FGrH #256": "testimonia"
@@ -53774,7 +60687,7 @@ let LDM = {
    "1706"
   ]
  ],
- "Antonius THALLUS": [
+ "ANTONIUS THALLUS": [
   "Antonius THALLUS",
   {
    "epigramma": "epigramma"
@@ -53813,7 +60726,7 @@ let LDM = {
    "1085"
   ]
  ],
- "Theaet. Schol.": [
+ "THEAET. SCHOL.": [
   "THEAETETUS",
   {
    "epigrammata": "epigrammata"
@@ -53840,7 +60753,7 @@ let LDM = {
    "123"
   ]
  ],
- "Theaet.": [
+ "THEAET.": [
   "THEAETETUS",
   {
    "epigrammata": "epigrammata",
@@ -53855,7 +60768,7 @@ let LDM = {
    "1708"
   ]
  ],
- "Theag.": [
+ "THEAG.": [
   "THEAGENES",
   {
    "FGrH #774": "fragmenta"
@@ -53868,7 +60781,7 @@ let LDM = {
    "2275"
   ]
  ],
- "Theagen.": [
+ "THEAGEN.": [
   "THEAGENES",
   {
    "testimonia": "testimonia"
@@ -53895,7 +60808,7 @@ let LDM = {
    "1712"
   ]
  ],
- "Themiso Hist.": [
+ "THEMISO HIST.": [
   "THEMISON",
   {
    "fragmentum": "fragmentum",
@@ -53923,7 +60836,7 @@ let LDM = {
    "1088"
   ]
  ],
- "Them.": [
+ "THEM.": [
   "THEMISTIUS",
   {
    "or. 6": "\u03a6\u03b9\u03bb\u03ac\u03b4\u03b5\u03bb\u03c6\u03bf\u03b9 \u1f22 \u03c0\u03b5\u03c1\u1f76 \u03c6\u03b9\u03bb\u03b1\u03bd\u03b8\u03c1\u03c9\u03c0\u03af\u03b1\u03c2 {006}",
@@ -54019,7 +60932,7 @@ let LDM = {
    "2515"
   ]
  ],
- "Theocl.": [
+ "THEOCL.": [
   "THEOCLES",
   {
    "Ithyphalli": "Ithyphalli"
@@ -54045,7 +60958,7 @@ let LDM = {
    "1947"
   ]
  ],
- "Theocr.": [
+ "THEOCR.": [
   "THEOCRITUS",
   {
    "id.": "Idyllia {001}",
@@ -54061,7 +60974,7 @@ let LDM = {
    "5"
   ]
  ],
- "Theos. Chius": [
+ "THEOS. CHIUS": [
   "THEOCRITUS",
   {
    "fragmentum": "fragmentum",
@@ -54093,7 +61006,7 @@ let LDM = {
    "4402"
   ]
  ],
- "Theodect.": [
+ "THEODECT.": [
   "THEODECTAS",
   {
    "fragmenta": "fragmenta",
@@ -54133,7 +61046,7 @@ let LDM = {
    "2125"
   ]
  ],
- "Theodrt.": [
+ "THEODRT.": [
   "THEODORETUS",
   {
    "affect.": "Graecarum affectionum curatio (= De Graecarum affectionum curatione (RAC)",
@@ -54189,7 +61102,7 @@ let LDM = {
    "4089"
   ]
  ],
- "Theodorid.": [
+ "THEODORID.": [
   "THEODORIDAS",
   {
    "epigrammata": "epigrammata",
@@ -54203,7 +61116,7 @@ let LDM = {
    "1715"
   ]
  ],
- "Theodorid. Trag.": [
+ "THEODORID. TRAG.": [
   "THEODORIDES",
   {
    "tituli": "tituli"
@@ -54219,17 +61132,45 @@ let LDM = {
  "THEODORUS": [
   "THEODORUS",
   {
-   "FGrH #346": "fragmenta"
+   "titulus": "titulus"
   },
   [
-   "1 B. C. ?",
-   "",
-   "Gramm.",
-   "Atheniensis",
-   "1718"
+   "-800",
+   "-401",
+   "Poeta",
+   "Colophonius",
+   "2696"
   ]
  ],
- "THEODORUS Mopsuestenus": [
+ "THEODORUS $1": [
+  "THEODORUS",
+  {
+   "titulus": "titulus",
+   "FGrH #195": "testimonium"
+  },
+  [
+   "1",
+   "1600",
+   "Poeta",
+   "fort. Smyrnaeus",
+   "1987"
+  ]
+ ],
+ "THEODORUS $2": [
+  "THEODORUS",
+  {
+   "testimonia": "testimonia",
+   "testimonia et imitationes": "testimonia et imitationes"
+  },
+  [
+   "-470",
+   "-399",
+   "Math.",
+   "Cyrenaeus",
+   "2237"
+  ]
+ ],
+ "THEODORUS MOPSUESTENUS": [
   "THEODORUS Mopsuestenus",
   {
    "Expositio in psalmos {006}": "Expositio in psalmos {006}",
@@ -54471,7 +61412,50 @@ let LDM = {
    "4135"
   ]
  ],
- "Theod. Trag.": [
+ "THEODORUS $3": [
+  "THEODORUS",
+  {
+   "epistulae": "epistulae",
+   "Epistula 2: Ad Constantinum imperatorem: p. 319": "Epistula 2: Ad Constantinum imperatorem: p. 319",
+   "Epistula 4: Responsum ad eundem: p. 321": "Epistula 4: Responsum ad eundem: p. 321",
+   "Epistula 6: Responsum ad eundem: pp. 322-323": "Epistula 6: Responsum ad eundem: pp. 322-323",
+   "Epistula 8: Responsum ad eundem: pp. 324-325": "Epistula 8: Responsum ad eundem: pp. 324-325",
+   "Epistula 9: Ad eundem: pp. 326-327": "Epistula 9: Ad eundem: pp. 326-327",
+   "Epistula 11: Responsum ad eundem: p. 328": "Epistula 11: Responsum ad eundem: p. 328",
+   "Epistula 13: Ad eundem: p. 329": "Epistula 13: Ad eundem: p. 329",
+   "Epistula 14: Ad eundem: p. 330": "Epistula 14: Ad eundem: p. 330",
+   "Epistula 16: Responsum ad eundem: p. 331": "Epistula 16: Responsum ad eundem: p. 331",
+   "Epistula 17: Ad eundem: pp. 331-332": "Epistula 17: Ad eundem: pp. 331-332",
+   "Epistula 19: Ad patriarcham (Polyeuctum): p. 333": "Epistula 19: Ad patriarcham (Polyeuctum): p. 333",
+   "Epistula 20: Ad metropolitam quendam: p. 334": "Epistula 20: Ad metropolitam quendam: p. 334",
+   "Epistula 21: Ad eundem metropolitam: pp. 334-335": "Epistula 21: Ad eundem metropolitam: pp. 334-335",
+   "Epistula 22: Ad eundem metropolitam: p. 335": "Epistula 22: Ad eundem metropolitam: p. 335",
+   "Epistula 23: Ad officialem quendam: pp. 335-336": "Epistula 23: Ad officialem quendam: pp. 335-336",
+   "Epistula 24: (Sine titulo): p. 336": "Epistula 24: (Sine titulo): p. 336",
+   "Epistula 25: (Sine titulo): pp. 336-337": "Epistula 25: (Sine titulo): pp. 336-337",
+   "Epistula 26: Ad quendam patrem spiritualem: pp. 337-338": "Epistula 26: Ad quendam patrem spiritualem: pp. 337-338",
+   "Epistula 27: Ad monachum quendam: p. 338": "Epistula 27: Ad monachum quendam: p. 338",
+   "Epistula 28: Ad eundem?: pp. 338-339": "Epistula 28: Ad eundem?: pp. 338-339",
+   "Epistula 29: Ad fratrem quendam: p. 339": "Epistula 29: Ad fratrem quendam: p. 339",
+   "Epistula 30: (Sine titulo): p. 339": "Epistula 30: (Sine titulo): p. 339",
+   "Epistula 31: Ad patrem spiritualem: p. 340": "Epistula 31: Ad patrem spiritualem: p. 340",
+   "Epistula 32: Ad quendam patrem spiritualem?: pp. 340-341": "Epistula 32: Ad quendam patrem spiritualem?: pp. 340-341",
+   "Epistula 33: Ad monachos: p. 341": "Epistula 33: Ad monachos: p. 341",
+   "Epistulae 1, 3, 5, 7, 10, 12, 15, 18 a Constantino VII Porphyrogenito": "Epistulae 1, 3, 5, 7, 10, 12, 15, 18 a Constantino VII Porphyrogenito",
+   "Epistulae (e cod. Vindob. phil. gr. 342)": "Epistulae (e cod. Vindob. phil. gr. 342)",
+   "Epistulae 1-32: pp. 269-296": "Epistulae 1-32: pp. 269-296",
+   "Epistulae 42-52: pp. 144-150": "Epistulae 42-52: pp. 144-150",
+   "Epistulae 56-64: pp. 152-157": "Epistulae 56-64: pp. 152-157"
+  },
+  [
+   "901",
+   "1000",
+   "Epist.",
+   "Metropolita Cyzicenus",
+   "3158"
+  ]
+ ],
+ "THEOD. TRAG.": [
   "THEODORUS",
   {
    "tituli": "tituli"
@@ -54484,7 +61468,7 @@ let LDM = {
    "611"
   ]
  ],
- "Thdr. Heracl.": [
+ "THDR. HERACL.": [
   "THEODORUS",
   {
    "mt.": "Fragmenta in Matthaeum",
@@ -54500,7 +61484,7 @@ let LDM = {
    "4126"
   ]
  ],
- "Thdr.": [
+ "THDR.": [
   "THEODORUS Heracleensis vel THEODORUS Mopsuestenus",
   {
    "mt.": "Fragmenta in Matthaeum (in catenis)"
@@ -54513,7 +61497,7 @@ let LDM = {
    "2967"
   ]
  ],
- "Theod. Stud.": [
+ "THEOD. STUD.": [
   "THEODORUS STUDITES",
   {
    "antirrh.": "antirrhetica adversus iconomachos",
@@ -55275,7 +62259,7 @@ let LDM = {
    "2714"
   ]
  ],
- "THEODORUS Scutariota": [
+ "THEODORUS SCUTARIOTA": [
   "THEODORUS Scutariota",
   {
    "Additamenta ad Georgii Acropolitae historiam": "Additamenta ad Georgii Acropolitae historiam"
@@ -55288,7 +62272,33 @@ let LDM = {
    "3157"
   ]
  ],
- "THEODORUS Spudaeus": [
+ "THEODORUS $4": [
+  "THEODORUS",
+  {
+   "Vita Theodosii (BHG 1776)": "Vita Theodosii (BHG 1776)"
+  },
+  [
+   "A. D. 6",
+   "",
+   "Biogr., Hagiogr.",
+   "Petraeus",
+   "2876"
+  ]
+ ],
+ "THEODORUS $5": [
+  "THEODORUS",
+  {
+   "Praeparatio (= De incarnatione liber)": "Praeparatio (= De incarnatione liber)"
+  },
+  [
+   "A. D. 6-7",
+   "",
+   "Scr. Eccl.",
+   "Raithenus",
+   "2882"
+  ]
+ ],
+ "THEODORUS SPUDAEUS": [
   "THEODORUS Spudaeus",
   {
    "Hypomnesticum": "Hypomnesticum"
@@ -55301,7 +62311,111 @@ let LDM = {
    "2921"
   ]
  ],
- "Theod. Gad.": [
+ "THEODORUS $6": [
+  "THEODORUS",
+  {
+   "epigramma": "epigramma"
+  },
+  [
+   "4-3 B. C.",
+   "",
+   "Epigr.",
+   "",
+   "1716"
+  ]
+ ],
+ "THEODORUS $7": [
+  "THEODORUS",
+  {
+   "epigramma": "epigramma"
+  },
+  [
+   "A. D. 4 ?",
+   "",
+   "Epigr.",
+   "",
+   "2728"
+  ]
+ ],
+ "THEODORUS $8": [
+  "THEODORUS",
+  {
+   "epigramma": "epigramma"
+  },
+  [
+   "A. D. 6",
+   "",
+   "Epigr.",
+   "",
+   "4045"
+  ]
+ ],
+ "THEODORUS $9": [
+  "THEODORUS",
+  {
+   "epigramma": "epigramma"
+  },
+  [
+   "A. D. 2",
+   "",
+   "Gramm.",
+   "Bithynius",
+   "1717"
+  ]
+ ],
+ "THEODORUS $10": [
+  "THEODORUS",
+  {
+   "FGrH # 406": "testimonium"
+  },
+  [
+   "5-4 B. C. ?",
+   "",
+   "Hist.",
+   "Phocaeus",
+   "2251"
+  ]
+ ],
+ "THEODORUS $11": [
+  "THEODORUS",
+  {
+   "FGrH # 48": "fragmenta"
+  },
+  [
+   "p. 4 B. C.",
+   "",
+   "Hist.",
+   "Iliensis",
+   "1892"
+  ]
+ ],
+ "THEODORUS $12": [
+  "THEODORUS",
+  {
+   "FGrH # 230": "fragmentum"
+  },
+  [
+   "3 B. C.",
+   "",
+   "Hist.",
+   "fort. Rhodius",
+   "2161"
+  ]
+ ],
+ "THEODORUS $13": [
+  "THEODORUS",
+  {
+   "FGrH # 822": "testimonium"
+  },
+  [
+   "a. 2 B. C.",
+   "",
+   "Hist.",
+   "?",
+   "2551"
+  ]
+ ],
+ "THEOD. GAD.": [
   "THEODORUS",
   {
    "FGrH #850": "tituli"
@@ -55314,7 +62428,7 @@ let LDM = {
    "2570"
   ]
  ],
- "Thdr. Samothr.": [
+ "THDR. SAMOTHR.": [
   "THEODORUS",
   {
    "FGrH #62": "fragmenta"
@@ -55327,7 +62441,65 @@ let LDM = {
    "1904"
   ]
  ],
- "Theodorus DAPHNOPATES": [
+ "THEODORUS $14": [
+  "THEODORUS",
+  {
+   "FGrH #542": "testimonium"
+  },
+  [
+   "Incertum",
+   "",
+   "Hist.",
+   "",
+   "2150"
+  ]
+ ],
+ "THEODORUS $15": [
+  "THEODORUS",
+  {
+   "Fragmentum ap. A\u00ebtium (lib 6,8)": "Fragmentum ap. A\u00ebtium (lib 6,8)",
+   "Fragmenta ap. A\u00ebtium (lib. 16)": "Fragmenta ap. A\u00ebtium (lib. 16)",
+   "fragmentum ap. Philumenum": "fragmentum ap. Philumenum"
+  },
+  [
+   "A. D. 1",
+   "",
+   "Med.",
+   "fort. Macedo",
+   "1090"
+  ]
+ ],
+ "THEODORUS $16": [
+  "THEODORUS",
+  {
+   "fragmentum ap. Alexandrum Trallianum": "fragmentum ap. Alexandrum Trallianum",
+   "eup.": "euporista (euporiston)",
+   "gyn.": "Gynaecia",
+   "log.": "Logicus",
+   "phys.": "de Physicis"
+  },
+  [
+   "A. D. 4-5 ?",
+   "",
+   "Med.",
+   "",
+   "1028"
+  ]
+ ],
+ "THEODORUS $17": [
+  "THEODORUS",
+  {
+   "testimonia": "testimonia"
+  },
+  [
+   "A. D. 3-4",
+   "",
+   "Phil.",
+   "Asinaeus",
+   "2947"
+  ]
+ ],
+ "THEODORUS DAPHNOPATES": [
   "Theodorus DAPHNOPATES",
   {
    "epistulae": "epistulae",
@@ -55341,7 +62513,20 @@ let LDM = {
    "3123"
   ]
  ],
- "THEODORUS Protosecretarius": [
+ "THEODORUS $18": [
+  "THEODORUS",
+  {
+   "FGrH #346": "fragmenta"
+  },
+  [
+   "1 B. C. ?",
+   "",
+   "Gramm.",
+   "Atheniensis",
+   "1718"
+  ]
+ ],
+ "THEODORUS PROTOSECRETARIUS": [
   "THEODORUS Protosecretarius",
   {
    "Dithyambus in Theophanem": "Dithyambus in Theophanem"
@@ -55354,7 +62539,7 @@ let LDM = {
    "3154"
   ]
  ],
- "Theodos.": [
+ "THEODOS.": [
   "THEODOSIUS",
   {
    "can.": "Canones isagogici de flexione verborum",
@@ -55371,7 +62556,7 @@ let LDM = {
    "2020"
   ]
  ],
- "Theodos. Bith.": [
+ "THEODOS. BITH.": [
   "THEODOSIUS",
   {
    "sph.": "sphaerica",
@@ -55390,17 +62575,18 @@ let LDM = {
  "THEODOSIUS": [
   "THEODOSIUS",
   {
-   "\u1f08\u03c0\u1f78 \u03c4\u03bf\u1fe6 \u0398\u03b5\u03bf\u03b4\u03bf\u03c3\u03af\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03b3\u03bd\u1ff6\u03bd\u03b1\u03b9 \u03c4\u1f74\u03bd \u1f21\u03bc\u03ad\u03c1\u03b1\u03bd \u1f10\u03bd \u1f97 \u03c4\u03b9\u03c2 \u03c4\u03b5\u03b8\u03bd\u03ae\u03be\u03b5\u03c4\u03b1\u03b9 (e cod. Venet. Marc. 335, fol. 193v)": "\u1f08\u03c0\u1f78 \u03c4\u03bf\u1fe6 \u0398\u03b5\u03bf\u03b4\u03bf\u03c3\u03af\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03b3\u03bd\u1ff6\u03bd\u03b1\u03b9 \u03c4\u1f74\u03bd \u1f21\u03bc\u03ad\u03c1\u03b1\u03bd \u1f10\u03bd \u1f97 \u03c4\u03b9\u03c2 \u03c4\u03b5\u03b8\u03bd\u03ae\u03be\u03b5\u03c4\u03b1\u03b9 (e cod. Venet. Marc. 335, fol. 193v)"
+   "Fragmentum ap. A\u00ebtium (lib 6)": "Fragmentum ap. A\u00ebtium (lib 6)",
+   "fragmentum ap. Alexandrum Trallianum": "fragmentum ap. Alexandrum Trallianum"
   },
   [
-   "Incerta",
+   "A. D. 2-3 ?",
    "",
-   "Astrol.",
+   "Med.",
    "",
-   "4389"
+   "1091"
   ]
  ],
- "THEODOSIUS Diaconus": [
+ "THEODOSIUS DIACONUS": [
   "THEODOSIUS Diaconus",
   {
    "de Creta capta": "de Creta capta"
@@ -55413,7 +62599,7 @@ let LDM = {
    "3125"
   ]
  ],
- "THEODOSIUS Dyrrhachiensis": [
+ "THEODOSIUS DYRRHACHIENSIS": [
   "THEODOSIUS Dyrrhachiensis",
   {
    "Opus alphabeticum de eutaxia": "Opus alphabeticum de eutaxia"
@@ -55424,6 +62610,19 @@ let LDM = {
    "Theol.",
    "Dyrrachinus",
    "3296"
+  ]
+ ],
+ "THEODOSIUS $1": [
+  "THEODOSIUS",
+  {
+   "\u1f08\u03c0\u1f78 \u03c4\u03bf\u1fe6 \u0398\u03b5\u03bf\u03b4\u03bf\u03c3\u03af\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03b3\u03bd\u1ff6\u03bd\u03b1\u03b9 \u03c4\u1f74\u03bd \u1f21\u03bc\u03ad\u03c1\u03b1\u03bd \u1f10\u03bd \u1f97 \u03c4\u03b9\u03c2 \u03c4\u03b5\u03b8\u03bd\u03ae\u03be\u03b5\u03c4\u03b1\u03b9 (e cod. Venet. Marc. 335, fol. 193v)": "\u1f08\u03c0\u1f78 \u03c4\u03bf\u1fe6 \u0398\u03b5\u03bf\u03b4\u03bf\u03c3\u03af\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u03bf\u1fe6 \u03b3\u03bd\u1ff6\u03bd\u03b1\u03b9 \u03c4\u1f74\u03bd \u1f21\u03bc\u03ad\u03c1\u03b1\u03bd \u1f10\u03bd \u1f97 \u03c4\u03b9\u03c2 \u03c4\u03b5\u03b8\u03bd\u03ae\u03be\u03b5\u03c4\u03b1\u03b9 (e cod. Venet. Marc. 335, fol. 193v)"
+  },
+  [
+   "Incerta",
+   "",
+   "Astrol.",
+   "",
+   "4389"
   ]
  ],
  "THEODOTION": [
@@ -55439,7 +62638,7 @@ let LDM = {
    "1770"
   ]
  ],
- "THEODOTUS Coriarius Ebionites": [
+ "THEODOTUS CORIARIUS EBIONITES": [
   "THEODOTUS Coriarius Ebionites",
   {
    "fragmentum": "fragmentum"
@@ -55452,7 +62651,7 @@ let LDM = {
    "1721"
   ]
  ],
- "THEODOTUS Judaeus": [
+ "THEODOTUS JUDAEUS": [
   "THEODOTUS Judaeus",
   {
    "fragmenta": "fragmenta",
@@ -55466,7 +62665,7 @@ let LDM = {
    "1720"
   ]
  ],
- "Thdt. Anc.": [
+ "THDT. ANC.": [
   "THEODOTUS",
   {
    "Homilia in sanctam Deiparam et in nativitatem domini [Dub.] {001}": "Homilia in sanctam Deiparam et in nativitatem domini [Dub.] {001}",
@@ -55500,7 +62699,7 @@ let LDM = {
    "1722"
   ]
  ],
- "Theognet.": [
+ "THEOGNET.": [
   "THEOGNETUS",
   {
    "fragmenta": "fragmenta",
@@ -55556,7 +62755,7 @@ let LDM = {
    "313"
   ]
  ],
- "Thgn. Hier.": [
+ "THGN. HIER.": [
   "THEOGNOSIUS",
   {
    "Homilia in Ramos palamarum": "Homilia in Ramos palamarum"
@@ -55582,7 +62781,7 @@ let LDM = {
    "3128"
   ]
  ],
- "Thgn.": [
+ "THGN. $1": [
   "THEOGNOSTUS",
   {
    "hypotheses (Fragmenta)": "hypotheses (Fragmenta)",
@@ -55599,6 +62798,19 @@ let LDM = {
  "THEOGNOSTUS": [
   "THEOGNOSTUS",
   {
+   "Encomium in dormitionem sanctissimae Deiparae": "Encomium in dormitionem sanctissimae Deiparae"
+  },
+  [
+   "A.D. 9",
+   "",
+   "Hagiogr., Scr. Eccl. / Encom., Homilet., Theol.",
+   "Constantinopolitanus",
+   "3337"
+  ]
+ ],
+ "THEOGNOSTUS $1": [
+  "THEOGNOSTUS",
+  {
    "Thesaurus (= \u0392\u03b9\u03b2\u03bb\u03af\u03bf\u03bd \u03c4\u1f78 \u03ba\u03b1\u03bb\u03bf\u03cd\u03bc\u03b5\u03bd\u03bf\u03bd \u0398\u03b7\u03c3\u03b1\u03c5\u03c1\u03cc\u03c2)": "Thesaurus (= \u0392\u03b9\u03b2\u03bb\u03af\u03bf\u03bd \u03c4\u1f78 \u03ba\u03b1\u03bb\u03bf\u03cd\u03bc\u03b5\u03bd\u03bf\u03bd \u0398\u03b7\u03c3\u03b1\u03c5\u03c1\u03cc\u03c2)"
   },
   [
@@ -55609,7 +62821,7 @@ let LDM = {
    "4475"
   ]
  ],
- "THEOLEPTUS Philadelphiensis": [
+ "THEOLEPTUS PHILADELPHIENSIS": [
   "THEOLEPTUS Philadelphiensis",
   {
    "Orationes monasticae {001}": "Orationes monasticae {001}",
@@ -55660,7 +62872,7 @@ let LDM = {
    "3214"
   ]
  ],
- "Theolyt.": [
+ "THEOLYT.": [
   "THEOLYTUS",
   {
    "fr.": "fragmentum"
@@ -55689,6 +62901,58 @@ let LDM = {
  "THEON": [
   "THEON",
   {
+   "testimonia": "testimonia",
+   "fragmenta": "fragmenta",
+   "commentarium de pythiis xii pindari (p. Oxy. 31.2536)": "commentarium de pythiis xii pindari (p. Oxy. 31.2536)",
+   "arati genus (olim sub auctore Theone Alexandrino Math.)": "arati genus (olim sub auctore Theone Alexandrino Math.)"
+  },
+  [
+   "-50",
+   "50",
+   "Gramm.",
+   "Alexandrinus",
+   "1838"
+  ]
+ ],
+ "THEON $1": [
+  "THEON",
+  {
+   "mathematicam i-iv {001}": "mathematicam i-iv {001}",
+   "\u0395\u1f30\u03c2 \u03c4\u03bf\u1f7a\u03c2 \u03c0\u03c1\u03bf\u03c7\u03b5\u03af\u03c1\u03bf\u03c5\u03c2 \u03ba\u03b1\u03bd\u03cc\u03bd\u03b1\u03c2 {002}": "\u0395\u1f30\u03c2 \u03c4\u03bf\u1f7a\u03c2 \u03c0\u03c1\u03bf\u03c7\u03b5\u03af\u03c1\u03bf\u03c5\u03c2 \u03ba\u03b1\u03bd\u03cc\u03bd\u03b1\u03c2 {002}",
+   "FGrH #651": "Testimonia {006}",
+   "Epigrammata {007}": "Epigrammata {007}",
+   "commentaria in ptolemaei syntaxia methematicam v-xi": "commentaria in ptolemaei syntaxia methematicam v-xi",
+   "\u1f59\u03c0\u03cc\u03bc\u03bd\u03b7\u03bc\u03b1 \u03b5\u1f30\u03c2 \u03c4\u03bf\u1f7a\u03c2 \u03c0\u03c1\u03bf\u03c7\u03b5\u03af\u03c1\u03bf\u03c5\u03c2 \u03a0\u03c4\u03bf\u03bb\u03b5\u03bc\u03b1\u03af\u03bf\u03c5 \u03ba\u03b1\u03bd\u03cc\u03bd\u03b1\u03c2 {009}": "\u1f59\u03c0\u03cc\u03bc\u03bd\u03b7\u03bc\u03b1 \u03b5\u1f30\u03c2 \u03c4\u03bf\u1f7a\u03c2 \u03c0\u03c1\u03bf\u03c7\u03b5\u03af\u03c1\u03bf\u03c5\u03c2 \u03a0\u03c4\u03bf\u03bb\u03b5\u03bc\u03b1\u03af\u03bf\u03c5 \u03ba\u03b1\u03bd\u03cc\u03bd\u03b1\u03c2 {009}",
+   "opticorum recensio theonis": "opticorum recensio theonis",
+   "scholia in opticorum recensio theonis": "scholia in opticorum recensio theonis",
+   "epigrammata demonstrativa": "epigrammata demonstrativa",
+   "arati genus (olim sub auctore Theone Alexandrino Gramm. Vel Theone Alexandrino Math.)": "arati genus (olim sub auctore Theone Alexandrino Gramm. Vel Theone Alexandrino Math.)",
+   "epistula ad Julianum quendam data (olim sub auctore Theone Alexandrino Math.)": "epistula ad Julianum quendam data (olim sub auctore Theone Alexandrino Math.)"
+  },
+  [
+   "301",
+   "400",
+   "Math.",
+   "Alexandrinus",
+   "2033"
+  ]
+ ],
+ "THEON $2": [
+  "THEON",
+  {
+   "De utilitate mathematicae": "De utilitate mathematicae"
+  },
+  [
+   "101",
+   "200",
+   "Phil.",
+   "Smyrnaeus",
+   "1724"
+  ]
+ ],
+ "THEON $3": [
+  "THEON",
+  {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
   },
   [
@@ -55699,7 +62963,20 @@ let LDM = {
    "1092"
   ]
  ],
- "THEON Archiatrus": [
+ "AELIUS THEON $1": [
+  "Aelius THEON",
+  {
+   "progymnasmata": "progymnasmata"
+  },
+  [
+   "?",
+   "?",
+   "Rhet.",
+   "Alexandrinus",
+   "607"
+  ]
+ ],
+ "THEON ARCHIATRUS": [
   "THEON Archiatrus",
   {
    "\u03b1\u03bd\u03b8\u03c1\u03c9\u03c0\u03bf\u03c3 (fragmenta ap. Photium, Bibl. Cod. 220)": "\u03b1\u03bd\u03b8\u03c1\u03c9\u03c0\u03bf\u03c3 (fragmenta ap. Photium, Bibl. Cod. 220)"
@@ -55765,7 +63042,7 @@ let LDM = {
    "4153"
   ]
  ],
- "THEOPHANES Caesarensis": [
+ "THEOPHANES CAESARENSIS": [
   "THEOPHANES Caesarensis",
   {
    "Laudatio Theodori Grapti (BHG 1745z)": "Laudatio Theodori Grapti (BHG 1745z)"
@@ -55778,7 +63055,7 @@ let LDM = {
    "3336"
   ]
  ],
- "THEOPHANES Metropolita": [
+ "THEOPHANES METROPOLITA": [
   "THEOPHANES Metropolita",
   {
    "Vita s. Maximi Causocalybitae": "Vita s. Maximi Causocalybitae"
@@ -55845,17 +63122,45 @@ let LDM = {
  "THEOPHILUS": [
   "THEOPHILUS",
   {
-   "epigramma demonstrativum": "epigramma demonstrativum"
+   "Ad Autolycum": "Ad Autolycum",
+   "in canticum canticorum (fragmentum)": "in canticum canticorum (fragmentum)"
   },
   [
-   "A. D. 9",
-   "",
-   "",
-   "Constantinopolitanus",
-   "2706"
+   "101",
+   "200",
+   "Apol.",
+   "Antiochenus",
+   "1725"
   ]
  ],
- "THEOPHILUS Protospatharius": [
+ "THEOPHILUS $1": [
+  "THEOPHILUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-400",
+   "-301",
+   "Comic.",
+   "",
+   "512"
+  ]
+ ],
+ "THEOPHILUS $2": [
+  "THEOPHILUS",
+  {
+   "Fragmenta in Matthaeum": "Fragmenta in Matthaeum",
+   "Fragmenta in Joannem": "Fragmenta in Joannem"
+  },
+  [
+   "301",
+   "400",
+   "Scr. Eccl.",
+   "Alexandrinus",
+   "4115"
+  ]
+ ],
+ "THEOPHILUS PROTOSPATHARIUS": [
   "THEOPHILUS Protospatharius",
   {
    "De urinis {002}": "De urinis {002}",
@@ -55872,7 +63177,7 @@ let LDM = {
    "729"
   ]
  ],
- "THEOPHILUS Protospatharius et STEPHANUS Atheniensis": [
+ "THEOPHILUS PROTOSPATHARIUS ET STEPHANUS ATHENIENSIS": [
   "THEOPHILUS Protospatharius et STEPHANUS Atheniensis",
   {
    "De febrium differentia": "De febrium differentia"
@@ -55885,7 +63190,7 @@ let LDM = {
    "746"
   ]
  ],
- "THEOPHILUS Protospatharius, DAMASCIUS et STEPHANUS Atheniensis": [
+ "THEOPHILUS PROTOSPATHARIUS, DAMASCIUS ET STEPHANUS ATHENIENSIS": [
   "THEOPHILUS Protospatharius, DAMASCIUS et STEPHANUS Atheniensis",
   {
    "Commentarii in Hippocratis aphorismos": "Commentarii in Hippocratis aphorismos"
@@ -55898,7 +63203,20 @@ let LDM = {
    "728"
   ]
  ],
- "THEOPHILUS Antecessor": [
+ "THEOPHILUS $3": [
+  "THEOPHILUS",
+  {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "",
+   "",
+   "Gramm.",
+   "fort. Alexandrinus",
+   "4250"
+  ]
+ ],
+ "THEOPHILUS ANTECESSOR": [
   "THEOPHILUS Antecessor",
   {
    "Paraphrasis institutionum": "Paraphrasis institutionum",
@@ -55915,7 +63233,77 @@ let LDM = {
    "4314"
   ]
  ],
- "THEOPHILUS et NARCISSUS": [
+ "THEOPHILUS $4": [
+  "THEOPHILUS",
+  {
+   "Fragmentum apotelesmaticum {002}": "Fragmentum apotelesmaticum {002}",
+   "De rebus praesertim bellicis {007}": "De rebus praesertim bellicis {007}",
+   "Fragmentum apotelesmaticum {008}": "Fragmentum apotelesmaticum {008}",
+   "\u03a0\u03b5\u03c1\u1f76 \u03c0\u03c1\u03bf\u03b2\u03bf\u03bb\u1fc6\u03c2 \u1f04\u03c1\u03c7\u03bf\u03bd\u03c4\u03bf\u03c2 {009}": "\u03a0\u03b5\u03c1\u1f76 \u03c0\u03c1\u03bf\u03b2\u03bf\u03bb\u1fc6\u03c2 \u1f04\u03c1\u03c7\u03bf\u03bd\u03c4\u03bf\u03c2 {009}"
+  },
+  [
+   "",
+   "",
+   "Astrol., Astron.",
+   "Edessenus",
+   "4360"
+  ]
+ ],
+ "THEOPHILUS $5": [
+  "THEOPHILUS",
+  {
+   "De ruta (fort. auctore Theophilo Corydaleo) (excerptum e cod. Petropol. Mus. Palaeogr. Acad. Scient., fol. 49)": "De ruta (fort. auctore Theophilo Corydaleo) (excerptum e cod. Petropol. Mus. Palaeogr. Acad. Scient., fol. 49)"
+  },
+  [
+   "",
+   "",
+   "Astrol.",
+   "",
+   "4364"
+  ]
+ ],
+ "THEOPHILUS $6": [
+  "THEOPHILUS",
+  {
+   "FGrH #733": "fragmentum"
+  },
+  [
+   "a. 2 B. C. ?",
+   "",
+   "Hist.",
+   "",
+   "2496"
+  ]
+ ],
+ "THEOPHILUS $7": [
+  "THEOPHILUS",
+  {
+   "FGrH #573": "fragmentum",
+   "sic.": "descriptio siciliae"
+  },
+  [
+   "Incertum",
+   "",
+   "Hist.",
+   "",
+   "2394"
+  ]
+ ],
+ "THEOPHILUS $8": [
+  "THEOPHILUS",
+  {
+   "Fragmentum ap. A\u00ebtium (lib 7)": "Fragmentum ap. A\u00ebtium (lib 7)",
+   "fragmentum ap. Alexandrum Trallianum": "fragmentum ap. Alexandrum Trallianum"
+  },
+  [
+   "a. A. D. 6",
+   "",
+   "Med.",
+   "",
+   "1093"
+  ]
+ ],
+ "THEOPHILUS ET NARCISSUS": [
   "THEOPHILUS et NARCISSUS",
   {
    "epistula de pascha (fragmentum)": "epistula de pascha (fragmentum)"
@@ -55928,7 +63316,56 @@ let LDM = {
    "1050"
   ]
  ],
+ "THEOPHILUS $9": [
+  "THEOPHILUS",
+  {
+   "epigramma demonstrativum": "epigramma demonstrativum"
+  },
+  [
+   "A. D. 9",
+   "",
+   "",
+   "Constantinopolitanus",
+   "2706"
+  ]
+ ],
  "THEOPHRASTUS": [
+  "THEOPHRASTUS",
+  {
+   "Historia plantarum {017}": "Historia plantarum {017}",
+   "De causis plantarum {002}": "De causis plantarum {002}",
+   "De sensu et sensibilibus {003}": "De sensu et sensibilibus {003}",
+   "De lapidibus {004}": "De lapidibus {004}",
+   "De igne {005}": "De igne {005}",
+   "Metaphysica {006}": "Metaphysica {006}",
+   "De pietate {007}": "De pietate {007}",
+   "Physicorum opiniones {008}": "Physicorum opiniones {008}",
+   "Characteres {009}": "Characteres {009}",
+   "Fragmenta {010}": "Fragmenta {010}",
+   "De odoribus (fr. 4): pp. 364-376": "De odoribus (fr. 4): pp. 364-376",
+   "De ventis (fr. 5): pp. 376-389": "De ventis (fr. 5): pp. 376-389",
+   "De signis tempestatum (fr. 6): pp. 389-398": "De signis tempestatum (fr. 6): pp. 389-398",
+   "De lassitudine (fr. 7): pp. 398-401": "De lassitudine (fr. 7): pp. 398-401",
+   "De vertigine (fr. 8): pp. 401-403": "De vertigine (fr. 8): pp. 401-403",
+   "De sudore (fr. 9): pp. 403-408": "De sudore (fr. 9): pp. 403-408",
+   "De animi defectione (fr. 10): p. 409": "De animi defectione (fr. 10): p. 409",
+   "De nervorum resolutione (fr. 11): pp. 409-410": "De nervorum resolutione (fr. 11): pp. 409-410",
+   "Fragmenta varia (frr. 13-190): pp. 417-462": "Fragmenta varia (frr. 13-190): pp. 417-462",
+   "De causis plantarum {014}": "De causis plantarum {014}",
+   "De eligendis magistratibus {015}": "De eligendis magistratibus {015}",
+   "\u03c0\u03b5\u03c1\u03b9 \u03bb\u03b5\u03be\u03b5\u03c9\u03c3 (P. Hamb. 128)": "\u03c0\u03b5\u03c1\u03b9 \u03bb\u03b5\u03be\u03b5\u03c9\u03c3 (P. Hamb. 128)",
+   "de aqua (P. Hibeh. 1.16)": "de aqua (P. Hibeh. 1.16)",
+   "de animalibus (p. Lit. Lond. 164 [Brit. Mus. Inv. 2242])": "de animalibus (p. Lit. Lond. 164 [Brit. Mus. Inv. 2242])"
+  },
+  [
+   "-371",
+   "-286",
+   "Phil.",
+   "Eresius",
+   "93"
+  ]
+ ],
+ "THEOPHRASTUS $1": [
   "THEOPHRASTUS",
   {
    "\u0398\u03b5\u03bf\u03c6\u03c1\u03ac\u03c3\u03c4\u03bf\u03c5 \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u03b8\u03b5\u03af\u03b1\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2 \u03b4\u03b9\u1f70 \u03c3\u03c4\u03af\u03c7\u03c9\u03bd \u1f30\u03ac\u03bc\u03b2\u03c9\u03bd (fort. auctore Heliodoro alchemista et poeta) (e cod. Casselano)": "\u0398\u03b5\u03bf\u03c6\u03c1\u03ac\u03c3\u03c4\u03bf\u03c5 \u03c6\u03b9\u03bb\u03bf\u03c3\u03cc\u03c6\u03bf\u03c5 \u03c0\u03b5\u03c1\u1f76 \u03c4\u1fc6\u03c2 \u03b8\u03b5\u03af\u03b1\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2 \u03b4\u03b9\u1f70 \u03c3\u03c4\u03af\u03c7\u03c9\u03bd \u1f30\u03ac\u03bc\u03b2\u03c9\u03bd (fort. auctore Heliodoro alchemista et poeta) (e cod. Casselano)"
@@ -55960,6 +63397,33 @@ let LDM = {
  "THEOPOMPUS": [
   "THEOPOMPUS",
   {
+   "fragmenta": "fragmenta",
+   "titulus": "titulus"
+  },
+  [
+   "-450",
+   "-351",
+   "Comic.",
+   "",
+   "513"
+  ]
+ ],
+ "THEOPOMPUS $1": [
+  "THEOPOMPUS",
+  {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "-300",
+   "1600",
+   "Epic.",
+   "Colophonius",
+   "1726"
+  ]
+ ],
+ "THEOPOMPUS $2": [
+  "THEOPOMPUS",
+  {
    "FGrH #115": "fragmenta",
    "fragmentum": "fragmentum",
    "FGrH #105": "fragmenta"
@@ -55972,7 +63436,7 @@ let LDM = {
    "566"
   ]
  ],
- "Gaius Julius THEOPOMPUS": [
+ "GAIUS JULIUS THEOPOMPUS": [
   "Gaius Julius THEOPOMPUS",
   {
    "FGrH #21": "testimonia"
@@ -55998,7 +63462,7 @@ let LDM = {
    "4047"
   ]
  ],
- "THEORIANUS Magister": [
+ "THEORIANUS MAGISTER": [
   "THEORIANUS Magister",
   {
    "Disputatio cum Armeniorum Catholico": "Disputatio cum Armeniorum Catholico",
@@ -56012,7 +63476,7 @@ let LDM = {
    "3131"
   ]
  ],
- "Theos.": [
+ "THEOS.": [
   "THEOSOPHORUM GRAECORUM FRAGMENTA",
   {
    "tub.": "Textus Theosophiae Tubingensis {001}",
@@ -56027,7 +63491,21 @@ let LDM = {
    "3241"
   ]
  ],
- "Theot.": [
+ "THEOT.": [
+  "THEOTIMUS",
+  {
+   "FGrH #470": "fragmenta",
+   "cyr.": "de cyrene"
+  },
+  [
+   "-200",
+   "-1",
+   "Hist.",
+   "",
+   "1727"
+  ]
+ ],
+ "THEOT. $1": [
   "THEOTIMUS",
   {
    "FGrH #834": "fragmenta",
@@ -56067,7 +63545,7 @@ let LDM = {
    "301"
   ]
  ],
- "Thessal.": [
+ "THESSAL.": [
   "THESSALUS",
   {
    "De virtutibus herbarum (e cod. Paris. gr. 2502 + Vindob. med. gr. 23)": "De virtutibus herbarum (e cod. Paris. gr. 2502 + Vindob. med. gr. 23)",
@@ -56113,7 +63591,7 @@ let LDM = {
    "2198"
   ]
  ],
- "Theud.": [
+ "THEUD.": [
   "THEUDO[TUS]",
   {
    "titulus": "titulus"
@@ -56139,7 +63617,7 @@ let LDM = {
    "2440"
   ]
  ],
- "THOMAS MAGISTER": [
+ "THOMAS MAGISTER $1": [
   "THOMAS MAGISTER",
   {
    "Ecloga nominum et verborum Atticorum {001}": "Ecloga nominum et verborum Atticorum {001}",
@@ -56184,6 +63662,32 @@ let LDM = {
  "THOMAS": [
   "THOMAS",
   {
+   "epigramma": "epigramma"
+  },
+  [
+   "A. D. 6",
+   "",
+   "Epigr.",
+   "",
+   "4048"
+  ]
+ ],
+ "THOMAS $1": [
+  "THOMAS",
+  {
+   "epigramma": "epigramma"
+  },
+  [
+   "A. D. 6",
+   "",
+   "Epigr.",
+   "",
+   "4049"
+  ]
+ ],
+ "THOMAS $2": [
+  "THOMAS",
+  {
    "Epistula ad Aretham": "Epistula ad Aretham"
   },
   [
@@ -56223,6 +63727,32 @@ let LDM = {
  "THRASYLLUS": [
   "THRASYLLUS",
   {
+   "FGrH #622": "fragmenta"
+  },
+  [
+   "1",
+   "100",
+   "Hist.",
+   "Mendesicus",
+   "2428"
+  ]
+ ],
+ "THRASYLLUS $1": [
+  "THRASYLLUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "A. D. 1",
+   "",
+   "Hist.",
+   "Alexandrinus",
+   "1762"
+  ]
+ ],
+ "THRASYLLUS $2": [
+  "THRASYLLUS",
+  {
    "FGrH #253": "fragmentum"
   },
   [
@@ -56234,6 +63764,20 @@ let LDM = {
   ]
  ],
  "THRASYMACHUS": [
+  "THRASYMACHUS",
+  {
+   "testimonia": "testimonia",
+   "fragmenta": "fragmenta"
+  },
+  [
+   "-500",
+   "-401",
+   "Rhet. Soph.",
+   "Chalcedonius",
+   "1729"
+  ]
+ ],
+ "THRASYMACHUS $1": [
   "THRASYMACHUS",
   {
    "testimonium": "testimonium"
@@ -56259,7 +63803,7 @@ let LDM = {
    "1097"
   ]
  ],
- "Th.": [
+ "TH.": [
   "THUCYDIDES",
   {
    "historiae": "historiae",
@@ -56276,7 +63820,7 @@ let LDM = {
    "3"
   ]
  ],
- "Thugen.": [
+ "THUGEN.": [
   "THUGENIDES",
   {
    "fragmenta": "fragmenta",
@@ -56290,7 +63834,7 @@ let LDM = {
    "514"
   ]
  ],
- "Thyill.": [
+ "THYILL.": [
   "THYLLUS",
   {
    "epigrammata": "epigrammata"
@@ -56303,7 +63847,7 @@ let LDM = {
    "1730"
   ]
  ],
- "Thymocl.": [
+ "THYMOCL.": [
   "THYMOCLES",
   {
    "epigramma": "epigramma"
@@ -56316,7 +63860,7 @@ let LDM = {
    "1731"
   ]
  ],
- "tib.": [
+ "TIB.": [
   "TIBERIUS",
   {
    "fig.": "De figuris Demosthenicis",
@@ -56330,7 +63874,7 @@ let LDM = {
    "2601"
   ]
  ],
- "Tib. Ill.": [
+ "TIB. ILL.": [
   "TIBERIUS",
   {
    "epigrammata": "epigrammata"
@@ -56343,7 +63887,7 @@ let LDM = {
    "2126"
   ]
  ],
- "TIBERIUS Imperator": [
+ "TIBERIUS IMPERATOR": [
   "TIBERIUS Imperator",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum",
@@ -56371,7 +63915,7 @@ let LDM = {
    "1732"
   ]
  ],
- "Timae.": [
+ "TIMAE.": [
   "TIMAEUS",
   {
    "FGrH #566": "fragmenta"
@@ -56384,7 +63928,7 @@ let LDM = {
    "1733"
   ]
  ],
- "Ti. Locr.": [
+ "TI. LOCR.": [
   "TIMAEUS",
   {
    "fragmenta": "fragmenta",
@@ -56412,22 +63956,20 @@ let LDM = {
    "1105"
   ]
  ],
- "Tim.": [
-  "TIMOTHEUS",
+ "TIM.": [
+  "TIMAEUS Sophista",
   {
-   "fragmenta": "fragmenta",
-   "tituli": "tituli",
-   "epigramma": "epigramma"
+   "lex.": "lexicon platonicum"
   },
   [
-   "-234",
-   "-356",
-   "Lyr.",
-   "Milesius",
-   "376"
+   "301",
+   "400",
+   "Gramm.",
+   "",
+   "2602"
   ]
  ],
- "Timag. Alex.": [
+ "TIMAG. ALEX.": [
   "TIMAGENES",
   {
    "FGrH #88": "fragmenta"
@@ -56456,6 +63998,19 @@ let LDM = {
  "TIMAGORAS": [
   "TIMAGORAS",
   {
+   "FgrH #381": "fragmenta"
+  },
+  [
+   "-800",
+   "1600",
+   "Hist.",
+   "",
+   "2268"
+  ]
+ ],
+ "TIMAGORAS $1": [
+  "TIMAGORAS",
+  {
    "testimonium": "testimonium"
   },
   [
@@ -56479,7 +64034,7 @@ let LDM = {
    "3132"
   ]
  ],
- "Timesith.": [
+ "TIMESITH.": [
   "TIMESITHEUS",
   {
    "tituli": "tituli"
@@ -56505,7 +64060,20 @@ let LDM = {
    "1960"
   ]
  ],
- "Timocl.": [
+ "TIMOCL.": [
+  "TIMOCLES",
+  {
+   "TrGF 1\u00b2, n. 86.": "fragmentum (= fragmenta tragica (DGE) ?)"
+  },
+  [
+   "-350",
+   "-301",
+   "Trag.",
+   "",
+   "333"
+  ]
+ ],
+ "TIMOCL. $1": [
   "TIMOCLES",
   {
    "fragmenta": "fragmenta"
@@ -56534,6 +64102,30 @@ let LDM = {
  "TIMOCRATES": [
   "TIMOCRATES",
   {
+   "FGrH #563": "fragmentum"
+  },
+  [
+   "A. D. 1?",
+   "?",
+   "Hist.",
+   "?",
+   "2388"
+  ]
+ ],
+ "TIMOCRATES $1": [
+  "TIMOCRATES",
+  {},
+  [
+   "Incertum",
+   "?",
+   "Hist.",
+   "Adramyttenus",
+   "2459"
+  ]
+ ],
+ "TIMOCRATES $2": [
+  "TIMOCRATES",
+  {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
   },
   [
@@ -56544,7 +64136,7 @@ let LDM = {
    "1100"
   ]
  ],
- "Timocr.": [
+ "TIMOCR.": [
   "TIMOCREON",
   {
    "fragmenta": "fragmenta",
@@ -56587,6 +64179,19 @@ let LDM = {
  "TIMOLAUS": [
   "TIMOLAUS",
   {
+   "FGrH #798": "fragmentum"
+  },
+  [
+   "-800",
+   "1600",
+   "Hist.",
+   "",
+   "2533"
+  ]
+ ],
+ "TIMOLAUS $1": [
+  "TIMOLAUS",
+  {
    "fragmentum": "fragmentum",
    "FHG 4": "fragmenta"
   },
@@ -56598,7 +64203,7 @@ let LDM = {
    "2697"
   ]
  ],
- "Timomach.": [
+ "TIMOMACH.": [
   "TIMOMACHUS",
   {
    "FGrH #754": "fragmenta"
@@ -56665,7 +64270,7 @@ let LDM = {
    "1002"
   ]
  ],
- "Timostr.": [
+ "TIMOSTR.": [
   "TIMOSTRATUS",
   {
    "fragmenta": "fragmenta",
@@ -56679,7 +64284,7 @@ let LDM = {
    "516"
   ]
  ],
- "Tim. Com.": [
+ "TIM. COM.": [
   "TIMOTHEUS",
   {
    "fragmenta": "fragmenta"
@@ -56692,7 +64297,7 @@ let LDM = {
    "517"
   ]
  ],
- "Tim. Gaz.": [
+ "TIM. GAZ.": [
   "TIMOTHEUS",
   {
    "FGrH #652": "testimonia",
@@ -56708,7 +64313,22 @@ let LDM = {
    "2449"
   ]
  ],
- "Tim. Trag.": [
+ "TIM. $1": [
+  "TIMOTHEUS",
+  {
+   "fragmenta": "fragmenta",
+   "tituli": "tituli",
+   "epigramma": "epigramma"
+  },
+  [
+   "-234",
+   "-356",
+   "Lyr.",
+   "Milesius",
+   "376"
+  ]
+ ],
+ "TIM. TRAG.": [
   "TIMOTHEUS",
   {
    "tituli": "tituli"
@@ -56721,7 +64341,7 @@ let LDM = {
    "467"
   ]
  ],
- "Tim. Met.": [
+ "TIM. MET.": [
   "TIMOTHEUS",
   {
    "fragmentum ap. Anonymum Londinensem": "fragmentum ap. Anonymum Londinensem"
@@ -56734,7 +64354,7 @@ let LDM = {
    "1101"
   ]
  ],
- "Tim. I Alex.": [
+ "TIM. I ALEX.": [
   "TIMOTHEUS AELURUS",
   {
    "ad leonem imperatorem petitio (in doctrina patrum)": "ad leonem imperatorem petitio (in doctrina patrum)",
@@ -56776,7 +64396,7 @@ let LDM = {
    "5357"
   ]
  ],
- "Titanomach.": [
+ "TITANOMACH.": [
   "TITANOMACHIA",
   {
    "fragmenta": "fragmenta",
@@ -56794,7 +64414,7 @@ let LDM = {
    "1737"
   ]
  ],
- "Tit. Bost.": [
+ "TIT. BOST.": [
   "TITUS Bostrensis",
   {
    "Contra Manichaeos": "Contra Manichaeos",
@@ -56816,7 +64436,7 @@ let LDM = {
    "3378"
   ]
  ],
- "TITUS Imperator": [
+ "TITUS IMPERATOR": [
   "TITUS Imperator",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -56829,7 +64449,7 @@ let LDM = {
    "1102"
   ]
  ],
- "Euthymius TORNICES": [
+ "EUTHYMIUS TORNICES": [
   "Euthymius TORNICES",
   {
    "orationes": "orationes",
@@ -56846,22 +64466,52 @@ let LDM = {
    "3037"
   ]
  ],
- "Georgius TORNICES": [
+ "GEORGIUS TORNICES": [
   "Georgius TORNICES",
   {
-   "Orationes in honorem Georgii Xiphilini": "Orationes in honorem Georgii Xiphilini",
-   "Oration 1: pp. 35-105": "Oration 1: pp. 35-105",
-   "Oration 2: pp. 107-135": "Oration 2: pp. 107-135"
+   "epistulae": "epistulae",
+   "Epistula 4: Ad Andronicum Comnenum: pp. 108-111": "Epistula 4: Ad Andronicum Comnenum: pp. 108-111",
+   "Epistula 5: Ad metropolitam Athenarum: pp. 113-116": "Epistula 5: Ad metropolitam Athenarum: pp. 113-116",
+   "Epistula 6: Ad metropolitam Athenarum: pp. 117-119": "Epistula 6: Ad metropolitam Athenarum: pp. 117-119",
+   "Epistula 7: Ad metropolitam Athenarum: pp. 205-219": "Epistula 7: Ad metropolitam Athenarum: pp. 205-219",
+   "Epistula 8: Ad metropolitam Athenarum: pp. 121-122": "Epistula 8: Ad metropolitam Athenarum: pp. 121-122",
+   "Epistula 9: Ad metropolitam Athenarum: pp. 123-126": "Epistula 9: Ad metropolitam Athenarum: pp. 123-126",
+   "Epistula 10: Ad Joannem Camaterum: pp. 127-129": "Epistula 10: Ad Joannem Camaterum: pp. 127-129",
+   "Epistula 11: Ad Joannem Camaterum: pp. 130-132": "Epistula 11: Ad Joannem Camaterum: pp. 130-132",
+   "Epistula 12: Ad Joannem Camaterum: pp. 133-134": "Epistula 12: Ad Joannem Camaterum: pp. 133-134",
+   "Epistula 13: Ad primum montis Gani: pp. 135-136": "Epistula 13: Ad primum montis Gani: pp. 135-136",
+   "Epistula 15: Ad Joannem Camaterum: pp. 137-139": "Epistula 15: Ad Joannem Camaterum: pp. 137-139",
+   "Epistula 16: Ad Andronicum Camaterum: pp. 140-141": "Epistula 16: Ad Andronicum Camaterum: pp. 140-141",
+   "Epistula 17: Ad Theodorum Stypeiotem: pp. 142-144": "Epistula 17: Ad Theodorum Stypeiotem: pp. 142-144",
+   "Epistula 18: Ad metropolitam Smyrnae: pp. 145-147": "Epistula 18: Ad metropolitam Smyrnae: pp. 145-147",
+   "Epistula 19: Ad hominem Giphardi: pp. 148-149": "Epistula 19: Ad hominem Giphardi: pp. 148-149",
+   "Epistula 20: Ad Alexium Giphardum: pp. 150-151": "Epistula 20: Ad Alexium Giphardum: pp. 150-151",
+   "Epistula 21: Ad metropolitam Athenarum: pp. 152-155": "Epistula 21: Ad metropolitam Athenarum: pp. 152-155",
+   "Epistula 22: Ad Irenem filiam Annae caesarissae: pp. 156-158": "Epistula 22: Ad Irenem filiam Annae caesarissae: pp. 156-158",
+   "Epistula 23: Ad Theodorum Pantechnem: pp. 159-161": "Epistula 23: Ad Theodorum Pantechnem: pp. 159-161",
+   "Epistula 24: Ad Alexium ducem Dyrrhachii: pp. 163-166": "Epistula 24: Ad Alexium ducem Dyrrhachii: pp. 163-166",
+   "Epistula 25: Ad Joannem Comnenum: pp. 167-168": "Epistula 25: Ad Joannem Comnenum: pp. 167-168",
+   "Epistula 26: Ad Joannem Pantechnem: pp. 169-171": "Epistula 26: Ad Joannem Pantechnem: pp. 169-171",
+   "Epistula 27: Ad Alexium Contostephanum: pp. 172-174": "Epistula 27: Ad Alexium Contostephanum: pp. 172-174",
+   "Epistula 28: Ad Aristenum: pp. 175-177": "Epistula 28: Ad Aristenum: pp. 175-177",
+   "Epistula 29: Ad Bucinatorem: pp. 178-179": "Epistula 29: Ad Bucinatorem: pp. 178-179",
+   "Epistula 30: Ad papam: pp. 325-335": "Epistula 30: Ad papam: pp. 325-335",
+   "orationes": "orationes",
+   "Oratio 1: Prooemium psalterii: pp. 74-85": "Oratio 1: Prooemium psalterii: pp. 74-85",
+   "Oratio 2: Prooemium evangelii: pp. 88-99": "Oratio 2: Prooemium evangelii: pp. 88-99",
+   "Oratio 3: Prooemium substitutii: pp. 101-106": "Oratio 3: Prooemium substitutii: pp. 101-106",
+   "Oratio 14: In mortem Annae caesarissae: pp. 221-323": "Oratio 14: In mortem Annae caesarissae: pp. 221-323",
+   "Oratio 31: Opinio synodalis: pp. 181-185": "Oratio 31: Opinio synodalis: pp. 181-185"
   },
   [
    "A. D. 12",
    "",
-   "Rhet.",
-   "Constantinopolitanus",
-   "3373"
+   "Epist., Rhet.",
+   "Constantinopolitanus, Ephesius",
+   "3207"
   ]
  ],
- "Demetrius TORNICES": [
+ "DEMETRIUS TORNICES": [
   "Demetrius TORNICES",
   {
    "epistulae": "epistulae",
@@ -56877,6 +64527,21 @@ let LDM = {
    "3223"
   ]
  ],
+ "GEORGIUS TORNICES $1": [
+  "Georgius TORNICES",
+  {
+   "Orationes in honorem Georgii Xiphilini": "Orationes in honorem Georgii Xiphilini",
+   "Oration 1: pp. 35-105": "Oration 1: pp. 35-105",
+   "Oration 2: pp. 107-135": "Oration 2: pp. 107-135"
+  },
+  [
+   "A. D. 12",
+   "",
+   "Rhet.",
+   "Constantinopolitanus",
+   "3373"
+  ]
+ ],
  "TRACTATUS DE COMOEDIA": [
   "TRACTATUS DE COMOEDIA",
   {},
@@ -56888,7 +64553,7 @@ let LDM = {
    "3002"
   ]
  ],
- "Trag. Adesp.": [
+ "TRAG. ADESP.": [
   "TRAGICA ADESPOTA",
   {
    "Fragmenta {001}": "Fragmenta {001}",
@@ -56906,7 +64571,7 @@ let LDM = {
    "1738"
   ]
  ],
- "TRAJANUS Imperator": [
+ "TRAJANUS IMPERATOR": [
   "TRAJANUS Imperator",
   {
    "epigrammata": "epigrammata"
@@ -56919,7 +64584,7 @@ let LDM = {
    "1739"
   ]
  ],
- "Georgius TRAPEZUNTIUS": [
+ "GEORGIUS TRAPEZUNTIUS": [
   "Georgius TRAPEZUNTIUS",
   {
    "Epistula ad Mehmed II de fide christianorum {001}": "Epistula ad Mehmed II de fide christianorum {001}",
@@ -56953,7 +64618,7 @@ let LDM = {
    "2656"
   ]
  ],
- "Demetrius TRICLINIUS": [
+ "DEMETRIUS TRICLINIUS": [
   "Demetrius TRICLINIUS",
   {
    "de comoedia": "de comoedia",
@@ -56971,7 +64636,7 @@ let LDM = {
    "2999"
   ]
  ],
- "Tryphiod.": [
+ "TRYPHIOD.": [
   "TRIPHIODORUS",
   {
    "\u1f0d\u03bb\u03c9\u03c3\u03b9\u03c2 \u1f38\u03bb\u03af\u03bf\u03c5": "\u1f0d\u03bb\u03c9\u03c3\u03b9\u03c2 \u1f38\u03bb\u03af\u03bf\u03c5"
@@ -56998,7 +64663,7 @@ let LDM = {
    "2127"
   ]
  ],
- "Trophil.": [
+ "TROPHIL.": [
   "TROPHILUS",
   {
    "fragmenta": "fragmenta"
@@ -57046,6 +64711,19 @@ let LDM = {
  "TRYPHON": [
   "TRYPHON",
   {
+   "epigramma": "epigramma"
+  },
+  [
+   "1 B. C. / A. D. 1?",
+   "",
+   "Epigr.",
+   "",
+   "1740"
+  ]
+ ],
+ "TRYPHON $1": [
+  "TRYPHON",
+  {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
   },
   [
@@ -57069,7 +64747,7 @@ let LDM = {
    "1763"
   ]
  ],
- "TRYPHON, \u03bf \u03b1\u03c1\u03c7\u03b1\u03b9\u03bf\u03c3": [
+ "TRYPHON, \u039f \u0391\u03a1\u03a7\u0391\u0399\u039f\u03a3": [
   "TRYPHON, \u03bf \u03b1\u03c1\u03c7\u03b1\u03b9\u03bf\u03c3",
   {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum"
@@ -57082,7 +64760,7 @@ let LDM = {
    "1103"
   ]
  ],
- "Tull. Gem.": [
+ "TULL. GEM.": [
   "TULLIUS GEMINUS",
   {
    "epigrammata": "epigrammata"
@@ -57095,7 +64773,7 @@ let LDM = {
    "1742"
   ]
  ],
- "Tull. Laur.": [
+ "TULL. LAUR.": [
   "TULLIUS LAUREA",
   {
    "epigrammata": "epigrammata"
@@ -57108,7 +64786,7 @@ let LDM = {
    "1743"
   ]
  ],
- "Tull. Sab.": [
+ "TULL. SAB.": [
   "TULLIUS SABINUS",
   {
    "epigrammata": "epigrammata"
@@ -57121,7 +64799,7 @@ let LDM = {
    "1745"
   ]
  ],
- "Turp.": [
+ "TURP.": [
   "TURPILIANUS",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -57134,7 +64812,7 @@ let LDM = {
    "1106"
   ]
  ],
- "Tymn.": [
+ "TYMN.": [
   "TYMNES",
   {
    "epigrammata": "epigrammata"
@@ -57147,7 +64825,7 @@ let LDM = {
    "1744"
   ]
  ],
- "Tyn.": [
+ "TYN.": [
   "TYNNICHUS",
   {
    "fragmentum": "fragmentum"
@@ -57237,7 +64915,7 @@ let LDM = {
    "1266"
   ]
  ],
- "TYRANNION Junior": [
+ "TYRANNION JUNIOR": [
   "TYRANNION Junior",
   {
    "fragmenta": "fragmenta"
@@ -57250,7 +64928,7 @@ let LDM = {
    "1611"
   ]
  ],
- "Tyrt.": [
+ "TYRT.": [
   "TYRTAEUS",
   {
    "fragmenta": "fragmenta",
@@ -57264,7 +64942,7 @@ let LDM = {
    "266"
   ]
  ],
- "Isaac TZETZES": [
+ "ISAAC TZETZES": [
   "Isaac TZETZES",
   {
    "De metris Pindaricis": "De metris Pindaricis",
@@ -57279,7 +64957,7 @@ let LDM = {
    "9024"
   ]
  ],
- "Theodorus PRODROMUS": [
+ "THEODORUS PRODROMUS": [
   "Theodorus PRODROMUS",
   {
    "Epithalamium fortunatissimis caesaris filiis {001}": "Epithalamium fortunatissimis caesaris filiis {001}",
@@ -57442,7 +65120,7 @@ let LDM = {
    "2461"
   ]
  ],
- "Val. Gn.": [
+ "VAL. GN.": [
   "VALENTINUS",
   {
    "Valentini hymnus": "Valentini hymnus",
@@ -57663,7 +65341,7 @@ let LDM = {
    "4173"
   ]
  ],
- "Vit. Hes.": [
+ "VIT. HES.": [
   "VITAE HESIODI PARTICULA",
   {
    "Vitae Hesiodi particula": "Vitae Hesiodi particula"
@@ -57676,7 +65354,7 @@ let LDM = {
    "1749"
   ]
  ],
- "Vit. Hom.": [
+ "VIT. HOM.": [
   "VITAE HOMERI",
   {
    "<Plutarchi> De Homero 1": "<Plutarchi> De Homero 1",
@@ -57719,7 +65397,7 @@ let LDM = {
    "4172"
   ]
  ],
- "Vit. Pit.": [
+ "VIT. PIT.": [
   "VITAE PINDARI ET VARIA DE PINDARO",
   {
    "Vitae Pindari et varia de Pindaro": "Vitae Pindari et varia de Pindaro",
@@ -57736,7 +65414,7 @@ let LDM = {
    "4170"
   ]
  ],
- "Vit. Prophet.": [
+ "VIT. PROPHET.": [
   "VITAE PROPHETARUM",
   {
    "De prophetarum vita et obitu (Dorothei recensio)": "De prophetarum vita et obitu (Dorothei recensio)",
@@ -57775,7 +65453,7 @@ let LDM = {
    "3135"
   ]
  ],
- "Valerius APSINES": [
+ "VALERIUS APSINES": [
   "Valerius APSINES",
   {},
   [
@@ -57786,7 +65464,7 @@ let LDM = {
    "2027"
   ]
  ],
- "Valerius BABRIUS": [
+ "VALERIUS BABRIUS": [
   "Valerius BABRIUS",
   {
    "Mythiambi Aesopici": "Mythiambi Aesopici"
@@ -57799,7 +65477,7 @@ let LDM = {
    "614"
   ]
  ],
- "Xant. / Xanth.": [
+ "XANT. / XANTH.": [
   "XANTHUS",
   {
    "FHG i p. 36FGrH #765": "fragmenta"
@@ -57812,7 +65490,7 @@ let LDM = {
    "1751"
   ]
  ],
- "Xanth. Lyr.": [
+ "XANTH. LYR.": [
   "XANTHUS  Lyricus",
   {
    "Oresteia": "Oresteia"
@@ -57825,7 +65503,7 @@ let LDM = {
    "kein TLG, plg0204 (Poetae Lyrici Graeci)"
   ]
  ],
- "Xenag.": [
+ "XENAG.": [
   "XENAGORAS",
   {
    "testimonia": "testimonia",
@@ -57839,7 +65517,7 @@ let LDM = {
    "1752"
   ]
  ],
- "Xenarch.": [
+ "XENARCH.": [
   "XENARCHUS",
   {
    "fragmenta": "fragmenta"
@@ -57894,6 +65572,32 @@ let LDM = {
  "XENO": [
   "XENO",
   {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "-300",
+   "-201",
+   "Comic.",
+   "",
+   "519"
+  ]
+ ],
+ "XENO $1": [
+  "XENO",
+  {
+   "testimonia": "testimonia"
+  },
+  [
+   "?",
+   "?",
+   "Gramm.",
+   "Alexandrinus",
+   "4252"
+  ]
+ ],
+ "XENO $2": [
+  "XENO",
+  {
    "Testimonium": "Testimonium"
   },
   [
@@ -57904,7 +65608,7 @@ let LDM = {
    "2558"
   ]
  ],
- "Xenocl.": [
+ "XENOCL.": [
   "XENOCLES",
   {
    "fragmentum": "fragmentum"
@@ -57919,18 +65623,29 @@ let LDM = {
  ],
  "XENOCRATES": [
   "XENOCRATES",
-  {
-   "testimonia doctrina et fragmenta": "testimonia doctrina et fragmenta"
-  },
+  {},
   [
-   "-396",
-   "-314",
-   "Phil.",
-   "Chalcedonius",
-   "634"
+   "?",
+   "?",
+   "Epigr.",
+   "Cf. XENOCRITUS Epigr. (0091.001)",
+   "/"
   ]
  ],
- "Xenocr.": [
+ "XENOCRATES $1": [
+  "XENOCRATES",
+  {
+   "fragmenta ap. Galenum": "fragmenta ap. Galenum"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "",
+   "2174"
+  ]
+ ],
+ "XENOCR.": [
   "XENOCRATES",
   {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum",
@@ -57943,6 +65658,19 @@ let LDM = {
    "Med.",
    "Aphrodisiensis",
    "1009"
+  ]
+ ],
+ "XENOCRATES $2": [
+  "XENOCRATES",
+  {
+   "testimonia doctrina et fragmenta": "testimonia doctrina et fragmenta"
+  },
+  [
+   "-396",
+   "-314",
+   "Phil.",
+   "Chalcedonius",
+   "634"
   ]
  ],
  "XENOCRITUS": [
@@ -57972,7 +65700,7 @@ let LDM = {
    "2306"
   ]
  ],
- "Xenoph.": [
+ "XENOPH.": [
   "XENOPHANES",
   {
    "Fragmenta (001)": "Fragmenta (001)",
@@ -57994,6 +65722,19 @@ let LDM = {
  "XENOPHILUS": [
   "XENOPHILUS",
   {
+   "fragmentum": "fragmentum"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "",
+   "2518"
+  ]
+ ],
+ "XENOPHILUS $1": [
+  "XENOPHILUS",
+  {
    "fragmenta": "fragmenta"
   },
   [
@@ -58004,7 +65745,7 @@ let LDM = {
    "2241"
   ]
  ],
- "X. Eph.": [
+ "X. EPH.": [
   "XENOPHON",
   {
    "ephesiaca": "ephesiaca",
@@ -58027,11 +65768,63 @@ let LDM = {
    "?",
    "?",
    "Hist.",
+   "Atheniensis",
+   "1926"
+  ]
+ ],
+ "XENOPHON $1": [
+  "XENOPHON",
+  {
+   "testimoniusm": "testimoniusm"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "",
+   "1973"
+  ]
+ ],
+ "XENOPHON $2": [
+  "XENOPHON",
+  {
+   "testimoniusm": "testimoniusm"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "Samius",
+   "2376"
+  ]
+ ],
+ "XENOPHON $3": [
+  "XENOPHON",
+  {
+   "testimoniusm": "testimoniusm"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "",
+   "1876"
+  ]
+ ],
+ "XENOPHON $4": [
+  "XENOPHON",
+  {
+   "testimoniusm": "testimoniusm"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
    "Cyprius",
    "2510"
   ]
  ],
- "Xenoph. Med.": [
+ "XENOPH. MED.": [
   "XENOPHON",
   {
    "fragmentum ap. Oribasium": "fragmentum ap. Oribasium",
@@ -58045,7 +65838,7 @@ let LDM = {
    "1108"
   ]
  ],
- "Xen.": [
+ "XEN.": [
   "XENOPHON",
   {
    "ages.": "Agesilaus",
@@ -58087,7 +65880,7 @@ let LDM = {
    "1754"
   ]
  ],
- "Xuthos": [
+ "XUTHOS": [
   "XUTHUS",
   {
    "testimonium": "testimonium"
@@ -58100,7 +65893,7 @@ let LDM = {
    "2229"
   ]
  ],
- "Zach. Mit.": [
+ "ZACH. MIT.": [
   "ZACHARIAS Mytilenaeus",
   {
    "Opif.": "Ammonius sive De mundi opificio disputatio (= de mundi opificio (DGE)",
@@ -58118,7 +65911,7 @@ let LDM = {
    "2831"
   ]
  ],
- "ZACHARIAS Papa": [
+ "ZACHARIAS PAPA": [
   "ZACHARIAS Papa",
   {
    "Vita sancti Benedicti Zacharia graecae reddita (sub auctore Gregorio Magno)": "Vita sancti Benedicti Zacharia graecae reddita (sub auctore Gregorio Magno)"
@@ -58131,7 +65924,7 @@ let LDM = {
    "A. D. 8"
   ]
  ],
- "Zelot.": [
+ "ZELOT.": [
   "ZELOTUS",
   {
    "Epigramma": "Epigramma"
@@ -58157,34 +65950,34 @@ let LDM = {
    "2276"
   ]
  ],
- "Zeno Sid. (?)": [
+ "ZENO SID. (?)": [
   "ZENO",
   {
-   "fragmenta": "fragmenta"
+   "testimonium": "testimonium",
+   "titulus": "titulus"
   },
   [
    "?",
    "?",
-   "Phil.",
+   "Hist.",
    "Sidonius",
-   "2134"
+   "2528"
   ]
  ],
  "ZENO": [
   "ZENO",
   {
-   "fragmenta": "fragmenta",
-   "testimonia": "testimonia"
+   "testimonium": "testimonium"
   },
   [
-   "101",
-   "200",
+   "?",
+   "?",
    "Hist.",
-   "Rhodius",
-   "2364"
+   "?",
+   "1956"
   ]
  ],
- "Zeno Tars. Stoic.": [
+ "ZENO TARS. STOIC.": [
   "ZENO",
   {
    "fragmenta": "fragmenta"
@@ -58197,7 +65990,7 @@ let LDM = {
    "2294"
   ]
  ],
- "Zeno Eleat.": [
+ "ZENO ELEAT.": [
   "ZENO",
   {
    "fragmenta": "fragmenta",
@@ -58211,7 +66004,21 @@ let LDM = {
    "595"
   ]
  ],
- "Zeno Stoic.": [
+ "ZENO $1": [
+  "ZENO",
+  {
+   "fragmenta": "fragmenta",
+   "testimonia": "testimonia"
+  },
+  [
+   "101",
+   "200",
+   "Hist.",
+   "Rhodius",
+   "2364"
+  ]
+ ],
+ "ZENO STOIC.": [
   "ZENO",
   {
    "fragmenta": "fragmenta",
@@ -58244,7 +66051,7 @@ let LDM = {
    "635"
   ]
  ],
- "Zeno Med. (?)": [
+ "ZENO MED. (?)": [
   "ZENO",
   {
    "fragmentum ap. Pseudo-Galenum": "fragmentum ap. Pseudo-Galenum"
@@ -58257,7 +66064,7 @@ let LDM = {
    "1109"
   ]
  ],
- "Zeno Laod.": [
+ "ZENO LAOD.": [
   "ZENO",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum",
@@ -58271,7 +66078,20 @@ let LDM = {
    "1110"
   ]
  ],
- "ZENOBIA Regina Palmyrae": [
+ "ZENO SID. (?) $1": [
+  "ZENO",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "?",
+   "?",
+   "Phil.",
+   "Sidonius",
+   "2134"
+  ]
+ ],
+ "ZENOBIA REGINA PALMYRAE": [
   "ZENOBIA Regina Palmyrae",
   {
    "testimonium": "testimonium"
@@ -58284,7 +66104,7 @@ let LDM = {
    "2167"
   ]
  ],
- "Zen.": [
+ "ZEN.": [
   "ZENOBIUS Sophista",
   {
    "Epitome collectionum Lucilli Tarrhaei et Didymi": "Epitome collectionum Lucilli Tarrhaei et Didymi",
@@ -58314,6 +66134,19 @@ let LDM = {
  "ZENODORUS": [
   "ZENODORUS",
   {
+   "\u03a0\u03b5\u03c1\u1f76 \u03c3\u03c5\u03bd\u03b7\u03b8\u03b5\u03af\u03b1\u03c2 (e cod. Paris. suppl. gr. 1164 [olim cod. Athon.])": "\u03a0\u03b5\u03c1\u1f76 \u03c3\u03c5\u03bd\u03b7\u03b8\u03b5\u03af\u03b1\u03c2 (e cod. Paris. suppl. gr. 1164 [olim cod. Athon.])"
+  },
+  [
+   "-150",
+   "-51",
+   "Gramm.",
+   "?",
+   "597"
+  ]
+ ],
+ "ZENODORUS $1": [
+  "ZENODORUS",
+  {
    "fragmenta ap. Theonem Alexandrinum": "fragmenta ap. Theonem Alexandrinum"
   },
   [
@@ -58324,7 +66157,7 @@ let LDM = {
    "599"
   ]
  ],
- "Zenod. Trag.": [
+ "ZENOD. TRAG.": [
   "ZENODOTUS",
   {
    "fragmentum": "fragmentum"
@@ -58350,7 +66183,7 @@ let LDM = {
    "600"
   ]
  ],
- "Zenod. Troez. = Zenod. Hist. ?": [
+ "ZENOD. TROEZ. = ZENOD. HIST. ?": [
   "ZENODOTUS",
   {
    "fragmenta": "fragmenta"
@@ -58363,7 +66196,7 @@ let LDM = {
    "2550"
   ]
  ],
- "Zenod.": [
+ "ZENOD.": [
   "ZENODOTUS",
   {
    "fragmenta": "fragmenta"
@@ -58403,7 +66236,7 @@ let LDM = {
    "1111"
   ]
  ],
- "Zenoth.": [
+ "ZENOTH.": [
   "ZENOTHEMIS",
   {
    "fragmentum": "fragmentum"
@@ -58429,7 +66262,7 @@ let LDM = {
    "1113"
   ]
  ],
- "ZEUXIS Major": [
+ "ZEUXIS MAJOR": [
   "ZEUXIS Major",
   {
    "fragmentum ap. Galenum": "fragmentum ap. Galenum"
@@ -58445,6 +66278,21 @@ let LDM = {
  "ZOILUS": [
   "ZOILUS",
   {
+   "fragmentum ap. Galenum": "fragmentum ap. Galenum",
+   "fragmentum ap. A\u00ebtium": "fragmentum ap. A\u00ebtium",
+   "fragmentum ap. Alexandrum Trallianum": "fragmentum ap. Alexandrum Trallianum"
+  },
+  [
+   "?",
+   "?",
+   "Med.",
+   "",
+   "1114"
+  ]
+ ],
+ "ZOILUS $1": [
+  "ZOILUS",
+  {
    "testimonia": "testimonia",
    "fragmenta": "fragmenta"
   },
@@ -58456,7 +66304,7 @@ let LDM = {
    "128"
   ]
  ],
- "Zonae.": [
+ "ZONAE.": [
   "ZONAEUS",
   {
    "De figuris [Sp.]": "De figuris [Sp.]"
@@ -58469,7 +66317,7 @@ let LDM = {
    "4243"
   ]
  ],
- "Zopyr. Trag.": [
+ "ZOPYR. TRAG.": [
   "ZOPYRUS",
   {
    "fragmentum": "fragmentum"
@@ -58482,7 +66330,20 @@ let LDM = {
    "355"
   ]
  ],
- "Zopyr. Hist. (?)": [
+ "ZOPYR. HIST. (?)": [
+  "ZOPYRUS",
+  {
+   "fragmenta": "fragmenta"
+  },
+  [
+   "?",
+   "?",
+   "Hist.",
+   "fort. Magnes",
+   "130"
+  ]
+ ],
+ "ZOPYR. HIST. (?) $1": [
   "ZOPYRUS",
   {
    "fragmenta": "fragmenta"
@@ -58495,7 +66356,7 @@ let LDM = {
    "129"
   ]
  ],
- "Zopyr.": [
+ "ZOPYR.": [
   "ZOPYRUS",
   {
    "fragmenta ap. Galenum": "fragmenta ap. Galenum",
@@ -58509,7 +66370,7 @@ let LDM = {
    "1116"
   ]
  ],
- "Zos.": [
+ "ZOS.": [
   "ZOSIMUS",
   {
    "historia nova": "historia nova",
@@ -58527,7 +66388,20 @@ let LDM = {
    "4084"
   ]
  ],
- "Zos. (?)": [
+ "ZOS. (?)": [
+  "ZOSIMUS",
+  {
+   "AG.6.15?, AG 6.183, AG 6.184, AG 6.185AP 6.15?, AP 6.183, AP 6.184, AP 6.185.": "epigrammata"
+  },
+  [
+   "-150",
+   "50",
+   "Epigr.",
+   "Thasius",
+   "1755"
+  ]
+ ],
+ "ZOS. (?) $1": [
   "ZOSIMUS",
   {
    "epigrammata sepulcralia": "epigrammata sepulcralia"
@@ -58555,7 +66429,7 @@ let LDM = {
    "1117"
   ]
  ],
- "Zos. Alch.": [
+ "ZOS. ALCH.": [
   "ZOSIMUS",
   {
    "<\u03a0\u03b5\u03c1\u1f76 \u03b1\u1f30\u03c4\u03b9\u1ff6\u03bd> {033}": "<\u03a0\u03b5\u03c1\u1f76 \u03b1\u1f30\u03c4\u03b9\u1ff6\u03bd> {033}",
@@ -58636,6 +66510,39 @@ let LDM = {
    "Hist.",
    "",
    "4086"
+  ]
+ ],
+ "[AGATHODAEMON] $1": [
+  "[AGATHODAEMON]",
+  {},
+  [
+   "51",
+   "150",
+   "Alchem.",
+   "",
+   "2566"
+  ]
+ ],
+ "[AGATHON] $1": [
+  "[AGATHON]",
+  {},
+  [
+   "-800",
+   "1600",
+   "Hist.",
+   "",
+   "2556"
+  ]
+ ],
+ "[ALEXARCHUS] $1": [
+  "[ALEXARCHUS]",
+  {},
+  [
+   "-800",
+   "1600",
+   "Hist.",
+   "",
+   "2556"
   ]
  ],
  "[ARETADES]": [
@@ -58851,7 +66758,7 @@ let LDM = {
    "1896"
   ]
  ],
- "Hegesin.": [
+ "HEGESIN.": [
   "[HEGESINUS]",
   {
    "Atthis (fragmentum spurium) (fort. auctore Callippo)": "Atthis (fragmentum spurium) (fort. auctore Callippo)",
@@ -58866,7 +66773,7 @@ let LDM = {
    "1395"
   ]
  ],
- "Hermesian. Hist.": [
+ "HERMESIAN. HIST.": [
   "[HERMESIANAX]",
   {
    "FGrH # 797": "fragmenta"
@@ -58919,7 +66826,7 @@ let LDM = {
    "253"
   ]
  ],
- "[ISIS Prophetissa]": [
+ "[ISIS PROPHETISSA]": [
   "[ISIS Prophetissa]",
   {
    "\u1f3c\u03c3\u03b9\u03c2 \u03c0\u03c1\u03bf\u03c6\u1fc6\u03c4\u03b9\u03c2 \u03c4\u1ff7 \u03c5\u1f31\u1ff7 \u1f6d\u03c1\u1ff3 (redactio prima) (e cod. Paris. B.N. gr. 2327, fol. 256r)": "\u1f3c\u03c3\u03b9\u03c2 \u03c0\u03c1\u03bf\u03c6\u1fc6\u03c4\u03b9\u03c2 \u03c4\u1ff7 \u03c5\u1f31\u1ff7 \u1f6d\u03c1\u1ff3 (redactio prima) (e cod. Paris. B.N. gr. 2327, fol. 256r)",
@@ -59013,7 +66920,7 @@ let LDM = {
    "2691"
   ]
  ],
- "[NECHEPSO et PETOSIRIS]": [
+ "[NECHEPSO ET PETOSIRIS]": [
   "[NECHEPSO et PETOSIRIS]",
   {
    "Testimonium": "Testimonium",

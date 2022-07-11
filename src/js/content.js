@@ -401,7 +401,17 @@ function createIL(){
     if( document.body.innerHTML.indexOf( "Index locorum" ) !== -1 ){
         return;
     }
-    
+    console.log(optionsCBE.option3100.dl1);
+    showdebuggl1 = optionsCBE.option3100.dl1;
+    showdebuggl2 = optionsCBE.option3100.dl2;
+    showdebuggl3 = optionsCBE.option3100.dl3;
+    inpat1 = optionsCBE.option3100.inpat1;
+    inpat2 = optionsCBE.option3100.inpat2;
+    inpwt1 = optionsCBE.option3100.inpwt1;
+    inpwt2 = optionsCBE.option3100.inpwt2;
+    inpdct1 = optionsCBE.option3100.inpdct1;
+    inpdct2 = optionsCBE.option3100.inpdct2;
+    inpdct3 = optionsCBE.option3100.inpdct3;
 
     let loco = null;
 
@@ -414,11 +424,12 @@ function createIL(){
         loco = JSON.parse( tempcont );
     } else {
         console.log( "Index locorum computation" );
-        let aDaaA = Trennstricheraus( normatext( gettextnodes( ), analysisNormalform ).split( " " ) );
+        //let aDaaA = Trennstricheraus( normatext( gettextnodes( ), analysisNormalform ).split( " " ) );
         //console.log(aDaaA.join(" "));
-        loco = GENCTSURN2( aDaaA.join(" ") );
+        //loco = DOREFEXT( aDaaA.join(" ") );
+        loco = DOREFEXT( gettextnodes( ) );
         //localStorage.setItem( ownkey3, JSON.stringify( loco ) );
-        console.log(loco);
+        //console.log(loco);
     }
 
     /*communication with background and getting of other tab data*/
@@ -448,56 +459,111 @@ function createIL(){
         onelem.style.left = event.pageX.toString()+"px";
         onelem.style.top = event.pageY.toString()+"px";
     };*/
-    indexdiv.innerHTML = "<div class='itti'><span id='hiha3'>🖐️</span><i>Index locorum</i> <span class='shhi' onclick='document.getElementById(\"misto\").style.display=\"none\"; this.onclick = function(){ if(document.getElementById(\"misto\").style.display===\"none\"){document.getElementById(\"misto\").style.display=\"block\";}else{document.getElementById(\"misto\").style.display=\"none\";} };'>&#11021;</span><span class='shhi' onclick='let astri = document.getElementById( \"indind3\" ).innerHTML;let childWindow = window.open(\"\",\"childWindow\",\"location=yes, menubar=yes, toolbar=yes\");childWindow.document.open();childWindow.document.write(\"<html><head></head><body>\");childWindow.document.write(astri);childWindow.document.write(\"</body></html>\");childWindow.print();childWindow.close();'>PDF </span><span onclick='getcsv3();'>CSV</span></div>";
-         let indexbod = document.createElement( "div" );
-        indexbod.id = "misto";
-        cou = 0;
-        
-        for( let u in loco ){
-            let coucou = 1;
-            let curcol = '#'+Math.round(0xffffff * Math.random()).toString(16);
-            for( let w in loco[u] ){
-                let oneentr = document.createElement( "div" );
-                oneentr.style.color = curcol;
-                let adddtheotherpages = " ";
-                for( let x in otherloco ){
-                    if( x !== ownkey3 ){
-                        let ggg = JSON.parse(otherloco[x]);
-                        for( let y in ggg ){
-                            for( let z in ggg[y] ){
-                                console.log(ggg[y][z][1], loco[u][w][1], ggg[y][z][1] === loco[u][w][1] );
-                                if( ggg[y][z][1] === loco[u][w][1] ){
-                                    adddtheotherpages+= "<span title='"+x+"'>&#9755;<span>";
-                                }
-                            }
-                        }
-                    }
-                }
-                if( coucou === 1 ){
-                    cou+=1;
-                    oneentr.className = "iscshown"+cou.toString();
-                    if( loco[u].length > 1 ){
-                        oneentr.innerHTML = "<b>"+cou.toString( ) + "</b>    "+ loco[u][w][1] + " "+loco[u][w][2]+" "+loco[u][w][3].join(" ")+"  <span name='iscnot"+cou.toString()+"' onclick='shownotshown(this);'>&#8628;</span>"+adddtheotherpages;
-                    } else {
-                        oneentr.innerHTML = "<b>"+cou.toString( ) + "</b>    "+ loco[u][w][1] + " "+loco[u][w][2]+" "+loco[u][w][3].join(" ")+adddtheotherpages;
-                    }
-                } else {
-                    oneentr.className = "iscnot"+cou.toString();
-                    oneentr.style.display = "none";
-                    //oneentr.innerHTML = "<b>"+cou.toString( ) + "</b>    "+ loco[u][w][1] + " "+loco[u][w][2]+" "+loco[u][w][3].join(" ")+"  <span onclick=\'shownotshown(\"iscnot"+cou.toString()+"\");\'>Hide</span>"+adddtheotherpages;
-                    oneentr.innerHTML = "<b>- </b>    "+ loco[u][w][1] + " "+loco[u][w][2]+" "+loco[u][w][3].join(" ")+" "+adddtheotherpages;
-                }
-                indexbod.appendChild( oneentr );
-                coucou+=1;
+    indexdiv.innerHTML = "<div class='itti'><span id='hiha3'>🖐️</span><i>Index locorum</i> <span class='shhi' onclick='document.getElementById(\"misto\").style.display=\"none\"; this.onclick = function(){ if(document.getElementById(\"misto\").style.display===\"none\"){document.getElementById(\"misto\").style.display=\"block\";}else{document.getElementById(\"misto\").style.display=\"none\";} };'>&#11021;</span><span class='shhi' onclick='let astri = document.getElementById( \"indind3\" ).innerHTML;let childWindow = window.open(\"\",\"childWindow\",\"location=yes, menubar=yes, toolbar=yes\");childWindow.document.open();childWindow.document.write(\"<html><head></head><body>\");childWindow.document.write(astri);childWindow.document.write(\"</body></html>\");childWindow.print();childWindow.close();'>PDF </span><span class='shhi' onclick='getcsv3();'>CSV</span><span class='shhi' onclick='fullshowit();'>C1</span><span class='shhi' onclick='halveshowit();'>C2</span><span class='shhi' onclick='showuncertain();'>C3</span> </div>";
+    
+
+    let conclusiolevel1 = {} // sorted by author    
+    for( let con in loco ){
+        if( loco[con][0] === 0 ){
+            if( conclusiolevel1[ loco[con][1] ] ){
+                conclusiolevel1[ loco[con][1] ].push( loco[con] );
+            } else {
+                conclusiolevel1[ loco[con][1] ] = [loco[con]];
             }
         }
+    }
+    let conclusiolevel2 = {} // sorted by author    
+    for( let con in loco ){
+        if( loco[con][0] === 1 ){
+            if( conclusiolevel2[ loco[con][1] ] ){
+                conclusiolevel2[ loco[con][1] ].push( loco[con] );
+            } else {
+                conclusiolevel2[ loco[con][1] ] = [loco[con]];
+            }
+        }
+    }
+    let conclusiolevel3 = {} // sorted by author    
+    for( let con in loco ){
+        if( loco[con][0] === 2 ){
+            if( conclusiolevel3[ loco[con][1] ] ){
+                conclusiolevel3[ loco[con][1] ].push( loco[con] );
+            } else {
+                conclusiolevel3[ loco[con][1] ] = [loco[con]];
+            }
+        }
+    }
+    let indexbod1 = document.createElement( "div" );
+    indexbod1.id = "misto1";
+    for(let ku in conclusiolevel1 ){
+        let curcol = '#'+Math.round(0xffffff * Math.random()).toString(16);
+        let headerauthor = document.createElement( "div" );
+        headerauthor.className = "indexentr";
+        headerauthor.style.color = curcol;
+        let autoadd = abkAW[ku][0];
+        if( autoadd == "" ){
+            autoadd = ku;
+        }
+        headerauthor.innerHTML = autoadd;
+        indexbod1.appendChild( headerauthor );
+        for( let ent in conclusiolevel1[ku] ){
+            let indeentr = document.createElement( "div" );
+            indeentr.className = "indexentrmar";
+            indeentr.innerHTML = "<span style='color:gray;'>"+ent.toString()+".</span>  "+conclusiolevel1[ku][ent][2]+" <span style='color:orange;'>"+conclusiolevel1[ku][ent][3]+ "</span>   <span class='minibu'onclick='callforURN(this);' name='"+conclusiolevel1[ku][ent][0]+"__"+conclusiolevel1[ku][ent][1]+"__"+conclusiolevel1[ku][ent][2]+"'>rURN</span> <span class='minibu' onclick='markinWEBSITE(this);' name='"+conclusiolevel1[ku][ent][3]+"'>sT</span> ";
+            indexbod1.appendChild( indeentr );
+        }
+    }
+    indexdiv.appendChild( indexbod1 );
+    let indexbod2 = document.createElement( "div" );
+    indexbod2.style.display = "none";
+    indexbod2.id = "misto2";
+    for(let ku in conclusiolevel2 ){
+        let curcol = '#'+Math.round(0xffffff * Math.random()).toString(16);
+        let headerauthor = document.createElement( "div" );
+        headerauthor.className = "indexentr";
+        headerauthor.style.color = curcol;
+        let autoadd = abkAW[ku][0];
+        if( autoadd == "" ){
+            autoadd = ku;
+        }
+        headerauthor.innerHTML = autoadd;
+        indexbod2.appendChild( headerauthor );
+        for( let ent in conclusiolevel2[ku] ){
+            let indeentr = document.createElement( "div" );
+            indeentr.className = "indexentrmar";
+            indeentr.innerHTML = "<span style='color:gray;'>"+ent.toString()+".</span>  "+conclusiolevel2[ku][ent][2]+" <span style='color:orange;'>"+conclusiolevel2[ku][ent][3]+ "</span>   <span class='minibu'onclick='callforURN(this);' name='"+conclusiolevel2[ku][ent][0]+"__"+conclusiolevel2[ku][ent][1]+"__"+conclusiolevel2[ku][ent][2]+"'>rURN</span> <span class='minibu' onclick='markinWEBSITE(this);' name='"+conclusiolevel2[ku][ent][3]+"'>sT</span> ";
+            indexbod2.appendChild( indeentr );
+        }
+    }
+    indexdiv.appendChild( indexbod2 );
+    let indexbod3 = document.createElement( "div" );
+    indexbod3.style.display = "none";
+    indexbod3.id = "misto3";
+    for(let ku in conclusiolevel3 ){
+        let curcol = '#'+Math.round(0xffffff * Math.random()).toString(16);
+        let headerauthor = document.createElement( "div" );
+        headerauthor.className = "indexentr";
+        headerauthor.style.color = curcol;
+        let autoadd = abkAW[ku][0];
+        if( autoadd == "" ){
+            autoadd = ku;
+        }
+        headerauthor.innerHTML = autoadd;
+        indexbod3.appendChild( headerauthor );
+        for( let ent in conclusiolevel3[ku] ){
+            let indeentr = document.createElement( "div" );
+            indeentr.className = "indexentrmar";
+            indeentr.innerHTML = "<span style='color:gray;'>"+ent.toString()+".</span>  "+conclusiolevel3[ku][ent][2]+" <span style='color:orange;'>"+conclusiolevel3[ku][ent][3]+ "</span>   <span class='minibu'onclick='callforURN(this);' name='"+conclusiolevel3[ku][ent][0]+"__"+conclusiolevel3[ku][ent][1]+"__"+conclusiolevel3[ku][ent][2]+"'>rURN</span> <span class='minibu' onclick='markinWEBSITE(this);' name='"+conclusiolevel3[ku][ent][3]+"'>sT</span> ";
+            indexbod3.appendChild( indeentr );
+        }
+    }
+    indexdiv.appendChild( indexbod3 );
+    
 
-    indexdiv.appendChild( indexbod );
     document.body.appendChild( indexdiv );
 
     /*add interaction*/
     let scircra = document.createElement( "script" );
-    scircra.innerHTML = 'function shownotshown( aaa ){let na = aaa.getAttribute("name"); let notvis = document.getElementsByClassName( na );for( let n in notvis ){if(notvis[n].style){if( notvis[n].style.display == "block" ){notvis[n].style.display = "none";} else {notvis[n].style.display = "block";}}}} let dtomove3 = document.getElementById("hiha3"); dtomove3.draggable = "true";dtomove3.ondragend = function(event){let onelem = event.target.parentElement.parentElement || event.srcElement.parentElement.parentElement; onelem.style.left = event.pageX.toString()+"px";onelem.style.top = event.pageY.toString()+"px";};function getcsv3(){alert("not imple");}';
+    scircra.innerHTML = 'function shownotshown( aaa ){let na = aaa.getAttribute("name"); let notvis = document.getElementsByClassName( na );for( let n in notvis ){if(notvis[n].style){if( notvis[n].style.display == "block" ){notvis[n].style.display = "none";} else {notvis[n].style.display = "block";}}}} let dtomove3 = document.getElementById("hiha3"); dtomove3.draggable = "true";dtomove3.ondragend = function(event){let onelem = event.target.parentElement.parentElement || event.srcElement.parentElement.parentElement; onelem.style.left = event.pageX.toString()+"px";onelem.style.top = event.pageY.toString()+"px";};function getcsv3(){alert("not imple");} function fullshowit(){document.getElementById("misto1").style.display = "block"; document.getElementById("misto2").style.display = "none"; document.getElementById("misto3").style.display = "none";} function halveshowit(){document.getElementById("misto1").style.display = "none"; document.getElementById("misto2").style.display = "block"; document.getElementById("misto3").style.display = "none";} function showuncertain(){document.getElementById("misto1").style.display = "none";document.getElementById("misto2").style.display = "none";document.getElementById("misto3").style.display = "block";}';
     document.body.appendChild( scircra );
 }
 

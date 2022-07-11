@@ -27,7 +27,11 @@ function len( aA ){
         if( aA instanceof Set ){
             return aA.size;
         } else {
-            return aA.length;
+            let li = aA.length;
+            if( li == undefined ){
+                return Object.keys( aA ).length;
+            }
+            return li;
         }
     } else {
         return 0;

@@ -213,6 +213,7 @@ function doIL( data ){
 function saveTheOptions( ){
     let status = document.querySelector('#status');
     let savedMess = browser.i18n.getMessage('savedOpt') || 'Options saved.';
+    console.log("SAAAAAAVVVVEEEE");
     console.log(document.getElementById( "inpat1" ).value);
     let optionsss = { 
         nfdbutt: document.getElementById( "nfdbutt" ).checked,
@@ -274,9 +275,9 @@ function saveTheOptions( ){
 function setTheOptions( ){
   let status = document.querySelector('#status');
   let loadMess = browser.i18n.getMessage('loadOpt') || 'Options loaded.';  
-   
+  console.log("settheoptions");
   browser.storage.local.get( "option3100", function( data ){
-        
+        console.log(data.option3100);
         if(data.option3100){
             document.getElementById( "nfdbutt" ).checked = data.option3100.nfdbutt;
             document.getElementById( "nfcbutt" ).checked= data.option3100.nfcbutt;

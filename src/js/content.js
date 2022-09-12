@@ -1,7 +1,7 @@
 /*  content.js  
   
   the script has the same rights as in a single website
-  we can manipulate the dom here as usuly                         
+  we can manipulate the dom here as usual                        
      
 */ 
 
@@ -401,7 +401,8 @@ function createIL(){
     if( document.body.innerHTML.indexOf( "Index locorum" ) !== -1 ){
         return;
     }
-    console.log(optionsCBE.option3100.dl1);
+    //console.log(optionsCBE.option3100);
+    //console.log(optionsCBE.option3100.dl1);
     showdebuggl1 = optionsCBE.option3100.dl1;
     showdebuggl2 = optionsCBE.option3100.dl2;
     showdebuggl3 = optionsCBE.option3100.dl3;
@@ -472,6 +473,8 @@ function createIL(){
             }
         }
     }
+    let con1keys = Object.keys( conclusiolevel1 );
+    if(con1keys.length != 0){ con1keys.sort(); }
     let conclusiolevel2 = {} // sorted by author    
     for( let con in loco ){
         if( loco[con][0] === 1 ){
@@ -482,6 +485,8 @@ function createIL(){
             }
         }
     }
+    let con2keys = Object.keys( conclusiolevel2 );
+    if(con2keys.length != 0){ con2keys.sort(); }
     let conclusiolevel3 = {} // sorted by author    
     for( let con in loco ){
         if( loco[con][0] === 2 ){
@@ -492,9 +497,13 @@ function createIL(){
             }
         }
     }
+    let con3keys = Object.keys( conclusiolevel3 );
+    if(con3keys.length != 0){ con3keys.sort(); }
     let indexbod1 = document.createElement( "div" );
     indexbod1.id = "misto1";
-    for(let ku in conclusiolevel1 ){
+    console.log(con1keys);
+    for(let kk in con1keys ){
+        let ku = con1keys[kk];
         let curcol = '#'+Math.round(0xffffff * Math.random()).toString(16);
         let headerauthor = document.createElement( "div" );
         headerauthor.className = "indexentr";
@@ -508,7 +517,7 @@ function createIL(){
         for( let ent in conclusiolevel1[ku] ){
             let indeentr = document.createElement( "div" );
             indeentr.className = "indexentrmar";
-            indeentr.innerHTML = "<span style='color:gray;'>"+ent.toString()+".</span>  "+conclusiolevel1[ku][ent][2]+" <span style='color:orange;'>"+conclusiolevel1[ku][ent][3]+ "</span>   <span class='minibu'onclick='callforURN(this);' name='"+conclusiolevel1[ku][ent][0]+"__"+conclusiolevel1[ku][ent][1]+"__"+conclusiolevel1[ku][ent][2]+"'>rURN</span> <span class='minibu' onclick='markinWEBSITE(this);' name='"+conclusiolevel1[ku][ent][3]+"'>sT</span> ";
+            indeentr.innerHTML = "<span style='color:gray;'>"+ent.toString()+".</span>  "+conclusiolevel1[ku][ent][2]+" <span style='color:orange;'>"+conclusiolevel1[ku][ent][3]+ "</span>   <span class='minibu'onclick='callforURN(this);' name='"+conclusiolevel1[ku][ent][0]+"__"+conclusiolevel1[ku][ent][1]+"__"+conclusiolevel1[ku][ent][2]+"'>rURN</span> <span class='minibu' onclick='markinWEBSITE(this);' name='"+conclusiolevel1[ku][ent][3]+"'>sT</span> <span class='minibu' onclick='showrawwissba(this);' name='"+conclusiolevel1[ku][ent][0]+"__"+conclusiolevel1[ku][ent][1]+"__"+conclusiolevel1[ku][ent][2]+"'>sWBE</span>";
             indexbod1.appendChild( indeentr );
         }
     }
@@ -516,7 +525,8 @@ function createIL(){
     let indexbod2 = document.createElement( "div" );
     indexbod2.style.display = "none";
     indexbod2.id = "misto2";
-    for(let ku in conclusiolevel2 ){
+    for(let kk in con2keys ){
+        let ku = con2keys[kk];
         let curcol = '#'+Math.round(0xffffff * Math.random()).toString(16);
         let headerauthor = document.createElement( "div" );
         headerauthor.className = "indexentr";
@@ -530,7 +540,7 @@ function createIL(){
         for( let ent in conclusiolevel2[ku] ){
             let indeentr = document.createElement( "div" );
             indeentr.className = "indexentrmar";
-            indeentr.innerHTML = "<span style='color:gray;'>"+ent.toString()+".</span>  "+conclusiolevel2[ku][ent][2]+" <span style='color:orange;'>"+conclusiolevel2[ku][ent][3]+ "</span>   <span class='minibu'onclick='callforURN(this);' name='"+conclusiolevel2[ku][ent][0]+"__"+conclusiolevel2[ku][ent][1]+"__"+conclusiolevel2[ku][ent][2]+"'>rURN</span> <span class='minibu' onclick='markinWEBSITE(this);' name='"+conclusiolevel2[ku][ent][3]+"'>sT</span> ";
+            indeentr.innerHTML = "<span style='color:gray;'>"+ent.toString()+".</span>  "+conclusiolevel2[ku][ent][2]+" <span style='color:orange;'>"+conclusiolevel2[ku][ent][3]+ "</span>   <span class='minibu'onclick='callforURN(this);' name='"+conclusiolevel2[ku][ent][0]+"__"+conclusiolevel2[ku][ent][1]+"__"+conclusiolevel2[ku][ent][2]+"'>rURN</span> <span class='minibu' onclick='markinWEBSITE(this);' name='"+conclusiolevel2[ku][ent][3]+"'>sT</span> <span class='minibu' onclick='showrawwissba(this);' name='"+conclusiolevel2[ku][ent][0]+"__"+conclusiolevel2[ku][ent][1]+"__"+conclusiolevel2[ku][ent][2]+"'>sWBE</span>";
             indexbod2.appendChild( indeentr );
         }
     }
@@ -538,7 +548,8 @@ function createIL(){
     let indexbod3 = document.createElement( "div" );
     indexbod3.style.display = "none";
     indexbod3.id = "misto3";
-    for(let ku in conclusiolevel3 ){
+    for(let kk in con3keys ){
+        let ku = con3keys[kk];
         let curcol = '#'+Math.round(0xffffff * Math.random()).toString(16);
         let headerauthor = document.createElement( "div" );
         headerauthor.className = "indexentr";
@@ -552,7 +563,7 @@ function createIL(){
         for( let ent in conclusiolevel3[ku] ){
             let indeentr = document.createElement( "div" );
             indeentr.className = "indexentrmar";
-            indeentr.innerHTML = "<span style='color:gray;'>"+ent.toString()+".</span>  "+conclusiolevel3[ku][ent][2]+" <span style='color:orange;'>"+conclusiolevel3[ku][ent][3]+ "</span>   <span class='minibu'onclick='callforURN(this);' name='"+conclusiolevel3[ku][ent][0]+"__"+conclusiolevel3[ku][ent][1]+"__"+conclusiolevel3[ku][ent][2]+"'>rURN</span> <span class='minibu' onclick='markinWEBSITE(this);' name='"+conclusiolevel3[ku][ent][3]+"'>sT</span> ";
+            indeentr.innerHTML = "<span style='color:gray;'>"+ent.toString()+".</span>  "+conclusiolevel3[ku][ent][2]+" <span style='color:orange;'>"+conclusiolevel3[ku][ent][3]+ "</span>   <span class='minibu'onclick='callforURN(this);' name='"+conclusiolevel3[ku][ent][0]+"__"+conclusiolevel3[ku][ent][1]+"__"+conclusiolevel3[ku][ent][2]+"'>rURN</span> <span class='minibu' onclick='markinWEBSITE(this);' name='"+conclusiolevel3[ku][ent][3]+"'>sT</span> <span class='minibu' onclick='showrawwissba(this);' name='"+conclusiolevel3[ku][ent][0]+"__"+conclusiolevel3[ku][ent][1]+"__"+conclusiolevel3[ku][ent][2]+"'>sWBE</span>";
             indexbod3.appendChild( indeentr );
         }
     }

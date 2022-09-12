@@ -297,18 +297,19 @@ function LCS( vecA, vecB ){
     if( lenA === 0 || lenB === 0 ){ 
         return 0; 
     }
+
     let C = new Array( lenA ).fill( 0 ).map( () => new Array( lenB ).fill( 0 ));//[[0 for i in range(len(vecB))] for i in range(len(vecA))]
     for( let i = 0; i < lenA; i+=1 ){
         for( let j = 0; j < lenB; j+=1 ){
             if( vecA[i] === vecB[j] ){
                 if( i !== 0 && j !== 0 ){
-                    C[i][j] = max( max( C[i][j-1]+1, C[i-1][j]+1 ), C[i-1][j-1] + 1);
+                    C[i][j] = C[i-1][j-1] + 1;
                 } else {
                     C[i][j] = 1;
                 }
             } else {
                 if( i !== 0 && j !== 0 ){
-                    C[i][j] = max( C[i][j-1], C[i-1][j] ); 
+                    C[i][j] = max( C[i][j-1], C[i-1][j] );
                 }
             }
         }

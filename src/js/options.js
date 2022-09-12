@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   /* click on saveButton */  
   save_el.addEventListener("click", function(el) {
+    setTheOptions(); //chek if options are set
     saveTheOptions();
     });
 }); 
